@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 // import '../App.css';
 import '../assets/css/custom.css';
 import logo from '../assets/images/logo.png';
+import logo4 from '../assets/images/logo4.png';
 import logo5 from '../assets/images/logo5.png';
 import banner from '../assets/images/banner.png';
 import sliderImg from '../assets/images/slider_img.png';
@@ -140,14 +141,13 @@ function Homepage() {
                 </ul>
                 {/* .cd-dropdown-content */}
             </nav>
-            <div className="cp_navi_main_wrapper float_left">
+            <div className="cp_navi_main_wrapper index2_header_wrapper float_left">
                 <div className="container-fluid">
                     <div className="cp_logo_wrapper">
                         <a href="index.html">
-                            <img src={currentTheme === "light" ? logo : logo5} alt="logo" />
+                            <img src={currentTheme === "light" ? logo4 : logo5} alt="logo" />
                         </a>
                     </div>
-                    <ToggleTheme selectedTheme={currentTheme} onChange={setCurrentTheme} />
                     {/* mobile menu area start */}
                     <header className="mobail_menu d-block d-sm-block d-md-block d-lg-none d-xl-none">
                         <div className="container-fluid">
@@ -182,17 +182,18 @@ function Homepage() {
                         </div>
                         {/* .cd-dropdown-wrapper */}
                     </header>
-                    <div className="top_header_right_wrapper">
+                    <div className="top_header_right_wrapper top_phonecalls">
                         <p><i className="flaticon-phone-contact" /> (+91) 123 123 4567</p>
                         <div className="header_btn">
                             <ul>
                                 <li>
-                                    <Link to="/register"> register </Link>
-                                </li>
+                                    <a href="register.html"> register </a> </li>
                                 <li>
-                                    <a href="<Login />"> login </a> </li>
+                                    <a href="login.html"> login </a> </li>
                             </ul>
                         </div>
+                        <ToggleTheme selectedTheme={currentTheme} onChange={setCurrentTheme} />
+
                     </div>
                     <div className="cp_navigation_wrapper">
                         <div className="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
@@ -232,7 +233,7 @@ function Homepage() {
                                             </span></a>
                                             <ul className="dropdown-menu-right">
                                                 <li>
-                                                    <a href="my_account.html"> <i className="fas fa-caret-right" />my account</a>
+                                                    <a href="my_account.html"> <i className="fas fa-caret-right" />my account </a>
                                                 </li>
                                                 <li>
                                                     <a href="view_profile.html"> <i className="fas fa-caret-right" /> my profile</a>
@@ -328,9 +329,9 @@ function Homepage() {
             </div>
             {/* navi wrapper End */}
             {/* slider wrapper start */}
-            <div className="slider-area float_left">
-                <div className="banner_img_top">
-                    <img src={banner} alt="img" />
+            <div className="slider-area slider_index2_wrapper float_left">
+                <div className="index2_sliderbg">
+                    <img src="images/sliderbg.png" alt="img" className="img-responsive" />
                 </div>
                 <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
                     <div className="carousel-inner" role="listbox">
@@ -338,12 +339,14 @@ function Homepage() {
                             <div className="carousel-captions caption-1">
                                 <div className="container">
                                     <div className="row">
-                                        <div className="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                        <div className="col-xl-6 col-lg-10 col-md-12 col-sm-12 col-12">
                                             <div className="content">
                                                 <h2 data-animation="animated bounceInUp">Often Have Small</h2>
                                                 <h3 data-animation="animated bounceInUp">Invest Your Money  <br />
-                                                    For Future</h3>
-                                                <div className="slider_btn float_left">
+                                                    For <span>Future</span></h3>
+                                                <div data-animation="animated bounceInUp" className="line_shape" />
+                                                <p data-animation="animated bounceInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute an irure dolor in voluptate velit.</p>
+                                                <div className="slider_btn index2_sliderbtn float_left">
                                                     <ul>
                                                         <li data-animation="animated bounceInLeft">
                                                             <a href="#">start now</a>
@@ -354,11 +357,6 @@ function Homepage() {
                                                     </ul>
                                                 </div>
                                                 <div className="clear" />
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                                            <div className="slider_main_img_wrapper">
-                                                <img src={sliderImg} alt="slider_img" />
                                             </div>
                                         </div>
                                     </div>
@@ -369,12 +367,14 @@ function Homepage() {
                             <div className="carousel-captions caption-2">
                                 <div className="container">
                                     <div className="row">
-                                        <div className="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                        <div className="col-xl-6 col-lg-10 col-md-12 col-sm-12 col-12">
                                             <div className="content">
-                                                <h2 data-animation="animated bounceInLeft">Often Have Small</h2>
-                                                <h3 data-animation="animated bounceInLeft">Invest Your Money  <br />
-                                                    For Future</h3>
-                                                <div className="slider_btn float_left">
+                                                <h2 data-animation="animated bounceInUp">Often Have Small</h2>
+                                                <h3 data-animation="animated bounceInUp">Invest Your Money  <br />
+                                                    For <span>Future</span></h3>
+                                                <div data-animation="animated bounceInUp" className="line_shape" />
+                                                <p data-animation="animated bounceInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute an irure dolor in voluptate velit.</p>
+                                                <div className="slider_btn index2_sliderbtn float_left">
                                                     <ul>
                                                         <li data-animation="animated bounceInLeft">
                                                             <a href="#">start now</a>
@@ -385,11 +385,6 @@ function Homepage() {
                                                     </ul>
                                                 </div>
                                                 <div className="clear" />
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                                            <div className="slider_main_img_wrapper">
-                                                <img src={sliderImg} alt="slider_img" />
                                             </div>
                                         </div>
                                     </div>
@@ -400,12 +395,14 @@ function Homepage() {
                             <div className="carousel-captions caption-3">
                                 <div className="container">
                                     <div className="row">
-                                        <div className="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                        <div className="col-xl-6 col-lg-10 col-md-12 col-sm-12 col-12">
                                             <div className="content">
-                                                <h2 data-animation="animated bounceInLeft">Often Have Small</h2>
-                                                <h3 data-animation="animated bounceInLeft">Invest Your Money  <br />
-                                                    For Future</h3>
-                                                <div className="slider_btn float_left">
+                                                <h2 data-animation="animated bounceInUp">Often Have Small</h2>
+                                                <h3 data-animation="animated bounceInUp">Invest Your Money  <br />
+                                                    For <span>Future</span></h3>
+                                                <div data-animation="animated bounceInUp" className="line_shape" />
+                                                <p data-animation="animated bounceInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute an irure dolor in voluptate velit.</p>
+                                                <div className="slider_btn index2_sliderbtn float_left">
                                                     <ul>
                                                         <li data-animation="animated bounceInLeft">
                                                             <a href="#">start now</a>
@@ -418,29 +415,22 @@ function Homepage() {
                                                 <div className="clear" />
                                             </div>
                                         </div>
-                                        <div className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                                            <div className="slider_main_img_wrapper">
-                                                <img src={sliderImg} alt="slider_img" />
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <ol className="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to={0} className="active"><span className="number" />
+                            <li data-target="#carousel-example-generic" data-slide-to={0} className="active"><span className="number">01</span>
                             </li>
-                            <li data-target="#carousel-example-generic" data-slide-to={1} className><span className="number" />
+                            <li data-target="#carousel-example-generic" data-slide-to={1} className><span className="number">02</span>
                             </li>
-                            <li data-target="#carousel-example-generic" data-slide-to={2} className><span className="number" />
+                            <li data-target="#carousel-example-generic" data-slide-to={2} className><span className="number">03</span>
                             </li>
                         </ol>
                         <div className="carousel-nevigation">
-                            <a className="prev" href="#carousel-example-generic" id='header-prev-btn' role="button" data-slide="prev"> <span />
-                                <iconify-icon icon="majesticons:arrow-left" width="30" height="30"></iconify-icon>
+                            <a className="prev" href="#carousel-example-generic" role="button" data-slide="prev"> <span /> <i className="flaticon-left-arrow" />
                             </a>
-                            <a className="next" href="#carousel-example-generic" id='header-prev-btn' role="button" data-slide="next"> <span />
-                                <iconify-icon icon="majesticons:arrow-right" width="30" height="30"></iconify-icon>
+                            <a className="next" href="#carousel-example-generic" role="button" data-slide="next"> <span /> <i className="flaticon-arrow-pointing-to-right" />
                             </a>
                         </div>
                     </div>
@@ -448,19 +438,23 @@ function Homepage() {
             </div>
             {/* slider wrapper End */}
             {/*about us wrapper start */}
-            <div className="about_us_wrapper float_left">
+            <div className="about_us_wrapper index2_about_us_wrapper float_left">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 col-lg-6 col-sm-12 col-12">
-                            <div className="about_img_wrapper">
-                                <img src={sliderImg} alt="About" className="img-responsive" />
+                        <div className="col-xl-6 col-md-12 col-lg-12 col-sm-12 col-12">
+                            <div className="index2_abt_img_wrapper">
+                                <img src="images/abt_3.png" alt="About" className="img-responsive" />
+                                <div className="sw_disc_img_btm">
+                                    <img src="images/abt_2.png" alt="About" className="img-responsive" />
+                                </div>
                             </div>
                         </div>
-                        <div className="col-md-12 col-lg-6 col-sm-12 col-12">
+                        <div className="col-xl-6 col-md-12 col-lg-12 col-sm-12 col-12">
                             <div className="about_content_wrapper">
-                                <div className="sv_heading_wraper">
+                                <div className="sv_heading_wraper index2_heading">
                                     <h4>who we are</h4>
                                     <h3>Welcome to SaveHyip</h3>
+                                    <div className="line_shape" />
                                 </div>
                                 <div className="welcone_savehiyp float_left">
                                     <p>Put your investing ideas into action with full range of investments. Enjoy real benefits and rewards on your accrue investing.</p>
@@ -486,31 +480,33 @@ function Homepage() {
             </div>
             {/* about us wrapper end */}
             {/*investment plan wrapper start */}
-            <div className="investment_plans float_left">
+            <div className="investment_plans index2_investment_plans float_left">
                 <div className="investment_overlay" />
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12 col-12">
-                            <div className="sv_heading_wraper heading_wrapper_dark">
+                            <div className="sv_heading_wraper heading_wrapper_dark index2_heading index2_heading_center">
                                 <h4> our plans </h4>
                                 <h3> Our Investment Plans </h3>
+                                <div className="line_shape" />
                             </div>
                         </div>
                         <div className="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
-                            <div className="investment_box_wrapper float_left">
+                            <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
                                 <div className="investment_icon_circle">
                                     <i className="flaticon-bar-chart" />
                                 </div>
                                 <div className="investment_border_wrapper" />
                                 <div className="investment_content_wrapper">
                                     <h1><a href="#">silver plan</a></h1>
+                                    <div className="line_shape investment_line_shape" />
                                     <p>Up to 5% for 20 Hourly
                                         <br /> Compound Available
                                         <br /> Down to 5% for 20 Hourly
                                         <br /> Principal Return
                                         <br /> Up to 5% for 20 Hourly</p>
                                 </div>
-                                <div className="about_btn plans_btn">
+                                <div className="about_btn plans_btn index2_investment_btn">
                                     <ul>
                                         <li>
                                             <a href="#">read more</a>
@@ -520,20 +516,21 @@ function Homepage() {
                             </div>
                         </div>
                         <div className="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
-                            <div className="investment_box_wrapper float_left">
+                            <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
                                 <div className="investment_icon_circle red_info_circle">
                                     <i className="flaticon-money" />
                                 </div>
                                 <div className="investment_border_wrapper red_border_wrapper" />
                                 <div className="investment_content_wrapper red_content_wrapper">
                                     <h1><a href="#">Bronze Plan</a></h1>
+                                    <div className="line_shape investment_line_shape" />
                                     <p>Up to 5% Daily for 5 Days
                                         <br /> Min deposit: $2020
                                         <br /> Max deposit: $101010
                                         <br /> Principal Return
                                         <br /> Compound Available</p>
                                 </div>
-                                <div className="about_btn plans_btn red_btn_plans">
+                                <div className="about_btn plans_btn red_btn_plans index2_investment_btn">
                                     <ul>
                                         <li>
                                             <a href="#">read more</a>
@@ -543,20 +540,21 @@ function Homepage() {
                             </div>
                         </div>
                         <div className="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
-                            <div className="investment_box_wrapper float_left">
+                            <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
                                 <div className="investment_icon_circle blue_icon_circle">
                                     <i className="flaticon-gold" />
                                 </div>
                                 <div className="investment_border_wrapper blue_border_wrapper" />
                                 <div className="investment_content_wrapper blue_content_wrapper">
                                     <h1><a href="#">copper plan</a></h1>
+                                    <div className="line_shape investment_line_shape" />
                                     <p>Up to 3% Hourly for 10 Hourly
                                         <br /> Min deposit: $300
                                         <br /> Max deposit: $3000
                                         <br /> Principal Not Return
                                         <br /> Compound Not Available</p>
                                 </div>
-                                <div className="about_btn plans_btn blue_btn_plans">
+                                <div className="about_btn plans_btn blue_btn_plans index2_investment_btn">
                                     <ul>
                                         <li>
                                             <a href="#">read more</a>
@@ -566,20 +564,21 @@ function Homepage() {
                             </div>
                         </div>
                         <div className="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
-                            <div className="investment_box_wrapper float_left">
+                            <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
                                 <div className="investment_icon_circle green_info_circle">
                                     <i className="flaticon-medal" />
                                 </div>
                                 <div className="investment_border_wrapper green_border_wrapper" />
                                 <div className="investment_content_wrapper green_content_wrapper">
                                     <h1><a href="#">gold plan</a></h1>
+                                    <div className="line_shape investment_line_shape" />
                                     <p>Up to 7% for 30 days
                                         <br /> Min deposit: $500
                                         <br /> Max deposit: $3000
                                         <br /> Principal Not Return
                                         <br /> Compound Available</p>
                                 </div>
-                                <div className="about_btn plans_btn green_plan_btn">
+                                <div className="about_btn plans_btn green_plan_btn index2_investment_btn">
                                     <ul>
                                         <li>
                                             <a href="#">read more</a>
@@ -593,56 +592,24 @@ function Homepage() {
             </div>
             {/*investment plan wrapper end */}
             {/*calculator plan wrapper start */}
-            <div className="calculator_wrapper float_left">
+            <div className="calculator_wrapper index2_calculator_wrapper float_left">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12 col-12">
-                            <div className="sv_heading_wraper heading_wrapper_dark dark_heading">
+                            <div className="sv_heading_wraper heading_wrapper_dark dark_heading index2_heading index2_heading_center">
                                 <h4> plans calculator </h4>
                                 <h3> How Much Can You Save With Plans? </h3>
+                                <div className="line_shape" />
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-12 col-sm-12 col-12 calc">
-                            <div className="calculator_portion float_left">
-                                <div className="caluclator_text_wrapper">
-                                    <p>deposit amount : <i className="fas fa-info-circle" /></p>
-                                    <p className="dollar_wrap"><i className="fa fa-rupee-sign" />
-                                        <input type="text" id="investmentAmount" />
-                                    </p>
-                                </div>
-                                <div className="caluclator_text_wrapper">
-                                    <p>monthly SIP : <i className="fas fa-info-circle" /></p>
-                                    <p className="dollar_wrap"><i className="fa fa-rupee-sign" />
-                                        <input type="text" id="investmentAmountSIP" />
-                                    </p>
-                                </div>
-                                <div className="caluclator_text_wrapper">
-                                    <p>Investment Year : <i className="fas fa-info-circle" /></p>
-                                    <select className="custom-select" id="investmentYears">
-                                        <option selected value={5}>5 Years</option>
-                                        <option value={10}>10 Years</option>
-                                        <option value={15}>15 Years</option>
-                                        <option value={20}>20 Years</option>
-                                        <option value={25}>25 Years</option>
-                                    </select>
-                                </div>
-                                <div className="about_btn calc_btn float_left" onclick="CalCommission(); return false;">
-                                    <ul>
-                                        <li>
-                                            <a href="#">calculate profit</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-8 col-md-12 col-sm-12 col-xs-12 calc">
-                            <div className="mutualfunds-calculator">
-                                <div className="calculator">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 calc">
+                            <div className="mutualfunds-calculator index2_mutualfund">
+                                <div className="calculator calculator_index2">
                                     <div className="graph-area">
                                         <span className="mf-yAxis">Investment Value</span>
-                                        <svg width={480} height={350} id="graph" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 480 355" className="mf-chart">
+                                        <svg width="100%" height={350} id="graph" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 900 355" className="mf-chart">
                                             <defs>
-                                                <pattern id="grid" x={10} y={10} width={480} height={88} patternUnits="userSpaceOnUse">
+                                                <pattern id="grid" x={10} y={10} width="100%" height={88} patternUnits="userSpaceOnUse">
                                                     <line x1={0} y1={0} x2="100%" y2={0} strokeWidth={1} shapeRendering="crispEdges" stroke="#bdbdbd" />
                                                 </pattern>
                                             </defs>
@@ -677,21 +644,64 @@ function Homepage() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="calc-amt">
-                                <p className="calc-price" id="returnAmount">Rs. 34.06 L</p>
-                                <p>extra returns for you </p>
+                                <div className="calc-amt">
+                                    <p className="calc-price" id="returnAmount">Rs. 34.06 L</p>
+                                    <p>extra returns for you </p>
+                                </div>
                             </div>
                         </div>
-                    </div >
-                </div >
-            </div >
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-12 calc">
+                            <div className="calculator_portion index2_calculation_portion float_left">
+                                <div className="row">
+                                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <div className="caluclator_text_wrapper">
+                                            <p>deposit amount : <i className="fas fa-info-circle" /></p>
+                                            <p className="dollar_wrap"><i className="fa fa-rupee-sign" />
+                                                <input type="text" id="investmentAmount" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <div className="caluclator_text_wrapper">
+                                            <p>monthly SIP : <i className="fas fa-info-circle" /></p>
+                                            <p className="dollar_wrap"><i className="fa fa-rupee-sign" />
+                                                <input type="text" id="investmentAmountSIP" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <div className="caluclator_text_wrapper">
+                                            <p>Investment Year : <i className="fas fa-info-circle" /></p>
+                                            <select className="custom-select" id="investmentYears">
+                                                <option selected value={5}>5 Years</option>
+                                                <option value={10}>10 Years</option>
+                                                <option value={15}>15 Years</option>
+                                                <option value={20}>20 Years</option>
+                                                <option value={25}>25 Years</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <div className="about_btn calc_btn index2_calc_btn float_left" onclick="CalCommission(); return false;">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">calculate profit</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {/*calculator plan wrapper end */}
             {/* global community wrapper start */}
-            <div className="global_community_wrapper float_left">
+            <div className="global_community_wrapper index2_global_community_wrapper float_left">
                 <div className="container">
                     <div className="row">
-                        <div className="global_comm_wraper">
+                        <div className="global_comm_wraper index2_global_comm_wrapper">
                             <h1>We Were Always Thinking Global Community</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         </div>
@@ -716,14 +726,136 @@ function Homepage() {
                 </div>
             </div>
             {/* global community wrapper end */}
+            {/*our services wrapper start */}
+            <div className="our_services_wrapper index2_our_service_wrapper float_left">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12 col-lg-12 col-sm-12 col-12">
+                            <div className="sv_heading_wraper heading_wrapper_dark dark_heading index2_heading index2_heading_center">
+                                <h4> services</h4>
+                                <h3>our features</h3>
+                                <div className="line_shape" />
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle">
+                                    <i className="flaticon-medal" />
+                                </div>
+                                <div className="investment_border_wrapper" />
+                                <div className="investment_content_wrapper">
+                                    <h1><a href="#">We're Certified</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle red_info_circle">
+                                    <i className="flaticon-shield" />
+                                </div>
+                                <div className="investment_border_wrapper red_border_wrapper" />
+                                <div className="investment_content_wrapper red_content_wrapper">
+                                    <h1><a href="#">We're Secure</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle blue_icon_circle">
+                                    <i className="flaticon-bars" />
+                                </div>
+                                <div className="investment_border_wrapper blue_border_wrapper" />
+                                <div className="investment_content_wrapper blue_content_wrapper">
+                                    <h1><a href="#">We're Profitable</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle green_info_circle">
+                                    <i className="flaticon-bitcoin" />
+                                </div>
+                                <div className="investment_border_wrapper green_border_wrapper" />
+                                <div className="investment_content_wrapper green_content_wrapper">
+                                    <h1><a href="#">We Accept Crypto</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle pink_info_circle">
+                                    <i className="flaticon-headphones" />
+                                </div>
+                                <div className="investment_border_wrapper pink_border_wrapper" />
+                                <div className="investment_content_wrapper pink_content_wrapper">
+                                    <h1><a href="#">best support</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle yellow_info_circle">
+                                    <i className="flaticon-language" />
+                                </div>
+                                <div className="investment_border_wrapper yellow_border_wrapper" />
+                                <div className="investment_content_wrapper yellow_content_wrapper">
+                                    <h1><a href="#">We're global</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/*our services wrapper end */}
+            {/* works wrapper start */}
+            <div className="works_wrapper float_left">
+                <div className="work_banner_wrapper">
+                    <img src="images/video_bg.jpg" alt="img" />
+                </div>
+                <div className="howwork_banner_wrapper index2_homwork_banner_wrapper">
+                    <div className="vedio_link_wrapper">
+                        <a className="test-popup-link button" rel="external" href="https://www.youtube.com/embed/ryzOXAO0Ss0" title="title"><i className="fa fa-play" /></a>
+                        <div className="work_content_wrap">
+                            <h1>How It Works</h1>
+                            <ul className="work_checklist_wrapper">
+                                <li>
+                                    <a href="#"><i className="fas fa-dollar-sign" />get deposit</a>
+                                </li>
+                                <li><a href="#"><i className="far fa-money-bill-alt" /> utilize money</a></li>
+                                <li><a href="#"><i className="fas fa-plus" /> give interest</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* works wrapper end */}
             {/* transaction wrapper start */}
             <div className="transaction_wrapper float_left">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-sm-12">
-                            <div className="sv_heading_wraper half_section_headign half_sec_heading">
+                            <div className="sv_heading_wraper half_section_headign half_sec_heading index2_heading">
                                 <h4>who we are</h4>
                                 <h3>Our Latest Transaction</h3>
+                                <div className="line_shape" />
                             </div>
                             <div className="x_offer_tabs_wrapper">
                                 <ul className="nav nav-tabs">
@@ -749,56 +881,56 @@ function Homepage() {
                                                         <th>deposit</th>
                                                     </tr>
                                                         <tr>
-                                                            <td><img src={mem1} alt="img" /> <span>Olympia Ripple</span></td>
+                                                            <td><img src="images/mem1.png" alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$6,00,000.00</td>
                                                             <td>Dollar</td>
                                                             <td>03 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src={mem4} alt="img" /> <span>Nancee Broom</span></td>
+                                                            <td><img src="images/mem4.png" alt="img" /> <span>Nancee Broom</span></td>
                                                             <td>June 04,2019</td>
                                                             <td>$16,00,000.00</td>
                                                             <td>card</td>
                                                             <td>22 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src={mem1} alt="img" /> <span>Broom Nancee</span></td>
+                                                            <td><img src="images/mem1.png" alt="img" /> <span>Broom Nancee</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$6,00,000.00</td>
                                                             <td>bitcoin</td>
                                                             <td>15 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src={mem2} alt="img" /> <span>Ripple Alison</span></td>
+                                                            <td><img src="images/mem2.png" alt="img" /> <span>Ripple Alison</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$06,00,000.00</td>
                                                             <td>ripees</td>
                                                             <td>05 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src={mem3} alt="img" /> <span>Olympia Ripple</span></td>
+                                                            <td><img src="images/mem3.png" alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 05,2019</td>
                                                             <td>$45,00,000.00</td>
                                                             <td>ETH</td>
                                                             <td>13 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src={mem4} alt="img" /> <span>Alison Rittichier</span></td>
+                                                            <td><img src="images/mem4.png" alt="img" /> <span>Alison Rittichier</span></td>
                                                             <td>June 28,2019</td>
                                                             <td>$77,00,000.00</td>
                                                             <td>payonner</td>
                                                             <td>05 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src={mem5} alt="img" /> <span>Olympia Ripple</span></td>
+                                                            <td><img src="images/mem5.png" alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$11,00,000.00</td>
                                                             <td>card</td>
                                                             <td>23 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src={mem6} alt="img" /> <span>Emmett Stein </span></td>
+                                                            <td><img src="images/mem6.png" alt="img" /> <span>Emmett Stein </span></td>
                                                             <td>June 21,2019</td>
                                                             <td>$66,00,000.00</td>
                                                             <td>paypal</td>
@@ -822,28 +954,28 @@ function Homepage() {
                                                         <th>deposit</th>
                                                     </tr>
                                                         <tr>
-                                                            <td><img src={mem4} alt="img" /> <span>Nancee Broom</span></td>
+                                                            <td><img src="images/mem4.png" alt="img" /> <span>Nancee Broom</span></td>
                                                             <td>June 04,2019</td>
                                                             <td>$16,00,000.00</td>
                                                             <td>card</td>
                                                             <td>22 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src={mem1} alt="img" /> <span>Olympia Ripple</span></td>
+                                                            <td><img src="images/mem1.png" alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$6,00,000.00</td>
                                                             <td>Dollar</td>
                                                             <td>03 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src={mem2} alt="img" /> <span>Ripple Alison</span></td>
+                                                            <td><img src="images/mem2.png" alt="img" /> <span>Ripple Alison</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$06,00,000.00</td>
                                                             <td>ripees</td>
                                                             <td>05 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src={mem6} alt="img" /> <span>Emmett Stein
+                                                            <td><img src="images/mem6.png" alt="img" /> <span>Emmett Stein
                                                             </span></td>
                                                             <td>June 21,2019</td>
                                                             <td>$66,00,000.00</td>
@@ -851,28 +983,28 @@ function Homepage() {
                                                             <td>53 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src={mem1} alt="img" /> <span>Broom Nancee</span></td>
+                                                            <td><img src="images/mem1.png" alt="img" /> <span>Broom Nancee</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$6,00,000.00</td>
                                                             <td>bitcoin</td>
                                                             <td>15 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src={mem4} alt="img" /> <span>Alison Rittichier</span></td>
+                                                            <td><img src="images/mem4.png" alt="img" /> <span>Alison Rittichier</span></td>
                                                             <td>June 28,2019</td>
                                                             <td>$77,00,000.00</td>
                                                             <td>payonner</td>
                                                             <td>05 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src={mem3} alt="img" /> <span>Olympia Ripple</span></td>
+                                                            <td><img src="images/mem3.png" alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 05,2019</td>
                                                             <td>$45,00,000.00</td>
                                                             <td>ETH</td>
                                                             <td>13 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src={mem5} alt="img" /> <span>Olympia Ripple</span></td>
+                                                            <td><img src="images/mem5.png" alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$11,00,000.00</td>
                                                             <td>card</td>
@@ -889,222 +1021,55 @@ function Homepage() {
                 </div>
             </div>
             {/* transaction wrapper start */}
-            {/* works wrapper start */}
-            <div className="works_wrapper float_left">
-                <div className="work_banner_wrapper">
-                    <img src={workBanner} alt="img" />
-                </div>
-                <div className="howwork_banner_wrapper">
-                    <div className="vedio_link_wrapper">
-                        <a className="test-popup-link button" rel="external" href="https://www.youtube.com/embed/ryzOXAO0Ss0" title="title"><i className="fa fa-play" /></a>
-                        <div className="work_content_wrap">
-                            <h1>How It Works</h1>
-                            <ul className="work_checklist_wrapper">
-                                <li>
-                                    <a href="#"><i className="fas fa-dollar-sign" />get deposit</a>
-                                </li>
-                                <li><a href="#"><i className="far fa-money-bill-alt" /> utilize money</a></li>
-                                <li><a href="#"><i className="fas fa-plus" /> give interest</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* works wrapper end */}
-            {/*our services wrapper start */}
-            <div className="our_services_wrapper float_left">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12 col-lg-12 col-sm-12 col-12">
-                            <div className="sv_heading_wraper heading_wrapper_dark dark_heading">
-                                <h4> services</h4>
-                                <h3>our features</h3>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box float_left">
-                                <div className="investment_icon_circle">
-                                    <i className="flaticon-medal" />
-                                </div>
-                                <div className="investment_border_wrapper" />
-                                <div className="investment_content_wrapper">
-                                    <h1><a href="#">We're Certified</a></h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box float_left">
-                                <div className="investment_icon_circle red_info_circle">
-                                    <i className="flaticon-shield" />
-                                </div>
-                                <div className="investment_border_wrapper red_border_wrapper" />
-                                <div className="investment_content_wrapper red_content_wrapper">
-                                    <h1><a href="#">We're Secure</a></h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box float_left">
-                                <div className="investment_icon_circle blue_icon_circle">
-                                    <i className="flaticon-bars" />
-                                </div>
-                                <div className="investment_border_wrapper blue_border_wrapper" />
-                                <div className="investment_content_wrapper blue_content_wrapper">
-                                    <h1><a href="#">We're Profitable</a></h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box float_left">
-                                <div className="investment_icon_circle">
-                                    <i className="flaticon-language" />
-                                </div>
-                                <div className="investment_border_wrapper yellow_border_wrapper" />
-                                <div className="investment_content_wrapper yellow_content_wrapper">
-                                    <h1><a href="#">We're global</a></h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box float_left">
-                                <div className="investment_icon_circle green_info_circle">
-                                    <i className="flaticon-bitcoin" />
-                                </div>
-                                <div className="investment_border_wrapper green_border_wrapper" />
-                                <div className="investment_content_wrapper green_content_wrapper">
-                                    <h1><a href="#">We Accept Crypto</a></h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box float_left">
-                                <div className="investment_icon_circle pink_info_circle">
-                                    <i className="flaticon-headphones" />
-                                </div>
-                                <div className="investment_border_wrapper pink_border_wrapper" />
-                                <div className="investment_content_wrapper pink_content_wrapper">
-                                    <h1><a href="#">best support</a></h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/*our services wrapper end */}
             {/* testimonial wrapper start */}
             <div className="testimonial_wrapper float_left">
                 <div className="investment_overlay" />
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12 col-12">
-                            <div className="sv_heading_wraper heading_wrapper_dark">
+                            <div className="sv_heading_wraper heading_wrapper_dark index2_heading index2_heading_center">
                                 <h4>testimonial</h4>
                                 <h3>what people says</h3>
+                                <div className="line_shape" />
                             </div>
                         </div>
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div className="testimonial_slider_wrapper">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div className="saying_slider">
                                 <div className="owl-carousel owl-theme">
                                     <div className="item">
-                                        <div className="testimonial_slide_main_wrapper dark_top_testimonial">
-                                            <div className="ts_client_cont_wrapper">
-                                                <p>“This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.”</p>
+                                        <div className="saying_content_wrapper float_left">
+                                            <div className="saying_img">
+                                                <img src="images/cnt1.png" alt="img" />
                                             </div>
-                                            <div className="ts_img_social_wrapper">
-                                                <div className="ts_client_img_wrapper">
-                                                    <img src={ts1} className="img-responsive" alt="client_img" />
-                                                </div>
-                                                <div className="ts_client_social_wrapper">
-                                                    <p>- by Merry Jain
-                                                        <br /> <span>(investor, gold)</span></p>
-                                                </div>
+                                            <div className="saying_img_name">
+                                                <h1><a href="#">Iness Mcnzie</a></h1>
+                                                <p>CEO of apple</p>
                                             </div>
+                                            <p>“A wonderful serenity has taken possession of my entire soul was created for the bliss serenity”</p>
                                         </div>
                                     </div>
                                     <div className="item">
-                                        <div className="testimonial_slide_main_wrapper">
-                                            <div className="ts_client_cont_wrapper dark_testimonial_wrapper">
-                                                <p>“This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.”</p>
+                                        <div className="saying_content_wrapper float_left">
+                                            <div className="saying_img">
+                                                <img src="images/cnt2.png" alt="img" />
                                             </div>
-                                            <div className="ts_img_social_wrapper p2">
-                                                <div className="ts_client_social_wrapper right_social_medaia">
-                                                    <p>- by joahn doe
-                                                        <br /> <span>(investor, gold)</span></p>
-                                                </div>
-                                                <div className="ts_client_img_wrapper">
-                                                    <img src={ts2} className="img-responsive" alt="client_img" />
-                                                </div>
+                                            <div className="saying_img_name">
+                                                <h1><a href="#">Druid Wenydale</a></h1>
+                                                <p>CEO of apple</p>
                                             </div>
+                                            <p>“The grammar of the result language is more simple and regular the the of the individual languages”</p>
                                         </div>
                                     </div>
                                     <div className="item">
-                                        <div className="testimonial_slide_main_wrapper dark_top_testimonial">
-                                            <div className="ts_client_cont_wrapper">
-                                                <p>“This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.”</p>
+                                        <div className="saying_content_wrapper float_left">
+                                            <div className="saying_img">
+                                                <img src="images/cnt.png" alt="img" />
                                             </div>
-                                            <div className="ts_img_social_wrapper">
-                                                <div className="ts_client_img_wrapper">
-                                                    <img src={ts1} className="img-responsive" alt="client_img" />
-                                                </div>
-                                                <div className="ts_client_social_wrapper">
-                                                    <p>- by Merry Jain
-                                                        <br /> <span>(investor, gold)</span></p>
-                                                </div>
+                                            <div className="saying_img_name">
+                                                <h1><a href="#">Casian vedere</a></h1>
+                                                <p>CEO of apple</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="testimonial_slide_main_wrapper">
-                                            <div className="ts_client_cont_wrapper dark_testimonial_wrapper">
-                                                <p>“This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.”</p>
-                                            </div>
-                                            <div className="ts_img_social_wrapper p2">
-                                                <div className="ts_client_social_wrapper right_social_medaia">
-                                                    <p>- by joahn doe
-                                                        <br /> <span>(investor, gold)</span></p>
-                                                </div>
-                                                <div className="ts_client_img_wrapper">
-                                                    <img src={ts2} className="img-responsive" alt="client_img" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="testimonial_slide_main_wrapper dark_top_testimonial">
-                                            <div className="ts_client_cont_wrapper">
-                                                <p>“This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.”</p>
-                                            </div>
-                                            <div className="ts_img_social_wrapper">
-                                                <div className="ts_client_img_wrapper">
-                                                    <img src={ts1} className="img-responsive" alt="client_img" />
-                                                </div>
-                                                <div className="ts_client_social_wrapper">
-                                                    <p>- by Merry Jain
-                                                        <br /> <span>(investor, gold)</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="testimonial_slide_main_wrapper">
-                                            <div className="ts_client_cont_wrapper dark_testimonial_wrapper">
-                                                <p>“This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.”</p>
-                                            </div>
-                                            <div className="ts_img_social_wrapper p2">
-                                                <div className="ts_client_social_wrapper right_social_medaia">
-                                                    <p>- by joahn doe
-                                                        <br /> <span>(investor, gold)</span></p>
-                                                </div>
-                                                <div className="ts_client_img_wrapper">
-                                                    <img src={ts2} className="img-responsive" alt="client_img" />
-                                                </div>
-                                            </div>
+                                            <p>“A wonderful serenity has taken possession of my entire soul was created for the bliss serenity”</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1119,104 +1084,120 @@ function Homepage() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-sm-12">
-                            <div className="sv_heading_wraper half_section_headign">
+                            <div className="sv_heading_wraper half_section_headign index2_heading">
                                 <h4>Tranding People</h4>
                                 <h3>Our top investors</h3>
+                                <div className="line_shape" />
                             </div>
                         </div>
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 sw_spectrm_padding">
-                            <div className="investors_slider_wrapper">
+                            <div className="investors_slider_wrapper index2_investors_slider_Wrapper">
                                 <div className="owl-carousel owl-theme">
                                     <div className="item">
-                                        <div className="inves_slider_cntn float_left">
+                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
                                             <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_img_wrapper">
-                                                    <img src={inves1} className="img-responsive" alt="img" />
-                                                </div>
                                                 <div className="inves_main_border float_left">
-                                                    <div className="investment_icon_circle inves_icon">
-                                                        <a href="#"><i className="flaticon-twitter" /></a>
+                                                    <div className="inves_img_wrapper">
+                                                        <img src="images/inves1.png" className="img-responsive" alt="img" />
                                                     </div>
-                                                    <div className="investment_border_wrapper inves_border_slider" />
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">akshay H.</a></h1>
+                                                        <div className="line_shape investment_line_shape" />
                                                         <p>$22500.00 USD</p>
+                                                        <ul className="investment_slider_icon">
+                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
-                                        <div className="inves_slider_cntn float_left">
+                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
                                             <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_img_wrapper">
-                                                    <img src={inves2} className="img-responsive" alt="img" />
-                                                </div>
                                                 <div className="inves_main_border float_left">
-                                                    <div className="investment_icon_circle inves_icon">
-                                                        <a href="#"><i className="flaticon-twitter" /></a>
+                                                    <div className="inves_img_wrapper">
+                                                        <img src="images/inves2.png" className="img-responsive" alt="img" />
                                                     </div>
-                                                    <div className="investment_border_wrapper inves_border_slider" />
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">maria F.</a></h1>
+                                                        <div className="line_shape investment_line_shape" />
                                                         <p>$22500.00 USD</p>
+                                                        <ul className="investment_slider_icon">
+                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
-                                        <div className="inves_slider_cntn float_left">
+                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
                                             <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_img_wrapper">
-                                                    <img src={inves3} className="img-responsive" alt="img" />
-                                                </div>
                                                 <div className="inves_main_border float_left">
-                                                    <div className="investment_icon_circle inves_icon">
-                                                        <a href="#"><i className="flaticon-twitter" /></a>
+                                                    <div className="inves_img_wrapper">
+                                                        <img src="images/inves3.png" className="img-responsive" alt="img" />
                                                     </div>
-                                                    <div className="investment_border_wrapper inves_border_slider" />
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">josep K.</a></h1>
+                                                        <div className="line_shape investment_line_shape" />
                                                         <p>$22500.00 USD</p>
+                                                        <ul className="investment_slider_icon">
+                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
-                                        <div className="inves_slider_cntn float_left">
+                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
                                             <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_img_wrapper">
-                                                    <img src={inves4} className="img-responsive" alt="img" />
-                                                </div>
                                                 <div className="inves_main_border float_left">
-                                                    <div className="investment_icon_circle inves_icon">
-                                                        <a href="#"><i className="flaticon-twitter" /></a>
+                                                    <div className="inves_img_wrapper">
+                                                        <img src="images/inves4.png" className="img-responsive" alt="img" />
                                                     </div>
-                                                    <div className="investment_border_wrapper inves_border_slider" />
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">liva M.</a></h1>
+                                                        <div className="line_shape investment_line_shape" />
                                                         <p>$22500.00 USD</p>
+                                                        <ul className="investment_slider_icon">
+                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
-                                        <div className="inves_slider_cntn float_left">
+                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
                                             <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_img_wrapper">
-                                                    <img src={inves3} className="img-responsive" alt="img" />
-                                                </div>
                                                 <div className="inves_main_border float_left">
-                                                    <div className="investment_icon_circle inves_icon">
-                                                        <a href="#"><i className="flaticon-twitter" /></a>
+                                                    <div className="inves_img_wrapper">
+                                                        <img src="images/inves4.png" className="img-responsive" alt="img" />
                                                     </div>
-                                                    <div className="investment_border_wrapper inves_border_slider" />
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">akshay H.</a></h1>
+                                                        <div className="line_shape investment_line_shape" />
                                                         <p>$22500.00 USD</p>
+                                                        <ul className="investment_slider_icon">
+                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1230,7 +1211,7 @@ function Homepage() {
             </div>
             {/* investors wrapper end */}
             {/* newsletter wrapper start */}
-            <div className="global_community_wrapper newsletter_wrapper float_left">
+            <div className="global_community_wrapper newsletter_wrapper index2_newsletter float_left">
                 <div className="container">
                     <div className="row">
                         <div className="global_comm_wraper news_cntnt">
@@ -1264,16 +1245,17 @@ function Homepage() {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12 col-12">
-                            <div className="sv_heading_wraper heading_wrapper_dark dark_heading">
+                            <div className="sv_heading_wraper heading_wrapper_dark dark_heading index2_heading index2_heading_center">
                                 <h4> our blog</h4>
                                 <h3>Our Latest News</h3>
+                                <div className="line_shape" />
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-12 col-sm-12 col-12">
-                            <div className="blog_box_wrapper float_left">
+                            <div className="blog_box_wrapper index2_blog_wrapepr float_left">
                                 <div className="blog_img_wrapper">
-                                    <img src={blog_img1} alt="blog_img" />
-                                    <div className="blog_date_wrapper">
+                                    <img src="images/blog_img1.jpg" alt="blog_img" />
+                                    <div className="blog_date_wrapper index2_blog_date">
                                         <p>15
                                             <br /> <span>jun</span></p>
                                     </div>
@@ -1293,10 +1275,10 @@ function Homepage() {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-12 col-sm-12 col-12">
-                            <div className="blog_box_wrapper float_left">
+                            <div className="blog_box_wrapper index2_blog_wrapepr float_left">
                                 <div className="blog_img_wrapper">
-                                    <img src={blog_img2} alt="blog_img" />
-                                    <div className="blog_date_wrapper">
+                                    <img src="images/blog_img2.jpg" alt="blog_img" />
+                                    <div className="blog_date_wrapper index2_blog_date">
                                         <p>15
                                             <br /> <span>jun</span></p>
                                     </div>
@@ -1316,10 +1298,10 @@ function Homepage() {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-12 col-sm-12 col-12">
-                            <div className="blog_box_wrapper float_left">
+                            <div className="blog_box_wrapper index2_blog_wrapepr float_left">
                                 <div className="blog_img_wrapper">
-                                    <img src={blog_img3} alt="blog_img" />
-                                    <div className="blog_date_wrapper">
+                                    <img src="images/blog_img3.jpg" alt="blog_img" />
+                                    <div className="blog_date_wrapper index2_blog_date">
                                         <p>15
                                             <br /> <span>jun</span></p>
                                     </div>
@@ -1348,9 +1330,10 @@ function Homepage() {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12 col-12">
-                            <div className="sv_heading_wraper heading_wrapper_dark">
+                            <div className="sv_heading_wraper heading_wrapper_dark index2_heading  index2_heading_center">
                                 <h4>FAQ section</h4>
                                 <h3>Frequently Asked Questions</h3>
+                                <div className="line_shape" />
                             </div>
                         </div>
                     </div>
@@ -1370,7 +1353,7 @@ function Homepage() {
                                     <div id="collapseOne" className="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" style={{}}>
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src={ac1} alt="img" />
+                                                <img src="images/ac1.jpg" alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1389,7 +1372,7 @@ function Homepage() {
                                     <div id="collapseTwo" className="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" style={{}}>
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src={ac2} alt="img" />
+                                                <img src="images/ac2.jpg" alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1408,7 +1391,7 @@ function Homepage() {
                                     <div id="collapseThree" className="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src={ac3} alt="img" />
+                                                <img src="images/ac3.jpg" alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1427,7 +1410,7 @@ function Homepage() {
                                     <div id="collapse41" className="collapse" role="tabpanel" aria-labelledby="heading4" data-parent="#accordion">
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src={ac1} alt="img" />
+                                                <img src="images/ac1.jpg" alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1446,7 +1429,7 @@ function Homepage() {
                                     <div id="collapseT" className="collapse" role="tabpanel" aria-labelledby="heading7" data-parent="#accordion">
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src={ac3} alt="img" />
+                                                <img src="images/ac3.jpg" alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1469,7 +1452,7 @@ function Homepage() {
                                     <div id="collapse1" className="collapse" role="tabpanel" aria-labelledby="headingfour" data-parent="#accordion" style={{}}>
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src={ac1} alt="img" />
+                                                <img src="images/ac1.jpg" alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1488,7 +1471,7 @@ function Homepage() {
                                     <div id="collapse2" className="collapse" role="tabpanel" aria-labelledby="headingfive" data-parent="#accordion" style={{}}>
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src={ac2} alt="img" />
+                                                <img src="images/ac2.jpg" alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1507,7 +1490,7 @@ function Homepage() {
                                     <div id="collapse02" className="collapse" role="tabpanel" aria-labelledby="headingnine" data-parent="#accordion" style={{}}>
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src={ac2} alt="img" />
+                                                <img src="images/ac2.jpg" alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1526,7 +1509,7 @@ function Homepage() {
                                     <div id="collapse092" className="collapse" role="tabpanel" aria-labelledby="headingten" data-parent="#accordion" style={{}}>
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src={ac2} alt="img" />
+                                                <img src="images/ac2.jpg" alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1545,7 +1528,7 @@ function Homepage() {
                                     <div id="collapse3" className="collapse" role="tabpanel" aria-labelledby="headingsiz" data-parent="#accordion">
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src={ac3} alt="img" />
+                                                <img src="images/ac3.jpg" alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1564,7 +1547,7 @@ function Homepage() {
                                     <div id="collapse31" className="collapse" role="tabpanel" aria-labelledby="headingseven" data-parent="#accordion">
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src={ac2} alt="img" />
+                                                <img src="images/ac2.jpg" alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1583,7 +1566,7 @@ function Homepage() {
                                     <div id="collapse32" className="collapse" role="tabpanel" aria-labelledby="headingeight" data-parent="#accordion">
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src={ac1} alt="img" />
+                                                <img src="images/ac1.jpg" alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1651,9 +1634,10 @@ function Homepage() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-sm-12">
-                            <div className="sv_heading_wraper half_section_headign">
+                            <div className="sv_heading_wraper half_section_headign index2_heading">
                                 <h4>Payment Methods</h4>
                                 <h3>Accepted Payment Method</h3>
+                                <div className="line_shape" />
                             </div>
                         </div>
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
@@ -1661,27 +1645,27 @@ function Homepage() {
                                 <div className="owl-carousel owl-theme">
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
-                                            <img src={partner1} className="img-responsive" alt="img" />
+                                            <img src="images/partner1.png" className="img-responsive" alt="img" />
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
-                                            <img src={partner2} className="img-responsive" alt="img" />
+                                            <img src="images/partner2.png" className="img-responsive" alt="img" />
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
-                                            <img src={partner3} className="img-responsive" alt="img" />
+                                            <img src="images/partner3.png" className="img-responsive" alt="img" />
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
-                                            <img src={partner4} className="img-responsive" alt="img" />
+                                            <img src="images/partner4.png" className="img-responsive" alt="img" />
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
-                                            <img src={partner2} className="img-responsive" alt="img" />
+                                            <img src="images/partner2.png" className="img-responsive" alt="img" />
                                         </div>
                                     </div>
                                 </div>
@@ -1692,13 +1676,13 @@ function Homepage() {
             </div>
             {/* payments wrapper end */}
             {/* footer section start*/}
-            <div className="footer_main_wrapper float_left">
+            <div className="footer_main_wrapper index2_footer_wrapper float_left">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-4 col-md-6 col-12 col-sm-12">
                             <div className="wrapper_second_about">
                                 <div className="wrapper_first_image">
-                                    <a href="index.html"><img src={logo} className="img-responsive" alt="logo" /></a>
+                                    <a href="index.html"><img src="images/logo_resp.png" className="img-responsive" alt="logo" /></a>
                                 </div>
                                 <p>We are a full service Digital Marketing Agency all the foundational tool you need.</p>
                                 <div className="counter-section">
@@ -1782,8 +1766,8 @@ function Homepage() {
                     </div>
                 </div>
             </div>
-        </div >
-    )
-}
+        </div>
 
-export default Homepage;
+    )
+    }
+    export default Homepage;
