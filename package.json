@@ -1,4 +1,5 @@
 {
+  "homepage": "https://thepocketlawyer.vercel.app/",
   "name": "vite-project",
   "private": false,
   "version": "0.0.0",
@@ -27,7 +28,7 @@
   },
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
   "main": "vite.config.js",
-  "keywords": [],
+  "keywords": [ ],
   "author": "",
   "license": "ISC"
 }
