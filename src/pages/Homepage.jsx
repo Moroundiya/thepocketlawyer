@@ -32,6 +32,39 @@ import partner2 from '../assets/images/partner2.png';
 import partner3 from '../assets/images/partner3.png';
 import partner4 from '../assets/images/partner4.png';
 // import DarkModeToggle from '../components/DarkModeToggle';
+// import '../assets/css/fonts.css';
+// import '../assets/css/animate.css';
+// import '../assets/css/bootstrap.min.css';
+// import '../assets/css/custom.css';
+// import '../assets/css/datatables.css';
+// import '../assets/css/dropify.min.css';
+// import '../assets/css/flaticon.css';
+// import '../assets/css/flaticon2.css';
+// import '../assets/css/font-awesome.css';
+// import '../assets/css/magnific-popup.css';
+// import '../assets/css/nice-select.css';
+// import '../assets/css/owl.carousel.css';
+// import '../assets/css/owl.theme.default.css';
+// import '../assets/css/owl.theme.default.css';
+// import '../assets/css/reset.css';
+// import '../assets/css/responsive.css';
+// import '../assets/css/style.css';
+
+// import '../assets/js/calculator';
+// import '../assets/js/custom';
+// import '../assets/js/datatables';
+// import '../assets/js/jquery.countTo';
+// import '../assets/js/jquery.magnific-popup';
+// import '../assets/js/jquery.menu-aim';
+// import '../assets/js/modernizr';
+// import '../assets/js/owl.carousel';
+// import '../assets/js/plugin';
+// import '../assets/js/bootstrap.min.js';
+// import '../assets/js/calculator.js';
+// import '../assets/js/custom.js';
+// import '../assets/js/datatables.js';
+// import '../assets/js/dropify.min.js';
+// import '../assets/js/jquery-3.3.1.min.js';
 
 function Homepage() {
     const [currentTheme, setCurrentTheme] = useState("light")
