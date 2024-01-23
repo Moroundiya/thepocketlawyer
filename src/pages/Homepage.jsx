@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react';
+import ToggleTheme from "@qvgk/react-toggle-theme";
 import { Link } from 'react-router-dom';
 // import '../App.css';
+import '../assets/css/custom.css';
 import logo from '../assets/images/logo.png';
+import logo5 from '../assets/images/logo5.png';
 import banner from '../assets/images/banner.png';
 import sliderImg from '../assets/images/slider_img.png';
 import mem1 from '../assets/images/mem1.png';
@@ -30,6 +33,8 @@ import partner4 from '../assets/images/partner4.png';
 // import DarkModeToggle from '../components/DarkModeToggle';
 
 function Homepage() {
+    const [currentTheme, setCurrentTheme] = useState("light")
+
     return (
         <div>
             <div className="cursor" />
@@ -139,10 +144,10 @@ function Homepage() {
                 <div className="container-fluid">
                     <div className="cp_logo_wrapper">
                         <a href="index.html">
-                            <img src={logo} alt="logo" />
+                            <img src={currentTheme === "light" ? logo : logo5} alt="logo" />
                         </a>
                     </div>
-                    {/* <DarkModeToggle /> */}
+                    <ToggleTheme selectedTheme={currentTheme} onChange={setCurrentTheme} />
                     {/* mobile menu area start */}
                     <header className="mobail_menu d-block d-sm-block d-md-block d-lg-none d-xl-none">
                         <div className="container-fluid">
@@ -431,9 +436,11 @@ function Homepage() {
                             </li>
                         </ol>
                         <div className="carousel-nevigation">
-                            <a className="prev" href="#carousel-example-generic" role="button" data-slide="prev"> <span /> <i className="flaticon-left-arrow" />
+                            <a className="prev" href="#carousel-example-generic" id='header-prev-btn' role="button" data-slide="prev"> <span />
+                                <iconify-icon icon="majesticons:arrow-left" width="30" height="30"></iconify-icon>
                             </a>
-                            <a className="next" href="#carousel-example-generic" role="button" data-slide="next"> <span /> <i className="flaticon-arrow-pointing-to-right" />
+                            <a className="next" href="#carousel-example-generic" id='header-prev-btn' role="button" data-slide="next"> <span />
+                                <iconify-icon icon="majesticons:arrow-right" width="30" height="30"></iconify-icon>
                             </a>
                         </div>
                     </div>
@@ -676,9 +683,9 @@ function Homepage() {
                                 <p>extra returns for you </p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </div >
+                </div >
+            </div >
             {/*calculator plan wrapper end */}
             {/* global community wrapper start */}
             <div className="global_community_wrapper float_left">
@@ -1775,7 +1782,7 @@ function Homepage() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
