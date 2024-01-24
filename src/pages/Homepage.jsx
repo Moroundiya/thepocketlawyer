@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ToggleTheme from "@qvgk/react-toggle-theme";
 import { Link } from 'react-router-dom';
 import 'animate.css';
+import '../custom.js'
 
 import logo from '../assets/images/logo.png';
 import logo4 from '../assets/images/logo4.png';
