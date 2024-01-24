@@ -1,8 +1,26 @@
 import React, { useState } from 'react';
 import ToggleTheme from "@qvgk/react-toggle-theme";
 import { Link } from 'react-router-dom';
+import 'animate.css';
+
 // import '../App.css';
-import '../assets/css/custom.css';
+// import '../animate.css';
+// import '../bootstrap.min.css';
+// import '../custom.css';
+// import '../datatables.css';
+// import '../dropify.min.css';
+// import '../flaticon.css';
+// import '../flaticon2.css';
+// import '../font-awesome.css';
+// import '../fonts.css';
+// import '../magnific-popup.css';
+// import '../nice-select.css';
+// import '../owl.carousel.css';
+// import '../owl.theme.default.css';
+// import '../reset.css';
+// import '../responsive.css';
+// import '../style.css';
+
 import logo from '../assets/images/logo.png';
 import logo4 from '../assets/images/logo4.png';
 import logo5 from '../assets/images/logo5.png';
@@ -32,21 +50,7 @@ import partner2 from '../assets/images/partner2.png';
 import partner3 from '../assets/images/partner3.png';
 import partner4 from '../assets/images/partner4.png';
 // import DarkModeToggle from '../components/DarkModeToggle';
-// import '../assets/js/calculator';
-// import '../assets/js/custom';
-// import '../assets/js/datatables';
-// import '../assets/js/jquery.countTo';
-// import '../assets/js/jquery.magnific-popup';
-// import '../assets/js/jquery.menu-aim';
-// import '../assets/js/modernizr';
-// import '../assets/js/owl.carousel';
-// import '../assets/js/plugin';
-// import '../assets/js/bootstrap.min.js';
-// import '../assets/js/calculator.js';
-// import '../assets/js/custom.js';
-// import '../assets/js/datatables.js';
-// import '../assets/js/dropify.min.js';
-// import '../assets/js/jquery-3.3.1.min.js';
+
 
 function Homepage() {
     const [currentTheme, setCurrentTheme] = useState("light")

@@ -6,14 +6,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build",
+    "build": "vite build --base=./",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@flaticon/flaticon-uicons": "^3.1.0",
     "@qvgk/react-toggle-theme": "^1.4.3",
+    "animate.css": "^4.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^6.21.3"
   },
   "devDependencies": {
@@ -28,7 +31,7 @@
   },
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
   "main": "vite.config.js",
-  "keywords": [],
+  "keywords": [ ],
   "author": "",
   "license": "ISC"
 }
