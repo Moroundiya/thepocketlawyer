@@ -45,7 +45,7 @@ function CalCommission() {
 
     $('.mf-circles').hide();
     $('.funds_label').hide();
-    
+
     $("#path1").hide();
     $("#path2").hide();
 
@@ -56,7 +56,7 @@ function CalCommission() {
 
     //alert("cla test");
     var investA = $("#investmentAmount").val();
-    
+
     var investSIP = $("#investmentAmountSIP").val();
     var investY = $("#investmentYears").val();
     console.log(investY);
@@ -64,7 +64,7 @@ function CalCommission() {
     if (investY == 'undefined' || investY == 0) {
         investY = 1;
     }
-    $("#years_selected").text(investY+' Years');
+    $("#years_selected").text(investY + ' Years');
     var returnL;
     var IRDirect = 16;
     var IRRegular = 15;
@@ -76,11 +76,11 @@ function CalCommission() {
     //var calValueS;
 
     if (investA > 0) {
-        
+
         calValueA12 = calculateCompondInterest(investA, investY, IRDirect);
         //console.log("Direct Lumsum: "+calValueA12 );
         calValueA13 = calculateCompondInterest(investA, investY, IRRegular);;
-       // console.log("Regular Lumsum: "+calValueA13);
+        // console.log("Regular Lumsum: "+calValueA13);
         // return;
         // calValueA12 = (parseInt((investA * Math.pow((1 + (12 / 100)), (investY))) - investA));
         // calValueA13 = (parseInt((investA * Math.pow((1 + (13 / 100)), (investY))) - investA));
@@ -95,7 +95,7 @@ function CalCommission() {
         NP = InvestmentMonth + 1; // add one for the first month
         calValueS12 = FV(investSIP, IRDirect, NP, false);
 
-        
+
         calValueS13 = FV(investSIP, IRRegular, NP, false);
 
 
@@ -107,8 +107,8 @@ function CalCommission() {
         calValueS13 = 0;
     }
 
-    calValueL = calValueA12 - calValueA13 ;
-    calValueS = calValueS12 - calValueS13 ;
+    calValueL = calValueA12 - calValueA13;
+    calValueS = calValueS12 - calValueS13;
 
     calDirect = calValueS12 + calValueA12;
     calregular = calValueS13 + calValueA13;
@@ -117,11 +117,11 @@ function CalCommission() {
 
     var lenL = calDiffSL.toString().length;
     if (lenL == 4 || lenL == 5) {
-    //    //var returnL = "Rs. " + Math.round(calValueL / 1000) /100 + " K";
+        //    //var returnL = "Rs. " + Math.round(calValueL / 1000) /100 + " K";
         returnL = "Rs. " + (calDiffSL / 1000).toFixed(2) + " K";
         $("#returnAmount").text(returnL);
     }
-    else{
+    else {
         returnL = "Rs. " + (calDiffSL / 100000).toFixed(2) + " L";
         $("#returnAmount").text(returnL);
     }
@@ -135,18 +135,18 @@ function CalCommission() {
                 scrollTop: $("#clac-price-box").offset().top
             }, 2000);
         }
-        
+
     }
     first = 1; // for the second time function call
-    
+
 }
 
 function changeValueToString(value) {
-    
+
     value = value.toFixed(0);
-    
+
     if (value.toString().length == 4 || value.toString().length == 5) {
-        var returnString =  ('<i class="fa fa-inr"></i>' + (value / 1000).toFixed(2) + " K");
+        var returnString = ('<i class="fa fa-inr"></i>' + (value / 1000).toFixed(2) + " K");
     } else if (value.toString().length == 6 || value.toString().length == 7) {
         var returnString = ('<i class="fa fa-inr"></i>' + (value / 100000).toFixed(2) + " L");
     } else if (value.toString().length == 8 || value.toString().length == 9) {
@@ -161,9 +161,9 @@ function changeValueToString(value) {
 // 39130438.97995285 // 39662178.16635222
 
 // alert(calculateCompondInterest(10000, 25 , 1.25));
-function calculateCompondInterest(P , Years , rate_of_interest) {
+function calculateCompondInterest(P, Years, rate_of_interest) {
     ROI = rate_of_interest / 100;
-    
-    CI = (P * ( Math.pow((1 + ROI) , (Years))));
+
+    CI = (P * (Math.pow((1 + ROI), (Years))));
     return parseInt(CI);
 }
