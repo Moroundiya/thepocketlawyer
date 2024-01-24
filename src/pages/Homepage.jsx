@@ -3,29 +3,20 @@ import ToggleTheme from "@qvgk/react-toggle-theme";
 import { Link } from 'react-router-dom';
 import 'animate.css';
 
-// import '../App.css';
-// import '../animate.css';
-// import '../bootstrap.min.css';
-// import '../custom.css';
-// import '../datatables.css';
-// import '../dropify.min.css';
-// import '../flaticon.css';
-// import '../flaticon2.css';
-// import '../font-awesome.css';
-// import '../fonts.css';
-// import '../magnific-popup.css';
-// import '../nice-select.css';
-// import '../owl.carousel.css';
-// import '../owl.theme.default.css';
-// import '../reset.css';
-// import '../responsive.css';
-// import '../style.css';
-
 import logo from '../assets/images/logo.png';
 import logo4 from '../assets/images/logo4.png';
 import logo5 from '../assets/images/logo5.png';
 import banner from '../assets/images/banner.png';
 import sliderImg from '../assets/images/slider_img.png';
+import sliderbg from '../assets/images/sliderbg.png';
+import abt_1 from '../assets/images/abt_1.png';
+import abt_2 from '../assets/images/abt_2.png';
+import abt_3 from '../assets/images/abt_3.png';
+import video_bg from '../assets/images/video_bg.jpg';
+import cnt1 from '../assets/images/cnt1.png';
+import cnt2 from '../assets/images/cnt2.png';
+import cnt from '../assets/images/cnt.png';
+import logo_resp from '../assets/images/logo_resp.png';
 import mem1 from '../assets/images/mem1.png';
 import mem2 from '../assets/images/mem2.png';
 import mem3 from '../assets/images/mem3.png';
@@ -350,7 +341,7 @@ function Homepage() {
             {/* slider wrapper start */}
             <div className="slider-area slider_index2_wrapper float_left">
                 <div className="index2_sliderbg">
-                    <img src="images/sliderbg.png" alt="img" className="img-responsive" />
+                    <img src={sliderbg} alt="img" className="img-responsive" />
                 </div>
                 <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
                     <div className="carousel-inner" role="listbox">
@@ -462,9 +453,9 @@ function Homepage() {
                     <div className="row">
                         <div className="col-xl-6 col-md-12 col-lg-12 col-sm-12 col-12">
                             <div className="index2_abt_img_wrapper">
-                                <img src="images/abt_3.png" alt="About" className="img-responsive" />
+                                <img src={abt_3} alt="About" className="img-responsive" />
                                 <div className="sw_disc_img_btm">
-                                    <img src="images/abt_2.png" alt="About" className="img-responsive" />
+                                    <img src={abt_2} alt="About" className="img-responsive" />
                                 </div>
                             </div>
                         </div>
@@ -847,7 +838,7 @@ function Homepage() {
             {/* works wrapper start */}
             <div className="works_wrapper float_left">
                 <div className="work_banner_wrapper">
-                    <img src="images/video_bg.jpg" alt="img" />
+                    <img src={video_bg} alt="img" />
                 </div>
                 <div className="howwork_banner_wrapper index2_homwork_banner_wrapper">
                     <div className="vedio_link_wrapper">
@@ -900,56 +891,56 @@ function Homepage() {
                                                         <th>deposit</th>
                                                     </tr>
                                                         <tr>
-                                                            <td><img src="images/mem1.png" alt="img" /> <span>Olympia Ripple</span></td>
+                                                            <td><img src={mem1} alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$6,00,000.00</td>
                                                             <td>Dollar</td>
                                                             <td>03 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="images/mem4.png" alt="img" /> <span>Nancee Broom</span></td>
+                                                            <td><img src={mem4} alt="img" /> <span>Nancee Broom</span></td>
                                                             <td>June 04,2019</td>
                                                             <td>$16,00,000.00</td>
                                                             <td>card</td>
                                                             <td>22 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="images/mem1.png" alt="img" /> <span>Broom Nancee</span></td>
+                                                            <td><img src={mem1} alt="img" /> <span>Broom Nancee</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$6,00,000.00</td>
                                                             <td>bitcoin</td>
                                                             <td>15 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="images/mem2.png" alt="img" /> <span>Ripple Alison</span></td>
+                                                            <td><img src={mem2} alt="img" /> <span>Ripple Alison</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$06,00,000.00</td>
                                                             <td>ripees</td>
                                                             <td>05 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="images/mem3.png" alt="img" /> <span>Olympia Ripple</span></td>
+                                                            <td><img src={mem3} alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 05,2019</td>
                                                             <td>$45,00,000.00</td>
                                                             <td>ETH</td>
                                                             <td>13 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="images/mem4.png" alt="img" /> <span>Alison Rittichier</span></td>
+                                                            <td><img src={mem4} alt="img" /> <span>Alison Rittichier</span></td>
                                                             <td>June 28,2019</td>
                                                             <td>$77,00,000.00</td>
                                                             <td>payonner</td>
                                                             <td>05 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="images/mem5.png" alt="img" /> <span>Olympia Ripple</span></td>
+                                                            <td><img src={mem5} alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$11,00,000.00</td>
                                                             <td>card</td>
                                                             <td>23 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="images/mem6.png" alt="img" /> <span>Emmett Stein </span></td>
+                                                            <td><img src={mem6} alt="img" /> <span>Emmett Stein </span></td>
                                                             <td>June 21,2019</td>
                                                             <td>$66,00,000.00</td>
                                                             <td>paypal</td>
@@ -973,28 +964,28 @@ function Homepage() {
                                                         <th>deposit</th>
                                                     </tr>
                                                         <tr>
-                                                            <td><img src="images/mem4.png" alt="img" /> <span>Nancee Broom</span></td>
+                                                            <td><img src={mem4} alt="img" /> <span>Nancee Broom</span></td>
                                                             <td>June 04,2019</td>
                                                             <td>$16,00,000.00</td>
                                                             <td>card</td>
                                                             <td>22 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="images/mem1.png" alt="img" /> <span>Olympia Ripple</span></td>
+                                                            <td><img src={mem1} alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$6,00,000.00</td>
                                                             <td>Dollar</td>
                                                             <td>03 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="images/mem2.png" alt="img" /> <span>Ripple Alison</span></td>
+                                                            <td><img src={mem2} alt="img" /> <span>Ripple Alison</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$06,00,000.00</td>
                                                             <td>ripees</td>
                                                             <td>05 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="images/mem6.png" alt="img" /> <span>Emmett Stein
+                                                            <td><img src={mem6} alt="img" /> <span>Emmett Stein
                                                             </span></td>
                                                             <td>June 21,2019</td>
                                                             <td>$66,00,000.00</td>
@@ -1002,28 +993,28 @@ function Homepage() {
                                                             <td>53 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="images/mem1.png" alt="img" /> <span>Broom Nancee</span></td>
+                                                            <td><img src={mem1} alt="img" /> <span>Broom Nancee</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$6,00,000.00</td>
                                                             <td>bitcoin</td>
                                                             <td>15 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="images/mem4.png" alt="img" /> <span>Alison Rittichier</span></td>
+                                                            <td><img src={mem4} alt="img" /> <span>Alison Rittichier</span></td>
                                                             <td>June 28,2019</td>
                                                             <td>$77,00,000.00</td>
                                                             <td>payonner</td>
                                                             <td>05 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="images/mem3.png" alt="img" /> <span>Olympia Ripple</span></td>
+                                                            <td><img src={mem3} alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 05,2019</td>
                                                             <td>$45,00,000.00</td>
                                                             <td>ETH</td>
                                                             <td>13 Minutes Ago</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="images/mem5.png" alt="img" /> <span>Olympia Ripple</span></td>
+                                                            <td><img src={mem5} alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 24,2019</td>
                                                             <td>$11,00,000.00</td>
                                                             <td>card</td>
@@ -1058,7 +1049,7 @@ function Homepage() {
                                     <div className="item">
                                         <div className="saying_content_wrapper float_left">
                                             <div className="saying_img">
-                                                <img src="images/cnt1.png" alt="img" />
+                                                <img src={cnt1} alt="img" />
                                             </div>
                                             <div className="saying_img_name">
                                                 <h1><a href="#">Iness Mcnzie</a></h1>
@@ -1070,7 +1061,7 @@ function Homepage() {
                                     <div className="item">
                                         <div className="saying_content_wrapper float_left">
                                             <div className="saying_img">
-                                                <img src="images/cnt2.png" alt="img" />
+                                                <img src={cnt2} alt="img" />
                                             </div>
                                             <div className="saying_img_name">
                                                 <h1><a href="#">Druid Wenydale</a></h1>
@@ -1082,7 +1073,7 @@ function Homepage() {
                                     <div className="item">
                                         <div className="saying_content_wrapper float_left">
                                             <div className="saying_img">
-                                                <img src="images/cnt.png" alt="img" />
+                                                <img src={cnt} alt="img" />
                                             </div>
                                             <div className="saying_img_name">
                                                 <h1><a href="#">Casian vedere</a></h1>
@@ -1117,7 +1108,7 @@ function Homepage() {
                                             <div className="investment_box_wrapper index_investment float_left">
                                                 <div className="inves_main_border float_left">
                                                     <div className="inves_img_wrapper">
-                                                        <img src="images/inves1.png" className="img-responsive" alt="img" />
+                                                        <img src={inves1} className="img-responsive" alt="img" />
                                                     </div>
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">akshay H.</a></h1>
@@ -1139,7 +1130,7 @@ function Homepage() {
                                             <div className="investment_box_wrapper index_investment float_left">
                                                 <div className="inves_main_border float_left">
                                                     <div className="inves_img_wrapper">
-                                                        <img src="images/inves2.png" className="img-responsive" alt="img" />
+                                                        <img src={inves2} className="img-responsive" alt="img" />
                                                     </div>
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">maria F.</a></h1>
@@ -1161,7 +1152,7 @@ function Homepage() {
                                             <div className="investment_box_wrapper index_investment float_left">
                                                 <div className="inves_main_border float_left">
                                                     <div className="inves_img_wrapper">
-                                                        <img src="images/inves3.png" className="img-responsive" alt="img" />
+                                                        <img src={inves3} className="img-responsive" alt="img" />
                                                     </div>
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">josep K.</a></h1>
@@ -1183,7 +1174,7 @@ function Homepage() {
                                             <div className="investment_box_wrapper index_investment float_left">
                                                 <div className="inves_main_border float_left">
                                                     <div className="inves_img_wrapper">
-                                                        <img src="images/inves4.png" className="img-responsive" alt="img" />
+                                                        <img src={inves4} className="img-responsive" alt="img" />
                                                     </div>
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">liva M.</a></h1>
@@ -1205,7 +1196,7 @@ function Homepage() {
                                             <div className="investment_box_wrapper index_investment float_left">
                                                 <div className="inves_main_border float_left">
                                                     <div className="inves_img_wrapper">
-                                                        <img src="images/inves4.png" className="img-responsive" alt="img" />
+                                                        <img src={inves4} className="img-responsive" alt="img" />
                                                     </div>
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">akshay H.</a></h1>
@@ -1273,7 +1264,7 @@ function Homepage() {
                         <div className="col-lg-4 col-md-12 col-sm-12 col-12">
                             <div className="blog_box_wrapper index2_blog_wrapepr float_left">
                                 <div className="blog_img_wrapper">
-                                    <img src="images/blog_img1.jpg" alt="blog_img" />
+                                    <img src={blog_img1} alt="blog_img" />
                                     <div className="blog_date_wrapper index2_blog_date">
                                         <p>15
                                             <br /> <span>jun</span></p>
@@ -1296,7 +1287,7 @@ function Homepage() {
                         <div className="col-lg-4 col-md-12 col-sm-12 col-12">
                             <div className="blog_box_wrapper index2_blog_wrapepr float_left">
                                 <div className="blog_img_wrapper">
-                                    <img src="images/blog_img2.jpg" alt="blog_img" />
+                                    <img src={blog_img2} alt="blog_img" />
                                     <div className="blog_date_wrapper index2_blog_date">
                                         <p>15
                                             <br /> <span>jun</span></p>
@@ -1319,7 +1310,7 @@ function Homepage() {
                         <div className="col-lg-4 col-md-12 col-sm-12 col-12">
                             <div className="blog_box_wrapper index2_blog_wrapepr float_left">
                                 <div className="blog_img_wrapper">
-                                    <img src="images/blog_img3.jpg" alt="blog_img" />
+                                    <img src={blog_img3} alt="blog_img" />
                                     <div className="blog_date_wrapper index2_blog_date">
                                         <p>15
                                             <br /> <span>jun</span></p>
@@ -1372,7 +1363,7 @@ function Homepage() {
                                     <div id="collapseOne" className="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" style={{}}>
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src="images/ac1.jpg" alt="img" />
+                                                <img src={ac1} alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1391,7 +1382,7 @@ function Homepage() {
                                     <div id="collapseTwo" className="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" style={{}}>
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src="images/ac2.jpg" alt="img" />
+                                                <img src={ac2} alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1410,7 +1401,7 @@ function Homepage() {
                                     <div id="collapseThree" className="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src="images/ac3.jpg" alt="img" />
+                                                <img src={ac3} alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1429,7 +1420,7 @@ function Homepage() {
                                     <div id="collapse41" className="collapse" role="tabpanel" aria-labelledby="heading4" data-parent="#accordion">
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src="images/ac1.jpg" alt="img" />
+                                                <img src={ac1} alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1448,7 +1439,7 @@ function Homepage() {
                                     <div id="collapseT" className="collapse" role="tabpanel" aria-labelledby="heading7" data-parent="#accordion">
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src="images/ac3.jpg" alt="img" />
+                                                <img src={ac3} alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1471,7 +1462,7 @@ function Homepage() {
                                     <div id="collapse1" className="collapse" role="tabpanel" aria-labelledby="headingfour" data-parent="#accordion" style={{}}>
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src="images/ac1.jpg" alt="img" />
+                                                <img src={ac1} alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1490,7 +1481,7 @@ function Homepage() {
                                     <div id="collapse2" className="collapse" role="tabpanel" aria-labelledby="headingfive" data-parent="#accordion" style={{}}>
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src="images/ac2.jpg" alt="img" />
+                                                <img src={ac2} alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1509,7 +1500,7 @@ function Homepage() {
                                     <div id="collapse02" className="collapse" role="tabpanel" aria-labelledby="headingnine" data-parent="#accordion" style={{}}>
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src="images/ac2.jpg" alt="img" />
+                                                <img src={ac2} alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1528,7 +1519,7 @@ function Homepage() {
                                     <div id="collapse092" className="collapse" role="tabpanel" aria-labelledby="headingten" data-parent="#accordion" style={{}}>
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src="images/ac2.jpg" alt="img" />
+                                                <img src={ac2} alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1547,7 +1538,7 @@ function Homepage() {
                                     <div id="collapse3" className="collapse" role="tabpanel" aria-labelledby="headingsiz" data-parent="#accordion">
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src="images/ac3.jpg" alt="img" />
+                                                <img src={ac3} alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1566,7 +1557,7 @@ function Homepage() {
                                     <div id="collapse31" className="collapse" role="tabpanel" aria-labelledby="headingseven" data-parent="#accordion">
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src="images/ac2.jpg" alt="img" />
+                                                <img src={ac2} alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1585,7 +1576,7 @@ function Homepage() {
                                     <div id="collapse32" className="collapse" role="tabpanel" aria-labelledby="headingeight" data-parent="#accordion">
                                         <div className="card-body">
                                             <div className="card_img">
-                                                <img src="images/ac1.jpg" alt="img" />
+                                                <img src={ac1} alt="img" />
                                             </div>
                                             <div className="card_cntnt">
                                                 <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
@@ -1664,27 +1655,27 @@ function Homepage() {
                                 <div className="owl-carousel owl-theme">
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
-                                            <img src="images/partner1.png" className="img-responsive" alt="img" />
+                                            <img src={partner1} className="img-responsive" alt="img" />
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
-                                            <img src="images/partner2.png" className="img-responsive" alt="img" />
+                                            <img src={partner2} className="img-responsive" alt="img" />
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
-                                            <img src="images/partner3.png" className="img-responsive" alt="img" />
+                                            <img src={partner3} className="img-responsive" alt="img" />
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
-                                            <img src="images/partner4.png" className="img-responsive" alt="img" />
+                                            <img src={partner4} className="img-responsive" alt="img" />
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
-                                            <img src="images/partner2.png" className="img-responsive" alt="img" />
+                                            <img src={partner2} className="img-responsive" alt="img" />
                                         </div>
                                     </div>
                                 </div>
@@ -1701,7 +1692,7 @@ function Homepage() {
                         <div className="col-lg-4 col-md-6 col-12 col-sm-12">
                             <div className="wrapper_second_about">
                                 <div className="wrapper_first_image">
-                                    <a href="index.html"><img src="images/logo_resp.png" className="img-responsive" alt="logo" /></a>
+                                    <a href="index.html"><img src={logo_resp} className="img-responsive" alt="logo" /></a>
                                 </div>
                                 <p>We are a full service Digital Marketing Agency all the foundational tool you need.</p>
                                 <div className="counter-section">
