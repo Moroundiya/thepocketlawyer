@@ -1,4 +1,90 @@
-body.light-mode {
+#header-prev-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.header-logo {
+  width: 200px;
+}
+
+
+.register-login-container {
+  width: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_phonecalls p {
+  margin-top: 0;
+}
+
+
+.header-btn-div {
+  margin: 0 20px;
+}
+
+.styles_toggleContainer__ciZeY {
+  margin-top: 8px;
+  display: block;
+  width: 50px;
+}
+
+.styles_circle__RTbJD {
+  width: 16px;
+  height: 16px;
+}
+
+.top_header_right_wrapper,
+.cp_logo_wrapper {
+  float: none !important;
+  width: auto ;
+}
+
+.cp_logo_wrapper {
+  width: auto;
+}
+
+.header-parent-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.signin-icon {
+  font-size: 28px;
+  margin-right: 5px;
+}
+
+.cp_navigation_wrapper  {
+  width: auto !important;
+}
+
+.header_btn li:first-child a {
+  padding: 0 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body.light-mode {
     background-color: #fff;
     color: #333;
     transition: background-color 0.3s ease;
@@ -9,10 +95,6 @@ body.light-mode {
     color: #dfdfdf;
   }
   
-
-  body.darkmode .investment_overlay {
-    background-color: red !important;
-  }
   
   body.dark-mode .dark-mode-toggle>button {
     color: #999;
@@ -89,4 +171,4 @@ body.light-mode {
     top: 3px;
   }
 
-  
+   */
