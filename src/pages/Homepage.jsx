@@ -5,6 +5,8 @@ import { Icon } from '@iconify/react';
 import 'animate.css';
 import '../custom.js'
 import '../App.css';
+import '../external.css';
+
 
 import logo_light from '../assets/images/logo-light.png';
 import logo_dark from '../assets/images/logo-dark.png';
@@ -218,6 +220,7 @@ function Homepage() {
                                         Sign In </a> </li>
                             </ul>
                         </div>
+                        <Icon icon="vaadin:cart" className='cart-icon' />
                         <ToggleTheme selectedTheme={currentTheme} onChange={setCurrentTheme} />
                     </div>
                 </div>
@@ -236,12 +239,27 @@ function Homepage() {
                                     <div className="row">
                                         <div className="col-xl-6 col-lg-10 col-md-12 col-sm-12 col-12">
                                             <div className="content">
-                                                <h2 data-animation="animated bounceInUp">Often Have Small</h2>
-                                                <h3 data-animation="animated bounceInUp">Invest Your Money  <br />
-                                                    For <span>Future</span></h3>
+                                                {/* <h2 data-animation="animated bounceInUp">Often Have Small</h2> */}
+                                                <h3 data-animation="animated bounceInUp">Chat with a <br />
+                                                    Lawyer for  <span>personalized help!</span></h3>
                                                 <div data-animation="animated bounceInUp" className="line_shape" />
-                                                <p data-animation="animated bounceInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute an irure dolor in voluptate velit.</p>
-                                                <div className="slider_btn index2_sliderbtn float_left">
+                                                <p data-animation="animated bounceInUp">
+                                                    <Icon icon="emojione-v1:left-check-mark" /> &nbsp;
+                                                    Search and Book Any Lawyer of Your Choice
+                                                </p>
+                                                <p data-animation="animated bounceInUp">
+                                                    <Icon icon="emojione-v1:left-check-mark" /> &nbsp;
+                                                    All legal issues like divorce, real estate, child custody, and many more!
+                                                </p>
+                                                <p data-animation="animated bounceInUp">
+                                                    <Icon icon="emojione-v1:left-check-mark" /> &nbsp;
+                                                    Protect your family and your rights with expert legal help
+                                                </p>
+                                                <p data-animation="animated bounceInUp">
+                                                    <Icon icon="emojione-v1:left-check-mark" /> &nbsp;
+                                                    Unlimited chats, plus legal document &amp; small-claims court help
+                                                </p>
+                                                <div className="slider_btn index2_sliderbtn float_left cta-header-btn ">
                                                     <ul>
                                                         <li data-animation="animated bounceInLeft">
                                                             <a href="#">start now</a>
@@ -264,12 +282,27 @@ function Homepage() {
                                     <div className="row">
                                         <div className="col-xl-6 col-lg-10 col-md-12 col-sm-12 col-12">
                                             <div className="content">
-                                                <h2 data-animation="animated bounceInUp">Often Have Small</h2>
-                                                <h3 data-animation="animated bounceInUp">Invest Your Money  <br />
-                                                    For <span>Future</span></h3>
+                                                <h2 data-animation="animated bounceInUp">Book Appointments with Lawyers By department or specialization</h2>
+                                                <h3 data-animation="animated bounceInUp">Search For <br />
+                                                    Expert <span>Lawyers</span></h3>
                                                 <div data-animation="animated bounceInUp" className="line_shape" />
-                                                <p data-animation="animated bounceInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute an irure dolor in voluptate velit.</p>
-                                                <div className="slider_btn index2_sliderbtn float_left">
+                                                <p data-animation="animated bounceInUp">
+                                                    <Icon icon="emojione-v1:left-check-mark" /> &nbsp;
+                                                    Get Quick Response
+                                                </p>
+                                                <p data-animation="animated bounceInUp">
+                                                    <Icon icon="emojione-v1:left-check-mark" /> &nbsp;
+                                                    100% Customer Satisfactions
+                                                </p>
+                                                <p data-animation="animated bounceInUp">
+                                                    <Icon icon="emojione-v1:left-check-mark" /> &nbsp;
+                                                    Quality Service &amp; Review System
+                                                </p>
+                                                <p data-animation="animated bounceInUp">
+                                                    <Icon icon="emojione-v1:left-check-mark" /> &nbsp;
+                                                    Customer Access own Dashboard
+                                                </p>
+                                                <div className="slider_btn index2_sliderbtn float_left cta-header-btn">
                                                     <ul>
                                                         <li data-animation="animated bounceInLeft">
                                                             <a href="#">start now</a>
@@ -292,12 +325,18 @@ function Homepage() {
                                     <div className="row">
                                         <div className="col-xl-6 col-lg-10 col-md-12 col-sm-12 col-12">
                                             <div className="content">
-                                                <h2 data-animation="animated bounceInUp">Often Have Small</h2>
-                                                <h3 data-animation="animated bounceInUp">Invest Your Money  <br />
-                                                    For <span>Future</span></h3>
+                                                <h2 data-animation="animated bounceInUp">Revolutionize Your Legal Practice With</h2>
+                                                <h3 data-animation="animated bounceInUp">#1 African Legal Productive And<br />
+                                                    <span>Efficiency Tools</span></h3>
                                                 <div data-animation="animated bounceInUp" className="line_shape" />
-                                                <p data-animation="animated bounceInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute an irure dolor in voluptate velit.</p>
-                                                <div className="slider_btn index2_sliderbtn float_left">
+
+                                                <p data-animation="animated bounceInUp">
+                                                    ThePocketLawyers is your all-in-one solution for legal practice management, helping
+                                                    legal professionals like you streamline tasks, handle case details, and manage
+                                                    payments with ease. Boost efficiency and focus on delivering top-notch legal services
+                                                    to your clients, all within a single tool.
+                                                </p>
+                                                <div className="slider_btn index2_sliderbtn float_left cta-header-btn">
                                                     <ul>
                                                         <li data-animation="animated bounceInLeft">
                                                             <a href="#">start now</a>
@@ -314,14 +353,90 @@ function Homepage() {
                                 </div>
                             </div>
                         </div>
-                        <ol className="carousel-indicators">
+                        <div className="carousel-item">
+                            <div className="carousel-captions caption-2">
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-xl-6 col-lg-10 col-md-12 col-sm-12 col-12">
+                                            <div className="content">
+                                                {/* <h2 data-animation="animated bounceInUp">Book Appointments with Lawyers By department or specialization</h2> */}
+                                                <h3 data-animation="animated bounceInUp">Industry-Leading Legal Case Management <br />
+                                                    <span>Software and Solutions</span></h3>
+                                                <div data-animation="animated bounceInUp" className="line_shape" />
+                                                <p data-animation="animated bounceInUp">
+                                                    <Icon icon="emojione-v1:left-check-mark" /> &nbsp;
+                                                    Case Management – keep all of your case details and documents in one location.
+                                                </p>
+                                                <p data-animation="animated bounceInUp">
+                                                    <Icon icon="emojione-v1:left-check-mark" /> &nbsp;
+                                                    Client Communication – real time updates, messaging, document sharing, and task management.
+                                                </p>
+                                                <p data-animation="animated bounceInUp">
+                                                    <Icon icon="emojione-v1:left-check-mark" /> &nbsp;
+                                                    Billing and Payments – track time, generate invoices, and accept payments.
+                                                </p>
+                                                <p data-animation="animated bounceInUp">
+                                                    <Icon icon="emojione-v1:left-check-mark" /> &nbsp;
+                                                    Customer Lead Mgt.- Manage your customer records anytime &amp; Anywhere
+                                                </p>
+                                                <div className="slider_btn index2_sliderbtn float_left cta-header-btn">
+                                                    <ul>
+                                                        <li data-animation="animated bounceInLeft">
+                                                            <a href="#">start now</a>
+                                                        </li>
+                                                        <li data-animation="animated bounceInLeft">
+                                                            <a href="#">view plans</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div className="clear" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="carousel-captions caption-3">
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-xl-6 col-lg-10 col-md-12 col-sm-12 col-12">
+                                            <div className="content">
+                                                {/* <h2 data-animation="animated bounceInUp">Revolutionize Your Legal Practice With</h2> */}
+                                                <h3 data-animation="animated bounceInUp">Boost Your Legal Departments <br />
+                                                    <span>Efficiency And Productivity</span></h3>
+                                                <div data-animation="animated bounceInUp" className="line_shape" />
+
+                                                <p data-animation="animated bounceInUp">
+                                                    Take your legal department’s productivity to the next level with our innovative workflow and
+                                                    process automation tools. Experience customized process flows, streamlined external
+                                                    counsel and case management, and seamless document generation and file management
+                                                </p>
+                                                <div className="slider_btn index2_sliderbtn float_left cta-header-btn">
+                                                    <ul>
+                                                        <li data-animation="animated bounceInLeft">
+                                                            <a href="#">start now</a>
+                                                        </li>
+                                                        <li data-animation="animated bounceInLeft">
+                                                            <a href="#">view plans</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div className="clear" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <ol className="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to={0} className="active"><span className="number">01</span>
                             </li>
                             <li data-target="#carousel-example-generic" data-slide-to={1} className><span className="number">02</span>
                             </li>
                             <li data-target="#carousel-example-generic" data-slide-to={2} className><span className="number">03</span>
                             </li>
-                        </ol>
+                        </ol> */}
                         <div className="carousel-nevigation">
                             <a className="prev" href="#carousel-example-generic" role="button" data-slide="prev"> <span /> <i className="flaticon-left-arrow" />
                             </a>
@@ -348,18 +463,36 @@ function Homepage() {
                             <div className="about_content_wrapper">
                                 <div className="sv_heading_wraper index2_heading">
                                     <h4>who we are</h4>
-                                    <h3>Welcome to SaveHyip</h3>
+                                    <h3>Welcome To ThePocketLawyers</h3>
                                     <div className="line_shape" />
                                 </div>
                                 <div className="welcone_savehiyp float_left">
-                                    <p>Put your investing ideas into action with full range of investments. Enjoy real benefits and rewards on your accrue investing.</p>
-                                    <div className="welcome_save_inpvate_wrapper">
+                                    <p>
+                                        ThePocketLawyers is a pioneering Software and platform as a service, we are at the forefront of revolutionizing the
+                                        legal landscape across Africa and Globally. We&#39;re dedicated to transforming how people access and experience legal
+                                        services, making them more accessible, efficient, and user-friendly.
+                                    </p>
+                                    <p>
+                                        At our core, we&#39;re driven by a passion for democratizing legal assistance and support. We understand the complexities
+                                        and challenges individuals and businesses face when seeking legal guidance or representation. That&#39;s why we&#39;ve
+                                        created an innovative digital space that connects clients with a network of qualified legal professionals seamlessly.
+                                    </p>
+                                    <p>
+                                        Our platform serves as a bridge between clients and lawyers, offering a diverse range of legal services covering various
+                                        domains such as business law, intellectual property, family law, real estate, and much more.
+                                    </p>
+                                    <p>
+                                        We prioritize versatility to
+                                        cater to the diverse needs of our users. We offer functionalities like time tracking, CRM, accounting, case
+                                        management, contact management, and docketing.
+                                    </p>
+                                    {/* <div className="welcome_save_inpvate_wrapper">
                                         <ul>
                                             <li className="purple_inovate"><a href="#"><i className="flaticon-check-box" /> We Innovate </a></li>
                                             <li className="blue_inovate"><a href="#"><i className="flaticon-check-box" /> Licenced &amp; Certified </a></li>
                                             <li className="green_inovate"><a href="#"><i className="flaticon-check-box" />Saving &amp; Investments </a></li>
                                         </ul>
-                                    </div>
+                                    </div> */}
                                     <div className="about_btn float_left">
                                         <ul>
                                             <li>
@@ -374,6 +507,419 @@ function Homepage() {
                 </div>
             </div>
             {/* about us wrapper end */}
+
+            {/*our services wrapper start */}
+            <div className="our_services_wrapper index2_our_service_wrapper float_left">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12 col-lg-12 col-sm-12 col-12">
+                            <div className="sv_heading_wraper heading_wrapper_dark dark_heading index2_heading index2_heading_center">
+                                <h4> services</h4>
+                                <h3>Key Features &amp; Functionalities</h3>
+                                <div className="line_shape" />
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle">
+                                    <i className="flaticon-medal" />
+                                </div>
+                                <div className="investment_border_wrapper" />
+                                <div className="investment_content_wrapper">
+                                    <h1><a href="#">Legal Practice Made Easy</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Experience efficient legal practice management with ThePocketLawyers. Customize settings, track time, manage expenses, and streamline payments for a seamless legal workflow.</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle red_info_circle">
+                                    <i className="flaticon-shield" />
+                                </div>
+                                <div className="investment_border_wrapper red_border_wrapper" />
+                                <div className="investment_content_wrapper red_content_wrapper">
+                                    <h1><a href="#">Simplify Legal Document Management</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Effortlessly manage legal documents with ThePocketLawyers. This all-in-one solution offers document storage, categorization, and easy retrieval for lawyers and legal professionals.</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle blue_icon_circle">
+                                    <i className="flaticon-bars" />
+                                </div>
+                                <div className="investment_border_wrapper blue_border_wrapper" />
+                                <div className="investment_content_wrapper blue_content_wrapper">
+                                    <h1><a href="#">Legal Billing Made Easy</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Simplify billing for your legal practice with ThePocketLawyers. Manage fees, expenses, and payments seamlessly, offering a convenient and transparent financial tracking system.</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle green_info_circle">
+                                    <i className="flaticon-bitcoin" />
+                                </div>
+                                <div className="investment_border_wrapper green_border_wrapper" />
+                                <div className="investment_content_wrapper green_content_wrapper">
+                                    <h1><a href="#">Cloud Data Storage Integration</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Safeguard your data and enhance disaster recovery with ThePocketLawyers cloud data storage integration. Choose from providers like AWS and Wasabi for enhanced security.</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle pink_info_circle">
+                                    <i className="flaticon-headphones" />
+                                </div>
+                                <div className="investment_border_wrapper pink_border_wrapper" />
+                                <div className="investment_content_wrapper pink_content_wrapper">
+                                    <h1><a href="#">Meta SEO Keywords</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Boost your online visibility with ThePocketLawyers built-in Meta tags for SEO. Optimize your business&#39;s content for search engines and drive more traffic.</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle yellow_info_circle">
+                                    <i className="flaticon-language" />
+                                </div>
+                                <div className="investment_border_wrapper yellow_border_wrapper" />
+                                <div className="investment_content_wrapper yellow_content_wrapper">
+                                    <h1><a href="#">Your Legal Business Companion</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Empower your legal practice with ThePocketLawyers, offering comprehensive legal practice management, from task oversight to seamless payment processing. Streamline operations and enhance client services under one tool</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle yellow_info_circle">
+                                    <i className="flaticon-language" />
+                                </div>
+                                <div className="investment_border_wrapper yellow_border_wrapper" />
+                                <div className="investment_content_wrapper yellow_content_wrapper">
+                                    <h1><a href="#">Unlocking Legal Practice Potential</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Experience the future of legal practice management. Our comprehensive platform offers an array of tools and features designed to streamline tasks, enhance collaboration, and optimize financial control. Elevate your legal practice to new heights of efficiency and effectiveness.</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle yellow_info_circle">
+                                    <i className="flaticon-language" />
+                                </div>
+                                <div className="investment_border_wrapper yellow_border_wrapper" />
+                                <div className="investment_content_wrapper yellow_content_wrapper">
+                                    <h1><a href="#">Efficiency &amp; Productivity Redefined</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Empower your legal team with ThePocketLawyers, a robust platform designed for legal professionals. Benefit from role-based access control, customizable settings, and efficient task management. Our platform ensures that your legal practice is efficient, transparent, and always under your control.</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle yellow_info_circle">
+                                    <i className="flaticon-language" />
+                                </div>
+                                <div className="investment_border_wrapper yellow_border_wrapper" />
+                                <div className="investment_content_wrapper yellow_content_wrapper">
+                                    <h1><a href="#">Your Legal Symphony Conductor</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>ThePocketLawyers redefines the way legal professionals manage their practice. With features like streamlined case management, customizable timesheets, and seamless expense tracking, it takes your legal practice to the next level. Experience a hassle-free approach to legal tasks, enabling you to focus on delivering exceptional services to your clients.</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle yellow_info_circle">
+                                    <i className="flaticon-language" />
+                                </div>
+                                <div className="investment_border_wrapper yellow_border_wrapper" />
+                                <div className="investment_content_wrapper yellow_content_wrapper">
+                                    <h1><a href="#">Seamless Cash Handling</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>ThePocketLawyers simplifies case management with customizable timesheets, expenses tracking, and fee management. Streamline your legal workflow and enhance transparency in your practice.</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle yellow_info_circle">
+                                    <i className="flaticon-language" />
+                                </div>
+                                <div className="investment_border_wrapper yellow_border_wrapper" />
+                                <div className="investment_content_wrapper yellow_content_wrapper">
+                                    <h1><a href="#">Your Legal Practice’s Companion</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>ThePocketLawyers is the trusted companion for legal practice, with a comprehensive dashboard, document management, and multi-language support, it empowers you to manage every aspect of your practice effectively</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <div className="investment_icon_circle yellow_info_circle">
+                                    <i className="flaticon-language" />
+                                </div>
+                                <div className="investment_border_wrapper yellow_border_wrapper" />
+                                <div className="investment_content_wrapper yellow_content_wrapper">
+                                    <h1><a href="#">Your Gateway To Legal Success</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>ThePocketLawyers is your Gateway to a new era of legal practice management. With its intuitive tools, customizable settings, and seamless task handling, it empowers legal professionals to enhance their efficiency and deliver exceptional services.</p>
+                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {/*our services wrapper end */}
+
+
+            {/* counter wrapper start*/}
+            <div className="counter_section float_left">
+                <div className="investment_overlay" />
+                <div className="counter-section2">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-3 col-md-3 col-12 col-sm-6">
+                                <div className="counter_cntnt_box">
+                                    <div className="tb_icon investment_icon_circle">
+                                        <div className="icon"><i className="flaticon-bar-chart" />
+                                        </div>
+                                        <div className="investment_border_wrapper" />
+                                    </div>
+                                    <div className="count-description"><span className="timer">365</span>
+                                        <h5 className="con1"> <a href="#">days online</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-3 col-12 col-sm-6">
+                                <div className="counter_cntnt_box">
+                                    <div className="tb_icon investment_icon_circle blue_icon_circle">
+                                        <div className="icon"><i className="flaticon-user" />
+                                        </div>
+                                        <div className="investment_border_wrapper blue_border_wrapper" />
+                                    </div>
+                                    <div className="count-description"> <span className="timer">10,000+</span>
+                                        <h5 className="con2"> <a href="#"> registered users </a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-3 col-12 col-sm-6">
+                                <div className="counter_cntnt_box">
+                                    <div className="tb_icon investment_icon_circle red_info_circle">
+                                        <div className="icon"><i className="flaticon-salary" />
+                                        </div>
+                                        <div className="investment_border_wrapper red_border_wrapper" />
+                                    </div>
+                                    <div className="count-description"> <span className="timer">5000+</span>
+                                        <h5 className="con2"> <a href="#"> Law Firms </a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-3 col-12 col-sm-6">
+                                <div className="counter_cntnt_box">
+                                    <div className="tb_icon investment_icon_circle green_info_circle">
+                                        <div className="icon"><i className="flaticon-withdrawal" />
+                                        </div>
+                                        <div className="investment_border_wrapper green_border_wrapper" />
+                                    </div>
+                                    <div className="count-description"> <span className="timer">7000+</span>
+                                        <h5 className="con4"> <a href="#">Legal Professionals</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* counter wrapper end*/}
+
+
+
+            <section class="pm-features-section pt pb">
+                <div class="container">
+                    <div class="row align-items-center pm-features-section-child">
+                        <div class=" col-lg-6 col-12">
+                            <div class="section-title">
+                                <h3 class="fs-54">
+                                    Streamlined Case Management<span> With ThePocketLawyers</span></h3>
+                                <p>
+                                    ThePocketLawyers help optimizes legal practice management by lawyers’ overseeing their tasks, case
+                                    particulars, invoices, and payment processing. It facilitates smooth collaboration throughout the entire
+                                    workflow, enabling legal professionals to effectively manage every facet of their practice and operational
+                                    processes.
+                                </p>
+                                <a target="_blank" href="https://demo.rajodiya.com/advocatego-saas/login" class="btn" tabindex="0">Sign Up Now</a>
+                            </div>
+                        </div>
+                        <div class=" col-lg-6 col-12">
+                            <div class="info-cards-wrp">
+                                <div class="info-cards bg-theme">
+                                    <div class="icon-div bg-dark">
+                                        <Icon icon="entypo:flash" className='info-cards-icon' />
+                                    </div>
+                                    <h4>
+                                        Automate And Optimizing Your Legal Workflows
+                                    </h4>
+                                    <p>
+                                        ThePocketLawyers is your all-in-one solution for streamlining legal practice management. With features ranging from efficient task
+                                        handling and document management to role-based access control and integrated billing, it empowers legal professionals to
+                                        automate and enhance their workflow, ensuring that every facet of their practice is efficiently managed.
+                                    </p>
+                                </div>
+                                <div class="info-cards  bg-dark">
+                                    <div class="icon-div bg-theme">
+                                        <Icon icon="fa:legal" className='info-cards-icon dark' />
+                                    </div>
+                                    <h4>
+                                        Improve And Elevate Your Legal Practice With The ALL–In–One Tools
+                                    </h4>
+                                    <p>
+                                        Improve and elevate your legal practice with ThePocketLawyers, comprehensive platform designed to optimize legal workflows. It
+                                        offers user authentication, billings and expense tracking, and seamless billing processes. With customizable settings and a focus
+                                        on document management, ThePocketLawyers is your key to efficient, transparent, and streamlined legal operations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            {/* Work Section Testing */}
+
+            {/* <div className="our_services_wrapper index2_our_service_wrapper float_left">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-md-12 col-lg-12 col-sm-12 col-12">
+                            <div className="sv_heading_wraper heading_wrapper_dark dark_heading index2_heading index2_heading_center">
+                                <h3>How it Works</h3>
+                                <div className="line_shape" />
+                            </div>
+                        </div>
+                        <div className="col-md-4 col-lg-2 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <Icon icon="mdi:monitor-account" className='work-head-title-icon' />
+                                <div className="investment_border_wrapper" />
+                                <div className="investment_content_wrapper new ">
+                                    <h1><a href="#">Connect</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p> Tell the Lawyers' Assistant what's going on so that she can find the attorney for your situation.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-md-4 col-lg-2 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <Icon icon="gridicons:chat" className='work-head-title-icon' />
+                                <div className="investment_border_wrapper" />
+                                <div className="investment_content_wrapper new ">
+                                    <h1><a href="#">Go back-and-forth</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p> Connect with the lawyer via email, text or phone. Include citations, documents, tickets and more to get a comprehensice answer.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-md-4 col-lg-2 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <Icon icon="icon-park-solid:protect" className='work-head-title-icon' />
+                                <div className="investment_border_wrapper" />
+                                <div className="investment_content_wrapper new ">
+                                    <h1><a href="#"> Stay Protected</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Get expert legal support from bar-certified attorneys at an extremely affordable price.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4 col-lg-2 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <Icon icon="icon-park-solid:protect" className='work-head-title-icon' />
+                                <div className="investment_border_wrapper" />
+                                <div className="investment_content_wrapper new ">
+                                    <h1><a href="#"> Search And Review Lawyer Profiles</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p> Personally Search listing of Lawyers and attorney’s profile, specialization and services offered.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4 col-lg-2 col-12">
+                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
+                                <Icon icon="icon-park-solid:protect" className='work-head-title-icon' />
+                                <div className="investment_border_wrapper" />
+                                <div className="investment_content_wrapper new ">
+                                    <h1><a href="#"> Stay Protected</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>Get expert legal support from bar-certified attorneys at an extremely affordable price.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> */}
+
+
+
+
+
+            <div className="works_wrapper float_left">
+                <div className="work_banner_wrapper">
+                    <img src={video_bg} alt="img" />
+                </div>
+                <div className="howwork_banner_wrapper index2_homwork_banner_wrapper">
+                    <div className="vedio_link_wrapper">
+                        <a className="test-popup-link button" rel="external" href="https://www.youtube.com/embed/ryzOXAO0Ss0" title="title"><i className="fa fa-play" /></a>
+                        <div className="work_content_wrap" id='how-it-works'>
+                            <h1>How It Works</h1>
+                            <ul className="work_checklist_wrapper">
+                                <p data-animation="animated bounceInUp">
+                                    <Icon icon="mdi:monitor-account" className='work-head-title-icon' />
+                                    &nbsp;Connect
+                                </p>
+                                <p data-animation="animated bounceInUp">
+                                    <Icon icon="gridicons:chat" className='work-head-title-icon' />&nbsp;Go back-and-forth
+                                </p>
+                                <p data-animation="animated bounceInUp">
+                                    <Icon icon="icon-park-solid:protect" className='work-head-title-icon' /> &nbsp;Stay Protected
+                                </p>
+                                <p data-animation="animated bounceInUp">
+                                    <Icon icon="mdi:search" className='work-head-title-icon' /> &nbsp;Search And Review Lawyer Profiles
+                                </p>
+                                <p data-animation="animated bounceInUp">
+                                    <Icon icon="wpf:check-book" className='work-head-title-icon' /> &nbsp;Book Appointments And Make Payment
+                                </p>
+                                <p data-animation="animated bounceInUp">
+                                    <Icon icon="map:lawyer" className='work-head-title-icon' /> &nbsp;Get Instant Lawyer’s Appointment
+                                </p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
             {/*investment plan wrapper start */}
             <div className="investment_plans index2_investment_plans float_left">
                 <div className="investment_overlay" />
@@ -381,25 +927,23 @@ function Homepage() {
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12 col-12">
                             <div className="sv_heading_wraper heading_wrapper_dark index2_heading index2_heading_center">
-                                <h4> our plans </h4>
-                                <h3> Our Investment Plans </h3>
+                                <h4> Start your free trial. Full access. No credit card required. </h4>
+                                <h3> Pay Only for What You Need</h3>
                                 <div className="line_shape" />
                             </div>
                         </div>
-                        <div className="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
+                        <div className="col-md-6 col-lg-4 col-12">
                             <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
-                                <div className="investment_icon_circle">
-                                    <i className="flaticon-bar-chart" />
-                                </div>
+                                <img src="https://ww2-secure.justanswer.com/static/sip/btc/membership-benefits/law_tnt_1_v1.jpg" className='plan-img' alt="" />
                                 <div className="investment_border_wrapper" />
                                 <div className="investment_content_wrapper">
-                                    <h1><a href="#">silver plan</a></h1>
+                                    <h1><a href="#">Chat or Call with a Lawyer</a></h1>
                                     <div className="line_shape investment_line_shape" />
-                                    <p>Up to 5% for 20 Hourly
-                                        <br /> Compound Available
-                                        <br /> Down to 5% for 20 Hourly
-                                        <br /> Principal Return
-                                        <br /> Up to 5% for 20 Hourly</p>
+                                    <p>
+                                        Connect with verified lawyers in minutes, 24/7. After working appointments with your
+                                        preferred lawyer of your choice you can save time and cost, no time for long distance
+                                        travel to meet your lawyer.
+                                    </p>
                                 </div>
                                 <div className="about_btn plans_btn index2_investment_btn">
                                     <ul>
@@ -410,20 +954,17 @@ function Homepage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
+                        <div className="col-md-6 col-lg-4 col-12">
                             <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
-                                <div className="investment_icon_circle red_info_circle">
-                                    <i className="flaticon-money" />
-                                </div>
+                                <img src="https://ww2-secure.justanswer.com/static/sip/btc/membership-benefits/law_tnt_2_v1.jpg" className='plan-img' alt="" />
                                 <div className="investment_border_wrapper red_border_wrapper" />
                                 <div className="investment_content_wrapper red_content_wrapper">
-                                    <h1><a href="#">Bronze Plan</a></h1>
+                                    <h1><a href="#">Legal document prep</a></h1>
                                     <div className="line_shape investment_line_shape" />
-                                    <p>Up to 5% Daily for 5 Days
-                                        <br /> Min deposit: $2020
-                                        <br /> Max deposit: $101010
-                                        <br /> Principal Return
-                                        <br /> Compound Available</p>
+                                    <p>
+                                        Get help to write a will, make a power of attorney, prepare a healthcare directive, Get
+                                        represented, create a trust, and create other important legal documents and do more.
+                                    </p>
                                 </div>
                                 <div className="about_btn plans_btn red_btn_plans index2_investment_btn">
                                     <ul>
@@ -434,20 +975,16 @@ function Homepage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
+                        <div className="col-md-6 col-lg-4 col-12">
                             <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
-                                <div className="investment_icon_circle blue_icon_circle">
-                                    <i className="flaticon-gold" />
-                                </div>
+                                <img src="https://ww2-secure.justanswer.com/static/sip/btc/membership-benefits/law_tnt_3_v1.jpg" className='plan-img' alt="" />
                                 <div className="investment_border_wrapper blue_border_wrapper" />
                                 <div className="investment_content_wrapper blue_content_wrapper">
-                                    <h1><a href="#">copper plan</a></h1>
+                                    <h1><a href="#">Small claims court help</a></h1>
                                     <div className="line_shape investment_line_shape" />
-                                    <p>Up to 3% Hourly for 10 Hourly
-                                        <br /> Min deposit: $300
-                                        <br /> Max deposit: $3000
-                                        <br /> Principal Not Return
-                                        <br /> Compound Not Available</p>
+                                    <p>
+                                        Get help with small claims court, so you have the confidence you need to present your case.
+                                    </p>
                                 </div>
                                 <div className="about_btn plans_btn blue_btn_plans index2_investment_btn">
                                     <ul>
@@ -458,20 +995,59 @@ function Homepage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
+                        <div className="col-md-6 col-lg-4 col-12">
                             <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
-                                <div className="investment_icon_circle green_info_circle">
-                                    <i className="flaticon-medal" />
-                                </div>
+                                <img src="https://ww2-secure.justanswer.com/static/sip/btc/membership-benefits/law_tnt_4_v1.jpg" className='plan-img' alt="" />
                                 <div className="investment_border_wrapper green_border_wrapper" />
                                 <div className="investment_content_wrapper green_content_wrapper">
-                                    <h1><a href="#">gold plan</a></h1>
+                                    <h1><a href="#">More benefits beyond legal support</a></h1>
                                     <div className="line_shape investment_line_shape" />
-                                    <p>Up to 7% for 30 days
-                                        <br /> Min deposit: $500
-                                        <br /> Max deposit: $3000
-                                        <br /> Principal Not Return
-                                        <br /> Compound Available</p>
+                                    <p>
+                                        Enjoy extra perks that can help support other parts of your life. Referrals, education, and exclusive discounts to name a few.
+                                    </p>
+                                </div>
+                                <div className="about_btn plans_btn green_plan_btn index2_investment_btn">
+                                    <ul>
+                                        <li>
+                                            <a href="#">read more</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-12">
+                            <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
+                                <img src="https://ww2-secure.justanswer.com/static/sip/btc/membership-benefits/law_tnt_4_v1.jpg" className='plan-img' alt="" />
+                                <div className="investment_border_wrapper green_border_wrapper" />
+                                <div className="investment_content_wrapper green_content_wrapper">
+                                    <h1><a href="#">More benefits beyond legal support</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>
+                                        Enjoy extra perks that can help support other parts of your life. Referrals, education, and exclusive discounts to name a few.
+                                    </p>
+                                </div>
+                                <div className="about_btn plans_btn green_plan_btn index2_investment_btn">
+                                    <ul>
+                                        <li>
+                                            <a href="#">read more</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 col-12">
+                            <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
+                                <img src="https://ww2-secure.justanswer.com/static/JA54186/membership-savings.jpg" className='plan-img' alt="" />
+                                <div className="investment_border_wrapper green_border_wrapper" />
+                                <div className="investment_content_wrapper green_content_wrapper">
+                                    <h1><a href="#">No Contract, Cancel anytime.</a></h1>
+                                    <div className="line_shape investment_line_shape" />
+                                    <p>
+                                        Legal fees can add up quickly, especially when you’re charged by the hours.
+                                        ThePocketLawyers help you to save time and cost, by providing various legal
+                                        department at an affordable cost and ease to select from vast database of lawyers
+                                        directories.
+                                    </p>
                                 </div>
                                 <div className="about_btn plans_btn green_plan_btn index2_investment_btn">
                                     <ul>
@@ -487,7 +1063,8 @@ function Homepage() {
             </div>
             {/*investment plan wrapper end */}
             {/*calculator plan wrapper start */}
-            <div className="calculator_wrapper index2_calculator_wrapper float_left">
+
+            {/* <div className="calculator_wrapper index2_calculator_wrapper float_left">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12 col-12">
@@ -590,10 +1167,10 @@ function Homepage() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/*calculator plan wrapper end */}
             {/* global community wrapper start */}
-            <div className="global_community_wrapper index2_global_community_wrapper float_left">
+            {/* <div className="global_community_wrapper index2_global_community_wrapper float_left">
                 <div className="container">
                     <div className="row">
                         <div className="global_comm_wraper index2_global_comm_wrapper">
@@ -619,144 +1196,197 @@ function Homepage() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* global community wrapper end */}
-            {/*our services wrapper start */}
-            <div className="our_services_wrapper index2_our_service_wrapper float_left">
+
+
+            {/* investors wrapper start */}
+            <div className="investors_wrapper float_left">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 col-lg-12 col-sm-12 col-12">
-                            <div className="sv_heading_wraper heading_wrapper_dark dark_heading index2_heading index2_heading_center">
-                                <h4> services</h4>
-                                <h3>our features</h3>
+                        <div className="col-lg-12 col-md-12 col-sm-12">
+                            <div className="sv_heading_wraper half_section_headign index2_heading">
+                                <h4>Meet The </h4>
+                                <h3>Top High Profiled Lawyers And Attorney</h3>
                                 <div className="line_shape" />
                             </div>
                         </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle">
-                                    <i className="flaticon-medal" />
-                                </div>
-                                <div className="investment_border_wrapper" />
-                                <div className="investment_content_wrapper">
-                                    <h1><a href="#">We're Certified</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle red_info_circle">
-                                    <i className="flaticon-shield" />
-                                </div>
-                                <div className="investment_border_wrapper red_border_wrapper" />
-                                <div className="investment_content_wrapper red_content_wrapper">
-                                    <h1><a href="#">We're Secure</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle blue_icon_circle">
-                                    <i className="flaticon-bars" />
-                                </div>
-                                <div className="investment_border_wrapper blue_border_wrapper" />
-                                <div className="investment_content_wrapper blue_content_wrapper">
-                                    <h1><a href="#">We're Profitable</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle green_info_circle">
-                                    <i className="flaticon-bitcoin" />
-                                </div>
-                                <div className="investment_border_wrapper green_border_wrapper" />
-                                <div className="investment_content_wrapper green_content_wrapper">
-                                    <h1><a href="#">We Accept Crypto</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle pink_info_circle">
-                                    <i className="flaticon-headphones" />
-                                </div>
-                                <div className="investment_border_wrapper pink_border_wrapper" />
-                                <div className="investment_content_wrapper pink_content_wrapper">
-                                    <h1><a href="#">best support</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle yellow_info_circle">
-                                    <i className="flaticon-language" />
-                                </div>
-                                <div className="investment_border_wrapper yellow_border_wrapper" />
-                                <div className="investment_content_wrapper yellow_content_wrapper">
-                                    <h1><a href="#">We're global</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 sw_spectrm_padding">
+                            <div className="investors_slider_wrapper index2_investors_slider_Wrapper">
+                                <div className="owl-carousel owl-theme">
+                                    <div className="item">
+                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
+                                            <div className="investment_box_wrapper index_investment float_left">
+                                                <div className="inves_main_border float_left">
+                                                    <div className="inves_img_wrapper">
+                                                        <img src={inves1} className="img-responsive" alt="img" />
+                                                    </div>
+                                                    <div className="investment_content_wrapper inves_heading_txt">
+                                                        <h1><a href="#">Akshay H.</a></h1>
+                                                        <div className="line_shape investment_line_shape" />
+                                                        <p>Civil Right Lawyer</p>
+                                                        <ul className="investment_slider_icon">
+                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" className='view-lawyer-profile'>View Profile</a>
+
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
+                                            <div className="investment_box_wrapper index_investment float_left">
+                                                <div className="inves_main_border float_left">
+                                                    <div className="inves_img_wrapper">
+                                                        <img src={inves2} className="img-responsive" alt="img" />
+                                                    </div>
+                                                    <div className="investment_content_wrapper inves_heading_txt">
+                                                        <h1><a href="#">Maria F.</a></h1>
+                                                        <div className="line_shape investment_line_shape" />
+                                                        <p>Health Lawyer</p>
+                                                        <ul className="investment_slider_icon">
+                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" className='view-lawyer-profile'>View Profile</a>
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
+                                            <div className="investment_box_wrapper index_investment float_left">
+                                                <div className="inves_main_border float_left">
+                                                    <div className="inves_img_wrapper">
+                                                        <img src={inves3} className="img-responsive" alt="img" />
+                                                    </div>
+                                                    <div className="investment_content_wrapper inves_heading_txt">
+                                                        <h1><a href="#">josep K.</a></h1>
+                                                        <div className="line_shape investment_line_shape" />
+                                                        <p>Immigration Lawyer</p>
+                                                        <ul className="investment_slider_icon">
+                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" className='view-lawyer-profile'>View Profile</a>
+
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
+                                            <div className="investment_box_wrapper index_investment float_left">
+                                                <div className="inves_main_border float_left">
+                                                    <div className="inves_img_wrapper">
+                                                        <img src={inves4} className="img-responsive" alt="img" />
+                                                    </div>
+                                                    <div className="investment_content_wrapper inves_heading_txt">
+                                                        <h1><a href="#">liva M.</a></h1>
+                                                        <div className="line_shape investment_line_shape" />
+                                                        <p>International Lawyer</p>
+                                                        <ul className="investment_slider_icon">
+                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" className='view-lawyer-profile'>View Profile</a>
+
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
+                                            <div className="investment_box_wrapper index_investment float_left">
+                                                <div className="inves_main_border float_left">
+                                                    <div className="inves_img_wrapper">
+                                                        <img src="https://demo.phpscriptpoint.com/lawyer/assets/uploads/attorney-1.jpg" className="img-responsive" alt="img" />
+                                                    </div>
+                                                    <div className="investment_content_wrapper inves_heading_txt">
+                                                        <h1><a href="#">Peter R.</a></h1>
+                                                        <div className="line_shape investment_line_shape" />
+                                                        <p>Medical Lawyer</p>
+                                                        <ul className="investment_slider_icon">
+                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" className='view-lawyer-profile'>View Profile</a>
+
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
+                                            <div className="investment_box_wrapper index_investment float_left">
+                                                <div className="inves_main_border float_left">
+                                                    <div className="inves_img_wrapper">
+                                                        <img src="https://demo.phpscriptpoint.com/lawyer/assets/uploads/attorney-2.jpg" className="img-responsive" alt="img" />
+                                                    </div>
+                                                    <div className="investment_content_wrapper inves_heading_txt">
+                                                        <h1><a href="#">Tom S.</a></h1>
+                                                        <div className="line_shape investment_line_shape" />
+                                                        <p>Medical Lawyer</p>
+                                                        <ul className="investment_slider_icon">
+                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
+                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" className='view-lawyer-profile'>View Profile</a>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/*our services wrapper end */}
-            {/* works wrapper start */}
-            <div className="works_wrapper float_left">
-                <div className="work_banner_wrapper">
-                    <img src={video_bg} alt="img" />
-                </div>
-                <div className="howwork_banner_wrapper index2_homwork_banner_wrapper">
-                    <div className="vedio_link_wrapper">
-                        <a className="test-popup-link button" rel="external" href="https://www.youtube.com/embed/ryzOXAO0Ss0" title="title"><i className="fa fa-play" /></a>
-                        <div className="work_content_wrap">
-                            <h1>How It Works</h1>
-                            <ul className="work_checklist_wrapper">
-                                <li>
-                                    <a href="#"><i className="fas fa-dollar-sign" />get deposit</a>
-                                </li>
-                                <li><a href="#"><i className="far fa-money-bill-alt" /> utilize money</a></li>
-                                <li><a href="#"><i className="fas fa-plus" /> give interest</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* works wrapper end */}
+            {/* investors wrapper end */}
+
+
+
             {/* transaction wrapper start */}
-            <div className="transaction_wrapper float_left">
+            <div className="transaction_wrapper float_left" id='transaction-wrapper-container'>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-sm-12">
                             <div className="sv_heading_wraper half_section_headign half_sec_heading index2_heading">
-                                <h4>who we are</h4>
-                                <h3>Our Latest Transaction</h3>
+                                <h3>Top Expert Lawyers Listing</h3>
+                                <h4>By Specialty</h4>
                                 <div className="line_shape" />
                             </div>
                             <div className="x_offer_tabs_wrapper">
                                 <ul className="nav nav-tabs">
-                                    <li className="nav-item"> <a className="nav-link active" data-toggle="tab" href="#home"> deposits</a>
+                                    <li className="nav-item"> <a className="nav-link active" data-toggle="tab" href="#home"> General</a>
                                     </li>
-                                    <li className="nav-item"> <a className="nav-link" data-toggle="tab" href="#menu2">withdraw</a>
+                                    <li className="nav-item"> <a className="nav-link" data-toggle="tab" href="#menu2">Criminal</a>
+                                    </li>
+                                    <li className="nav-item"> <a className="nav-link" data-toggle="tab" href="#home">Tax</a>
+                                    </li>
+                                    <li className="nav-item"> <a className="nav-link" data-toggle="tab" href="#menu2">Real-Estate</a>
                                     </li>
                                 </ul>
                             </div>
@@ -770,31 +1400,88 @@ function Homepage() {
                                                 <table>
                                                     <tbody><tr>
                                                         <th className="form_table_resp">name</th>
-                                                        <th>date</th>
-                                                        <th>amount</th>
-                                                        <th>currency</th>
-                                                        <th>deposit</th>
+                                                        <th>joining date</th>
+                                                        <th>Country</th>
+                                                        <th>Firm</th>
+                                                        <th>Speciality</th>
+                                                        <th>Experience</th>
+                                                        <th>Social</th>
+                                                        <th>Profile</th>
                                                     </tr>
                                                         <tr>
                                                             <td><img src={mem1} alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 24,2019</td>
-                                                            <td>$6,00,000.00</td>
-                                                            <td>Dollar</td>
-                                                            <td>03 Minutes Ago</td>
+                                                            <td>South Africa</td>
+                                                            <td>Sashi &amp; Sashi</td>
+                                                            <td>Civil Lawyer</td>
+                                                            <td>7 Years</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <Icon icon="logos:facebook" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:twitter" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:instagram" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="">View Profile</a>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src={mem4} alt="img" /> <span>Nancee Broom</span></td>
                                                             <td>June 04,2019</td>
-                                                            <td>$16,00,000.00</td>
-                                                            <td>card</td>
-                                                            <td>22 Minutes Ago</td>
+                                                            <td>Canada</td>
+                                                            <td>Sashi</td>
+                                                            <td>Criminal Lawyer</td>
+                                                            <td>12 Years</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <Icon icon="logos:facebook" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:twitter" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:instagram" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="">View Profile</a>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src={mem1} alt="img" /> <span>Broom Nancee</span></td>
                                                             <td>June 24,2019</td>
-                                                            <td>$6,00,000.00</td>
-                                                            <td>bitcoin</td>
-                                                            <td>15 Minutes Ago</td>
+                                                            <td>United Kingdom</td>
+                                                            <td>Shashi</td>
+                                                            <td>Medical Lawyer</td>
+                                                            <td>5 Years</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <Icon icon="logos:facebook" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:twitter" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:instagram" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="">View Profile</a>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src={mem2} alt="img" /> <span>Ripple Alison</span></td>
@@ -843,31 +1530,88 @@ function Homepage() {
                                                 <table>
                                                     <tbody><tr>
                                                         <th className="form_table_resp">name</th>
-                                                        <th>date</th>
-                                                        <th>amount</th>
-                                                        <th>currency</th>
-                                                        <th>deposit</th>
+                                                        <th>joining date</th>
+                                                        <th>Country</th>
+                                                        <th>Firm</th>
+                                                        <th>Speciality</th>
+                                                        <th>Experience</th>
+                                                        <th>Social</th>
+                                                        <th>Profile</th>
                                                     </tr>
                                                         <tr>
                                                             <td><img src={mem4} alt="img" /> <span>Nancee Broom</span></td>
                                                             <td>June 04,2019</td>
-                                                            <td>$16,00,000.00</td>
-                                                            <td>card</td>
-                                                            <td>22 Minutes Ago</td>
+                                                            <td>South Africa</td>
+                                                            <td>Sashi &amp; Sashi</td>
+                                                            <td>Civil Lawyer</td>
+                                                            <td>7 Years</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <Icon icon="logos:facebook" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:twitter" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:instagram" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="">View Profile</a>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src={mem1} alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 24,2019</td>
-                                                            <td>$6,00,000.00</td>
-                                                            <td>Dollar</td>
-                                                            <td>03 Minutes Ago</td>
+                                                            <td>South Africa</td>
+                                                            <td>Sashi &amp; Sashi</td>
+                                                            <td>Civil Lawyer</td>
+                                                            <td>7 Years</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <Icon icon="logos:facebook" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:twitter" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:instagram" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="">View Profile</a>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src={mem2} alt="img" /> <span>Ripple Alison</span></td>
                                                             <td>June 24,2019</td>
-                                                            <td>$06,00,000.00</td>
-                                                            <td>ripees</td>
-                                                            <td>05 Minutes Ago</td>
+                                                            <td>South Africa</td>
+                                                            <td>Sashi &amp; Sashi</td>
+                                                            <td>Civil Lawyer</td>
+                                                            <td>7 Years</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <Icon icon="logos:facebook" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:twitter" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:instagram" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="">View Profile</a>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src={mem6} alt="img" /> <span>Emmett Stein
@@ -974,137 +1718,11 @@ function Homepage() {
                 </div>
             </div>
             {/* testimonial wrapper end */}
-            {/* investors wrapper start */}
-            <div className="investors_wrapper float_left">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12 col-md-12 col-sm-12">
-                            <div className="sv_heading_wraper half_section_headign index2_heading">
-                                <h4>Tranding People</h4>
-                                <h3>Our top investors</h3>
-                                <div className="line_shape" />
-                            </div>
-                        </div>
-                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 sw_spectrm_padding">
-                            <div className="investors_slider_wrapper index2_investors_slider_Wrapper">
-                                <div className="owl-carousel owl-theme">
-                                    <div className="item">
-                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
-                                            <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_main_border float_left">
-                                                    <div className="inves_img_wrapper">
-                                                        <img src={inves1} className="img-responsive" alt="img" />
-                                                    </div>
-                                                    <div className="investment_content_wrapper inves_heading_txt">
-                                                        <h1><a href="#">akshay H.</a></h1>
-                                                        <div className="line_shape investment_line_shape" />
-                                                        <p>$22500.00 USD</p>
-                                                        <ul className="investment_slider_icon">
-                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
-                                            <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_main_border float_left">
-                                                    <div className="inves_img_wrapper">
-                                                        <img src={inves2} className="img-responsive" alt="img" />
-                                                    </div>
-                                                    <div className="investment_content_wrapper inves_heading_txt">
-                                                        <h1><a href="#">maria F.</a></h1>
-                                                        <div className="line_shape investment_line_shape" />
-                                                        <p>$22500.00 USD</p>
-                                                        <ul className="investment_slider_icon">
-                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
-                                            <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_main_border float_left">
-                                                    <div className="inves_img_wrapper">
-                                                        <img src={inves3} className="img-responsive" alt="img" />
-                                                    </div>
-                                                    <div className="investment_content_wrapper inves_heading_txt">
-                                                        <h1><a href="#">josep K.</a></h1>
-                                                        <div className="line_shape investment_line_shape" />
-                                                        <p>$22500.00 USD</p>
-                                                        <ul className="investment_slider_icon">
-                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
-                                            <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_main_border float_left">
-                                                    <div className="inves_img_wrapper">
-                                                        <img src={inves4} className="img-responsive" alt="img" />
-                                                    </div>
-                                                    <div className="investment_content_wrapper inves_heading_txt">
-                                                        <h1><a href="#">liva M.</a></h1>
-                                                        <div className="line_shape investment_line_shape" />
-                                                        <p>$22500.00 USD</p>
-                                                        <ul className="investment_slider_icon">
-                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
-                                            <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_main_border float_left">
-                                                    <div className="inves_img_wrapper">
-                                                        <img src={inves4} className="img-responsive" alt="img" />
-                                                    </div>
-                                                    <div className="investment_content_wrapper inves_heading_txt">
-                                                        <h1><a href="#">akshay H.</a></h1>
-                                                        <div className="line_shape investment_line_shape" />
-                                                        <p>$22500.00 USD</p>
-                                                        <ul className="investment_slider_icon">
-                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* investors wrapper end */}
+
+
+
+
+
             {/* newsletter wrapper start */}
             <div className="global_community_wrapper newsletter_wrapper index2_newsletter float_left">
                 <div className="container">
@@ -1661,7 +2279,7 @@ function Homepage() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
 
     )
 }
