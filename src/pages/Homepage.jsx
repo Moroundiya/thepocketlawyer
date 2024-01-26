@@ -1,11 +1,26 @@
 import React, { useState } from 'react';
 import ToggleTheme from "@qvgk/react-toggle-theme";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import 'animate.css';
-import '../custom.js'
+import '../custom.js';
+import '../jquery.menu-aim.js';
 import '../App.css';
 import '../external.css';
+
+
+import t1 from '../assets/images/t1.png';
+import t2 from '../assets/images/t2.png';
+import t3 from '../assets/images/t3.png';
+import t4 from '../assets/images/t4.png';
+import t5 from '../assets/images/t5.png';
+import t6 from '../assets/images/t6.png';
+import vanguard from '../assets/images/vanguard.png'
+import techpoint from '../assets/images/techpoint.png';
+import techcabal from '../assets/images/techcabal.png';
+import punch from '../assets/images/punch.png';
+import guardian from '../assets/images/guardian.png';
+import sun from '../assets/images/the sun.png'
 
 
 import logo_light from '../assets/images/logo-light.png';
@@ -53,104 +68,52 @@ function Homepage() {
             <a href="javascript:" id="return-to-top"> <i className="fas fa-angle-double-up" /></a>
             {/* Top Scroll End */}
             {/* cp navi wrapper Start */}
-            <nav className="cd-dropdown d-block d-sm-block d-md-block d-lg-none d-xl-none">
-                <h2><a href="index.html"> savehyip </a></h2>
-                <a href="#0" className="cd-close">Close</a>
-                <ul className="cd-dropdown-content">
+
+
+            <nav className="cd-dropdown d-block d-sm-block d-md-block d-lg-block d-xl-none">
+                <h2 className='my-2'>
+                    <img src={currentTheme === "light" ? logo_dark : logo_light} alt="logo" className='header-logo' />
+                </h2>
+                <a href="#0" className="cd-close">
+                    Close
+                </a>
+                <ul className="cd-dropdown-content mt-5">
                     <li>
                         <form className="cd-search">
                             <input type="search" placeholder="Search..." />
                         </form>
                     </li>
-                    <li className="has-children">
-                        <a href="#">index</a>
-                        <ul className="cd-secondary-dropdown icon_menu is-hidden">
-                            <li className="go-back"><a href="#0">Menu</a></li>
-                            <li><a href="index.html">index I</a></li>
-                            <li><a href="index2.html">index II</a></li>
-                            <li><a href="index3.html">index III</a></li>
-                        </ul>
+                    <li >
+                        <a href="#">HOME</a>
                     </li>
-                    <li><a href="about_us.html"> about us </a></li>
-                    <li><a href="investment.html"> investment plan </a></li>
-                    <li><a href="faq.html"> FAQ </a></li>
-                    <li className="has-children">
-                        <a href="#">dashboard</a>
-                        <ul className="cd-secondary-dropdown icon_menu is-hidden">
-                            <li className="go-back"><a href="#0">Menu</a></li>
-                            <li>
-                                <a href="all_transactions.html">all transactions</a>
-                            </li>
-                            <li>
-                                <a href="banners.html">banners</a>
-                            </li>
-                            <li>
-                                <a href="change_password.html">change password</a>
-                            </li>
-                            <li>
-                                <a href="change_pin.html">change pin</a>
-                            </li>
-                            <li>
-                                <a href="deposit_history.html">deposit history</a>
-                            </li>
-                            <li>
-                                <a href="deposit_list.html">deposit list</a>
-                            </li>
-                            <li>
-                                <a href="earnings_history.html">earnings history</a>
-                            </li>
-                            <li>
-                                <a href="email_notification.html">email notification</a>
-                            </li>
-                            <li>
-                                <a href="exchange_history.html">exchange history</a>
-                            </li>
-                            <li>
-                                <a href="exchange_money.html">exchange money</a>
-                            </li>
-                            <li>
-                                <a href="make_deposit.html">make deposit</a>
-                            </li>
-                            <li>
-                                <a href="my_account.html">my account</a>
-                            </li>
-                            <li>
-                                <a href="payment_request.html">payment request</a>
-                            </li>
-                            <li>
-                                <a href="pending_history.html">pending history</a>
-                            </li>
-                            <li>
-                                <a href="referral_earnings.html">referral earnings</a>
-                            </li>
-                            <li>
-                                <a href="referrals.html">referrals</a>
-                            </li>
-                            <li>
-                                <a href="tickets.html">tickets</a>
-                            </li>
-                            <li>
-                                <a href="transfer_fund.html">transfer fund</a>
-                            </li>
-                            <li>
-                                <a href="view_profile.html">view profile</a>
-                            </li>
-                        </ul>
+                    <li>
+                        <a href="about_us.html"> about us </a>
                     </li>
-                    <li className="has-children">
-                        <a href="#">blog</a>
-                        <ul className="cd-secondary-dropdown icon_menu is-hidden">
-                            <li className="go-back"><a href="#0">Menu</a></li>
-                            <li><a href="blog_category.html">blog category</a></li>
-                            <li><a href="blog_single.html">blog single</a></li>
-                        </ul>
+                    <li>
+                        <a href="investment.html">PRICING </a>
                     </li>
-                    <li><a href="contact_us.html"> contact us </a></li>
-                    <li><a href="login.html"> login </a></li>
-                    <li><a href="register.html"> register </a></li>
+                    <li>
+                        <a href="faq.html"> FAQ </a>
+                    </li>
+                    <li>
+                        <a href="#">BLOG</a>
+
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+
+                    </li>
+
+                    <li className='my-2 ml-3'>
+                        <ToggleTheme selectedTheme={currentTheme} onChange={setCurrentTheme} />
+                    </li>
                 </ul>
-                {/* .cd-dropdown-content */}
+
+
             </nav>
+
+
+
             <div className="cp_navi_main_wrapper index2_header_wrapper float_left">
                 <div className="container-fluid header-parent-container">
                     <div className="cp_logo_wrapper">
@@ -164,14 +127,66 @@ function Homepage() {
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="cd-dropdown-wrapper">
-
+                                        <a className="house_toggle" href="#0">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                                version="1.1"
+                                                id="Capa_1"
+                                                x="0px"
+                                                y="0px"
+                                                viewBox="0 0 31.177 31.177"
+                                                style={{ enableBackground: "new 0 0 31.177 31.177" }}
+                                                xmlSpace="preserve"
+                                                width="25px"
+                                                height="25px"
+                                            >
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            className="menubar"
+                                                            d="M30.23,1.775H0.946c-0.489,0-0.887-0.398-0.887-0.888S0.457,0,0.946,0H30.23    c0.49,0,0.888,0.398,0.888,0.888S30.72,1.775,30.23,1.775z"
+                                                            fill="#004165"
+                                                        />
+                                                    </g>
+                                                    <g>
+                                                        <path
+                                                            className="menubar"
+                                                            d="M30.23,9.126H12.069c-0.49,0-0.888-0.398-0.888-0.888c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,8.729,30.72,9.126,30.23,9.126z"
+                                                            fill="#004165"
+                                                        />
+                                                    </g>
+                                                    <g>
+                                                        <path
+                                                            className="menubar"
+                                                            d="M30.23,16.477H0.946c-0.489,0-0.887-0.398-0.887-0.888c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,16.079,30.72,16.477,30.23,16.477z"
+                                                            fill="#004165"
+                                                        />
+                                                    </g>
+                                                    <g>
+                                                        <path
+                                                            className="menubar"
+                                                            d="M30.23,23.826H12.069c-0.49,0-0.888-0.396-0.888-0.887c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,23.43,30.72,23.826,30.23,23.826z"
+                                                            fill="#004165"
+                                                        />
+                                                    </g>
+                                                    <g>
+                                                        <path
+                                                            className="menubar"
+                                                            d="M30.23,31.177H0.946c-0.489,0-0.887-0.396-0.887-0.887c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.398,0.888,0.888C31.118,30.78,30.72,31.177,30.23,31.177z"
+                                                            fill="#004165"
+                                                        />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        {/* .cd-dropdown */}
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {/* .cd-dropdown-wrapper */}
                     </header>
-
                     <div className="cp_navigation_wrapper">
                         <div className="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
                             <ul className="main_nav_ul">
@@ -200,13 +215,10 @@ function Homepage() {
                                 </li>
                             </ul>
                         </div>
-                        {/* mainmenu end */}
                     </div>
 
                     <div className="top_header_right_wrapper top_phonecalls register-login-container">
-                        {/* <p className='no_text'>
-                            <i className="flaticon-phone-contact" /> (+234) 000 000 0000
-                        </p> */}
+
                         <div className="header_btn header-btn-div">
                             <ul>
                                 <li>
@@ -225,7 +237,13 @@ function Homepage() {
                     </div>
                 </div>
             </div>
+
+
+
+
             {/* navi wrapper End */}
+
+
             {/* slider wrapper start */}
             <div className="slider-area slider_index2_wrapper float_left">
                 <div className="index2_sliderbg">
@@ -508,8 +526,7 @@ function Homepage() {
             </div>
             {/* about us wrapper end */}
 
-            {/*our services wrapper start */}
-            <div className="our_services_wrapper index2_our_service_wrapper float_left">
+            <div className="float_left">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12 col-12">
@@ -519,179 +536,213 @@ function Homepage() {
                                 <div className="line_shape" />
                             </div>
                         </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle">
-                                    <i className="flaticon-medal" />
-                                </div>
-                                <div className="investment_border_wrapper" />
-                                <div className="investment_content_wrapper">
-                                    <h1><a href="#">Legal Practice Made Easy</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Experience efficient legal practice management with ThePocketLawyers. Customize settings, track time, manage expenses, and streamline payments for a seamless legal workflow.</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle red_info_circle">
-                                    <i className="flaticon-shield" />
-                                </div>
-                                <div className="investment_border_wrapper red_border_wrapper" />
-                                <div className="investment_content_wrapper red_content_wrapper">
-                                    <h1><a href="#">Simplify Legal Document Management</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Effortlessly manage legal documents with ThePocketLawyers. This all-in-one solution offers document storage, categorization, and easy retrieval for lawyers and legal professionals.</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle blue_icon_circle">
-                                    <i className="flaticon-bars" />
-                                </div>
-                                <div className="investment_border_wrapper blue_border_wrapper" />
-                                <div className="investment_content_wrapper blue_content_wrapper">
-                                    <h1><a href="#">Legal Billing Made Easy</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Simplify billing for your legal practice with ThePocketLawyers. Manage fees, expenses, and payments seamlessly, offering a convenient and transparent financial tracking system.</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle green_info_circle">
-                                    <i className="flaticon-bitcoin" />
-                                </div>
-                                <div className="investment_border_wrapper green_border_wrapper" />
-                                <div className="investment_content_wrapper green_content_wrapper">
-                                    <h1><a href="#">Cloud Data Storage Integration</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Safeguard your data and enhance disaster recovery with ThePocketLawyers cloud data storage integration. Choose from providers like AWS and Wasabi for enhanced security.</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle pink_info_circle">
-                                    <i className="flaticon-headphones" />
-                                </div>
-                                <div className="investment_border_wrapper pink_border_wrapper" />
-                                <div className="investment_content_wrapper pink_content_wrapper">
-                                    <h1><a href="#">Meta SEO Keywords</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Boost your online visibility with ThePocketLawyers built-in Meta tags for SEO. Optimize your business&#39;s content for search engines and drive more traffic.</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle yellow_info_circle">
-                                    <i className="flaticon-language" />
-                                </div>
-                                <div className="investment_border_wrapper yellow_border_wrapper" />
-                                <div className="investment_content_wrapper yellow_content_wrapper">
-                                    <h1><a href="#">Your Legal Business Companion</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Empower your legal practice with ThePocketLawyers, offering comprehensive legal practice management, from task oversight to seamless payment processing. Streamline operations and enhance client services under one tool</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle yellow_info_circle">
-                                    <i className="flaticon-language" />
-                                </div>
-                                <div className="investment_border_wrapper yellow_border_wrapper" />
-                                <div className="investment_content_wrapper yellow_content_wrapper">
-                                    <h1><a href="#">Unlocking Legal Practice Potential</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Experience the future of legal practice management. Our comprehensive platform offers an array of tools and features designed to streamline tasks, enhance collaboration, and optimize financial control. Elevate your legal practice to new heights of efficiency and effectiveness.</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle yellow_info_circle">
-                                    <i className="flaticon-language" />
-                                </div>
-                                <div className="investment_border_wrapper yellow_border_wrapper" />
-                                <div className="investment_content_wrapper yellow_content_wrapper">
-                                    <h1><a href="#">Efficiency &amp; Productivity Redefined</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Empower your legal team with ThePocketLawyers, a robust platform designed for legal professionals. Benefit from role-based access control, customizable settings, and efficient task management. Our platform ensures that your legal practice is efficient, transparent, and always under your control.</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle yellow_info_circle">
-                                    <i className="flaticon-language" />
-                                </div>
-                                <div className="investment_border_wrapper yellow_border_wrapper" />
-                                <div className="investment_content_wrapper yellow_content_wrapper">
-                                    <h1><a href="#">Your Legal Symphony Conductor</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>ThePocketLawyers redefines the way legal professionals manage their practice. With features like streamlined case management, customizable timesheets, and seamless expense tracking, it takes your legal practice to the next level. Experience a hassle-free approach to legal tasks, enabling you to focus on delivering exceptional services to your clients.</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle yellow_info_circle">
-                                    <i className="flaticon-language" />
-                                </div>
-                                <div className="investment_border_wrapper yellow_border_wrapper" />
-                                <div className="investment_content_wrapper yellow_content_wrapper">
-                                    <h1><a href="#">Seamless Cash Handling</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>ThePocketLawyers simplifies case management with customizable timesheets, expenses tracking, and fee management. Streamline your legal workflow and enhance transparency in your practice.</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle yellow_info_circle">
-                                    <i className="flaticon-language" />
-                                </div>
-                                <div className="investment_border_wrapper yellow_border_wrapper" />
-                                <div className="investment_content_wrapper yellow_content_wrapper">
-                                    <h1><a href="#">Your Legal Practice’s Companion</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>ThePocketLawyers is the trusted companion for legal practice, with a comprehensive dashboard, document management, and multi-language support, it empowers you to manage every aspect of your practice effectively</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-sm-6 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <div className="investment_icon_circle yellow_info_circle">
-                                    <i className="flaticon-language" />
-                                </div>
-                                <div className="investment_border_wrapper yellow_border_wrapper" />
-                                <div className="investment_content_wrapper yellow_content_wrapper">
-                                    <h1><a href="#">Your Gateway To Legal Success</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>ThePocketLawyers is your Gateway to a new era of legal practice management. With its intuitive tools, customizable settings, and seamless task handling, it empowers legal professionals to enhance their efficiency and deliver exceptional services.</p>
-                                    <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
-                                </div>
-                            </div>
-                        </div>
 
+
+                        <section class="carousel-parent-section">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                            <i class="fa fa-arrow-left"></i>
+                                        </a>
+                                        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner" id='export-carousel'>
+                                                <div class="carousel-item active">
+                                                    <div class="row">
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+
+                                                                    <iconify-icon icon="fa:legal" id='carousel-service-icon'></iconify-icon>
+                                                                    <div className="investment_content_wrapper">
+                                                                        <h1><a href="#">Legal Practice Made Easy</a></h1>
+                                                                        <p>Experience efficient legal practice management with ThePocketLawyers. Customize settings, track time, manage expenses, and streamline payments for a seamless legal workflow.</p>
+                                                                        <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+
+                                                                    <iconify-icon icon="mdi:legal" id='carousel-service-icon'></iconify-icon>
+                                                                    <div className="investment_content_wrapper red_content_wrapper">
+                                                                        <h1 className='text-center'><a href="#">Simplify Legal Document Management</a></h1>
+                                                                        <p>Effortlessly manage legal documents with ThePocketLawyers. This all-in-one solution offers document storage, categorization, and easy retrieval for lawyers and legal professionals.</p>
+                                                                        <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+
+                                                                    <iconify-icon icon="solar:bill-check-bold" id='carousel-service-icon'></iconify-icon>
+                                                                    <div className="investment_content_wrapper blue_content_wrapper">
+                                                                        <h1><a href="#">Legal Billing Made Easy</a></h1>
+                                                                        <p>Simplify billing for your legal practice with ThePocketLawyers. Manage fees, expenses, and payments seamlessly, offering a convenient and transparent financial tracking system.</p>
+                                                                        <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row">
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+
+                                                                    <iconify-icon icon="zondicons:cloud" id='carousel-service-icon'></iconify-icon>
+                                                                    <div className="investment_content_wrapper green_content_wrapper">
+                                                                        <h1><a href="#">Cloud Data Storage Integration</a></h1>
+                                                                        <p>Safeguard your data and enhance disaster recovery with ThePocketLawyers cloud data storage integration. Choose from providers like AWS and Wasabi for enhanced security.</p>
+                                                                        <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+
+                                                                    <iconify-icon icon="tabler:seo" id='carousel-service-icon'></iconify-icon>
+                                                                    <div className="investment_content_wrapper pink_content_wrapper">
+                                                                        <h1><a href="#">Meta SEO Keywords</a></h1>
+                                                                        <p>Boost your online visibility with ThePocketLawyers built-in Meta tags for SEO. Optimize your business&#39;s content for search engines and drive more traffic.</p>
+                                                                        <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+
+                                                                    <iconify-icon icon="fa6-solid:handshake" id='carousel-service-icon'></iconify-icon>
+                                                                    <div className="investment_content_wrapper yellow_content_wrapper">
+                                                                        <h1><a href="#">Your Legal Business Companion</a></h1>
+                                                                        <p>Empower your legal practice with ThePocketLawyers, offering comprehensive legal practice management, from task oversight to seamless payment processing. Streamline operations and enhance client services under one tool</p>
+                                                                        <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row">
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+
+                                                                    <iconify-icon icon="dashicons:unlock" id='carousel-service-icon'></iconify-icon>
+                                                                    <div className="investment_content_wrapper yellow_content_wrapper">
+                                                                        <h1><a href="#">Unlocking Legal Practice Potential</a></h1>
+                                                                        <p>Experience the future of legal practice management. Our comprehensive platform offers an array of tools and features designed to streamline tasks, enhance collaboration, and optimize financial control. Elevate your legal practice to new heights of efficiency and effectiveness.</p>
+                                                                        <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+
+                                                                    <iconify-icon icon="material-symbols:productivity" id='carousel-service-icon'></iconify-icon>
+                                                                    <div className="investment_content_wrapper yellow_content_wrapper">
+                                                                        <h1><a href="#">Efficiency &amp; Productivity Redefined</a></h1>
+                                                                        <p>Empower your legal team with ThePocketLawyers, a robust platform designed for legal professionals. Benefit from role-based access control, customizable settings, and efficient task management. Our platform ensures that your legal practice is efficient, transparent, and always under your control.</p>
+                                                                        <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div class="card-body">
+
+                                                                    <iconify-icon icon="material-symbols:productivity" id='carousel-service-icon'></iconify-icon>
+                                                                    <div className="investment_content_wrapper yellow_content_wrapper">
+                                                                        <h1><a href="#">Your Legal Symphony Conductor</a></h1>
+                                                                        <p>ThePocketLawyers redefines the way legal professionals manage their practice. With features like streamlined case management, customizable timesheets, and seamless expense tracking, it takes your legal practice to the next level. Experience a hassle-free approach to legal tasks, enabling you to focus on delivering exceptional services to your clients.</p>
+                                                                        <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row">
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+
+                                                                    <iconify-icon icon="game-icons:take-my-money" id='carousel-service-icon'></iconify-icon>
+                                                                    <div className="investment_content_wrapper yellow_content_wrapper">
+                                                                        <h1><a href="#">Seamless Cash Handling</a></h1>
+                                                                        <p>ThePocketLawyers simplifies case management with customizable timesheets, expenses tracking, and fee management. Streamline your legal workflow and enhance transparency in your practice.</p>
+                                                                        <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+
+                                                                    <iconify-icon icon="material-symbols:partner-exchange" id='carousel-service-icon'></iconify-icon>
+                                                                    <div className="investment_content_wrapper yellow_content_wrapper">
+                                                                        <h1><a href="#">Your Legal Practice’s Companion</a></h1>
+                                                                        <p>ThePocketLawyers is the trusted companion for legal practice, with a comprehensive dashboard, document management, and multi-language support, it empowers you to manage every aspect of your practice effectively</p>
+                                                                        <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <iconify-icon icon="ep:success-filled" id='carousel-service-icon'></iconify-icon>
+                                                                    <div className="investment_content_wrapper yellow_content_wrapper">
+                                                                        <h1><a href="#">Your Gateway To Legal Success</a></h1>
+                                                                        <p>ThePocketLawyers is your Gateway to a new era of legal practice management. With its intuitive tools, customizable settings, and seamless task handling, it empowers legal professionals to enhance their efficiency and deliver exceptional services.</p>
+                                                                        <span className="investment_index_icon"><a href="#"><i className="flaticon-arrow-pointing-to-right" /></a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
-            </div>
-            {/*our services wrapper end */}
+            </div >
+
 
 
             {/* counter wrapper start*/}
@@ -921,6 +972,11 @@ function Homepage() {
 
 
             {/*investment plan wrapper start */}
+
+
+
+
+
             <div className="investment_plans index2_investment_plans float_left">
                 <div className="investment_overlay" />
                 <div className="container">
@@ -932,132 +988,170 @@ function Homepage() {
                                 <div className="line_shape" />
                             </div>
                         </div>
-                        <div className="col-md-6 col-lg-4 col-12">
-                            <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
-                                <img src="https://ww2-secure.justanswer.com/static/sip/btc/membership-benefits/law_tnt_1_v1.jpg" className='plan-img' alt="" />
-                                <div className="investment_border_wrapper" />
-                                <div className="investment_content_wrapper">
-                                    <h1><a href="#">Chat or Call with a Lawyer</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>
-                                        Connect with verified lawyers in minutes, 24/7. After working appointments with your
-                                        preferred lawyer of your choice you can save time and cost, no time for long distance
-                                        travel to meet your lawyer.
-                                    </p>
-                                </div>
-                                <div className="about_btn plans_btn index2_investment_btn">
-                                    <ul>
-                                        <li>
-                                            <a href="#">read more</a>
-                                        </li>
-                                    </ul>
+
+                        <section class="carousel-parent-section">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                                            <i class="fa fa-arrow-left"></i>
+                                        </a>
+                                        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators3" role="button" data-slide="next">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner" id='export-carousel'>
+                                                <div class="carousel-item active">
+                                                    <div class="row">
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+                                                                    <img src="https://ww2-secure.justanswer.com/static/sip/btc/membership-benefits/law_tnt_1_v1.jpg" className='plan-img' alt="" />
+                                                                    <div className="investment_content_wrapper">
+                                                                        <h1><a href="#">Chat or Call with a Lawyer</a></h1>
+                                                                        <p>
+                                                                            Connect with verified lawyers in minutes, 24/7. After working appointments with your
+                                                                            preferred lawyer of your choice you can save time and cost, no time for long distance
+                                                                            travel to meet your lawyer.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div className="about_btn plans_btn index2_investment_btn">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="#">read more</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+                                                                    <img src="https://ww2-secure.justanswer.com/static/sip/btc/membership-benefits/law_tnt_2_v1.jpg" className='plan-img' alt="" />
+                                                                    <div className="investment_content_wrapper red_content_wrapper">
+                                                                        <h1><a href="#">Legal document prep</a></h1>
+                                                                        <p>
+                                                                            Get help to write a will, make a power of attorney, prepare a healthcare directive, Get
+                                                                            represented, create a trust, and create other important legal documents and do more.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div className="about_btn plans_btn red_btn_plans index2_investment_btn">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="#">read more</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+                                                                    <img src="https://ww2-secure.justanswer.com/static/sip/btc/membership-benefits/law_tnt_3_v1.jpg" className='plan-img' alt="" />
+                                                                    <div className="investment_content_wrapper blue_content_wrapper">
+                                                                        <h1><a href="#">Small claims court help</a></h1>
+                                                                        <p>
+                                                                            Get help with small claims court, so you have the confidence you need to present your case.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div className="about_btn plans_btn blue_btn_plans index2_investment_btn">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="#">read more</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row">
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+                                                                    <img src="https://ww2-secure.justanswer.com/static/sip/btc/membership-benefits/law_tnt_4_v1.jpg" className='plan-img' alt="" />
+                                                                    <div className="investment_content_wrapper green_content_wrapper">
+                                                                        <h1><a href="#">More benefits beyond legal support</a></h1>
+                                                                        <p>
+                                                                            Enjoy extra perks that can help support other parts of your life. Referrals, education, and exclusive discounts to name a few.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div className="about_btn plans_btn green_plan_btn index2_investment_btn">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="#">read more</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+                                                                    <img src="https://ww2-secure.justanswer.com/static/sip/btc/membership-benefits/law_tnt_4_v1.jpg" className='plan-img' alt="" />
+                                                                    <div className="investment_content_wrapper green_content_wrapper">
+                                                                        <h1><a href="#">More benefits beyond legal support</a></h1>
+                                                                        <p>
+                                                                            Enjoy extra perks that can help support other parts of your life. Referrals, education, and exclusive discounts to name a few.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div className="about_btn plans_btn green_plan_btn index2_investment_btn">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="#">read more</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <div class="card">
+                                                                <div className="card-body">
+                                                                    <img src="https://ww2-secure.justanswer.com/static/JA54186/membership-savings.jpg" className='plan-img' alt="" />
+                                                                    <div className="investment_content_wrapper green_content_wrapper">
+                                                                        <h1><a href="#">No Contract, Cancel anytime.</a></h1>
+                                                                        <p>
+                                                                            Legal fees can add up quickly, especially when you’re charged by the hours.
+                                                                            ThePocketLawyers help you to save time and cost, by providing various legal
+                                                                            department at an affordable cost and ease to select from vast database of lawyers
+                                                                            directories.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div className="about_btn plans_btn green_plan_btn index2_investment_btn">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="#">read more</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-12">
-                            <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
-                                <img src="https://ww2-secure.justanswer.com/static/sip/btc/membership-benefits/law_tnt_2_v1.jpg" className='plan-img' alt="" />
-                                <div className="investment_border_wrapper red_border_wrapper" />
-                                <div className="investment_content_wrapper red_content_wrapper">
-                                    <h1><a href="#">Legal document prep</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>
-                                        Get help to write a will, make a power of attorney, prepare a healthcare directive, Get
-                                        represented, create a trust, and create other important legal documents and do more.
-                                    </p>
-                                </div>
-                                <div className="about_btn plans_btn red_btn_plans index2_investment_btn">
-                                    <ul>
-                                        <li>
-                                            <a href="#">read more</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-12">
-                            <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
-                                <img src="https://ww2-secure.justanswer.com/static/sip/btc/membership-benefits/law_tnt_3_v1.jpg" className='plan-img' alt="" />
-                                <div className="investment_border_wrapper blue_border_wrapper" />
-                                <div className="investment_content_wrapper blue_content_wrapper">
-                                    <h1><a href="#">Small claims court help</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>
-                                        Get help with small claims court, so you have the confidence you need to present your case.
-                                    </p>
-                                </div>
-                                <div className="about_btn plans_btn blue_btn_plans index2_investment_btn">
-                                    <ul>
-                                        <li>
-                                            <a href="#">read more</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-12">
-                            <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
-                                <img src="https://ww2-secure.justanswer.com/static/sip/btc/membership-benefits/law_tnt_4_v1.jpg" className='plan-img' alt="" />
-                                <div className="investment_border_wrapper green_border_wrapper" />
-                                <div className="investment_content_wrapper green_content_wrapper">
-                                    <h1><a href="#">More benefits beyond legal support</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>
-                                        Enjoy extra perks that can help support other parts of your life. Referrals, education, and exclusive discounts to name a few.
-                                    </p>
-                                </div>
-                                <div className="about_btn plans_btn green_plan_btn index2_investment_btn">
-                                    <ul>
-                                        <li>
-                                            <a href="#">read more</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-12">
-                            <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
-                                <img src="https://ww2-secure.justanswer.com/static/sip/btc/membership-benefits/law_tnt_4_v1.jpg" className='plan-img' alt="" />
-                                <div className="investment_border_wrapper green_border_wrapper" />
-                                <div className="investment_content_wrapper green_content_wrapper">
-                                    <h1><a href="#">More benefits beyond legal support</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>
-                                        Enjoy extra perks that can help support other parts of your life. Referrals, education, and exclusive discounts to name a few.
-                                    </p>
-                                </div>
-                                <div className="about_btn plans_btn green_plan_btn index2_investment_btn">
-                                    <ul>
-                                        <li>
-                                            <a href="#">read more</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-12">
-                            <div className="investment_box_wrapper index2_investment_box_Wraper float_left">
-                                <img src="https://ww2-secure.justanswer.com/static/JA54186/membership-savings.jpg" className='plan-img' alt="" />
-                                <div className="investment_border_wrapper green_border_wrapper" />
-                                <div className="investment_content_wrapper green_content_wrapper">
-                                    <h1><a href="#">No Contract, Cancel anytime.</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>
-                                        Legal fees can add up quickly, especially when you’re charged by the hours.
-                                        ThePocketLawyers help you to save time and cost, by providing various legal
-                                        department at an affordable cost and ease to select from vast database of lawyers
-                                        directories.
-                                    </p>
-                                </div>
-                                <div className="about_btn plans_btn green_plan_btn index2_investment_btn">
-                                    <ul>
-                                        <li>
-                                            <a href="#">read more</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        </section >
+
+
                     </div>
                 </div>
             </div>
@@ -1678,37 +1772,125 @@ function Homepage() {
                                     <div className="item">
                                         <div className="saying_content_wrapper float_left">
                                             <div className="saying_img">
-                                                <img src={cnt1} alt="img" />
+                                                <img src={t1} alt="img" />
                                             </div>
                                             <div className="saying_img_name">
-                                                <h1><a href="#">Iness Mcnzie</a></h1>
-                                                <p>CEO of apple</p>
+                                                <h1><a href="#">Alfred Oghenekaro </a></h1>
+                                                <p>Tax Lawyer</p>
                                             </div>
-                                            <p>“A wonderful serenity has taken possession of my entire soul was created for the bliss serenity”</p>
+                                            <p>I have been using ThePocketLawyers, it has been an integral part of my practice and I cannot
+                                                imagine doing it without the tools. The interface is extremely easy to navigate. The price is
+                                                affordable, the customer service is impeccable and the constantly innovating and evolving</p>
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="saying_content_wrapper float_left">
                                             <div className="saying_img">
-                                                <img src={cnt2} alt="img" />
+                                                <img src="https://www.thepocketlawyers.net/dark/images/ts1.png" alt="img" />
                                             </div>
                                             <div className="saying_img_name">
-                                                <h1><a href="#">Druid Wenydale</a></h1>
-                                                <p>CEO of apple</p>
+                                                <h1><a href="#">Merry Jain</a></h1>
+                                                <p>Business Lawyer</p>
                                             </div>
-                                            <p>“The grammar of the result language is more simple and regular the the of the individual languages”</p>
+                                            <p>ThePocketLawyers has been beneficiary to our Firm right from the beginning we Signup. The more
+                                                we learn to use the tools, the more it is beneficial. It keeps everything all together in one place.</p>
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="saying_content_wrapper float_left">
                                             <div className="saying_img">
-                                                <img src={cnt} alt="img" />
+                                                <img src={t3} alt="img" />
                                             </div>
                                             <div className="saying_img_name">
-                                                <h1><a href="#">Casian vedere</a></h1>
-                                                <p>CEO of apple</p>
+                                                <h1><a href="#">Edem Akpan</a></h1>
+                                                <p>Immigration Lawyer</p>
                                             </div>
-                                            <p>“A wonderful serenity has taken possession of my entire soul was created for the bliss serenity”</p>
+                                            <p>
+                                                We have small law firm, but since using ThePocketLawyers, we are more organized and customer
+                                                centric. It is extremely user friendly. It help us keep track of inflows and expenses. Upload template
+                                                documents, which saves us time and money. I would recommend this case management system to
+                                                every law office.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="saying_content_wrapper float_left">
+                                            <div className="saying_img">
+                                                <img src={t4} alt="img" />
+                                            </div>
+                                            <div className="saying_img_name">
+                                                <h1><a href="#">Agnes Michael</a></h1>
+                                                <p>Satisfied Customer</p>
+                                            </div>
+                                            <p>
+                                                The time keeping is incredibly easy to use, the invoicing and ability for clients to pay is fantastic, the
+                                                ability to execute documents remotely is unparalleled and the chance to communicate with our
+                                                clients through the portal cannot be over emphasized
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="saying_content_wrapper float_left">
+                                            <div className="saying_img">
+                                                <img src={t2} alt="img" />
+                                            </div>
+                                            <div className="saying_img_name">
+                                                <h1><a href="#">Magnus Okeke </a></h1>
+                                                <p>Property Lawyer</p>
+                                            </div>
+                                            <p>
+                                                The best thing about the platform is that we only need this one solutions for all our Firms
+                                                requirement. Moreso they always improve the platform with latest technology , will always
+                                                recommend the solution.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="saying_content_wrapper float_left">
+                                            <div className="saying_img">
+                                                <img src="https://www.thepocketlawyers.net/dark/images/ts2.png" alt="img" />
+                                            </div>
+                                            <div className="saying_img_name">
+                                                <h1><a href="#">John Cranne  </a></h1>
+                                                <p>Civil Lawyer</p>
+                                            </div>
+                                            <p>
+                                                I use ThePocketLawyers on every single case that I have. As I have become more familiar with the
+                                                software. I use more and more features. My clients love the solutions and although I am a sole
+                                                practitioner, I feel very professionally competitive because of the software and the tools that
+                                                makes me more efficient and productive.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="saying_content_wrapper float_left">
+                                            <div className="saying_img">
+                                                <img src={t5} alt="img" />
+                                            </div>
+                                            <div className="saying_img_name">
+                                                <h1><a href="#">Margaret Philips  </a></h1>
+                                                <p>Satisfied Customer</p>
+                                            </div>
+                                            <p>
+                                                ThePocketLawyers has been the technological and case management backbone of supporting our
+                                                firm’s case management, invoicing and payment, ensuring timelines in our cases are properly
+                                                documented and management. Is the tool I will whole heartedly recommend without fear?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="saying_content_wrapper float_left">
+                                            <div className="saying_img">
+                                                <img src={t6} alt="img" />
+                                            </div>
+                                            <div className="saying_img_name">
+                                                <h1><a href="#">Bar. Franky Melaka</a></h1>
+                                                <p>Legal Consultant</p>
+                                            </div>
+                                            <p>ThePocketLawyers has allowed me to consolidate all of my client files into a single virtual work
+                                                space, giving me and my clients access to all documents at all times.it is also secured and puts my
+                                                clients at ease that their sensitive information is not being exchanged of email servers.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -1720,11 +1902,65 @@ function Homepage() {
             {/* testimonial wrapper end */}
 
 
+            {/* payments wrapper start */}
+            <div className="payments_wrapper float_left">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12 col-md-12 col-sm-12">
+                            <div className="sv_heading_wraper half_section_headign index2_heading">
+                                <h4></h4>
+                                <h3>We are on the News</h3>
+                                <div className="line_shape" />
+                            </div>
+                        </div>
+                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                            <div className="payment_slider_wrapper">
+                                <div className="owl-carousel owl-theme">
+                                    <div className="item">
+                                        <div className="partner_img_wrapper float_left">
+                                            <img src={techpoint} className="img-responsive" alt="img" />
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="partner_img_wrapper float_left">
+                                            <img src={vanguard} className="img-responsive" alt="img" />
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="partner_img_wrapper float_left">
+                                            <img src={techcabal} className="img-responsive" alt="img" />
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="partner_img_wrapper float_left">
+                                            <img src={guardian} className="img-responsive" alt="img" />
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="partner_img_wrapper float_left">
+                                            <img src={punch} className="img-responsive" alt="img" />
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="partner_img_wrapper float_left">
+                                            <img src={sun} className="img-responsive" alt="img" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* payments wrapper end */}
+
+
 
 
 
             {/* newsletter wrapper start */}
-            <div className="global_community_wrapper newsletter_wrapper index2_newsletter float_left">
+            {/* <div className="global_community_wrapper newsletter_wrapper index2_newsletter float_left">
                 <div className="container">
                     <div className="row">
                         <div className="global_comm_wraper news_cntnt">
@@ -1751,10 +1987,10 @@ function Homepage() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* newsletter  wrapper end */}
             {/*our blog wrapper start */}
-            <div className="our_blog_wrapper float_left">
+            {/* <div className="our_blog_wrapper float_left">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12 col-12">
@@ -1835,10 +2071,13 @@ function Homepage() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/*our blog wrapper end */}
+
+
+
             {/* FAQ wrapper start */}
-            <div className="faq_wrapper float_left">
+            {/* <div className="faq_wrapper float_left">
                 <div className="investment_overlay faq_overlay" />
                 <div className="container">
                     <div className="row">
@@ -1854,7 +2093,6 @@ function Homepage() {
                         <div className="row">
                             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div className="card">
-                                    {/* Card Title */}
                                     <div className="card_pagee" role="tab" id="headingOne">
                                         <h5 className="h5-md">
                                             <a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
@@ -1862,7 +2100,6 @@ function Homepage() {
                                             </a>
                                         </h5>
                                     </div>
-                                    {/* Card Content */}
                                     <div id="collapseOne" className="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" style={{}}>
                                         <div className="card-body">
                                             <div className="card_img">
@@ -1953,7 +2190,6 @@ function Homepage() {
                             </div>
                             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div className="card">
-                                    {/* Card Title */}
                                     <div className="card_pagee" role="tab" id="headingfour">
                                         <h5 className="h5-md">
                                             <a className="collapsed" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
@@ -1961,7 +2197,6 @@ function Homepage() {
                                             </a>
                                         </h5>
                                     </div>
-                                    {/* Card Content */}
                                     <div id="collapse1" className="collapse" role="tabpanel" aria-labelledby="headingfour" data-parent="#accordion" style={{}}>
                                         <div className="card-body">
                                             <div className="card_img">
@@ -2140,10 +2375,11 @@ function Homepage() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* FAQ wrapper end */}
+
             {/* payments wrapper start */}
-            <div className="payments_wrapper float_left">
+            <div className="payments_wrapper float_left" id='transaction-wrapper-container'>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-sm-12">
@@ -2158,27 +2394,48 @@ function Homepage() {
                                 <div className="owl-carousel owl-theme">
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
-                                            <img src={partner1} className="img-responsive" alt="img" />
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png" className="img-responsive" alt="img" />
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
-                                            <img src={partner2} className="img-responsive" alt="img" />
+                                            <img src="https://logos-world.net/wp-content/uploads/2020/07/PayPal-Logo.png" className="img-responsive" alt="img" />
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
-                                            <img src={partner3} className="img-responsive" alt="img" />
+                                            <img src="https://1000logos.net/wp-content/uploads/2023/11/Flutterwave-Logo-2016.png" className="img-responsive" alt="img" />
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
-                                            <img src={partner4} className="img-responsive" alt="img" />
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Paystack_Logo.png" className="img-responsive" alt="img" />
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
-                                            <img src={partner2} className="img-responsive" alt="img" />
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Razorpay_logo.svg/1200px-Razorpay_logo.svg.png" className="img-responsive" alt="img" />
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="partner_img_wrapper float_left">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Skrill_logo.svg/2560px-Skrill_logo.svg.png" className="img-responsive" alt="img" />
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="partner_img_wrapper float_left">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Payoneer_logo.svg/2560px-Payoneer_logo.svg.png" className="img-responsive" alt="img" />
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="partner_img_wrapper float_left">
+                                            <img src="https://banner2.cleanpng.com/20171220/kke/mastercard-logo-png-5a3a1f282e6103.818127331513758504194124.jpg" className="img-responsive" alt="img" />
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="partner_img_wrapper float_left">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Verve_Image.png" className="img-responsive" alt="img" />
                                         </div>
                                     </div>
                                 </div>
@@ -2188,6 +2445,8 @@ function Homepage() {
                 </div>
             </div>
             {/* payments wrapper end */}
+
+
             {/* footer section start*/}
             <div className="footer_main_wrapper index2_footer_wrapper float_left">
                 <div className="container">
@@ -2195,9 +2454,16 @@ function Homepage() {
                         <div className="col-lg-4 col-md-6 col-12 col-sm-12">
                             <div className="wrapper_second_about">
                                 <div className="wrapper_first_image">
-                                    <a href="index.html"><img src={logo_resp} className="img-responsive" alt="logo" /></a>
+                                    <a href="index.html"><img src={logo_light} className="img-responsive footer-logo" alt="logo" /></a>
                                 </div>
-                                <p>We are a full service Digital Marketing Agency all the foundational tool you need.</p>
+                                <p>
+                                    ThePocketLawyers is a pioneering Software and platform as a service, we are at the forefront of revolutionizing the
+                                    legal landscape across Africa and Globally.
+                                </p> <br />
+                                <p>
+                                    We&#39;re dedicated to transforming how people access and experience legal
+                                    services, making them more accessible, efficient, and user-friendly.
+                                </p>
                                 <div className="counter-section">
                                     <div className="ft_about_icon float_left">
                                         <i className="flaticon-user" />
@@ -2218,31 +2484,37 @@ function Homepage() {
                         </div>
                         <div className="col-lg-2 col-md-3 col-12 col-sm-4">
                             <div className="wrapper_second_useful">
-                                <h4>usefull links </h4>
+                                <h4>useful links </h4>
                                 <ul>
-                                    <li><a href="#"><i className="fa fa-angle-right" />About us</a>
+                                    <li><a href="#"><i className="fa fa-angle-right" />Home</a>
                                     </li>
-                                    <li><a href="#"><i className="fa fa-angle-right" />contact </a>
+                                    <li><a href="#"><i className="fa fa-angle-right" />Services </a>
                                     </li>
-                                    <li><a href="#"><i className="fa fa-angle-right" />services</a>
+                                    <li><a href="#"><i className="fa fa-angle-right" />E-Stores</a>
                                     </li>
-                                    <li><a href="#"><i className="fa fa-angle-right" />news</a> </li>
-                                    <li><a href="#"><i className="fa fa-angle-right" />blog</a> </li>
+                                    <li><a href="#"><i className="fa fa-angle-right" />Lawyers</a> </li>
+                                    <li><a href="#"><i className="fa fa-angle-right" />Consultants</a> </li>
+                                    <li><a href="#"><i className="fa fa-angle-right" />Plans</a> </li>
+                                    <li><a href="#"><i className="fa fa-angle-right" />Solutions</a> </li>
+                                    <li><a href="#"><i className="fa fa-angle-right" />Integrations</a> </li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-lg-2 col-md-3 col-12 col-sm-4">
                             <div className="wrapper_second_useful wrapper_second_links">
                                 <ul>
-                                    <li><a href="#"><i className="fa fa-angle-right" />sitemap</a>
+                                    <li><a href="#"><i className="fa fa-angle-right" />About Us</a>
                                     </li>
-                                    <li><a href="#"><i className="fa fa-angle-right" />FAQ </a>
+                                    <li><a href="#"><i className="fa fa-angle-right" />Contact </a>
                                     </li>
-                                    <li><a href="#"><i className="fa fa-angle-right" />awards </a>
+                                    <li><a href="#"><i className="fa fa-angle-right" />Support </a>
                                     </li>
-                                    <li><a href="#"><i className="fa fa-angle-right" />tstimonials</a>
+                                    <li><a href="#"><i className="fa fa-angle-right" />Careers</a>
                                     </li>
-                                    <li><a href="#"><i className="fa fa-angle-right" />career</a> </li>
+                                    <li><a href="#"><i className="fa fa-angle-right" />Partners</a> </li>
+                                    <li><a href="#"><i className="fa fa-angle-right" />News</a> </li>
+                                    <li><a href="#"><i className="fa fa-angle-right" />Help</a> </li>
+                                    <li><a href="#"><i className="fa fa-angle-right" />FAQ</a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -2251,20 +2523,39 @@ function Homepage() {
                                 <h4>contact  us</h4>
                                 <ul>
                                     <li>
-                                        <h1>+800 568 322</h1></li>
-                                    <li><a href="#"><i className="flaticon-mail" />savehyip@example.com</a>
+                                        <h1>+234 915 848 2622</h1></li>
+                                    <li><a href="#"><i className="flaticon-mail" />support@thepocketlawyers.net</a>
                                     </li>
-                                    <li><a href="#"><i className="flaticon-language" />www.example.com</a>
+                                    <li><a href="#"><i className="flaticon-language" />www.thepocketlawyers.net</a>
                                     </li>
-                                    <li><i className="flaticon-placeholder" />110, B Street Kalani Bagh Dewas, Madhya Pradesh, INDIA #455001
+                                    <li><i className="flaticon-placeholder" />3 rd Floor, 152 Obafemi Awolowo Way Allen Junctions Lagos, Nigeria.
                                     </li>
                                 </ul>
+
+                                <div className='footer-payment-icon-container'>
+                                    <a href="#">
+                                        <Icon icon="logos:apple-pay" />
+                                    </a>
+                                    <a href="#">
+                                        <Icon icon="logos:google-pay" />
+                                    </a>
+                                    <a href="#">
+                                        <Icon icon="logos:mastercard" />
+                                    </a>
+                                    <a href="#">
+                                        <Icon icon="logos:paypal" />
+                                    </a>
+                                    <a href="#">
+                                        <Icon icon="logos:visa" />
+                                    </a>
+                                </div>
+
                             </div>
                         </div>
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                             <div className="copyright_wrapper float_left">
                                 <div className="copyright">
-                                    <p>Copyright <i className="far fa-copyright" /> 2019 <a href="index.html"> SaveHyip</a>. all right reserved - design by <a href="index.html">webstrot</a></p>
+                                    <p>Copyright <i className="far fa-copyright" />  2024 ThePocketLawyers. <br /> All Right Reserved - Powered By NextSoft-Group</p>
                                 </div>
                                 <div className="social_link_foter">
                                     <ul>

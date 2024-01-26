@@ -15,7 +15,7 @@ header {
   margin: 0 0 0 0%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-      float: right;
+      /* float: right; */
 }
 .house_toggle i{
 	font-size:17px;

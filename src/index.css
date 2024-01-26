@@ -3394,9 +3394,10 @@ a:hover {
 }
 
 .partner_img_wrapper img {
-  width: auto !important;
+  /* height: auto !important; */
   float: none;
   display: inline-block !important;
+ 
 }
 
 /*****--------- footer wrapper css -----*********/

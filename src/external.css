@@ -269,6 +269,61 @@
 }
 
 
+.footer-logo {
+    max-width: 250px;
+}
+
+
+.footer-payment-icon-container a {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+
+
+#export-carousel .card-body  {
+    text-align: center;
+}
+
+#carousel-service-icon {
+    color: #00aaef;
+    font-size: 2.2rem;
+}
+
+#export-carousel .card-body p {
+    color: #000;
+}
+
+
+.carousel-parent-section {
+    margin: 0 0 50px;
+}
+
+
+@media screen and (max-width: 1300px ) {
+    .main_nav_ul{
+        display: none;
+    }
+}
+@media screen and (max-width: 991px ) {
+    .register-login-container, .cp_navigation_wrapper {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
