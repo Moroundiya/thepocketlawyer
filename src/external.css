@@ -5,9 +5,11 @@
 .pm-features-section-child {
     padding: 5rem 0;
 }
-.info-cards.bg-theme{
+
+.info-cards.bg-theme {
     background-color: #6FD943;
 }
+
 .pm-features-section .info-cards-wrp .info-cards h4 {
     font-size: 19px;
 }
@@ -18,7 +20,7 @@
 
 .pm-features-section .info-cards.bg-dark h4,
 .pm-features-section .info-cards.bg-dark p {
-    color:#6FD943;
+    color: #6FD943;
 }
 
 .pm-features-section .info-cards-wrp .info-cards h4 {
@@ -79,6 +81,7 @@
 .info-cards-icon {
     color: #fff;
 }
+
 .info-cards-icon.dark {
     color: #002332;
 }
@@ -127,6 +130,7 @@
     box-shadow: 0px 0px 0px 6px rgba(0, 35, 50, 0.5);
     border-radius: 50%;
 }
+
 .icon-div.bg-dark {
     background: #002332 !important;
     -webkit-box-shadow: 0px 0px 0px 6px rgba(0, 35, 50, 0.5);
@@ -197,7 +201,7 @@
 
 .work-head-title-desc {
     font-size: 1.16rem;
-    color:#3e3d3d;
+    color: #3e3d3d;
     margin: 6px 0;
 }
 
@@ -205,7 +209,7 @@
     /* margin: 30px 0; */
 }
 
-.work-head-title-container-parent{
+.work-head-title-container-parent {
     /* padding-top: 50px; */
 }
 
@@ -281,7 +285,7 @@
 
 
 
-#export-carousel .card-body  {
+#export-carousel .card-body {
     text-align: center;
 }
 
@@ -299,16 +303,109 @@
     margin: 0 0 50px;
 }
 
+.about_us_wrapper {
+    padding-top: 120px !important;
+}
 
-@media screen and (max-width: 1300px ) {
-    .main_nav_ul{
+
+
+@media screen and (max-width: 1300px) {
+    .main_nav_ul {
         display: none;
     }
 }
-@media screen and (max-width: 991px ) {
-    .register-login-container, .cp_navigation_wrapper {
+
+@media screen and (max-width: 991px) {
+
+    .register-login-container,
+    .cp_navigation_wrapper {
         display: none;
     }
+
+    .index2_abt_img_wrapper img {
+        display: block !important;
+        width: 100%;
+        margin-bottom: 120px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-logo {
+        width: 160px;
+    }
+
+    .slider_index2_wrapper .carousel-inner .carousel-item .carousel-captions .content,
+    .payments_wrapper {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+
+    .index2_abt_img_wrapper,
+    .sw_disc_img_btm {
+        position: relative !important;
+    }
+
+    .about_us_wrapper {
+        padding-top: 10px !important;
+    }
+
+    .sw_disc_img_btm {
+        display: none;
+    }
+
+    .slider-area .carousel-inner .carousel-item .caption-1,
+    .slider-area .carousel-inner .carousel-item .caption-2,
+    .slider-area .carousel-inner .carousel-item .caption-3 {
+        min-height: 250px !important;
+    }
+
+    .slider_index2_wrapper .carousel-inner .carousel-item .carousel-captions .content h3,
+    .slider_index2_wrapper .carousel-inner .carousel-item .carousel-captions .content h3 span {
+        font-size: 45px !important;
+    }
+
+    #works_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work_banner_wrapper-img,
+    #work_banner_wrapper,
+    .howwork_banner_wrapper {
+        width: 100% !important;
+    }
+
+    .test-popup-link.button {
+        display: none;
+    }
+
+    .howwork_banner_wrapper {
+        padding: 5rem .5rem !important;
+    }
+
+    .work_content_wrap {
+        width: 100% !important;
+        padding-left: 20px !important;
+    }
+
+    .investors_slider_wrapper .owl-theme .owl-nav {
+        top: -60px;
+    }
+
+    .investors_wrapper {
+        padding: 100px 0 30px !important;
+    }
+
+    .x_offer_tabs_wrapper .nav-tabs .nav-link {
+        padding: 10px 15px !important;
+    }
+
+    .nav-tabs .nav-item .nav-link {
+        border-top-right-radius: none !important;
+        border-top-left-radius: none !important;
+    }
+
+
 }
 
 

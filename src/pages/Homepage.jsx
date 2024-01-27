@@ -5,6 +5,7 @@ import { Icon } from '@iconify/react';
 import 'animate.css';
 import '../custom.js';
 import '../jquery.menu-aim.js';
+// import '../logo-carousel.js';
 import '../App.css';
 import '../external.css';
 
@@ -103,17 +104,27 @@ function Homepage() {
                         <a href="#">CONTACT</a>
 
                     </li>
-
+                    <li>
+                        <a href="register.html">
+                            <Icon icon="fa6-solid:user-clock" className='book-icon' />
+                            Book Appointment
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <Icon icon="carbon:password" className='signin-icon' />
+                            Sign In
+                        </a>
+                    </li>
                     <li className='my-2 ml-3'>
                         <ToggleTheme selectedTheme={currentTheme} onChange={setCurrentTheme} />
                     </li>
                 </ul>
 
 
-            </nav>
 
 
-
+            </nav >
             <div className="cp_navi_main_wrapper index2_header_wrapper float_left">
                 <div className="container-fluid header-parent-container">
                     <div className="cp_logo_wrapper">
@@ -934,9 +945,9 @@ function Homepage() {
 
 
 
-            <div className="works_wrapper float_left">
-                <div className="work_banner_wrapper">
-                    <img src={video_bg} alt="img" />
+            <div className="works_wrapper float_left" id='works_wrapper'>
+                <div className="work_banner_wrapper" id='work_banner_wrapper'>
+                    <img src={video_bg} alt="img" className='work_banner_wrapper-img' />
                 </div>
                 <div className="howwork_banner_wrapper index2_homwork_banner_wrapper">
                     <div className="vedio_link_wrapper">
@@ -1903,6 +1914,9 @@ function Homepage() {
 
 
             {/* payments wrapper start */}
+
+
+
             <div className="payments_wrapper float_left">
                 <div className="container">
                     <div className="row">
@@ -1914,8 +1928,8 @@ function Homepage() {
                             </div>
                         </div>
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                            <div className="payment_slider_wrapper">
-                                <div className="owl-carousel owl-theme">
+                            <div className="payment_slider_wrapper" id='payment-slider-parent'>
+                                <div className="owl-carousel owl-theme" id='owl-theme-container'>
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
                                             <img src={techpoint} className="img-responsive" alt="img" />
