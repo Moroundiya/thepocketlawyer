@@ -3,6 +3,14 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import contact1 from '../assets/images/contact1.jpg';
+import contact2 from '../assets/images/contact2.jpg';
+import contact3 from '../assets/images/contact3.jpeg';
 
 
 function Contact_Us() {
@@ -16,6 +24,30 @@ function Contact_Us() {
       {/* cp navi wrapper Start */}
       <Header />
       {/* navi wrapper End */}
+
+
+      <Swiper
+        cssMode={true}
+        navigation={true}
+        pagination={true}
+        mousewheel={true}
+        keyboard={true}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={contact1} alt="image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={contact2} alt="image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={contact3} alt="image" />
+        </SwiperSlide>
+
+      </Swiper>
+
+
 
       {/* map wrapper start */}
       <iframe
@@ -134,6 +166,32 @@ function Contact_Us() {
                   </div>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="contact_section float_left">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div className="sv_heading_wraper heading_wrapper_dark dark_heading">
+                <h4> get in touch</h4>
+                <h3>Have Any Question?</h3>
+              </div>
+            </div>
+            <div className="col-lg-10 offset-lg-1 col-md-12 col-sm-12 col-12">
+              <div className="wrapper_second_useful wrapper_second_useful_2 ">
+                <ul>
+                  <li>
+                    <h1 className='help-contact-details'>+234 915 848 2622</h1></li>
+                  <li className='help-contact-details'><a href="#"><i className="flaticon-mail" />support@thepocketlawyers.net</a>
+                  </li>
+                  <li className='help-contact-details'><a href="#"><i className="flaticon-language" />www.thepocketlawyers.net</a>
+                  </li>
+                  <li className='help-contact-details'><i className="flaticon-placeholder help-contact-details" />3rd Floor, 152 Obafemi Awolowo Way Allen Junctions Lagos, Nigeria.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
