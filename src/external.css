@@ -399,6 +399,10 @@
     margin: 0 10px;
 }
 
+.login_banner_wrapper {
+    border-right: 1px solid #e2e2e2;
+}
+
 
 
 
@@ -427,7 +431,7 @@
         margin: 0px 0 50px !important;
     }
 
-    .jp_regis_center_tag_wrapper{
+    .jp_regis_center_tag_wrapper {
         display: none;
     }
 
@@ -435,14 +439,20 @@
         display: flex;
         flex-direction: column;
     }
-    
-    .login_banner_wrapper, .login_form_wrapper {
+
+    .login_banner_wrapper,
+    .login_form_wrapper {
         width: 100% !important;
     }
 
-    .login_form_wrapper {
+    #login_form_wrapper {
         padding: 30px !important;
     }
+
+    .login_banner_wrapper {
+        border-right: none;
+    }
+
 }
 
 @media screen and (max-width: 500px) {

@@ -154,10 +154,10 @@ function Header() {
                         </a>
                     </li>
                     <li>
-                        <a href="login.html">
+                        <Link to="/login" relative='path'>
                             <Icon icon="carbon:password" className='signin-icon' />
                             Sign In
-                        </a>
+                        </Link>
                     </li>
                     <li className='my-2 ml-3'>
                         <ToggleTheme selectedTheme={currentTheme} onChange={setCurrentTheme} />
@@ -366,9 +366,11 @@ function Header() {
                                         Book Appointment
                                     </a> </li>
                                 <li>
-                                    <a href="login.html">
+                                    <Link to="/login" relative='path'>
                                         <Icon icon="carbon:password" className='signin-icon' />
-                                        Sign In </a> </li>
+                                        Sign In
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                         <Icon icon="vaadin:cart" className='cart-icon' />

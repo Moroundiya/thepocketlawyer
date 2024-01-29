@@ -42,7 +42,7 @@ function Login() {
                                         <h1>OR</h1>
                                     </div>
                                 </div>
-                                <div className="login_form_wrapper">
+                                <div className="login_form_wrapper" id='login_form_wrapper'>
                                     <div className="sv_heading_wraper heading_wrapper_dark dark_heading hwd">
                                         <h3> login to enter</h3>
                                     </div>
