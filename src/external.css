@@ -446,11 +446,23 @@
     }
 
     #login_form_wrapper {
-        padding: 30px !important;
+        padding: 30px 20px !important;
     }
 
     .login_banner_wrapper {
         border-right: none;
+    }
+
+    .register_contact {
+        width: 100% !important;
+    }
+
+    .login_form_wrapper {
+        padding: 20px !important;
+    }
+
+    .register_contact {
+        padding-right: 0 !important;
     }
 
 }

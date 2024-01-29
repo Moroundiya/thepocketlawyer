@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import logo2 from '../assets/images/logo2.png';
+import { Link } from 'react-router-dom';
 
 function Login() {
     return (
@@ -65,7 +66,7 @@ function Login() {
                                         <a href="#">login</a>
                                     </div>
                                     <div className="dont_have_account float_left">
-                                        <p>Don’t have an acount ? <a href="register.html">Sign up</a></p>
+                                        <p>Don’t have an acount ? <Link to="/register" relative="path">Sign up</Link></p>
                                     </div>
                                 </div>
                             </div>
