@@ -33,6 +33,7 @@ import Tickets from './pages/Tickets';
 import Transfer_Fund from './pages/Transfer_Fund';
 import View_Profile from './pages/View_Profile';
 import Earnings_History from './pages/Earnings_History';
+import Integrations from './pages/Integrations';
 
 
 const router = createBrowserRouter([
@@ -147,6 +148,10 @@ const router = createBrowserRouter([
   {
     path: "view-profile",
     element: <View_Profile />
+  },
+  {
+    path: "integrations",
+    element: <Integrations />
   }
 
 ]);

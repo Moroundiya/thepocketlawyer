@@ -307,6 +307,39 @@
     padding-top: 120px !important;
 }
 
+.react-international-phone-input-container {
+    /* height: 50px !important; */
+
+    height: 50px;
+    padding: 0px 5px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: none;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background-color: #fff;
+}
+
+.react-international-phone-input {
+    width: 100%;
+    font-size: 16px;
+    height: 100%;
+}
+
+
+.react-international-phone-country-selector-button, .react-international-phone-input {
+    height: 50px !important;
+    border: none !important;
+}
+
+
+
 
 
 @media screen and (max-width: 1300px) {
@@ -406,7 +439,7 @@
     }
 
     .fs-54 {
-        font-size: 43px;
+        font-size: 38px;
     }
 
 
