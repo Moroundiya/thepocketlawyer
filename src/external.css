@@ -333,7 +333,8 @@
 }
 
 
-.react-international-phone-country-selector-button, .react-international-phone-input {
+.react-international-phone-country-selector-button,
+.react-international-phone-input {
     height: 50px !important;
     border: none !important;
 }
@@ -342,7 +343,9 @@
 .help-contact-details {
     color: #000 !important;
 }
-.help-contact-details a, .help-contact-details a i  {
+
+.help-contact-details a,
+.help-contact-details a i {
     color: #000 !important;
 }
 
@@ -351,34 +354,50 @@
 .swiper {
     width: 100%;
     height: 100%;
-  }
-  
-  .swiper-slide {
+}
+
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-  
+
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .swiper-slide img {
+}
+
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
+}
 
 
+#fixed_portion {
+    margin: 20px 0 50px !important;
+}
 
 
+#login-logo {
+    width: 200px;
+    height: 80px;
+}
 
 
+.login-with-text {
+    font-weight: semibold;
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
 
 
+#login-icon-container a {
+    font-size: 1.7rem !important;
+    margin: 0 10px;
+}
 
 
 
@@ -402,6 +421,27 @@
         display: block !important;
         width: 100%;
         margin-bottom: 120px;
+    }
+
+    #fixed_portion {
+        margin: 0px 0 50px !important;
+    }
+
+    .jp_regis_center_tag_wrapper{
+        display: none;
+    }
+
+    .login_top_box {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .login_banner_wrapper, .login_form_wrapper {
+        width: 100% !important;
+    }
+
+    .login_form_wrapper {
+        padding: 30px !important;
     }
 }
 
