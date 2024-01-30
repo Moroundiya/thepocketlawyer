@@ -7,6 +7,8 @@ import inves1 from '../assets/images/inves1.png';
 import inves2 from '../assets/images/inves2.png';
 import inves3 from '../assets/images/inves3.png';
 import inves4 from '../assets/images/inves4.png';
+import abt_img from '../assets/images/abt_img.jpg';
+import abt_1 from '../assets/images/abt_1.png';
 
 function About() {
     return (

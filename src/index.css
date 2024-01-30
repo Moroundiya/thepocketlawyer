@@ -1,4 +1,3 @@
-
 div#root {
   width: 100%;
   height: 100%;
@@ -3397,7 +3396,7 @@ a:hover {
   /* height: auto !important; */
   float: none;
   display: inline-block !important;
- 
+
 }
 
 /*****--------- footer wrapper css -----*********/
@@ -8558,7 +8557,7 @@ dl.userdescc dd {
 }
 
 .index2_footer_wrapper {
-  background: #f6c60d;
+  background: #00aaef;
 }
 
 .index2_footer_wrapper .social_link_foter li a:hover {

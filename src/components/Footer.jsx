@@ -21,22 +21,7 @@ function Footer() {
                                 We&#39;re dedicated to transforming how people access and experience legal
                                 services, making them more accessible, efficient, and user-friendly.
                             </p>
-                            <div className="counter-section">
-                                <div className="ft_about_icon float_left">
-                                    <i className="flaticon-user" />
-                                    <div className="ft_abt_text_wrapper">
-                                        <p className="timer"> 62236</p>
-                                        <h4>total member</h4>
-                                    </div>
-                                </div>
-                                <div className="ft_about_icon float_left">
-                                    <i className="flaticon-money-bag" />
-                                    <div className="ft_abt_text_wrapper">
-                                        <p className="timer">27236</p>
-                                        <h4>total deposited</h4>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                     <div className="col-lg-2 col-md-3 col-12 col-sm-4">
