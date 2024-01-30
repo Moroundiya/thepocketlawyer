@@ -34,6 +34,7 @@ import Transfer_Fund from './pages/Transfer_Fund';
 import View_Profile from './pages/View_Profile';
 import Earnings_History from './pages/Earnings_History';
 import Integrations from './pages/Integrations';
+import Forget_Password from './pages/Forget_Password';
 
 
 const router = createBrowserRouter([
@@ -126,7 +127,7 @@ const router = createBrowserRouter([
     element: <Pending_History />
   },
   {
-    path: "referral_earnings",
+    path: "referral-earnings",
     element: <Referral_Earnings />
   },
   {
@@ -136,6 +137,10 @@ const router = createBrowserRouter([
   {
     path: "register",
     element: <Register />
+  },
+  {
+    path: "forget-password",
+    element: <Forget_Password />
   },
   {
     path: "tickets",

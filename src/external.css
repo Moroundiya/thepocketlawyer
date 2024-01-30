@@ -403,6 +403,18 @@
     border-right: 1px solid #e2e2e2;
 }
 
+.all-countries-list {
+    padding: 10px;
+}
+
+#register-wrapper-container .comments_form .form-control {
+    padding: 10px !important;
+}
+
+div.nice-select.form-control.all-countries-list {
+    display: none;
+}
+
 
 
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import logo2 from '../assets/images/logo-dark.png';
 import { Link } from 'react-router-dom';
+import logoLight from '../assets/images/logo-dark.png';
 
-function Login() {
+function Forget_Password() {
     return (
         <div>
             <div className="cursor" />
@@ -22,51 +22,22 @@ function Login() {
                         <div className="col-lg-12 col-md-12 col-sm-12">
                             <div className="login_top_box float_left">
                                 <div className="login_banner_wrapper">
-                                    <img src={logo2} alt="logo" id='login-logo' />
-                                    <div className='my-5' id='login-icon-container'>
-                                        <p className='login-with-text'>Login with:</p>
-                                        <a href="#">
-                                            <iconify-icon className="login-with-icon" icon="logos:facebook"></iconify-icon>
-                                        </a>
-                                        <a href="#">
-                                            <iconify-icon className="login-with-icon" icon="devicon:linkedin"></iconify-icon>
-                                        </a>
-                                        <a href="#">
-                                            <iconify-icon className="login-with-icon" icon="skill-icons:gmail-light"></iconify-icon>
-                                        </a>
-                                        <a href="#">
-                                            <iconify-icon className="login-with-icon" icon="skill-icons:twitter"></iconify-icon>
-                                        </a>
-                                    </div>
-                                    <img src="https://img.freepik.com/free-vector/sign-concept-illustration_114360-5375.jpg?w=740&t=st=1706521326~exp=1706521926~hmac=754966f517c49c6cb9069d4f9139f09dcba417960b2e04f73f113af030ac15af" alt="" className='img-fluid' />
-                                    <div className="jp_regis_center_tag_wrapper jb_register_red_or">
-                                        <h1>OR</h1>
-                                    </div>
+                                    <img src={logoLight} alt="logo" id='login-logo' />
+                                    <img src="https://img.freepik.com/free-vector/forgot-password-concept-illustration_114360-1095.jpg?size=626&ext=jpg&ga=GA1.2.233311484.1695720566&semt=ais" alt="" className='img-fluid' />
+
                                 </div>
                                 <div className="login_form_wrapper" id='login_form_wrapper'>
                                     <div className="sv_heading_wraper heading_wrapper_dark dark_heading hwd">
-                                        <h3> login to enter</h3>
+                                        <h3> Forgot Password</h3>
                                     </div>
                                     <div className="form-group icon_form comments_form">
-                                        <input type="text" className="form-control require" name="full_name" placeholder="Email Address*" />
-                                    </div>
-                                    <div className="form-group icon_form comments_form">
-                                        <input type="password" className="form-control require" placeholder="Password *" />
-                                    </div>
-                                    <div className="login_remember_box">
-                                        <label className="control control--checkbox">Remember me
-                                            <input type="checkbox" />
-                                            <span className="control__indicator" />
-                                        </label>
-                                        <Link to="/forget-password" relative='path' className='forget_password'>
-                                            Forget Password
-                                        </Link>
+                                        <input type="text" className="form-control require" name="full_name" placeholder="Enter email address to recover password*" />
                                     </div>
                                     <div className="about_btn login_btn float_left">
-                                        <a href="#">login</a>
+                                        <a href="#">Recover Password</a>
                                     </div>
                                     <div className="dont_have_account float_left">
-                                        <p>Don’t have an acount ? <Link to="/register" relative="path">Sign up</Link></p>
+                                        <p>Remember your password ? Go back to <Link to="/login" relative="path">Login</Link></p>
                                     </div>
                                 </div>
                             </div>
@@ -145,8 +116,7 @@ function Login() {
             {/* footer section start*/}
             <Footer />
         </div>
-
     )
 }
 
-export default Login
+export default Forget_Password
