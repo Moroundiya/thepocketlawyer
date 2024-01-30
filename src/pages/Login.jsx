@@ -58,7 +58,7 @@ function Login() {
                                             <input type="checkbox" />
                                             <span className="control__indicator" />
                                         </label>
-                                        <Link to="/forget-password" relative='path' className='forget_password'>
+                                        <Link to="/forget-password" reloadDocument relative='path' className='forget_password'>
                                             Forget Password
                                         </Link>
                                     </div>
@@ -66,7 +66,7 @@ function Login() {
                                         <a href="#">login</a>
                                     </div>
                                     <div className="dont_have_account float_left">
-                                        <p>Don’t have an acount ? <Link to="/register" relative="path">Sign up</Link></p>
+                                        <p>Don’t have an acount ? <Link to="/register" reloadDocument relative="path">Sign up</Link></p>
                                     </div>
                                 </div>
                             </div>

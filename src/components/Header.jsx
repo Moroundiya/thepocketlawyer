@@ -25,7 +25,7 @@ function Header() {
                         </form>
                     </li>
                     <li >
-                        <Link to="/" relative='path'>HOME</Link>
+                        <Link to="/" reloadDocument relative='path'>HOME</Link>
                     </li>
                     <li>
                         <a href="about_us.html">Services</a>
@@ -128,7 +128,7 @@ function Header() {
                                         <a href="#0">FAQ</a>
                                     </li>
                                     <li>
-                                        <Link to="/contact" relative='path'>Contact Us</Link>
+                                        <Link to="/contact" reloadDocument relative='path'>Contact Us</Link>
                                     </li>
                                     <li>
                                         <a href="#0">Support</a>
@@ -154,7 +154,7 @@ function Header() {
                         </a>
                     </li>
                     <li>
-                        <Link to="/login" relative='path'>
+                        <Link to="/login" reloadDocument relative='path'>
                             <Icon icon="carbon:password" className='signin-icon' />
                             Sign In
                         </Link>
@@ -170,7 +170,7 @@ function Header() {
             <div className="cp_navi_main_wrapper index2_header_wrapper float_left">
                 <div className="container-fluid header-parent-container">
                     <div className="cp_logo_wrapper">
-                        <Link to="/" relative='path'>
+                        <Link to="/" reloadDocument relative='path'>
                             <img src={currentTheme === "light" ? logo_dark : logo_light} alt="logo" className='header-logo' />
                         </Link>
                     </div>
@@ -244,7 +244,7 @@ function Header() {
                         <div className="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
                             <ul className="main_nav_ul">
                                 <li className="has-mega gc_main_navigation">
-                                    <Link to="/" relative='path' className="gc_main_navigation active_class">HOME</Link>
+                                    <Link to="/" relative='path' reloadDocument className="gc_main_navigation active_class">HOME</Link>
 
                                 </li>
                                 <li><a href="about_us.html" className="gc_main_navigation">SERVICES </a></li>
@@ -309,7 +309,7 @@ function Header() {
                                                     <a href="faq.html">FAQ</a>
                                                 </li>
                                                 <li class="parent">
-                                                    <Link to="/contact" relative='path'>Contact Us</Link>
+                                                    <Link to="/contact" reloadDocument relative='path'>Contact Us</Link>
                                                 </li>
                                                 <li class="parent">
                                                     <a href="register.html">Support </a>
@@ -366,7 +366,7 @@ function Header() {
                                         Book Appointment
                                     </a> </li>
                                 <li>
-                                    <Link to="/login" relative='path'>
+                                    <Link to="/login" reloadDocument relative='path'>
                                         <Icon icon="carbon:password" className='signin-icon' />
                                         Sign In
                                     </Link>
