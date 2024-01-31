@@ -35,6 +35,7 @@ import View_Profile from './pages/View_Profile';
 import Earnings_History from './pages/Earnings_History';
 import Integrations from './pages/Integrations';
 import Forget_Password from './pages/Forget_Password';
+import Plans from './pages/Plans';
 
 
 const router = createBrowserRouter([
@@ -157,6 +158,10 @@ const router = createBrowserRouter([
   {
     path: "integrations",
     element: <Integrations />
+  },
+  {
+    path: "plans",
+    element: <Plans />
   }
 
 ]);

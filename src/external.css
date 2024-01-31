@@ -375,8 +375,15 @@
 }
 
 
-#fixed_portion {
+#fixed_portion,
+.transaction_wrapper,
+.investors_wrapper {
     margin: 20px 0 50px !important;
+}
+
+.transaction_wrapper,
+.investors_wrapper {
+    padding: 20px 0 !important;
 }
 
 
@@ -479,6 +486,19 @@ div.nice-select.form-control.all-countries-list {
 
     .register_contact {
         padding-right: 0 !important;
+    }
+
+    .slider_index3_wrapper .carousel-inner .carousel-item .carousel-captions .content {
+        padding-top: 170px !important;
+        padding-bottom: 0 !important;
+    }
+
+    #about_us_wrapper {
+        padding: 70px 0 !important;
+    }
+
+    .index3_sliderbtn {
+        margin: 30px 0 !important;
     }
 
 }
