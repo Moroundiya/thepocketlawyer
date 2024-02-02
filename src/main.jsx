@@ -36,6 +36,7 @@ import Earnings_History from './pages/Earnings_History';
 import Integrations from './pages/Integrations';
 import Forget_Password from './pages/Forget_Password';
 import Plans from './pages/Plans';
+import Help from './pages/Help';
 
 
 const router = createBrowserRouter([
@@ -162,6 +163,10 @@ const router = createBrowserRouter([
   {
     path: "plans",
     element: <Plans />
+  },
+  {
+    path: "help",
+    element: <Help />
   }
 
 ]);
