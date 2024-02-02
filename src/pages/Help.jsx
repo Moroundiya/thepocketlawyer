@@ -27,13 +27,13 @@ function Help() {
                             <div className="col-md-10 col-lg-8 col-xl-7 mx-auto">
                                 <div className="input-group">
                                     <input
-                                        className="form-control shadow-none border-0"
+                                        className="form-control shadow-none border-0 p-4"
                                         type="search"
                                         id="search-input"
                                         placeholder="Search for a topic or question"
                                         defaultValue=""
                                     />
-                                    <button className="btn btn-primary shadow-none" type="button">
+                                    <button className="btn btn-primary shadow-none px-4" type="button">
                                         <i className="fa fa-search" />
                                     </button>
                                 </div>
