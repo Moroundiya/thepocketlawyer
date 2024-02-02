@@ -898,6 +898,7 @@
   @media (max-width: 991.98px) {
     #envelope-container {
       padding: 1.8rem;
+      margin-bottom: 1.4rem;
     }
     #header .navbar-dropdown-dark.primary-menu:before, .primary-menu.navbar-dropdown-dark ul.navbar-nav > li.dropdown .dropdown-menu .dropdown-menu {
       background-color: #252A2C;
