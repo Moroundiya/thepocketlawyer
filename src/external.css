@@ -445,6 +445,10 @@ color: red;
 }
 
 
+.privacy-container {
+    margin: 50px 0 70px !important;
+}
+
 
 
 
@@ -612,6 +616,17 @@ color: red;
         font-size: 38px;
     }
 
+    .title-desc {
+        font-size: 1.4rem;
+    }
+
+    .title-heading {
+        font-size: 1.6rem;
+    }
+
+    .privacy-container {
+        margin: 40px 0 !important;
+    }
 
 }
 

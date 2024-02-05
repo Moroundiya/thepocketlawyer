@@ -7,7 +7,7 @@ function Delivery_Policy() {
         <div>
             <Header />
 
-            <div className="inner_faq_wrapper fixed_portion float_left" id='fixed_portion'>
+            <div className="fixed_portion float_left privacy-container">
                 <h2 className='text-center fw-bold mb-5 title-heading'>Product and Service Delivery Policy</h2>
                 <div className='mb-5'>
                     <h3 className='text-center title-desc mb-2'>General Information</h3>
