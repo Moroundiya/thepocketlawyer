@@ -37,6 +37,8 @@ import Integrations from './pages/Integrations';
 import Forget_Password from './pages/Forget_Password';
 import Plans from './pages/Plans';
 import Help from './pages/Help';
+import Privacy_Policy from './pages/Privacy_Policy';
+import Delivery_Policy from './pages/Delivery_Policy';
 
 
 const router = createBrowserRouter([
@@ -167,6 +169,14 @@ const router = createBrowserRouter([
   {
     path: "help",
     element: <Help />
+  },
+  {
+    path: "privacy-policy",
+    element: <Privacy_Policy />
+  },
+  {
+    path: "delivery-policy",
+    element: <Delivery_Policy />
   }
 
 ]);
