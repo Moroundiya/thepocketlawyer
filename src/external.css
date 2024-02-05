@@ -427,6 +427,10 @@ div.nice-select.form-control.all-countries-list {
     line-height: 28px;
 }
 
+.inner_faq_section_parent {
+    padding-bottom: 60px !important;
+}
+
 
 
 
@@ -438,6 +442,13 @@ div.nice-select.form-control.all-countries-list {
 }
 
 @media screen and (max-width: 991px) {
+    .inner_faq_section_parent {
+        padding-bottom: 40px !important;
+    }
+
+    .inner_faq_wrapper {
+        padding-bottom: 30px !important;
+    }
 
     .register-login-container,
     .cp_navigation_wrapper {
