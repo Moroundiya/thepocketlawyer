@@ -50,7 +50,7 @@ function Header() {
                                         <a href="#0">BACK</a>
                                     </li>
                                     <li>
-                                        <a href="#0">About Us</a>
+                                        <Link to="/about" reloadDocument relative='path'>About Us</Link>
                                     </li>
                                     <li>
                                         <a href="#0">Why Choose Us</a>
@@ -96,19 +96,21 @@ function Header() {
                                         <a href="#0">BACK</a>
                                     </li>
                                     <li>
-                                        <a href="#0">Delivery Policy</a>
+                                        <Link to="/delivery-policy" reloadDocument relative='path'>Delivery Policy</Link>
+
                                     </li>
                                     <li>
-                                        <a href="#0">Grievances Policy</a>
+                                        <Link to="/grievance-policy" reloadDocument relative='path'>Grievances Policy</Link>
+
                                     </li>
                                     <li>
-                                        <a href="#0">Private Policy</a>
+                                        <Link to="/privacy-policy" reloadDocument relative='path'>Privacy Policy</Link>
                                     </li>
                                     <li>
-                                        <a href="#0">Refund Policy</a>
+                                        <Link to="/refund-policy" reloadDocument relative='path'>Refund Policy</Link>
                                     </li>
                                     <li>
-                                        <a href="#0">Security Policy</a>
+                                        <Link to="/security-policy" reloadDocument relative='path'>Security Policy</Link>
                                     </li>
                                     <li>
                                         <a href="#0">Terms & Conditions</a>
@@ -125,7 +127,7 @@ function Header() {
                                         <a href="#0">BACK</a>
                                     </li>
                                     <li>
-                                        <a href="#0">FAQ</a>
+                                        <Link to="/faq" reloadDocument relative='path'>FAQ</Link>
                                     </li>
                                     <li>
                                         <Link to="/contact" reloadDocument relative='path'>Contact Us</Link>
@@ -264,7 +266,8 @@ function Header() {
                                             <a href="faq.html"><i class="fas fa-caret-right"></i>Who We Are</a>
                                             <ul class="navi_2_dropdown">
                                                 <li class="parent">
-                                                    <a href="faq.html">About Us </a>
+                                                    <Link to="/about" relative='path' reloadDocument>About Us</Link>
+
                                                 </li>
                                                 <li class="parent">
                                                     <a href="login.html">Why Choose Us </a>
@@ -304,7 +307,7 @@ function Header() {
                                             <a href="register.html"><i class="fas fa-caret-right"></i>Help Center</a>
                                             <ul class="navi_2_dropdown">
                                                 <li class="parent">
-                                                    <a href="faq.html">FAQ</a>
+                                                    <Link to="/faq" relative='path' reloadDocument>FAQ</Link>
                                                 </li>
                                                 <li class="parent">
                                                     <Link to="/contact" reloadDocument relative='path'>Contact Us</Link>
@@ -325,19 +328,24 @@ function Header() {
                                             <a href="register.html"><i class="fas fa-caret-right"></i>Statutory </a>
                                             <ul class="navi_2_dropdown">
                                                 <li class="parent">
-                                                    <a href="faq.html">Delivery Policy </a>
+                                                    <Link to="/delivery-policy" reloadDocument relative='path'>Delivery Policy</Link>
+
                                                 </li>
                                                 <li class="parent">
-                                                    <a href="login.html">Grievances Policy </a>
+                                                    <Link to="/grievance-policy" reloadDocument relative='path'>Grievances Policy</Link>
+
                                                 </li>
                                                 <li class="parent">
-                                                    <a href="register.html">Private Policy </a>
+                                                    <Link to="/privacy-policy" reloadDocument relative='path'>Privacy Policy</Link>
+
                                                 </li>
                                                 <li class="parent">
-                                                    <a href="register.html">Refund Policy </a>
+                                                    <Link to="/refund-policy" reloadDocument relative='path'>Refund Policy</Link>
+
                                                 </li>
                                                 <li class="parent">
-                                                    <a href="register.html">Security Policy </a>
+                                                    <Link to="/security-policy" reloadDocument relative='path'>Security Policy</Link>
+
                                                 </li>
                                                 <li class="parent">
                                                     <a href="register.html">Terms & Conditions</a>

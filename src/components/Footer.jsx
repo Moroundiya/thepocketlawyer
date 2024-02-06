@@ -1,6 +1,7 @@
 import React from 'react';
 import logo_light from '../assets/images/logo-light.png';
 import { Icon } from '@iconify/react';
+import { Link } from 'react-router-dom';
 
 
 function Footer() {
@@ -36,7 +37,10 @@ function Footer() {
                                 </li>
                                 <li><a href="#"><i className="fa fa-angle-right" />Lawyers</a> </li>
                                 <li><a href="#"><i className="fa fa-angle-right" />Consultants</a> </li>
-                                <li><a href="#"><i className="fa fa-angle-right" />Plans</a> </li>
+                                <li>
+                                    <Link to="/plans" reloadDocument relative='path'><i className="fa fa-angle-right" /> Plans</Link>
+
+                                </li>
                                 <li><a href="#"><i className="fa fa-angle-right" />Solutions</a> </li>
                                 <li><a href="#"><i className="fa fa-angle-right" />Integrations</a> </li>
                             </ul>
@@ -45,9 +49,11 @@ function Footer() {
                     <div className="col-lg-2 col-md-3 col-12 col-sm-4">
                         <div className="wrapper_second_useful wrapper_second_links">
                             <ul>
-                                <li><a href="#"><i className="fa fa-angle-right" />About Us</a>
+                                <li>
+                                    <Link to="/about" reloadDocument relative='path'> <i className="fa fa-angle-right" />About Us</Link>
                                 </li>
-                                <li><a href="#"><i className="fa fa-angle-right" />Contact </a>
+                                <li>
+                                    <Link to="/contact" reloadDocument relative='path'><i className="fa fa-angle-right" />Contact </Link>
                                 </li>
                                 <li><a href="#"><i className="fa fa-angle-right" />Support </a>
                                 </li>
@@ -55,8 +61,12 @@ function Footer() {
                                 </li>
                                 <li><a href="#"><i className="fa fa-angle-right" />Partners</a> </li>
                                 <li><a href="#"><i className="fa fa-angle-right" />News</a> </li>
-                                <li><a href="#"><i className="fa fa-angle-right" />Help</a> </li>
-                                <li><a href="#"><i className="fa fa-angle-right" />FAQ</a> </li>
+                                <li>
+                                    <Link to="/help" reloadDocument relative='path'><i className="fa fa-angle-right" />Help</Link>
+                                </li>
+                                <li>
+                                    <Link to="/faq" reloadDocument relative='path'><i className="fa fa-angle-right" />FAQ</Link>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -111,7 +121,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
