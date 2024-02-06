@@ -39,6 +39,9 @@ import Plans from './pages/Plans';
 import Help from './pages/Help';
 import Privacy_Policy from './pages/Privacy_Policy';
 import Delivery_Policy from './pages/Delivery_Policy';
+import Security_Policy from './pages/Security_Policy';
+import Refund_Policy from './pages/Refund_Policy';
+import Grievance_Policy from './pages/Grievance_Policy';
 
 
 const router = createBrowserRouter([
@@ -177,6 +180,18 @@ const router = createBrowserRouter([
   {
     path: "delivery-policy",
     element: <Delivery_Policy />
+  },
+  {
+    path: "security-policy",
+    element: <Security_Policy />
+  },
+  {
+    path: "refund-policy",
+    element: <Refund_Policy />
+  },
+  {
+    path: "grievance-policy",
+    element: <Grievance_Policy />
   }
 
 ]);

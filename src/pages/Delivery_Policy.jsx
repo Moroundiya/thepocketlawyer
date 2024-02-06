@@ -6,13 +6,12 @@ function Delivery_Policy() {
     return (
         <div>
             <Header />
-
             <div className="fixed_portion float_left privacy-container">
                 <h2 className='text-center fw-bold mb-5 title-heading'>Product and Service Delivery Policy</h2>
                 <div className='mb-5'>
-                    <h3 className='text-center title-desc mb-2'>General Information</h3>
+                    <h3 className='text-center title-desc mb-4'>General Information</h3>
                     <div className="row px-3">
-                        <div className="col-lg-8 mx-auto px-3">
+                        <div className="col-lg-8 mx-auto px-3 text-justify">
                             <h6 className='content-text'>
                                 All orders are subject to product and service availability. If a product or service
                                 is unavailable at the time you place your order, we will notify you and refund
@@ -22,9 +21,9 @@ function Delivery_Policy() {
                     </div>
                 </div>
                 <div>
-                    <h3 className='text-center title-desc mb-2'>Delivery Time</h3>
+                    <h3 className='text-center title-desc mb-4'>Delivery Time</h3>
                     <div className="row px-3">
-                        <div className="col-lg-8 mx-auto">
+                        <div className="col-lg-8 mx-auto text-justify">
                             <h6 className='content-text mb-4'>
                                 For walk-ins, kindly visit a selected partner&#39;s location within their opening hour,
                                 preferably 1 hour before close of business.
@@ -48,8 +47,6 @@ function Delivery_Policy() {
                 </div>
 
             </div>
-
-
             <Footer />
         </div>
     )
