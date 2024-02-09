@@ -150,10 +150,11 @@ function Header() {
                         </ul>
                     </li>
                     <li>
-                        <a href="register.html">
+                        <Link to="/search-lawyer" reloadDocument relative='path'>
+
                             <Icon icon="fa6-solid:user-clock" className='book-icon' />
                             Book Appointment
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <Link to="/login" reloadDocument relative='path'>
@@ -367,10 +368,12 @@ function Header() {
                         <div className="header_btn header-btn-div">
                             <ul>
                                 <li>
-                                    <a href="register.html">
+                                    <Link to="/search-lawyer" reloadDocument relative='path'>
+
                                         <Icon icon="fa6-solid:user-clock" className='book-icon' />
                                         Book Appointment
-                                    </a> </li>
+                                    </Link>
+                                </li>
                                 <li>
                                     <Link to="/login" reloadDocument relative='path'>
                                         <Icon icon="carbon:password" className='signin-icon' />

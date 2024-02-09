@@ -473,6 +473,10 @@ div.nice-select.form-control.all-countries-list {
 
 
 
+
+
+
+
 @media screen and (max-width: 1300px) {
     .main_nav_ul {
         display: none;
@@ -553,7 +557,9 @@ div.nice-select.form-control.all-countries-list {
     .title-sub-desc {
         width: 100%;
     }
-
+#doctor-content-subpage {
+    padding: 0 .4rem !important;
+}
 
 }
 

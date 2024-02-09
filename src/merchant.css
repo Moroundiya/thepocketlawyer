@@ -1,0 +1,527 @@
+@media only screen and (max-width: 767.98px) {
+
+
+    .doctor-widget {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .doc-info-right {
+        margin-left: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .doc-info-left {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .doctor-widget .doc-name {
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 615px) {
+    #footer_logo {
+        width: 50%;
+        margin-top: 0rem;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {}
+
+@media only screen and (max-width: 479px) {
+    .clinic-booking a.view-pro-btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .clinic-booking a.apt-btn {
+        width: 100%;
+    }
+}
+
+.doc-info-left,
+.doctor-widget {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.custom_check {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.rating {
+    list-style: none;
+    width: 100%;
+    margin: 0 0 7px;
+    padding: 0;
+}
+
+.rating i {
+    color: #dedfe0;
+}
+
+.rating i.filled {
+    color: #f4c150;
+}
+
+.sort-by {
+    float: right;
+}
+
+.sort-title {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.sortby-fliter {
+    display: inline-block;
+    width: 120px;
+}
+
+.custom_check {
+    color: #666;
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    font-size: .9375rem;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.custom_check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom_check input:checked~.checkmark {
+    background-color: #fff;
+}
+
+.custom_check input:checked~.checkmark:after {
+    display: block;
+}
+
+.custom_check .checkmark {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    border-radius: 3px;
+    -webkit-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.custom_check .checkmark:after {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: none;
+    color: #00329b;
+    font-size: 11px;
+    position: absolute;
+    top: 0;
+    left: 4px;
+}
+
+.filter-widget {
+    margin-bottom: 20px;
+}
+
+#country {
+    padding: .5rem 2rem .5rem .4rem;
+    color: #000;
+    width: 100%;
+    border: 2px solid white !important;
+}
+
+.filter-widget .nice-select,
+.merchants .nice-select {
+    display: none;
+}
+
+#audiologist,
+#dental {
+    padding: .5rem 2.3rem .5rem .4rem;
+    color: #000;
+    width: 100%;
+    border: 2px solid white !important;
+}
+
+#dental {
+    padding: .5rem 4.5rem .5rem .4rem;
+    border: 2px solid white !important;
+    width: 100%;
+}
+
+#merchant {
+    color: #000;
+    border: 2px solid white !important;
+    width: 100%;
+}
+
+#merchant option {
+    background-color: #00329b;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+#checked {
+    color: #fff;
+}
+
+#search__button {
+    border: 2px solid #00329b;
+    color: #00329b;
+    background-color: #fff !important;
+}
+
+.filter-widget .custom_check {
+    line-height: 18px;
+}
+
+.btn-search .btn {
+    background-color: #fff !important;
+    color: #fff;
+    height: 46px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #00329b;
+}
+
+@media (max-width: 767.98px) {
+    .doctor-widget {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.doctor-widget .doc-name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+@media (max-width: 767.98px) {
+    .doctor-widget .doc-name {
+        font-size: 18px;
+    }
+}
+
+.doctor-widget .rating i {
+    font-size: 14px;
+}
+
+.doctor-widget .average-rating {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+    .doc-info-left {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+.doc-info-right {
+    margin-left: auto;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
+    max-width: 200px;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 767.98px) {
+    .doc-info-right {
+        margin-left: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.doc-location {
+    color: #757575;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.clinic-details {
+    margin-bottom: 15px;
+}
+
+.clini-infos {
+    margin-bottom: 15px;
+}
+
+.clinic-booking a {
+    background-color: #fff;
+    color: #000;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.view-pro-btn {
+    background-color: #fff;
+    border: 2px solid #00329b;
+    color: #00329b;
+    display: block;
+    margin: .6rem 0;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.clinic-booking a.view-pro-btn {
+    background-color: #fff;
+}
+
+.clinic-booking a.view-pro-btn:hover,
+.clinic-booking a.view-pro-btn:focus {
+    background: #00aaef;
+    color: #000;
+}
+
+.clinic-booking a.apt-btn {
+    background: #00aaef;
+    color: #000;
+}
+
+@media (max-width: 479.98px) {
+    .clinic-booking a.apt-btn {
+        width: 100%;
+    }
+}
+
+.clinic-booking a.apt-btn:hover,
+.clinic-booking a.apt-btn:focus {
+    background-color: #0db9f2;
+    border-color: #0db9f2;
+    color: #000;
+}
+
+@media (max-width: 479.98px) {
+    .clinic-booking a.view-pro-btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.load-more {
+    margin-bottom: 30px;
+}
+
+.btn-search {
+    background: white !important;
+    border: 1px solid #ffffff;
+    color: #1e5c92;
+}
+
+.doctor-img1 {
+    margin-right: 20px;
+    margin-left: 0 !important;
+}
+
+.fa-solid,
+.fas {
+    font-weight: 900;
+}
+
+.btn-dark-blue {
+    padding: 10px;
+    background: #00329b !important;
+    color: #fff !important;
+    border-radius: 5px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    box-shadow: inset 0 0 #00329b;
+    /* font-size:13px; */
+}
+
+.clinic-booking a:first-child {
+    display: none;
+}
+
+.merchants .merchant__type #audiologist,
+.merchants #dental,
+.merchants #merchant {
+    border: 1px solid #737373;
+}
+
+.merchants #merchant {
+    padding: .6rem .3rem;
+}
+
+.merchant-header .available-merchant {
+    box-shadow: 2px -4px 35px -8px #0000002e;
+    padding: .7rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.merchant-header .contented .merchant-section {
+    padding: 0rem 3rem;
+    margin-bottom: 160px !important;
+
+}
+
+.merchant-header {
+    position: relative;
+    top: 80px;
+}
+
+@media screen and (max-width:500px) {
+    .merchant-header {
+        top: 50px;
+    }
+
+    .merchant-header .contented .merchant-section {
+        padding: 0 1.2rem;
+    }
+
+    .doc-name {
+        margin: 1.2rem 0;
+    }
+
+    .btn-dark-blue {
+        padding: .7rem 1rem !important;
+        font-size: 1rem;
+    }
+
+    .merchant-header .contented .merchant-section {
+        margin-bottom: 100px !important;
+
+    }
+}
+
+#merchant-section .card {
+    margin-bottom: 50px;
+}
+
+.merchant-header .contented .merchant-section .mt-35 {
+    padding: 2rem 0;
+}
+
+.merchant-header .contented input {
+    padding: .6rem 1rem;
+}
+
+.merchant-header .contented #country {
+    border: 1px solid #737373;
+}
+
+.merchant-header .contented #searched {
+    background-color: #00aaef;
+    color: #fff;
+}
+
+.dropdowned {
+    position: relative;
+    display: inline-block;
+    display: flex;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0 8px 16px #0003;
+    z-index: 1;
+}
+
+.dropdowned:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-iteming {
+    padding: 1px 16px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+.side-dropdown {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 100%;
+    background-color: #f9f9f9;
+    min-width: 220px;
+    box-shadow: 0 8px 16px #0003;
+    z-index: 1;
+}
+
+.side-dropdown a {
+    margin: .4rem 0 !important;
+}
+
+.my-drop {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: background-color .3s ease-in-out;
+}
+
+.dropdown-iteming {
+    margin-bottom: .8rem;
+}
+
+.dropdown-iteming:hover {
+    color: #09e5ab;
+    cursor: pointer;
+}
+
+.dropdown-iteming:hover .side-dropdown {
+    display: block;
+}
+
+.side-dropdown-item {
+    padding: 5px 10px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+@media screen and (max-width:990px) {
+    .dropdown-iteming:hover {
+        color: #00f;
+    }
+
+    .side-dropdown {
+        left: 7%;
+        top: 4rem;
+    }
+}

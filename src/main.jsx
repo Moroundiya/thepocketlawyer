@@ -42,6 +42,8 @@ import Delivery_Policy from './pages/Delivery_Policy';
 import Security_Policy from './pages/Security_Policy';
 import Refund_Policy from './pages/Refund_Policy';
 import Grievance_Policy from './pages/Grievance_Policy';
+import Search_Lawyer from './pages/Search_Lawyer';
+import Search_Merchant from './pages/Search_Merchant';
 
 
 const router = createBrowserRouter([
@@ -192,6 +194,14 @@ const router = createBrowserRouter([
   {
     path: "grievance-policy",
     element: <Grievance_Policy />
+  },
+  {
+    path: "search-lawyer",
+    element: <Search_Lawyer />
+  },
+  {
+    path: "search-merchant",
+    element: <Search_Merchant />
   }
 
 ]);
