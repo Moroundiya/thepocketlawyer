@@ -113,7 +113,8 @@ function Header() {
                                         <Link to="/security-policy" reloadDocument relative='path'>Security Policy</Link>
                                     </li>
                                     <li>
-                                        <a href="#0">Terms & Conditions</a>
+                                        <Link to="/terms-and-conditions" reloadDocument relative='path'>Terms & Conditions</Link>
+
                                     </li>
                                     <li>
                                         <a href="#0">Whistle Blowers</a>
@@ -277,7 +278,7 @@ function Header() {
                                                     <a href="register.html">Career</a>
                                                 </li>
                                                 <li class="parent">
-                                                <Link to="/blog-category" reloadDocument relative='path'>Event & News</Link>
+                                                    <Link to="/blog-category" reloadDocument relative='path'>Event & News</Link>
                                                 </li>
                                             </ul>
                                         </li>
@@ -349,7 +350,7 @@ function Header() {
 
                                                 </li>
                                                 <li class="parent">
-                                                    <a href="register.html">Terms & Conditions</a>
+                                                    <Link to="/terms-and-conditions" reloadDocument relative='path'>Terms & Conditions</Link>
                                                 </li>
                                                 <li class="parent">
                                                     <a href="register.html">Whistle Blowers</a>

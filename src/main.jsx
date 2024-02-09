@@ -44,6 +44,7 @@ import Refund_Policy from './pages/Refund_Policy';
 import Grievance_Policy from './pages/Grievance_Policy';
 import Search_Lawyer from './pages/Search_Lawyer';
 import Search_Merchant from './pages/Search_Merchant';
+import TermsAndCondition from './pages/TermsAndCondition';
 
 
 const router = createBrowserRouter([
@@ -202,6 +203,10 @@ const router = createBrowserRouter([
   {
     path: "search-merchant",
     element: <Search_Merchant />
+  },
+  {
+    path: "terms-and-conditions",
+    element: <TermsAndCondition />
   }
 
 ]);
