@@ -59,7 +59,7 @@ function Header() {
                                         <a href="#0">Career</a>
                                     </li>
                                     <li>
-                                        <a href="#0">Event & News </a>
+                                        <Link to="/blog-category" reloadDocument relative='path'>Event & News</Link>
                                     </li>
                                 </ul>
                             </li>
@@ -277,7 +277,7 @@ function Header() {
                                                     <a href="register.html">Career</a>
                                                 </li>
                                                 <li class="parent">
-                                                    <a href="register.html">Event & News </a>
+                                                <Link to="/blog-category" reloadDocument relative='path'>Event & News</Link>
                                                 </li>
                                             </ul>
                                         </li>

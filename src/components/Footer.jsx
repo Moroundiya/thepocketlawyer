@@ -60,7 +60,9 @@ function Footer() {
                                 <li><a href="#"><i className="fa fa-angle-right" />Careers</a>
                                 </li>
                                 <li><a href="#"><i className="fa fa-angle-right" />Partners</a> </li>
-                                <li><a href="#"><i className="fa fa-angle-right" />News</a> </li>
+                                <li>
+                                    <Link to="/blog-category" reloadDocument relative='path'><i className="fa fa-angle-right" />News</Link>
+                                </li>
                                 <li>
                                     <Link to="/help" reloadDocument relative='path'><i className="fa fa-angle-right" />Help</Link>
                                 </li>

@@ -4571,14 +4571,13 @@ a:hover {
 }
 
 .blog_image_single {
-  float: left;
+  /* float: left; */
   width: 300px;
 }
 
 .blog_text_single {
-  float: left;
-  width: calc(100% - 300px);
-  padding-left: 30px;
+  width: 100%;
+  /* padding-left: 30px; */
 }
 
 .blog_text_single p {

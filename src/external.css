@@ -467,6 +467,26 @@ div.nice-select.form-control.all-countries-list {
 }
 
 
+.blog-learn-more {
+    padding: 12px 16px;
+    background-color: #00aaef;
+    color: #fff !important;
+    border-radius: 5px;
+}
+
+.mobile-blog-learn-more {
+    display: none;
+    padding: 8px 12px;
+    background-color: #00aaef;
+    color: #fff !important;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.blog-learn-more:hover, .mobile-blog-learn-more:hover {
+    background-color: #0b7aa6;
+}
+
 
 
 
@@ -564,6 +584,13 @@ div.nice-select.form-control.all-countries-list {
 }
 
 @media screen and (max-width: 500px) {
+
+    .blog-learn-more {
+        display: none;
+    }
+    .mobile-blog-learn-more {
+        display: inline-block;
+    }
     .header-logo {
         width: 160px;
     }
