@@ -45,6 +45,8 @@ import Grievance_Policy from './pages/Grievance_Policy';
 import Search_Lawyer from './pages/Search_Lawyer';
 import Search_Merchant from './pages/Search_Merchant';
 import TermsAndCondition from './pages/TermsAndCondition';
+import Why_Choose_Us from './pages/Why_Choose_Us';
+import Support from './pages/Support';
 
 
 const router = createBrowserRouter([
@@ -207,6 +209,14 @@ const router = createBrowserRouter([
   {
     path: "terms-and-conditions",
     element: <TermsAndCondition />
+  },
+  {
+    path: "why-choose-us",
+    element: <Why_Choose_Us />
+  },
+  {
+    path: "support",
+    element: <Support />
   }
 
 ]);

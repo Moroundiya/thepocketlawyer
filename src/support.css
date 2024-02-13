@@ -1,0 +1,663 @@
+#content__heading-icons-text {
+    padding: 12rem 0 5rem;
+}
+
+
+#content__heading-icons-text .col-lg-6 {
+    display: flex;
+
+}
+
+#content__heading-icons-text .col-lg-6 .ease {
+    border-top: 0.0555555556rem solid #808084;
+    border-bottom: 0.0555555556rem solid #808084;
+    width: 100%;
+    display: flex;
+}
+
+#content__heading-icons-text .col-lg-6#wrap h4 {
+    color: #2b2a31;
+    font-size: 2.2222222222rem;
+    line-height: 1.4;
+    margin-bottom: 1.3888888889rem;
+}
+
+#content__heading-icons-text .col-lg-6>div>div:first-child {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    padding: 0 1.1111111111rem;
+    width: 37.2%;
+}
+
+#content__heading-icons-text .col-lg-6>div {
+    display: flex;
+    padding: 1.7777777778rem 0;
+}
+
+#content__heading-icons-text-heading {
+    margin-bottom: 80px !important;
+}
+
+#support-cta-btn {
+    align-items: center;
+    background-color: #ff8746 !important;
+    border: none !important;
+    border-radius: 0.5rem !important;
+    color: #fff;
+    display: inline-flex;
+    font-family: "SuisseIntl-SemiBold" !important;
+    justify-content: center;
+    text-decoration: none;
+    transition: all .3s ease !important;
+}
+
+#decrease-padding-div {
+    padding: 3rem 0 !important;
+}
+
+.grey-alt {
+    background-image: url(https://www.mycase.com/wp-content/themes/mycase/library/img/grey-alt-bg.svg);
+    color: #d8d8d8;
+}
+
+.content__centered {
+    padding: 7.2222222222rem 0;
+    text-align: center;
+}
+
+.grey-alt {
+    background-image: url(https://www.mycase.com/wp-content/themes/mycase/library/img/grey-alt-bg.svg);
+    color: #d8d8d8;
+}
+
+.content__centered {
+    padding: 7.2222222222rem 0;
+    text-align: center;
+}
+
+.grey-alt h2 {
+    color: #d8d8d8;
+}
+
+.content__centered p {
+    margin: 1rem auto;
+    font-size: 1.2rem;
+}
+
+
+
+.grey {
+    background-color: rgba(225, 225, 215, .3);
+}
+
+.content__image {
+    overflow: hidden;
+    padding: 3.8888888889rem 0;
+}
+
+
+.content__image .row>div:first-child {
+    align-items: center;
+    display: flex;
+    margin-right: 1.6666666667rem;
+    max-width: 28.8888888889rem;
+}
+
+.content__image .row>div:first-child {
+    align-items: center;
+    display: flex;
+    margin-right: 1.6666666667rem;
+    max-width: 28.8888888889rem;
+}
+
+.ease.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content__image-images>div.ease {
+    transform: translateY(0) translateX(50px);
+}
+
+
+
+@media only screen and (max-width :650px) {
+
+    .content__image p {
+        max-width: 34rem;
+        padding-right: .6666666667rem;
+    }
+
+    .content__image ul li {
+        background-position-y: .3888888889rem;
+    }
+
+    .content__image ul:last-of-type {
+        margin-top: 1.6666666667rem;
+    }
+
+    .content__image#wrap h4 {
+        margin-bottom: 1.6666666667rem;
+    }
+
+    .content__image .row {
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        max-width: 59.4444444444rem;
+    }
+
+    .content__image .row>div:first-child {
+        align-items: center;
+        display: flex;
+        margin-right: 1.6666666667rem;
+        max-width: 28.8888888889rem;
+    }
+
+    .content__image .row>div:last-child {
+        flex-shrink: 0;
+        margin-left: auto;
+        width: 35%;
+    }
+
+    .content__image-images>div {
+        margin-bottom: .9444444444rem;
+        padding-right: 3.3888888889rem;
+    }
+
+    .content__image-images>div img {
+        box-shadow: 10px 2px 5px -2px rgba(0, 0, 0, .12);
+        margin-left: auto;
+        max-width: 18.9444444444rem;
+    }
+
+    .content__image-images>div:last-child {
+        margin-bottom: 0;
+    }
+
+    .content__image-images>div.ease {
+        transform: translateY(0) translateX(50px);
+    }
+
+    .content__image-images>div.ease.show {
+        transform: translateY(0) translateX(0);
+    }
+
+    .content__image-extra {
+        border-top: .0555555556rem solid #d8d8d8;
+        margin-top: 2rem;
+        padding-top: 1.3333333333rem;
+    }
+
+    .content__image.has-one .content__image-images:last-child {
+        width: 44%;
+    }
+
+    @media only screen and (max-width :1100px) {
+        .content__image-images>div img {
+            max-width: 100%;
+        }
+    }
+
+    @media only screen and (max-width :800px) {
+        .content__image .row {
+            flex-wrap: wrap;
+        }
+
+        .content__image .row>div:first-child {
+            margin-left: 0 !important;
+        }
+
+        .content__image .row>div:last-child {
+            margin-top: 1.6666666667rem;
+            margin-left: 0;
+            max-width: 16.6666666667rem;
+            width: 100% !important;
+        }
+
+        .content__image .row>div:first-child {
+            margin-right: 0;
+        }
+    }
+
+    @media only screen and (max-width :650px) {
+        .content__image-extra {
+            margin-top: .5555555556rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width :650px) {
+
+    .content__image p {
+        max-width: 34rem;
+        padding-right: .6666666667rem;
+    }
+
+    .content__image ul li {
+        background-position-y: .3888888889rem;
+    }
+
+    .content__image ul:last-of-type {
+        margin-top: 1.6666666667rem;
+    }
+
+    .content__image#wrap h4 {
+        margin-bottom: 1.6666666667rem;
+    }
+
+    .content__image .row {
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        max-width: 59.4444444444rem;
+    }
+
+    .content__image .row>div:first-child {
+        align-items: center;
+        display: flex;
+        margin-right: 1.6666666667rem;
+        max-width: 28.8888888889rem;
+    }
+
+    .content__image .row>div:last-child {
+        flex-shrink: 0;
+        margin-left: auto;
+        width: 35%;
+    }
+
+    .content__image-images>div {
+        margin-bottom: .9444444444rem;
+        padding-right: 3.3888888889rem;
+    }
+
+    .content__image-images>div img {
+        box-shadow: 10px 2px 5px -2px rgba(0, 0, 0, .12);
+        margin-left: auto;
+        max-width: 18.9444444444rem;
+    }
+
+    .content__image-images>div:last-child {
+        margin-bottom: 0;
+    }
+
+    .content__image-images>div.ease {
+        transform: translateY(0) translateX(50px);
+    }
+
+    .content__image-images>div.ease.show {
+        transform: translateY(0) translateX(0);
+    }
+
+    .content__image-extra {
+        border-top: .0555555556rem solid #d8d8d8;
+        margin-top: 2rem;
+        padding-top: 1.3333333333rem;
+    }
+
+    .content__image.has-one .content__image-images:last-child {
+        width: 44%;
+    }
+
+    @media only screen and (max-width :1100px) {
+        .content__image-images>div img {
+            max-width: 100%;
+        }
+    }
+
+    @media only screen and (max-width :800px) {
+        .content__image .row {
+            flex-wrap: wrap;
+        }
+
+        .content__image .row>div:first-child {
+            margin-left: 0 !important;
+        }
+
+        .content__image .row>div:last-child {
+            margin-top: 1.6666666667rem;
+            margin-left: 0;
+            max-width: 16.6666666667rem;
+            width: 100% !important;
+        }
+
+        .content__image .row>div:first-child {
+            margin-right: 0;
+        }
+    }
+
+    @media only screen and (max-width :650px) {
+        .content__image-extra {
+            margin-top: .5555555556rem;
+        }
+    }
+}
+
+@media all {
+    .content__image-images>div img {
+        max-width: 100% !important;
+    }
+
+    @media only screen and (max-width:800px) {
+        .content__image-images>div {
+            padding-right: 0 !important;
+        }
+
+        .content__image-images>div img {
+            min-width: 100% !important;
+            margin-left: 0;
+        }
+
+        .content__image .row>div:last-child,
+        .content__image .row>div:first-child {
+            max-width: 100% !important;
+        }
+    }
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "SuisseWorks-Regular";
+    src: url(https://www.mycase.com/wp-content/themes/mycase/library/fonts/SuisseWorks-Regular-WebXL.woff2) format("woff2"), url(https://www.mycase.com/wp-content/themes/mycase/library/fonts/SuisseWorks-Regular-WebXL.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "SuisseWorks-Regular";
+    src: url(https://www.mycase.com/wp-content/themes/mycase/library/fonts/SuisseWorks-Regular-WebXL.woff2) format("woff2"), url(https://www.mycase.com/wp-content/themes/mycase/library/fonts/SuisseWorks-Regular-WebXL.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media all {
+    #wrap h4 {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-weight: inherit;
+        font-style: inherit;
+        font-size: 100%;
+        font-family: inherit;
+        vertical-align: baseline;
+    }
+
+    :focus {
+        outline: 0;
+    }
+
+    #wrap h4 {
+        color: #2b2a31;
+        font-family: "SuisseWorks-Regular";
+        font-size: 2.2222222222rem;
+        line-height: 1.4;
+        margin-bottom: 1.3888888889rem;
+    }
+
+    @media only screen and (max-width :800px) {
+        #wrap h4 {
+            font-size: 2.1111111111rem;
+        }
+    }
+
+    .content__image#wrap h4 {
+        margin-bottom: 1.6666666667rem;
+    }
+}
+
+@media all {
+    #wrap h4 {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-weight: inherit;
+        font-style: inherit;
+        font-size: 100%;
+        font-family: inherit;
+        vertical-align: baseline;
+    }
+
+    :focus {
+        outline: 0;
+    }
+
+
+    #wrap h4 {
+        color: #2b2a31;
+        font-family: "SuisseWorks-Regular";
+        font-size: 2.2222222222rem;
+        line-height: 1.4;
+        margin-bottom: 1.3888888889rem;
+    }
+
+    @media only screen and (max-width :800px) {
+        #wrap h4 {
+            font-size: 2.1111111111rem;
+        }
+    }
+
+    .content__image h4 {
+        margin-bottom: 1.6666666667rem;
+    }
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "SuisseWorks-Regular";
+    src: url(https://www.mycase.com/wp-content/themes/mycase/library/fonts/SuisseWorks-Regular-WebXL.woff2) format("woff2"), url(https://www.mycase.com/wp-content/themes/mycase/library/fonts/SuisseWorks-Regular-WebXL.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "SuisseWorks-Regular";
+    src: url(https://www.mycase.com/wp-content/themes/mycase/library/fonts/SuisseWorks-Regular-WebXL.woff2) format("woff2"), url(https://www.mycase.com/wp-content/themes/mycase/library/fonts/SuisseWorks-Regular-WebXL.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@media all {
+
+    .ease {
+        opacity: 0;
+        transition: opacity 1.5s ease, transform 1s ease;
+        transform: translateY(1rem);
+    }
+
+    .ease.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .content__image .row>div:last-child {
+        flex-shrink: 0;
+        margin-left: auto;
+        width: 35%;
+    }
+
+    .content__image-images>div {
+        margin-bottom: .9444444444rem;
+        padding-right: 3.3888888889rem;
+    }
+
+    .content__image-images>div img {
+        box-shadow: 10px 2px 5px -2px rgba(0, 0, 0, .12);
+        margin-left: auto;
+        max-width: 18.9444444444rem;
+    }
+
+    .content__image-images>div:last-child {
+        margin-bottom: 0;
+    }
+
+    .content__image-images>div.ease {
+        transform: translateY(0) translateX(50px);
+    }
+
+    .content__image-images>div.ease.show {
+        transform: translateY(0) translateX(0);
+    }
+
+    .content__image.has-one .content__image-images:last-child {
+        width: 44%;
+    }
+
+    @media only screen and (max-width :1100px) {
+        .content__image-images>div img {
+            max-width: 100%;
+        }
+    }
+
+    @media only screen and (max-width :800px) {
+        .content__image .row>div:last-child {
+            margin-top: 1.6666666667rem;
+            margin-left: 0;
+            max-width: 16.6666666667rem;
+            width: 100% !important;
+        }
+    }
+}
+
+@media all {
+
+    #wrap img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .ease {
+        opacity: 0;
+        transition: opacity 1.5s ease, transform 1s ease;
+        transform: translateY(1rem);
+    }
+
+    .ease.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .content__image .row>div:last-child {
+        flex-shrink: 0;
+        margin-left: auto;
+        width: 35%;
+    }
+
+    .content__image-images>div {
+        margin-bottom: .9444444444rem;
+        padding-right: 3.3888888889rem;
+    }
+
+    .content__image-images>div img {
+        box-shadow: 10px 2px 5px -2px rgba(0, 0, 0, .12);
+        margin-left: auto;
+        max-width: 18.9444444444rem;
+    }
+
+    .content__image-images>div:last-child {
+        margin-bottom: 0;
+    }
+
+    .content__image-images>div.ease {
+        transform: translateY(0) translateX(50px);
+    }
+
+    .content__image-images>div.ease.show {
+        transform: translateY(0) translateX(0);
+    }
+
+    .content__image.has-one .content__image-images:last-child {
+        width: 44%;
+    }
+
+    @media only screen and (max-width :1100px) {
+        .content__image-images>div img {
+            max-width: 100%;
+        }
+    }
+
+    @media only screen and (max-width :800px) {
+        .content__image .row>div:last-child {
+            margin-top: 1.6666666667rem;
+            margin-left: 0;
+            max-width: 16.6666666667rem;
+            width: 100% !important;
+        }
+    }
+}
+
+@media all {
+    .content__image-images>div img {
+        max-width: 100% !important;
+    }
+
+    @media only screen and (max-width:800px) {
+        .content__image-images>div {
+            padding-right: 0 !important;
+        }
+
+        .content__image-images>div img {
+            min-width: 100% !important;
+            margin-left: 0;
+        }
+
+        .content__image .row>div:last-child {
+            max-width: 100% !important;
+        }
+    }
+}
+
+
+#custom-ease {
+    width: 50%;
+}
+
+@media screen and (max-width:500px) {
+    #reverse-container {
+        flex-direction: column-reverse;
+    }
+
+    #wrap h4 {
+        margin-top: 50px;
+        font-size: 1.6rem;
+    }
+
+    #wrap h2 {
+        font-size: 1.6rem;
+    }
+
+    .content__image {
+        padding: 3rem 0 1rem;
+    }
+
+    #content__heading-icons-text {
+        padding: 9rem 0 1rem;
+    }
+
+
+    .ease {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content__heading-icons-text .col-lg-6>div>div:first-child {
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .support-images {
+        width: 60%;
+    }
+
+    #custom-ease {
+        margin-bottom: 7rem;
+    }
+
+
+}
