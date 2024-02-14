@@ -56,7 +56,7 @@ function Header() {
                                         <a href="#0">Why Choose Us</a>
                                     </li>
                                     <li>
-                                        <a href="#0">Career</a>
+                                        <Link to="/career" relative='path' reloadDocument>Career</Link>
                                     </li>
                                     <li>
                                         <Link to="/blog-category" reloadDocument relative='path'>Event & News</Link>
@@ -134,7 +134,7 @@ function Header() {
                                         <Link to="/contact" reloadDocument relative='path'>Contact Us</Link>
                                     </li>
                                     <li>
-                                        <a href="#0">Support</a>
+                                        <Link to="/support" relative='path' reloadDocument>Support</Link>
                                     </li>
                                     <li>
                                         <a href="#0">Partner</a>
@@ -158,7 +158,7 @@ function Header() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/login" reloadDocument relative='path'>
+                        <Link to="/signin" reloadDocument relative='path'>
                             <Icon icon="carbon:password" className='signin-icon' />
                             Sign In
                         </Link>
@@ -275,7 +275,7 @@ function Header() {
                                                     <a href="login.html">Why Choose Us </a>
                                                 </li>
                                                 <li class="parent">
-                                                    <a href="register.html">Career</a>
+                                                    <Link to="/career" relative='path' reloadDocument>Career</Link>
                                                 </li>
                                                 <li class="parent">
                                                     <Link to="/blog-category" reloadDocument relative='path'>Event & News</Link>
@@ -315,7 +315,7 @@ function Header() {
                                                     <Link to="/contact" reloadDocument relative='path'>Contact Us</Link>
                                                 </li>
                                                 <li class="parent">
-                                                    <a href="register.html">Support </a>
+                                                    <Link to="/support" relative='path' reloadDocument>Support</Link>
                                                 </li>
                                                 <li class="parent">
                                                     <a href="register.html">Partners</a>
@@ -376,7 +376,7 @@ function Header() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/login" reloadDocument relative='path'>
+                                    <Link to="/signin" reloadDocument relative='path'>
                                         <Icon icon="carbon:password" className='signin-icon' />
                                         Sign In
                                     </Link>

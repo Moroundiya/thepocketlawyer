@@ -3,8 +3,9 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import logo2 from '../assets/images/logo-dark.png';
+import { Link } from 'react-router-dom';
 
-function Register() {
+function Signup() {
 
     return (
         <div>
@@ -26,16 +27,16 @@ function Register() {
                                     <div className='my-5' id='login-icon-container'>
                                         <p className='login-with-text'>Sign up with:</p>
                                         <a href="#">
-                                            <iconify-icon className="login-with-icon" icon="logos:facebook"></iconify-icon>
+                                            <img src="https://i.pinimg.com/originals/5f/0c/25/5f0c255d69fa5c24701c547d35ceb5ae.png" className="login-with-icon" alt="" />
                                         </a>
                                         <a href="#">
-                                            <iconify-icon className="login-with-icon" icon="devicon:linkedin"></iconify-icon>
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI0HIhQzH1LSKm_9OhP_IPwNMlLPiFip7LmbKjoscO_w&amp;s" className="login-with-icon" alt="" />
                                         </a>
                                         <a href="#">
-                                            <iconify-icon className="login-with-icon" icon="skill-icons:gmail-light"></iconify-icon>
+                                            <img src="https://assets.dryicons.com/uploads/icon/svg/6904/929fe990-8f44-43be-9c3a-5d2f84e2f56e.svg" className="login-with-icon" alt="" />
                                         </a>
                                         <a href="#">
-                                            <iconify-icon className="login-with-icon" icon="skill-icons:twitter"></iconify-icon>
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSK7QajYraVhWFuQPgLxq5FZnEyOaZveO87Q&amp;s" className="login-with-icon" alt="" />
                                         </a>
                                     </div>
                                     <img src="https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7875.jpg?size=626&ext=jpg&ga=GA1.2.233311484.1695720566&semt=ais" alt="" className='img-fluid' />
@@ -48,7 +49,76 @@ function Register() {
                                         <h3> Register To Enter</h3>
                                     </div>
                                     <div className="form-group icon_form comments_form register_contact">
-                                        <input type="text" className="form-control require" name="full_name" placeholder="Referral Name*" />
+                                        <select name="" id="" className='form-control required all-countries-list'>
+                                            <option value="" selected disabled>
+                                                Referral Name
+                                            </option>
+                                            <option value="">
+                                                Associate
+                                            </option>
+                                            <option value="">
+                                                Bar.
+                                            </option>
+                                            <option value="">
+                                                Dr.
+                                            </option>
+                                            <option value="">
+                                                Esq.
+                                            </option>
+                                            <option value="">
+                                                Hon.
+                                            </option>
+                                            <option value="">
+                                                Jr.
+                                            </option>
+                                            <option value="">
+                                                Messrs.
+                                            </option>
+                                            <option value="">
+                                                Mr.
+                                            </option>
+                                            <option value="">
+                                                Mrs.
+                                            </option>
+                                            <option value="">
+                                                Miss.
+                                            </option>
+                                            <option value="">
+                                                Msgr.
+                                            </option>
+                                            <option value="">
+                                                Ms.
+                                            </option>
+                                            <option value="">
+                                                Prof.
+                                            </option>
+                                            <option value="">
+                                                Partner
+                                            </option>
+                                            <option value="">
+                                                Jr. Partner
+                                            </option>
+                                            <option value="">
+                                                Sr. Partner
+                                            </option>
+                                            <option value="">
+                                                Sir
+                                            </option>
+                                            <option value="">
+                                                Sr.
+                                            </option>
+                                            <option value="">
+                                                St.
+                                            </option>
+                                            <option value="">
+                                                Rev.
+                                            </option>
+                                            <option value="">
+                                                Rt. Hon
+                                            </option>
+
+                                        </select>
+
                                     </div>
                                     <div className="form-group icon_form comments_form register_contact">
                                         <input type="text" className="form-control require" name="first_name" placeholder="First Name*" />
@@ -69,7 +139,15 @@ function Register() {
                                         <input type="tel" className="form-control require" name placeholder="Mobile No." />
                                     </div>
                                     <div className="form-group icon_form comments_form register_contact">
-                                        <input type="text" className="form-control require" name placeholder="User Type Advocate, Client, Employee" />
+                                        <select name="" id="" className='form-control required all-countries-list'>
+                                            <option value="" selected disabled>User Type Advocate, Client, Employee</option>
+                                            <option value="">Advocate</option>
+                                            <option value="">Client</option>
+                                            <option value="">Employee</option>
+                                            <option value="">Legal Firm</option>
+                                            <option value="">Merchant</option>
+                                            <option value="">Super Admin.</option>
+                                        </select>
                                     </div>
                                     <div className="form-group icon_form comments_form register_contact">
                                         <input type="email" className="form-control require" name="email" placeholder="Email Address*" />
@@ -340,6 +418,11 @@ function Register() {
                                     <div className="about_btn login_btn register_btn float_left">
                                         <a href="#">submit</a>
                                     </div>
+                                    <div className="dont_have_account float_left" id='dont_have_account'>
+                                        <p>Already have an account ? <Link to="/signin" reloadDocument relative="path">Sign In</Link></p>
+                                    </div>
+                                    <h2 id='big-title-add'>#1 African Platform For Lawyers And Attorney
+                                        On Demands.</h2>
                                 </div>
                             </div>
                         </div>
@@ -421,4 +504,4 @@ function Register() {
     )
 }
 
-export default Register
+export default Signup

@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import logo2 from '../assets/images/logo-dark.png';
 import { Link } from 'react-router-dom';
 
-function Login() {
+function Signin() {
     return (
         <div>
             <div className="cursor" />
@@ -24,19 +24,20 @@ function Login() {
                                 <div className="login_banner_wrapper">
                                     <img src={logo2} alt="logo" id='login-logo' />
                                     <div className='my-5' id='login-icon-container'>
-                                        <p className='login-with-text'>Login with:</p>
+                                        <p className='login-with-text'>Sign In with:</p>
                                         <a href="#">
-                                            <iconify-icon className="login-with-icon" icon="logos:facebook"></iconify-icon>
+                                            <img src="https://i.pinimg.com/originals/5f/0c/25/5f0c255d69fa5c24701c547d35ceb5ae.png" className="login-with-icon" alt="" />
                                         </a>
                                         <a href="#">
-                                            <iconify-icon className="login-with-icon" icon="devicon:linkedin"></iconify-icon>
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI0HIhQzH1LSKm_9OhP_IPwNMlLPiFip7LmbKjoscO_w&amp;s" className="login-with-icon" alt="" />
                                         </a>
                                         <a href="#">
-                                            <iconify-icon className="login-with-icon" icon="skill-icons:gmail-light"></iconify-icon>
+                                            <img src="https://assets.dryicons.com/uploads/icon/svg/6904/929fe990-8f44-43be-9c3a-5d2f84e2f56e.svg" className="login-with-icon" alt="" />
                                         </a>
                                         <a href="#">
-                                            <iconify-icon className="login-with-icon" icon="skill-icons:twitter"></iconify-icon>
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSK7QajYraVhWFuQPgLxq5FZnEyOaZveO87Q&amp;s" className="login-with-icon" alt="" />
                                         </a>
+
                                     </div>
                                     <img src="https://img.freepik.com/free-vector/sign-concept-illustration_114360-5375.jpg?w=740&t=st=1706521326~exp=1706521926~hmac=754966f517c49c6cb9069d4f9139f09dcba417960b2e04f73f113af030ac15af" alt="" className='img-fluid' />
                                     <div className="jp_regis_center_tag_wrapper jb_register_red_or">
@@ -45,7 +46,7 @@ function Login() {
                                 </div>
                                 <div className="login_form_wrapper" id='login_form_wrapper'>
                                     <div className="sv_heading_wraper heading_wrapper_dark dark_heading hwd">
-                                        <h3> login to enter</h3>
+                                        <h3> Sign In to enter</h3>
                                     </div>
                                     <div className="form-group icon_form comments_form">
                                         <input type="text" className="form-control require" name="full_name" placeholder="Email Address*" />
@@ -63,14 +64,20 @@ function Login() {
                                         </Link>
                                     </div>
                                     <div className="about_btn login_btn float_left">
-                                        <a href="#">login</a>
+                                        <a href="#">Sign In</a>
                                     </div>
-                                    <div className="dont_have_account float_left">
-                                        <p>Don’t have an acount ? <Link to="/register" reloadDocument relative="path">Sign up</Link></p>
+                                    <div className="dont_have_account float_left" id='dont_have_account'>
+                                        <p>Don’t have an account ? <Link to="/signup" reloadDocument relative="path">Sign up</Link></p>
                                     </div>
+                                    <h2 id='big-title-add'>#1 African Platform For Lawyers And Attorney
+                                        On Demands.</h2>
+
                                 </div>
+
                             </div>
+
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -149,4 +156,4 @@ function Login() {
     )
 }
 
-export default Login
+export default Signin

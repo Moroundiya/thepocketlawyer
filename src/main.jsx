@@ -21,14 +21,12 @@ import Email_Notification from './pages/Email_Notification';
 import Exchange_History from './pages/Exchange_History';
 import Faq from './pages/Faq';
 import Investment from './pages/Investment';
-import Login from './pages/Login';
 import Make_Deposit from './pages/Make_Deposit';
 import My_Account from './pages/My_Account';
 import Payment_Request from './pages/Payment_Request';
 import Pending_History from './pages/Pending_History';
 import Referral_Earnings from './pages/Referral_Earnings';
 import Referrals from './pages/Referrals';
-import Register from './pages/Register';
 import Tickets from './pages/Tickets';
 import Transfer_Fund from './pages/Transfer_Fund';
 import View_Profile from './pages/View_Profile';
@@ -47,6 +45,9 @@ import Search_Merchant from './pages/Search_Merchant';
 import TermsAndCondition from './pages/TermsAndCondition';
 import Why_Choose_Us from './pages/Why_Choose_Us';
 import Support from './pages/Support';
+import Career from './pages/Career';
+import Signin from './pages/Signin';
+import Signup from './pages/Signup';
 
 
 const router = createBrowserRouter([
@@ -119,8 +120,8 @@ const router = createBrowserRouter([
     element: <Investment />
   },
   {
-    path: "login",
-    element: <Login />
+    path: "signin",
+    element: <Signin />
   },
   {
     path: "make-deposit",
@@ -147,8 +148,8 @@ const router = createBrowserRouter([
     element: <Referrals />
   },
   {
-    path: "register",
-    element: <Register />
+    path: "signup",
+    element: <Signup />
   },
   {
     path: "forget-password",
@@ -217,6 +218,10 @@ const router = createBrowserRouter([
   {
     path: "support",
     element: <Support />
+  },
+  {
+    path: "career",
+    element: <Career />
   }
 
 ]);

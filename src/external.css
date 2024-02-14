@@ -205,8 +205,13 @@
     margin: 6px 0;
 }
 
-.work-head-title-container {
-    /* margin: 30px 0; */
+#big-title-add {
+    font-size: 1.5rem;
+    font-weight: semibold;
+}
+
+#dont_have_account {
+    margin-bottom: 70px !important;
 }
 
 .work-head-title-container-parent {
@@ -483,11 +488,14 @@ div.nice-select.form-control.all-countries-list {
     margin-top: 20px;
 }
 
-.blog-learn-more:hover, .mobile-blog-learn-more:hover {
+.blog-learn-more:hover,
+.mobile-blog-learn-more:hover {
     background-color: #0b7aa6;
 }
 
-
+.login-with-icon {
+    width: 30px;
+}
 
 
 
@@ -577,20 +585,30 @@ div.nice-select.form-control.all-countries-list {
     .title-sub-desc {
         width: 100%;
     }
-#doctor-content-subpage {
-    padding: 0 .4rem !important;
-}
+
+    #doctor-content-subpage {
+        padding: 0 .4rem !important;
+    }
 
 }
 
 @media screen and (max-width: 500px) {
+    #big-title-add {
+        font-size: 1.35rem;
+    }
+
+    #dont_have_account {
+        margin-bottom: 50px !important;
+    }
 
     .blog-learn-more {
         display: none;
     }
+
     .mobile-blog-learn-more {
         display: inline-block;
     }
+
     .header-logo {
         width: 160px;
     }

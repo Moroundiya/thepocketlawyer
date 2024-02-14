@@ -1,805 +1,751 @@
-import React from 'react'
+import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import '../view-profile.css'
+
 
 function View_Profile() {
     return (
-        <div>
-            <div className="cursor" />
-            {/* Top Scroll Start */}
-            <a href="javascript:" id="return-to-top"> <i className="fas fa-angle-double-up" /></a>
-            {/* Top Scroll End */}
-            {/* cp navi wrapper Start */}
-            <nav className="cd-dropdown d-block d-sm-block d-md-block d-lg-none d-xl-none">
-                <h2><a href="index.html"> savehyip </a></h2>
-                <a href="#0" className="cd-close">Close</a>
-                <ul className="cd-dropdown-content">
-                    <li>
-                        <form className="cd-search">
-                            <input type="search" placeholder="Search..." />
-                        </form>
-                    </li>
-                    <li className="has-children">
-                        <a href="#">index</a>
-                        <ul className="cd-secondary-dropdown icon_menu is-hidden">
-                            <li className="go-back"><a href="#0">Menu</a></li>
-                            <li><a href="index.html">index I</a></li>
-                            <li><a href="index2.html">index II</a></li>
-                            <li><a href="index3.html">index III</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about_us.html"> about us </a></li>
-                    <li><a href="investment.html"> investment plan </a></li>
-                    <li><a href="faq.html"> FAQ </a></li>
-                    <li className="has-children">
-                        <a href="#">dashboard</a>
-                        <ul className="cd-secondary-dropdown icon_menu is-hidden">
-                            <li className="go-back"><a href="#0">Menu</a></li>
-                            <li>
-                                <a href="all_transactions.html">all transactions</a>
-                            </li>
-                            <li>
-                                <a href="banners.html">banners</a>
-                            </li>
-                            <li>
-                                <a href="change_password.html">change password</a>
-                            </li>
-                            <li>
-                                <a href="change_pin.html">change pin</a>
-                            </li>
-                            <li>
-                                <a href="deposit_history.html">deposit history</a>
-                            </li>
-                            <li>
-                                <a href="deposit_list.html">deposit list</a>
-                            </li>
-                            <li>
-                                <a href="earnings_history.html">earnings history</a>
-                            </li>
-                            <li>
-                                <a href="email_notification.html">email notification</a>
-                            </li>
-                            <li>
-                                <a href="exchange_history.html">exchange history</a>
-                            </li>
-                            <li>
-                                <a href="exchange_money.html">exchange money</a>
-                            </li>
-                            <li>
-                                <a href="make_deposit.html">make deposit</a>
-                            </li>
-                            <li>
-                                <a href="my_account.html">my account</a>
-                            </li>
-                            <li>
-                                <a href="payment_request.html">payment request</a>
-                            </li>
-                            <li>
-                                <a href="pending_history.html">pending history</a>
-                            </li>
-                            <li>
-                                <a href="referral_earnings.html">referral earnings</a>
-                            </li>
-                            <li>
-                                <a href="referrals.html">referrals</a>
-                            </li>
-                            <li>
-                                <a href="tickets.html">tickets</a>
-                            </li>
-                            <li>
-                                <a href="transfer_fund.html">transfer fund</a>
-                            </li>
-                            <li>
-                                <a href="view_profile.html">view profile</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li className="has-children">
-                        <a href="#">blog</a>
-                        <ul className="cd-secondary-dropdown icon_menu is-hidden">
-                            <li className="go-back"><a href="#0">Menu</a></li>
-                            <li><a href="blog_category.html">blog category</a></li>
-                            <li><a href="blog_single.html">blog single</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact_us.html"> contact us </a></li>
-                    <li><a href="login.html"> login </a></li>
-                    <li><a href="register.html"> register </a></li>
-                </ul>
-                {/* .cd-dropdown-content */}
-            </nav>
-            <div className="cp_navi_main_wrapper inner_header_wrapper dashboard_header_middle float_left">
-                <div className="container-fluid">
-                    <div className="cp_logo_wrapper">
-                        <a href="index.html">
-                            <img src="images/logo2.png" alt="logo" />
-                        </a>
-                    </div>
-                    {/* mobile menu area start */}
-                    <header className="mobail_menu d-block d-sm-block d-md-block d-lg-none d-xl-none">
-                        <div className="container-fluid">
-                            <div className="row">
-                                <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <div className="cd-dropdown-wrapper">
-                                        <a className="house_toggle inner_toggle" href="#0">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.177 31.177" style={{ enableBackground: 'new 0 0 31.177 31.177' }} xmlSpace="preserve" width="25px" height="25px">
-                                                <g>
-                                                    <g>
-                                                        <path className="menubar" d="M30.23,1.775H0.946c-0.489,0-0.887-0.398-0.887-0.888S0.457,0,0.946,0H30.23    c0.49,0,0.888,0.398,0.888,0.888S30.72,1.775,30.23,1.775z" fill="#004165" />
-                                                    </g>
-                                                    <g>
-                                                        <path className="menubar" d="M30.23,9.126H12.069c-0.49,0-0.888-0.398-0.888-0.888c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,8.729,30.72,9.126,30.23,9.126z" fill="#004165" />
-                                                    </g>
-                                                    <g>
-                                                        <path className="menubar" d="M30.23,16.477H0.946c-0.489,0-0.887-0.398-0.887-0.888c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,16.079,30.72,16.477,30.23,16.477z" fill="#004165" />
-                                                    </g>
-                                                    <g>
-                                                        <path className="menubar" d="M30.23,23.826H12.069c-0.49,0-0.888-0.396-0.888-0.887c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,23.43,30.72,23.826,30.23,23.826z" fill="#004165" />
-                                                    </g>
-                                                    <g>
-                                                        <path className="menubar" d="M30.23,31.177H0.946c-0.489,0-0.887-0.396-0.887-0.887c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.398,0.888,0.888C31.118,30.78,30.72,31.177,30.23,31.177z" fill="#004165" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </a>
-                                        {/* .cd-dropdown */}
+        <div className="main-wrapper" >
+            <Header />
+            <div className="content" id='view-profile-parent'>
+                <div className="container">
+                    <div className="card">
+                        <div className="card-body">
+                            <div className="doctor-widget">
+                                <div className="doc-info-left">
+                                    <div className="doctor-img">
+                                        <img
+                                            src="https://helpful-bienenstitch-7914f7.netlify.app/assets/deborah-b6522712.jpg"
+                                            className="img-fluid"
+                                            alt="User Image"
+                                        />
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* .cd-dropdown-wrapper */}
-                    </header>
-                    <div className="top_header_right_wrapper dashboard_right_Wrapper">
-                        <div className="crm_message_dropbox_wrapper">
-                            <div className="nice-select budge_noti_wrapper" tabIndex={0}> <span className="current"><i className="flaticon-envelope" /></span>
-                                <div className="budge_noti">4</div>
-                                <ul className="list">
-                                    <li><a href="#">2 New Messages</a>
-                                    </li>
-                                    <li>
-                                        <div className="crm_mess_main_box_wrapper">
-                                            <div className="crm_mess_img_wrapper">
-                                                <img src="images/mess1.jpg" alt="img" />
-                                            </div>
-                                            <div className="crm_mess_img_cont_wrapper">
-                                                <h4>Mr.ajay <span>01:30PM</span></h4>
-                                                <p>I'm Leaving early</p>
-                                            </div>
+                                    <div className="doc-info-cont">
+                                        <h5 className="doc-name">Dr. Darren Elder</h5>
+                                        <p className="doc-speciality">
+                                            BDS, MDS - Oral &amp; Maxillofacial Surgery
+                                        </p>
+                                        <p className="doc-department">
+                                            <img
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAC+lBMVEUAAAAUmMQUkr4RrNQUlcEXfK0QsdgOxekYcqQM3PwYbaAOx+sXfKwSo80PwOUVh7YTl8MRqtMYcKISqdIM3v0ZaZ0Ukr8YbqENzvEM1/gZaZ0RrtYYap0UlsIUlsIXd6kM2voYa54Vj70Oye0TnskN1/gNzvATncgUlcEUkL4SqNETmsYM1vcUlsITnMcVhrUWg7IZZJkPwucNzfAVjboNy+4TmsUM2fkM2foNzvEYbqEZap0aXJMYbqEXdacSoswRrNQQs9oTmcUWgbEM2fkSpc4L3/4M2/wUlcEaYZYRq9MUlMAXe6wTnsgZap4NzvENz/ETmMQUkr8PuuARr9YVgrEYcqQRrdUVjrwM3/4aYJYTm8cRr9cSp9AaYpgM3v4Yb6IM2/sTncgaYJUN1/gTnMcUlsEaYJUPwOUYcaMaYpgN1fYQtdwWhrQXfa4TnMcM3f0VhbQXdaYUmMQQud8Ul8MM2fkQt94M2PgToMoSn8kXd6kUjbsPut8Ukb4WgrESpM4WhLMVibcQtNsZZJgPw+cPxOkRr9YUl8IbWY8N0/QXfq8XdacN1fcVirgZaJ0ZbJ8XeKkZap4Oyu0So80M1PYZYZYPv+QQtdwN1vcUk78aYJUXe6sTnskaYpcWfa4M2voXdqcSqdEQuN4ViLYXcKMUkL4YcqUUkb4UlMEOwucTmcQM1vgVirkUi7oM2fkPw+cYbqARsdgXe6sTmMUM2/oQtt0Wfq4TnMcQttwYcaMWfK0QuuAbXZMNy+4Qt94Xe6wYcaQXfa0VhLMQuuATn8oVjLoaYpcTmcUaZJkQtt4Rr9YVkr8SqdEPwOUZZZsNzvAZYpcRsdgTnsoOyOsRrtUZaZwRsdcWh7YYcaQL3f0M2vsUk8ASrNQVj7wQv+QVh7YRs9oN2PgaaJ0VirgZa54WgLAZaJ0RstkWfq0Uk8AL4v8TmsUVj7wXe6sOx+oWg7MYcaMZY5gbWI8PwucPu+ERs9kViLYWgrAWfq4Spc8L6P8Qtt0YdKYaBGP2AAAA6nRSTlMAAxEFFwoHCQb+/hAN/v70Kx0SDeLf2sC6e2FfST05ODUeHBf+/fzy8ube3K+ckJB5dkk+NjIwJiAcF/7+9/Xz6uXl4t7W1MfFhmtpZWFYVklJRTg3LickI/7++fX19fHr6urm5eXk4d3a2dLNzcK9sa6uraSikouKh4B0cWFcW1dUST03IhT+/vn37+7r6ebUz87Lx8bDwL+8vLi2tK2ppKOinJqRh4SAfHtxbmhhYFJRUFBOSkZBNDExI/Lx7ern5N7W08/Ny8q8tbOvrqehn5qZmZSEgnxwb2VZQSv2593b1bejnIV8c26GJqJ6AAAGRElEQVRYw6VXZVQbQRDeQAhJIFa0heJOgSIt7lAoNazFvVAoUpxCoS2l7u7u7u7u7u4awbXyXi+XS+6S3NGX1/mzs9/efNn5dmcWAGrK7kb7ylfk5q4YO6yfqTKKU6ZE1Wxanpd368nBN2RAaBrO5Sk087SRkM2ZaXG23FlNhJvuL21rO33O39/fz2/aT5uq/sr48UaFPNrHPi+NXN3d3Yx26+ZaWOiGkwBQq8luPX25VO9EDIcTE/VssQ2DYR+DE67aMy5uxStVDDBM16KhguO6jPluUx1AjRy2mJE+US5ebT1vwD5Z0GlRw6Js5qYTMrBylSV/lwxGKeSFuMGLek7YbT1ubS0F8tbbVoaBVM5boibaya8gqZWdrdn7cRj6Z3EjsHNnnqYpNOzfqaZ80En6Uz0ms0JVniGSq62EEWAA7Qg09OTxpsh/GnW5bdlRedhesBWdHOH1EcbTgsIpQN44Fe2JD9/IouS51iYSqQpTnAHYRwtxBbhGqstr978VFs2RQrcLqsXuFNoAANyC4qIAkZEnLp+W6Gejh8UMBEWohPeFCYwF3ZhGtN6dNf2xiNLV9+Ky2J0SDtRCUlxB96YsUwKbBccQb72mK4iCdFTQdjQORrwQTXfgxBurKMGezueIN0BzKhgW11NRggmNfbEEtP8gCIHusRNN4RT2dooJCjXdQB1tvaIE1Z1iEXumGQH3OUGmChI4dNWKS8F8NwD309wUiycV+bARt5+5LgBu/UiKEXhcXCCOcE/L/ff3VHWK1O+DQ/WbJdXYZ06/7ndrUHk9ICBL2z5SA66CSZsvBQbO6ioYId7CS/Od3YXXXfH1TUi3zbSysrIeoq5ePZfFYgVePD/Lx2f1cACbq/kSYgGUqxi+aw6TKYCiZGBnLbiaz5rr4KKkoqLiUVvg0/QCyWFmOGF8JSM4QjiaCH/D5HNHRz7aDHvNbhoHO+HmhLWoxwiGG2WErQE878ti7VWXrBqm0g3hrrpkpjN+vGmwZTQk2xB27xIX5AYHdhX1lqwfoOuowG+QhS6+CgcZdlB8CX8H5k0oaqxf1/cQMtPxPAmroNvwCvcEHiVBv1bJHxOLRQev7qqfLZbB2xEejSyCyHjd1CZYFbAtbZVk8GPPJ4gvpJaOyHncUIFDEMNYDOlmNggQmorWfOR1WnTWSH6Z/XMMAGV8F0BsWqMRp6bhLgVnBxBByfRuCEgSAoouU/4J5KRfIQE7/mtigh5aS8XuMOZdVbkMV2aSQTW3Gw1GzFsr2cwyplxRapQlRAIDKzviUumV3Evif2c+k1mNGGPG3wrA4eGA0G40T5b4U7P9pfviELOA0IRQWFpiCUb1QGc3f0vlwE7IPA7KuOO7I3BsdsSkV9MWhl1cY3YYAANuqApxvPqoZGPM9MS5h8oYAS0zIXJSmWAPMcHA5qdYfSkflmugs+Pp9sIh1lrbhCje8MzoHlJAXiIHI6HleORvGQcigk/xQ6WBm+1sdGI/PUJUkZdYBMeoP2OpjD6l7dHopITfX+Ts6XBAEx0xAv1ibby+DOWTaZhyuB5ARu5zPkvcT06tvnBhgzhtlxk3qDIEExP1JL6S7Urx/hw6ahGsmK6jQ9+C4ONaxgEZi/bbKNlsbys78ZlOavwqcmqbitXVF9IRSe55GcoSTPULpkgOAa1BcmCBqKdto0MH85QuKh/jjGvyV8wmSXIRHnElzZuaP8sEHos9XYSdfCC8TYOWtUDONiYdF7uh3FMSuKAT1r7HghxIQON596hwYi0P5AnCksLE284KRR+gdfVwtrHewg5Mmq8FJzTUaxvOPxK+GxFvEHcXCjvUH4CbedMG4bDQE96bY8tgeQIlXxtE+tsCTCMcXP8D7j50+Ny+iHrIAy99nB57x5ItKkXtLEwJGZ/fQIUWt9DhEP1kR2ElX0NbCfYqmVXC43juViy8YLYHAB6pObAsHvNGQ3TDvVYBHOOY2ZLgDOBDRFX8cxIqXs9i0WxhszGkYctAgGf2/CrhEb1dKdUKD/lsga6RJ/Igfot3BNRVM/RxCUwCpu8AsdqCSCmUmtNkeNJ7PhWRJDnDeKjXUirAtUgrrrY1d7vMSzDUOzXVu5ekk8VnnMmYDAiMbWetPYgk1zx0cl5IQJWBo1ah8X8B3k2sVEYmnl8AAAAASUVORK5CYII="
+                                                className=""
+                                                alt="Speciality"
+                                            />
+                                            Dentist
+                                        </p>
+                                        <div className="rating">
+                                            <i className="fas fa-star filled" />
+                                            <i className="fas fa-star filled" />
+                                            <i className="fas fa-star filled" />
+                                            <i className="fas fa-star filled" />
+                                            <i className="fas fa-star" />
+                                            <span className="d-inline-block average-rating">(35)</span>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div className="crm_mess_main_box_wrapper">
-                                            <div className="crm_mess_img_wrapper">
-                                                <img src="images/mess1.jpg" alt="img" />
-                                            </div>
-                                            <div className="crm_mess_img_cont_wrapper">
-                                                <h4>Mr.ajay <span>01:30PM</span></h4>
-                                                <p>I'm Leaving early</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="crm_mess_main_box_wrapper">
-                                            <div className="crm_mess_img_wrapper">
-                                                <img src="images/mess1.jpg" alt="img" />
-                                            </div>
-                                            <div className="crm_mess_img_cont_wrapper">
-                                                <h4>Mr.akshay <span>01:30PM</span></h4>
-                                                <p>I'm Leaving early</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="crm_mess_main_box_wrapper">
-                                            <div className="crm_mess_img_wrapper">
-                                                <img src="images/mess1.jpg" alt="img" />
-                                            </div>
-                                            <div className="crm_mess_img_cont_wrapper">
-                                                <h4>Mr.john <span>01:30PM</span></h4>
-                                                <p>I'm Leaving early</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="crm_mess_all_main_box_wrapper">
-                                            <p><a href="#">See All</a>
+                                        <div className="clinic-details">
+                                            <p className="doc-location">
+                                                <i className="fas fa-map-marker-alt" /> Newyork, USA -{" "}
+                                                <a href="">Get Directions</a>
                                             </p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="crm_message_dropbox_wrapper crm_notify_dropbox_wrapper">
-                            <div className="nice-select budge_noti_wrapper" tabIndex={0}> <span className="current"><i className="flaticon-notification" /></span>
-                                <div className="budge_noti">4</div>
-                                <ul className="list">
-                                    <li><a href="#">2 New Messages</a>
-                                    </li>
-                                    <li>
-                                        <div className="crm_mess_main_box_wrapper">
-                                            <div className="crm_mess_img_wrapper">
-                                                <img src="images/mess1.jpg" alt="img" />
-                                            </div>
-                                            <div className="crm_mess_img_cont_wrapper">
-                                                <h4>Mr.Farhan <span>01:30PM</span></h4>
-                                                <p>I'm Leaving early</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="crm_mess_main_box_wrapper">
-                                            <div className="crm_mess_img_wrapper">
-                                                <img src="images/mess1.jpg" alt="img" />
-                                            </div>
-                                            <div className="crm_mess_img_cont_wrapper">
-                                                <h4>Mr.ajay <span>01:30PM</span></h4>
-                                                <p>I'm Leaving early</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="crm_mess_main_box_wrapper">
-                                            <div className="crm_mess_img_wrapper">
-                                                <img src="images/mess1.jpg" alt="img" />
-                                            </div>
-                                            <div className="crm_mess_img_cont_wrapper">
-                                                <h4>Mr.akshay <span>01:30PM</span></h4>
-                                                <p>I'm Leaving early</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="crm_mess_main_box_wrapper">
-                                            <div className="crm_mess_img_wrapper">
-                                                <img src="images/mess1.jpg" alt="img" />
-                                            </div>
-                                            <div className="crm_mess_img_cont_wrapper">
-                                                <h4>Mr.john <span>01:30PM</span></h4>
-                                                <p>I'm Leaving early</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="crm_mess_all_main_box_wrapper">
-                                            <p><a href="#">See All</a>
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="crm_profile_dropbox_wrapper">
-                            <div className="nice-select" tabIndex={0}> <span className="current"><img src="images/avatar.png" alt="img" /> hi, jenny ! <span className="hidden_xs_content" /></span>
-                                <ul className="list">
-                                    <li><a href="#"><i className="flaticon-profile" /> Profile</a>
-                                    </li>
-                                    <li><a href="#"><i className="flaticon-purse" /> My Balance</a>
-                                    </li>
-                                    <li><a href="#"><i className="flaticon-file" /> My Task</a>
-                                    </li>
-                                    <li><a href="#"><i className="flaticon-calendar" /> My Calender</a>
-                                    </li>
-                                    <li><a href="#"><i className="flaticon-envelope" /> Inbox</a>
-                                    </li>
-                                    <li><a href="#"><i className="flaticon-settings" /> Setting</a>
-                                    </li>
-                                    <li><a href="#"><i className="flaticon-help" /> Help</a>
-                                    </li>
-                                    <li><a href="#"><i className="flaticon-padlock" /> Lock Screen</a>
-                                    </li>
-                                    <li><a href="#"><i className="flaticon-turn-off" /> Logout</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="cp_navigation_wrapper main_top_wrapper dashboard_header">
-                        <div className="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
-                            <ul className="main_nav_ul">
-                                <li className="has-mega gc_main_navigation"><a href="#" className="gc_main_navigation active_class">index <i className="fas fa-caret-down" /></a>
-                                    <ul className="navi_2_dropdown">
-                                        <li className="parent">
-                                            <a href="index.html"><i className="fas fa-caret-right" />index I</a>
-                                        </li>
-                                        <li className="parent">
-                                            <a href="index2.html"><i className="fas fa-caret-right" />index II</a>
-                                        </li>
-                                        <li className="parent">
-                                            <a href="index3.html"><i className="fas fa-caret-right" />index III</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="about_us.html" className="gc_main_navigation">about us</a></li>
-                                <li><a href="investment.html" className="gc_main_navigation">investment plan</a></li>
-                                <li className="has-mega gc_main_navigation"><a href="#" className="gc_main_navigation">pages <i className="fas fa-caret-down" /></a>
-                                    <ul className="navi_2_dropdown">
-                                        <li className="parent">
-                                            <a href="faq.html"><i className="fas fa-caret-right" />FAQ</a>
-                                        </li>
-                                        <li className="parent">
-                                            <a href="login.html"><i className="fas fa-caret-right" />login</a>
-                                        </li>
-                                        <li className="parent">
-                                            <a href="register.html"><i className="fas fa-caret-right" />register</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="has-mega gc_main_navigation"><a href="#" className="gc_main_navigation">dashboard <i className="fas fa-caret-down" /></a>
-                                    <ul className="navi_2_dropdown">
-                                        <li className="parent">
-                                            <a href="#"><i className="fas fa-caret-right" />my account<span><i className="fas fa-caret-right" />
-                                            </span></a>
-                                            <ul className="dropdown-menu-right">
+                                            <ul className="clinic-gallery">
                                                 <li>
-                                                    <a href="my_account.html"> <i className="fas fa-caret-right" />my account</a>
+                                                    <a
+                                                        href="assets/img/features/feature-01.jpg"
+                                                        data-fancybox="gallery"
+                                                    >
+                                                        <img src="https://helpful-bienenstitch-7914f7.netlify.app/assets/homw-42cda38c.jpg" alt="Feature" />
+                                                    </a>
                                                 </li>
                                                 <li>
-                                                    <a href="view_profile.html"> <i className="fas fa-caret-right" /> my profile</a>
+                                                    <a
+                                                        href="assets/img/features/feature-02.jpg"
+                                                        data-fancybox="gallery"
+                                                    >
+                                                        <img
+                                                            src="https://helpful-bienenstitch-7914f7.netlify.app/assets/feature02-141fd269.jpg"
+                                                            alt="Feature Image"
+                                                        />
+                                                    </a>
                                                 </li>
                                                 <li>
-                                                    <a href="email_notification.html"><i className="fas fa-caret-right" />email notification </a>
+                                                    <a
+                                                        href="assets/img/features/feature-03.jpg"
+                                                        data-fancybox="gallery"
+                                                    >
+                                                        <img
+                                                            src="https://helpful-bienenstitch-7914f7.netlify.app/assets/feature03-10a49a5c.jpg"
+                                                            alt="Feature"
+                                                        />
+                                                    </a>
                                                 </li>
                                                 <li>
-                                                    <a href="change_password.html"><i className="fas fa-caret-right" />change password</a>
-                                                </li>
-                                                <li>
-                                                    <a href="change_pin.html"><i className="fas fa-caret-right" />change pin</a>
+                                                    <a
+                                                        href="assets/img/features/feature-04.jpg"
+                                                        data-fancybox="gallery"
+                                                    >
+                                                        <img
+                                                            src="https://helpful-bienenstitch-7914f7.netlify.app/assets/feature04-31ddad90.jpg"
+                                                            alt="Feature"
+                                                        />
+                                                    </a>
                                                 </li>
                                             </ul>
-                                        </li>
-                                        <li className="parent">
-                                            <a href="#"> <i className="fas fa-caret-right" />finance<span> <i className="fas fa-caret-right" />
-                                            </span></a>
-                                            <ul className="dropdown-menu-right">
-                                                <li>
-                                                    <a href="make_deposit.html"> <i className="fas fa-caret-right" />make deposit</a>
-                                                </li>
-                                                <li>
-                                                    <a href="deposit_list.html"> <i className="fas fa-caret-right" /> deposit lists</a>
-                                                </li>
-                                                <li>
-                                                    <a href="payment_request.html"><i className="fas fa-caret-right" />payment request</a>
-                                                </li>
-                                                <li>
-                                                    <a href="exchange_money.html"><i className="fas fa-caret-right" />exchange money</a>
-                                                </li>
-                                                <li>
-                                                    <a href="transfer_fund.html"><i className="fas fa-caret-right" />fund transfer</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li className="parent">
-                                            <a href="#"> <i className="fas fa-caret-right" />reports<span> <i className="fas fa-caret-right" />
-                                            </span></a>
-                                            <ul className="dropdown-menu-right">
-                                                <li>
-                                                    <a href="all_transactions.html"> <i className="fas fa-caret-right" />all transactions</a>
-                                                </li>
-                                                <li>
-                                                    <a href="deposit_history.html"> <i className="fas fa-caret-right" /> deposit history</a>
-                                                </li>
-                                                <li>
-                                                    <a href="pending_history.html"><i className="fas fa-caret-right" />pending history</a>
-                                                </li>
-                                                <li>
-                                                    <a href="exchange_history.html"><i className="fas fa-caret-right" />exchange history</a>
-                                                </li>
-                                                <li>
-                                                    <a href="earnings_history.html"><i className="fas fa-caret-right" />earning history</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li className="parent">
-                                            <a href="#"> <i className="fas fa-caret-right" />referrals<span> <i className="fas fa-caret-right" />
-                                            </span></a>
-                                            <ul className="dropdown-menu-right">
-                                                <li>
-                                                    <a href="referrals.html"> <i className="fas fa-caret-right" />my referrals</a>
-                                                </li>
-                                                <li>
-                                                    <a href="banners.html"> <i className="fas fa-caret-right" /> promotionals banners</a>
-                                                </li>
-                                                <li>
-                                                    <a href="referral_earnings.html"><i className="fas fa-caret-right" />referral earnings</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li className="parent">
-                                            <a href="tickets.html"><i className="fas fa-caret-right" />view tickets</a></li>
-                                    </ul>
-                                </li>
-                                <li className="has-mega gc_main_navigation"><a href="#" className="gc_main_navigation">blog <i className="fas fa-caret-down" /></a>
-                                    <ul className="navi_2_dropdown">
-                                        <li className="parent">
-                                            <a href="blog_category.html"><i className="fas fa-caret-right" />blog category</a>
-                                        </li>
-                                        <li className="parent">
-                                            <a href="blog_single.html"><i className="fas fa-caret-right" /> blog single</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact_us.html" className="gc_main_navigation">contact us</a></li>
-                            </ul>
-                        </div>
-                        {/* mainmenu end */}
-                    </div>
-                </div>
-            </div>
-            {/* navi wrapper End */}
-            {/* inner header wrapper start */}
-            <div className="page_title_section dashboard_title">
-                <div className="page_header">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-xl-9 col-lg-7 col-md-7 col-12 col-sm-7">
-                                <h1>View Profile</h1>
-                            </div>
-                            <div className="col-xl-3 col-lg-5 col-md-5 col-12 col-sm-5">
-                                <div className="sub_title_section">
-                                    <ul className="sub_title">
-                                        <li> <a href="#"> Home </a>&nbsp; / &nbsp; </li>
-                                        <li>View Profile</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* inner header wrapper end */}
-            <div className="l-sidebar">
-                <div className="l-sidebar__content">
-                    <nav className="c-menu js-menu" id="mynavi">
-                        <ul className="u-list crm_drop_second_ul">
-                            <li className="crm_navi_icon">
-                                <div className="c-menu__item__inner"><a href="my_account.html"><i className="flaticon-four-grid-layout-design-interface-symbol" /></a>
-                                    <ul className="crm_hover_menu">
-                                        <li><a href="my_account.html"><i className="fa fa-circle" /> my account</a>
-                                        </li>
-                                        <li><a href="view_profile.html"><i className="fa fa-circle" /> my profile</a>
-                                        </li>
-                                        <li><a href="email_notification.html"><i className="fa fa-circle" />email notification</a>
-                                        </li>
-                                        <li><a href="change_password.html"><i className="fa fa-circle" />change password</a>
-                                        </li>
-                                        <li><a href="change_pin.html"><i className="fa fa-circle" />change pin</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li className="c-menu__item is-active has-sub crm_navi_icon_cont">
-                                <a href="my_account.html">
-                                    <div className="c-menu-item__title"><span>my account</span><i className="no_badge">5</i>
-                                    </div>
-                                </a>
-                                <ul>
-                                    <li><a href="my_account.html"><i className="fa fa-circle" /> my account</a>
-                                    </li>
-                                    <li><a href="view_profile.html"><i className="fa fa-circle" /> my profile</a>
-                                    </li>
-                                    <li><a href="email_notification.html"><i className="fa fa-circle" />email notification</a>
-                                    </li>
-                                    <li><a href="change_password.html"><i className="fa fa-circle" />change password</a>
-                                    </li>
-                                    <li><a href="change_pin.html"><i className="fa fa-circle" />change pin</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul className="u-list crm_drop_second_ul">
-                            <li className="crm_navi_icon">
-                                <div className="c-menu__item__inner"><a href="make_deposit.html"><i className="flaticon-movie-tickets" /></a>
-                                    <ul className="crm_hover_menu">
-                                        <li>
-                                            <a href="make_deposit.html"> <i className="fa fa-circle" />make deposit</a>
-                                        </li>
-                                        <li>
-                                            <a href="deposit_list.html"> <i className="fa fa-circle" /> deposit lists</a>
-                                        </li>
-                                        <li>
-                                            <a href="payment_request.html"> <i className="fa fa-circle" /> payment request</a>
-                                        </li>
-                                        <li>
-                                            <a href="exchange_money.html"> <i className="fa fa-circle" />exchange money</a>
-                                        </li>
-                                        <li>
-                                            <a href="transfer_fund.html"> <i className="fa fa-circle" />fund transfer</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li className="c-menu__item is-active has-sub crm_navi_icon_cont">
-                                <a href="make_deposit.html">
-                                    <div className="c-menu-item__title"><span>finance</span><i className="no_badge">5</i>
-                                    </div>
-                                </a>
-                                <ul>
-                                    <li>
-                                        <a href="make_deposit.html"> <i className="fa fa-circle" />make deposit</a>
-                                    </li>
-                                    <li>
-                                        <a href="deposit_list.html"> <i className="fa fa-circle" /> deposit lists</a>
-                                    </li>
-                                    <li>
-                                        <a href="payment_request.html"> <i className="fa fa-circle" /> payment request</a>
-                                    </li>
-                                    <li>
-                                        <a href="exchange_money.html"> <i className="fa fa-circle" />exchange money</a>
-                                    </li>
-                                    <li>
-                                        <a href="transfer_fund.html"> <i className="fa fa-circle" />fund transfer</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul className="u-list crm_drop_second_ul">
-                            <li className="crm_navi_icon">
-                                <div className="c-menu__item__inner"><a href="transfer_fund.html"><i className="flaticon-progress-report" /></a>
-                                </div>
-                            </li>
-                            <li className="c-menu__item crm_navi_icon_cont">
-                                <a href="transfer_fund.html">
-                                    <div className="c-menu-item__title">fund transfer</div>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul className="u-list crm_drop_second_ul">
-                            <li className="crm_navi_icon">
-                                <div className="c-menu__item__inner"><a href="all_transactions.html"><i className="flaticon-help" /></a>
-                                    <ul className="crm_hover_menu">
-                                        <li><a href="all_transactions.html"><i className="fa fa-circle" /> all transactions</a>
-                                        </li>
-                                        <li><a href="deposit_history.html"><i className="fa fa-circle" />deposit history</a>
-                                        </li>
-                                        <li><a href="pending_history.html"><i className="fa fa-circle" />pending history</a>
-                                        </li>
-                                        <li><a href="exchange_history.html"><i className="fa fa-circle" />exchange history</a>
-                                        </li>
-                                        <li><a href="earnings_history.html"><i className="fa fa-circle" />earning history</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li className="c-menu__item is-active has-sub crm_navi_icon_cont">
-                                <a href="all_transactions.html">
-                                    <div className="c-menu-item__title"><span>reports</span><i className="no_badge purple">5</i>
-                                    </div>
-                                </a>
-                                <ul>
-                                    <li><a href="all_transactions.html"><i className="fa fa-circle" /> all transactions</a>
-                                    </li>
-                                    <li><a href="deposit_history.html"><i className="fa fa-circle" />deposit history</a>
-                                    </li>
-                                    <li><a href="pending_history.html"><i className="fa fa-circle" />pending history</a>
-                                    </li>
-                                    <li><a href="exchange_history.html"><i className="fa fa-circle" />exchange history</a>
-                                    </li>
-                                    <li><a href="earnings_history.html"><i className="fa fa-circle" />earning history</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul className="u-list crm_drop_second_ul">
-                            <li className="crm_navi_icon">
-                                <div className="c-menu__item__inner"><a href="tickets.html"><i className="flaticon-file" /></a>
-                                </div>
-                            </li>
-                            <li className="c-menu__item crm_navi_icon_cont">
-                                <a href="tickets.html">
-                                    <div className="c-menu-item__title">view tickets</div>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul className="u-list crm_drop_second_ul">
-                            <li className="crm_navi_icon">
-                                <div className="c-menu__item__inner"><a href="referrals.html"><i className="flaticon-settings" /></a>
-                                    <ul className="crm_hover_menu">
-                                        <li><a href="referrals.html"><i className="fa fa-circle" /> my referrals </a>
-                                        </li>
-                                        <li>
-                                            <a href="banners.html"> <i className="fa fa-circle" />promotionals banners</a>
-                                        </li>
-                                        <li>
-                                            <a href="referral_earnings.html"> <i className="fa fa-circle" />referral earnings</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li className="c-menu__item is-active has-sub crm_navi_icon_cont">
-                                <a href="#">
-                                    <div className="c-menu-item__title"><span>referrals</span><i className="no_badge purple">2</i>
-                                    </div>
-                                </a>
-                                <ul>
-                                    <li><a href="referrals.html"><i className="fa fa-circle" /> my referrals </a>
-                                    </li>
-                                    <li>
-                                        <a href="banners.html"> <i className="fa fa-circle" />promotionals banners</a>
-                                    </li>
-                                    <li>
-                                        <a href="referral_earnings.html"> <i className="fa fa-circle" />referral earnings</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul className="u-list crm_drop_second_ul">
-                            <li className="crm_navi_icon">
-                                <div className="c-menu__item__inner"><a href="make_deposit.html"><i className="flaticon-profile" /></a>
-                                </div>
-                            </li>
-                            <li className="c-menu__item crm_navi_icon_cont">
-                                <a href="make_deposit.html">
-                                    <div className="c-menu-item__title">deposit</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            {/* Main section Start */}
-            <div className="l-main">
-                {/*  my account wrapper start */}
-                <div className="account_top_information">
-                    <div className="account_overlay" />
-                    <div className="useriimg"><img src="images/user.png" alt="users" /></div>
-                    <div className="userdet uderid">
-                        <h3>Benmathew</h3>
-                        <dl className="userdescc">
-                            <dt>Registration Date</dt>
-                            <dd>: &nbsp; Sep-10-2014 11:20:37</dd>
-                            <dt>Last Login</dt>
-                            <dd>: &nbsp; Jul-05-2019 07:06:36</dd>
-                            <dt>Current Login</dt>
-                            <dd>: &nbsp; Jul-06-2019 02:47:23</dd>
-                            <dt>Last Access IP</dt>
-                            <dd>: &nbsp; 27.57.18.1 </dd>
-                            <dt>Current Access IP</dt>
-                            <dd>: &nbsp; 122.175.131.51 </dd>
-                        </dl>
-                    </div>
-                    <div className="userdet user_transcation">
-                        <h3>Available Balance</h3>
-                        <dl className="userdescc">
-                            <dt>Paypal</dt>
-                            <dd>:&nbsp;&nbsp;$ 392.79</dd>
-                            <dt>Pexpay</dt>
-                            <dd>:&nbsp;&nbsp;$ 498.61</dd>
-                            <dt>PerfectMoney</dt>
-                            <dd>:&nbsp;&nbsp;$ 60.18</dd>
-                            <dt>Payza</dt>
-                            <dd>:&nbsp;&nbsp;$ 435</dd>
-                            <dt>HDMoney</dt>
-                            <dd>:&nbsp;&nbsp;$ 0.08</dd>
-                        </dl>
-                    </div>
-                    <div className="userdet user_transcation">
-                        <h3 className="none_headung"> &nbsp;</h3>
-                        <dl className="userdescc">
-                            <dt>EGOpay</dt>
-                            <dd>:&nbsp;&nbsp;$ 0</dd>
-                            <dt>OKpay</dt>
-                            <dd>:&nbsp;&nbsp;$ 0</dd>
-                            <dt>Solidtrustpay </dt>
-                            <dd>:&nbsp;&nbsp;$ 0</dd>
-                            <dt>Webmoney</dt>
-                            <dd>:&nbsp;&nbsp;$ 450</dd>
-                            <dt>Bankwire</dt>
-                            <dd>:&nbsp;&nbsp;$ 799</dd>
-                            <dt>Bitcoin</dt>
-                            <dd>:&nbsp;&nbsp;$ 33584</dd>
-                        </dl>
-                    </div>
-                </div>
-                {/*  my account wrapper end */}
-                {/*  profile wrapper start */}
-                <div className="view_profile_wrapper_top float_left">
-                    <div className="row">
-                        <div className="col-md-12 col-lg-12 col-sm-12 col-12">
-                            <div className="sv_heading_wraper">
-                                <h3>profile</h3>
-                            </div>
-                        </div>
-                        <div className="col-md-12 col-lg-12 col-sm-12 col-12">
-                            <div className="view_profile_wrapper float_left">
-                                <div className="row">
-                                    <div className="col-md-12 col-lg-12 col-sm-12 col-12">
-                                        <div className="profile_view_img">
-                                            <img src="images/user.png" alt="post_img" />
                                         </div>
-                                        <div className="profile_width_cntnt">
-                                            <h4>JPEG or PNG 500x500px Thumbnail</h4>
-                                            <div className="width_50">
-                                                <input type="file" id="input-file-now-custom-233" className="dropify" data-height={90} /><span className="post_photo">browse image</span>
-                                            </div>
+                                        <div className="clinic-services">
+                                            <span>Dental Fillings</span>
+                                            <span>Teeth Whitneing</span>
                                         </div>
                                     </div>
-                                    <div className="col-xl-6 col-md-12 col-lg-12 col-sm-12 col-12">
-                                        <ul className="profile_list">
-                                            <li><span className="detail_left_part">Referral Name
-                                            </span> <span className="detail_right_part">--Nill--
-                                                </span>
-                                            </li>
-                                            <li><span className="detail_left_part">first name
-                                            </span> <span className="detail_right_part">akshay
-                                                </span>
-                                            </li>
-                                            <li><span className="detail_left_part">Last Name</span> <span className="detail_right_part">handge
-                                            </span>
-                                            </li>
-                                            <li><span className="detail_left_part">Your Email Address</span> <span className="detail_right_part">--Not Updated--</span>
-                                            </li>
-                                            <li><span className="detail_left_part">Address	</span> <span className="detail_right_part"> india,kolkata</span>
-                                            </li>
-                                            <li><span className="detail_left_part">Mobile No</span> <span className="detail_right_part">--Not Updated--</span>
-                                            </li>
-                                            <li><span className="detail_left_part">City</span> <span className="detail_right_part">koltaka</span>
-                                            </li>
-                                            <li><span className="detail_left_part">State</span> <span className="detail_right_part">mukundopur</span>
-                                            </li>
-                                            <li><span className="detail_left_part">Country</span> <span className="detail_right_part"> East Timor</span>
-                                            </li>
-                                            <li><span className="detail_left_part">Paypal</span> <span className="detail_right_part">azamsheikh645@gmail.com</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="col-xl-6 col-md-12 col-lg-12 col-sm-12 col-12">
-                                        <ul className="profile_list">
-                                            <li><span className="detail_left_part">Pexpay</span> <span className="detail_right_part">--Not Updated--</span>
-                                            </li>
-                                            <li><span className="detail_left_part">PerfectMoney</span> <span className="detail_right_part">U19230295</span>
-                                            </li>
-                                            <li><span className="detail_left_part">Payza</span> <span className="detail_right_part">azamsheikh645@gmail.com</span>
-                                            </li>
-                                            <li><span className="detail_left_part">HDMoney</span> <span className="detail_right_part"> --Not Updated--</span>
-                                            </li>
-                                            <li><span className="detail_left_part">Paypal</span> <span className="detail_right_part">azamsheikh645@gmail.com</span>
-                                            </li>
-                                            <li><span className="detail_left_part">EGOpay</span> <span className="detail_right_part"> --Not Updated--</span>
-                                            </li>
-                                            <li><span className="detail_left_part">OKpay</span> <span className="detail_right_part"> --Not Updated--</span>
-                                            </li>
-                                            <li><span className="detail_left_part">Solidtrustpay</span> <span className="detail_right_part"> --Not Updated--</span>
-                                            </li>
-                                            <li><span className="detail_left_part">Webmoney</span> <span className="detail_right_part"> --Not Updated--</span>
-                                            </li>
-                                            <li><span className="detail_left_part">Bankwire</span> <span className="detail_right_part"> BANK OF PAMHYIP</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="about_btn float_left">
+                                </div>
+                                <div className="doc-info-right">
+                                    <div className="clini-infos">
                                         <ul>
                                             <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal">change</a>
+                                                <i className="far fa-thumbs-up" /> 99%
+                                            </li>
+                                            <li>
+                                                <i className="far fa-comment" /> 35 Feedback
+                                            </li>
+                                            <li>
+                                                <i className="fas fa-map-marker-alt" /> Newyork, USA
+                                            </li>
+                                            <li>
+                                                <i className="far fa-money-bill-alt" /> $100 per hour{" "}
                                             </li>
                                         </ul>
                                     </div>
+                                    <div className="doctor-action">
+                                        <a href="javascript:void(0)" className="btn btn-white fav-btn">
+                                            <i className="far fa-bookmark" />
+                                        </a>
+                                        <a href="chat.html" className="btn btn-white msg-btn">
+                                            <i className="far fa-comment-alt" />
+                                        </a>
+                                        <a
+                                            href="javascript:void(0)"
+                                            className="btn btn-white call-btn"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#voice_call"
+                                        >
+                                            <i className="fas fa-phone" />
+                                        </a>
+                                        <a
+                                            href="javascript:void(0)"
+                                            className="btn btn-white call-btn"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#video_call"
+                                        >
+                                            <i className="fas fa-video" />
+                                        </a>
+                                    </div>
+                                    <a href="/newbooking"></a>
+                                    <div className="clinic-booking">
+                                        <a href="/newbooking"></a>
+                                        <a className="apt-btn" href="booking.html">
+                                            Book Appointment
+                                        </a>
+                                    </div>
                                 </div>
-                                <div className="modal fade question_modal" id="myModal" role="dialog">
-                                    <div className="modal-dialog">
-                                        <div className="modal-content">
-                                            <button type="button" className="close" data-dismiss="modal">×</button>
-                                            <div className="row">
-                                                <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                                                    <div className="sv_question_pop float_left">
-                                                        <h1>User Security
-                                                        </h1>
-                                                        <div className="search_alert_box float_left">
-                                                            <p>Please enter your valid Transaction Pin and edit your account details</p>
-                                                            <div className="change_field">
-                                                                <input type="text" name="full_name" placeholder="Please enter your transaction pin" />
-                                                            </div>
-                                                        </div>
-                                                        <div className="question_sec float_left">
-                                                            <div className="about_btn ques_Btn">
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="#">login</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div className="cancel_wrapper">
-                                                                <a href="#" className data-dismiss="modal">cancel</a>
-                                                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="nav nav-pills my-5" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-other-tab" data-toggle="pill" href="#pills-other" role="tab" aria-controls="pills-other" aria-selected="false">Business Hours</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent" >
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div className="row">
+                                <div className="col-md-12 col-lg-9">
+                                    <div className="widget about-widget">
+                                        <h4 className="widget-title">About Me</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                            sint occaecat cupidatat non proident, sunt in culpa qui
+                                            officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                    <div className="widget education-widget">
+                                        <h4 className="widget-title">Education</h4>
+                                        <div className="experience-box">
+                                            <ul className="experience-list">
+                                                <li>
+                                                    <div className="experience-user">
+                                                        <div className="before-circle" />
+                                                    </div>
+                                                    <div className="experience-content">
+                                                        <div className="timeline-content">
+                                                            <a href="#/" className="name">
+                                                                American Dental Medical University
+                                                            </a>
+                                                            <div>BDS</div>
+                                                            <span className="time">1998 - 2003</span>
                                                         </div>
                                                     </div>
+                                                </li>
+                                                <li>
+                                                    <div className="experience-user">
+                                                        <div className="before-circle" />
+                                                    </div>
+                                                    <div className="experience-content">
+                                                        <div className="timeline-content">
+                                                            <a href="#/" className="name">
+                                                                American Dental Medical University
+                                                            </a>
+                                                            <div>MDS</div>
+                                                            <span className="time">2003 - 2005</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="widget experience-widget">
+                                        <h4 className="widget-title">Work &amp; Experience</h4>
+                                        <div className="experience-box">
+                                            <ul className="experience-list">
+                                                <li>
+                                                    <div className="experience-user">
+                                                        <div className="before-circle" />
+                                                    </div>
+                                                    <div className="experience-content">
+                                                        <div className="timeline-content">
+                                                            <a href="#/" className="name">
+                                                                Glowing Smiles Family Dental Clinic
+                                                            </a>
+                                                            <span className="time">
+                                                                2010 - Present (5 years)
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div className="experience-user">
+                                                        <div className="before-circle" />
+                                                    </div>
+                                                    <div className="experience-content">
+                                                        <div className="timeline-content">
+                                                            <a href="#/" className="name">
+                                                                Comfort Care Dental Clinic
+                                                            </a>
+                                                            <span className="time">
+                                                                2007 - 2010 (3 years)
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div className="experience-user">
+                                                        <div className="before-circle" />
+                                                    </div>
+                                                    <div className="experience-content">
+                                                        <div className="timeline-content">
+                                                            <a href="#/" className="name">
+                                                                Dream Smile Dental Practice
+                                                            </a>
+                                                            <span className="time">
+                                                                2005 - 2007 (2 years)
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="widget awards-widget">
+                                        <h4 className="widget-title">Awards</h4>
+                                        <div className="experience-box">
+                                            <ul className="experience-list">
+                                                <li>
+                                                    <div className="experience-user">
+                                                        <div className="before-circle" />
+                                                    </div>
+                                                    <div className="experience-content">
+                                                        <div className="timeline-content">
+                                                            <p className="exp-year">July 2023</p>
+                                                            <h4 className="exp-title">Humanitarian Award</h4>
+                                                            <p>
+                                                                Lorem ipsum dolor sit amet, consectetur
+                                                                adipiscing elit. Proin a ipsum tellus. Interdum
+                                                                et malesuada fames ac ante ipsum primis in
+                                                                faucibus.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div className="experience-user">
+                                                        <div className="before-circle" />
+                                                    </div>
+                                                    <div className="experience-content">
+                                                        <div className="timeline-content">
+                                                            <p className="exp-year">March 2011</p>
+                                                            <h4 className="exp-title">
+                                                                Certificate for International Volunteer Service
+                                                            </h4>
+                                                            <p>
+                                                                Lorem ipsum dolor sit amet, consectetur
+                                                                adipiscing elit. Proin a ipsum tellus. Interdum
+                                                                et malesuada fames ac ante ipsum primis in
+                                                                faucibus.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div className="experience-user">
+                                                        <div className="before-circle" />
+                                                    </div>
+                                                    <div className="experience-content">
+                                                        <div className="timeline-content">
+                                                            <p className="exp-year">May 2008</p>
+                                                            <h4 className="exp-title">
+                                                                The Dental Professional of The Year Award
+                                                            </h4>
+                                                            <p>
+                                                                Lorem ipsum dolor sit amet, consectetur
+                                                                adipiscing elit. Proin a ipsum tellus. Interdum
+                                                                et malesuada fames ac ante ipsum primis in
+                                                                faucibus.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="service-list">
+                                        <h4>Services</h4>
+                                        <ul className="clearfix">
+                                            <li>Tooth cleaning </li>
+                                            <li>Root Canal Therapy</li>
+                                            <li>Implants</li>
+                                            <li>Composite Bonding</li>
+                                            <li>Fissure Sealants</li>
+                                            <li>Surgical Extractions</li>
+                                        </ul>
+                                    </div>
+                                    <div className="service-list">
+                                        <h4>Specializations</h4>
+                                        <ul className="clearfix">
+                                            <li>Children Care</li>
+                                            <li>Dental Care</li>
+                                            <li>Oral and Maxillofacial Surgery </li>
+                                            <li>Orthodontist</li>
+                                            <li>Periodontist</li>
+                                            <li>Prosthodontics</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div className="row">
+                                <div className="col-md-6">
+                                    <div className="clinic-content">
+                                        <h4 className="clinic-name">
+                                            <a href="#">Smile Cute Dental Care Center</a>
+                                        </h4>
+                                        <p className="doc-speciality">
+                                            MDS - Periodontology and Oral Implantology, BDS
+                                        </p>
+                                        <div className="rating">
+                                            <i className="fas fa-star filled" />
+                                            <i className="fas fa-star filled" />
+                                            <i className="fas fa-star filled" />
+                                            <i className="fas fa-star filled" />
+                                            <i className="fas fa-star" />
+                                            <span className="d-inline-block average-rating">
+                                                (4)
+                                            </span>
+                                        </div>
+                                        <div className="clinic-details mb-0">
+                                            <h5 className="clinic-direction">
+                                                {" "}
+                                                <i className="fas fa-map-marker-alt" /> 2286 Sundown
+                                                Lane, Austin, Texas 78749, USA <br />
+                                                <a href="">Get Directions</a>
+                                            </h5>
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        href="assets/img/features/feature-01.jpg"
+                                                        data-fancybox="gallery2"
+                                                    >
+                                                        <img
+                                                            src="https://helpful-bienenstitch-7914f7.netlify.app/assets/homw-42cda38c.jpg"
+                                                            alt="Feature Image"
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="assets/img/features/feature-02.jpg"
+                                                        data-fancybox="gallery2"
+                                                    >
+                                                        <img
+                                                            src="https://helpful-bienenstitch-7914f7.netlify.app/assets/feature02-141fd269.jpg"
+                                                            alt="Feature Image"
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="assets/img/features/feature-03.jpg"
+                                                        data-fancybox="gallery2"
+                                                    >
+                                                        <img
+                                                            src="https://helpful-bienenstitch-7914f7.netlify.app/assets/feature03-10a49a5c.jpg"
+                                                            alt="Feature Image"
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="assets/img/features/feature-04.jpg"
+                                                        data-fancybox="gallery2"
+                                                    >
+                                                        <img
+                                                            src="https://helpful-bienenstitch-7914f7.netlify.app/assets/feature04-31ddad90.jpg"
+                                                            alt="Feature Image"
+                                                        />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="clinic-timing">
+                                        <div>
+                                            <p className="timings-days">
+                                                <span> Mon - Sat </span>
+                                            </p>
+                                            <p className="timings-times">
+                                                <span>10:00 AM - 2:00 PM</span>
+                                                <span>4:00 PM - 9:00 PM</span>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p className="timings-days">
+                                                <span>Sun</span>
+                                            </p>
+                                            <p className="timings-times">
+                                                <span>10:00 AM - 2:00 PM</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-2">
+                                    <div className="consult-price">$250</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div className="widget review-listing">
+                                <ul className="comments-list">
+                                    <li>
+                                        <div className="comment">
+                                            <img
+                                                className="avatar avatar-sm rounded-circle"
+                                                alt="User Image"
+                                                src="https://helpful-bienenstitch-7914f7.netlify.app/assets/patient-da4fe188.jpg"
+                                            />
+                                            <div className="comment-body">
+                                                <div className="meta-data">
+                                                    <span className="comment-author">Richard Wilson</span>
+                                                    <span className="comment-date">
+                                                        Reviewed 2 Days ago
+                                                    </span>
+                                                    <div className="review-count rating">
+                                                        <i className="fas fa-star filled" />
+                                                        <i className="fas fa-star filled" />
+                                                        <i className="fas fa-star filled" />
+                                                        <i className="fas fa-star filled" />
+                                                        <i className="fas fa-star" />
+                                                    </div>
+                                                </div>
+                                                <p className="recommended">
+                                                    <i className="far fa-thumbs-up" /> I recommend the
+                                                    doctor
+                                                </p>
+                                                <p className="comment-content">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                    elit, sed do eiusmod tempor incididunt ut labore et
+                                                    dolore magna aliqua. Ut enim ad minim veniam, quis
+                                                    nostrud exercitation. Curabitur non nulla sit amet
+                                                    nisl tempus
+                                                </p>
+                                                <div className="comment-reply">
+                                                    <a className="comment-btn" href="#">
+                                                        <i className="fas fa-reply" /> Reply
+                                                    </a>
+                                                    <p className="recommend-btn">
+                                                        <span>Recommend?</span>
+                                                        <a href="#" className="like-btn">
+                                                            <i className="far fa-thumbs-up" /> Yes
+                                                        </a>
+                                                        <a href="#" className="dislike-btn">
+                                                            <i className="far fa-thumbs-down" /> No
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul className="comments-reply">
+                                            <li>
+                                                <div className="comment">
+                                                    <img
+                                                        className="avatar avatar-sm rounded-circle"
+                                                        alt="User Image"
+                                                        src="https://helpful-bienenstitch-7914f7.netlify.app/assets/patient1-e854562e.jpg"
+                                                    />
+                                                    <div className="comment-body">
+                                                        <div className="meta-data">
+                                                            <span className="comment-author">
+                                                                Charlene Reed
+                                                            </span>
+                                                            <span className="comment-date">
+                                                                Reviewed 3 Days ago
+                                                            </span>
+                                                            <div className="review-count rating">
+                                                                <i className="fas fa-star filled" />
+                                                                <i className="fas fa-star filled" />
+                                                                <i className="fas fa-star filled" />
+                                                                <i className="fas fa-star filled" />
+                                                                <i className="fas fa-star" />
+                                                            </div>
+                                                        </div>
+                                                        <p className="comment-content">
+                                                            Lorem ipsum dolor sit amet, consectetur
+                                                            adipisicing elit, sed do eiusmod tempor incididunt
+                                                            ut labore et dolore magna aliqua. Ut enim ad minim
+                                                            veniam. Curabitur non nulla sit amet nisl tempus
+                                                        </p>
+                                                        <div className="comment-reply">
+                                                            <a className="comment-btn" href="#">
+                                                                <i className="fas fa-reply" /> Reply
+                                                            </a>
+                                                            <p className="recommend-btn">
+                                                                <span>Recommend?</span>
+                                                                <a href="#" className="like-btn">
+                                                                    <i className="far fa-thumbs-up" /> Yes
+                                                                </a>
+                                                                <a href="#" className="dislike-btn">
+                                                                    <i className="far fa-thumbs-down" /> No
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div className="comment">
+                                            <img
+                                                className="avatar avatar-sm rounded-circle"
+                                                alt="User Image"
+                                                src="https://helpful-bienenstitch-7914f7.netlify.app/assets/patient2-5d2a29be.jpg"
+                                            />
+                                            <div className="comment-body">
+                                                <div className="meta-data">
+                                                    <span className="comment-author">Travis Trimble</span>
+                                                    <span className="comment-date">
+                                                        Reviewed 4 Days ago
+                                                    </span>
+                                                    <div className="review-count rating">
+                                                        <i className="fas fa-star filled" />
+                                                        <i className="fas fa-star filled" />
+                                                        <i className="fas fa-star filled" />
+                                                        <i className="fas fa-star filled" />
+                                                        <i className="fas fa-star" />
+                                                    </div>
+                                                </div>
+                                                <p className="comment-content">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                    elit, sed do eiusmod tempor incididunt ut labore et
+                                                    dolore magna aliqua. Ut enim ad minim veniam, quis
+                                                    nostrud exercitation. Curabitur non nulla sit amet
+                                                    nisl tempus
+                                                </p>
+                                                <div className="comment-reply">
+                                                    <a className="comment-btn" href="#">
+                                                        <i className="fas fa-reply" /> Reply
+                                                    </a>
+                                                    <p className="recommend-btn">
+                                                        <span>Recommend?</span>
+                                                        <a href="#" className="like-btn">
+                                                            <i className="far fa-thumbs-up" /> Yes
+                                                        </a>
+                                                        <a href="#" className="dislike-btn">
+                                                            <i className="far fa-thumbs-down" /> No
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div className="all-feedback text-center">
+                                    <a href="#" className="btn btn-primary btn-sm">
+                                        Show all feedback <strong>(167)</strong>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="write-review">
+                                <h4>
+                                    Write a review for <strong>Dr. Darren Elder</strong>
+                                </h4>
+                                <form>
+                                    <div className="mb-3">
+                                        <label className="mb-2">Review</label>
+                                        <div className="star-rating">
+                                            <input
+                                                id="star-5"
+                                                type="radio"
+                                                name="rating"
+                                                defaultValue="star-5"
+                                            />
+                                            <label htmlFor="star-5" title="5 stars">
+                                                <i className="active fa fa-star" />
+                                            </label>
+                                            <input
+                                                id="star-4"
+                                                type="radio"
+                                                name="rating"
+                                                defaultValue="star-4"
+                                            />
+                                            <label htmlFor="star-4" title="4 stars">
+                                                <i className="active fa fa-star" />
+                                            </label>
+                                            <input
+                                                id="star-3"
+                                                type="radio"
+                                                name="rating"
+                                                defaultValue="star-3"
+                                            />
+                                            <label htmlFor="star-3" title="3 stars">
+                                                <i className="active fa fa-star" />
+                                            </label>
+                                            <input
+                                                id="star-2"
+                                                type="radio"
+                                                name="rating"
+                                                defaultValue="star-2"
+                                            />
+                                            <label htmlFor="star-2" title="2 stars">
+                                                <i className="active fa fa-star" />
+                                            </label>
+                                            <input
+                                                id="star-1"
+                                                type="radio"
+                                                name="rating"
+                                                defaultValue="star-1"
+                                            />
+                                            <label htmlFor="star-1" title="1 star">
+                                                <i className="active fa fa-star" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div className="mb-3">
+                                        <label className="mb-2">Title of your review</label>
+                                        <input
+                                            className="form-control"
+                                            type="text"
+                                            placeholder="If you could say it in one sentence, what would you say?"
+                                        />
+                                    </div>
+                                    <div className="mb-3">
+                                        <label className="mb-2">Your review</label>
+                                        <textarea
+                                            id="review_desc"
+                                            maxLength={100}
+                                            className="form-control"
+                                            defaultValue={""}
+                                        />
+                                        <div className="d-flex justify-content-between mt-3">
+                                            <small className="text-muted">
+                                                <span id="chars">100</span> characters remaining
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div className="mb-3">
+                                        <div className="terms-accept">
+                                            <div className="custom-checkbox">
+                                                <input type="checkbox" id="terms_accept" />
+                                                <label htmlFor="terms_accept">
+                                                    I have read and accept{" "}
+                                                    <a href="#">Terms &amp; Conditions</a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="submit-section">
+                                        <button
+                                            type="submit"
+                                            className="btn btn-primary submit-btn"
+                                        >
+                                            Add Review
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-other" role="tabpanel" aria-labelledby="pills-other-tab">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="widget business-widget">
+                                        <div class="widget-content">
+                                            <div class="listing-hours">
+                                                <div class="listing-day current">
+                                                    <div class="day">Today <span>5 Nov 2023</span></div>
+                                                    <div class="time-items"><span class="open-status"><span class="badge bg-success-light">Open Now</span></span><span class="time">07:00 AM - 09:00 PM</span></div>
+                                                </div>
+                                                <div class="listing-day">
+                                                    <div class="day">Monday</div>
+                                                    <div class="time-items"><span class="time">07:00 AM - 09:00 PM</span></div>
+                                                </div>
+                                                <div class="listing-day">
+                                                    <div class="day">Tuesday</div>
+                                                    <div class="time-items"><span class="time">07:00 AM - 09:00 PM</span></div>
+                                                </div>
+                                                <div class="listing-day">
+                                                    <div class="day">Wednesday</div>
+                                                    <div class="time-items"><span class="time">07:00 AM - 09:00 PM</span></div>
+                                                </div>
+                                                <div class="listing-day">
+                                                    <div class="day">Thursday</div>
+                                                    <div class="time-items"><span class="time">07:00 AM - 09:00 PM</span></div>
+                                                </div>
+                                                <div class="listing-day">
+                                                    <div class="day">Friday</div>
+                                                    <div class="time-items"><span class="time">07:00 AM - 09:00 PM</span></div>
+                                                </div>
+                                                <div class="listing-day">
+                                                    <div class="day">Saturday</div>
+                                                    <div class="time-items"><span class="time">07:00 AM - 09:00 PM</span></div>
+                                                </div>
+                                                <div class="listing-day closed">
+                                                    <div class="day">Sunday</div>
+                                                    <div class="time-items"><span class="time"><span class="badge bg-danger-light">Closed</span></span></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -809,21 +755,11 @@ function View_Profile() {
                         </div>
                     </div>
                 </div>
-                {/*  profile wrapper end */}
-                {/*  footer  wrapper start */}
-                <div className="copy_footer_wrapper">
-                    <div className="container-fluid">
-                        <div className="row">
-                            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                <div className="crm_left_footer_cont">
-                                    <p>2019 Copyright © <a href="#"> savehyip </a> . All Rights Reserved.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <Footer />
         </div>
+
+
 
     )
 }

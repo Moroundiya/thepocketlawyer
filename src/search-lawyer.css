@@ -520,7 +520,7 @@
 }
 
 .filter-header {
-    background: #F2F6F6;
+    background: #00aaef;
     border-radius: 10px 10px 0px 0px;
     padding: 15px 20px;
 }
@@ -529,6 +529,7 @@
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 0;
+    color: #fff;
 }
 
 .filter-details {
@@ -567,7 +568,7 @@
 
 .filter-collapse ul li {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .filter-collapse ul li:last-child {
@@ -849,8 +850,8 @@
 }
 
 .doctor-widget-one .doctor-img img {
-    width: 164px;
-    height: 164px;
+    /* width: 164px; */
+    /* height: 164px; */
     border-radius: 10px;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
@@ -1055,8 +1056,9 @@
     border-radius: 8px;
     font-weight: 500;
     font-size: 14px;
-    border: 2px solid #09e5ab;
-    padding: 6px 15px;
+    border: none;
+    padding: 10px 18px;
+    cursor: pointer;
 }
 
 .doctor-widget-one .clinic-booking .btn-primary-light {
@@ -1231,4 +1233,355 @@
     #pagination-control-icon {
         display: none;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+#search-lawyer-container-all label {
+    display: inline-block;
+}
+
+#search-lawyer-container-all input {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+
+#search-lawyer-container-all input {
+    transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+#search-lawyer-container-all label {
+    display: inline-block;
+    /* margin-bottom: .5rem; */
+}
+
+#availability-text {
+    margin: 12px 5px 0 0;
+}
+
+#search-lawyer-container-all .check {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+#search-lawyer-container-all .check:checked+.checktoggle {
+    background-color: #008f64;
+    border: 1px solid #008f64;
+}
+
+#search-lawyer-container-all .check:checked+.checktoggle:after {
+    background-color: #fff;
+    left: 100%;
+    transform: translate(calc(-100% - 5px), -50%);
+    -webkit-transform: translate(calc(-100% - 5px), -50%);
+    -ms-transform: translate(calc(-100% - 5px), -50%);
+}
+
+.checktoggle {
+    background-color: #ff3535;
+    border: 1px solid #ff3535;
+    border-radius: 12px;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 24px;
+    margin-bottom: 0;
+    position: relative;
+    width: 42px;
+}
+
+.checktoggle:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(5px, -50%);
+    -webkit-transform: translate(5px, -50%);
+    -ms-transform: translate(5px, -50%);
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: left .3s ease, transform .3s ease;
+}
+
+.status-toggle .check:checked+.checktoggle {
+    background-color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.status-toggle .check:checked+.checktoggle:after {
+    transform: translate(calc(-100% - 2px), -50%);
+    -webkit-transform: translate(calc(-100% - 2px), -50%);
+    -ms-transform: translate(calc(-100% - 2px), -50%);
+}
+
+.status-toggle .checktoggle {
+    width: 41px;
+    height: 21px;
+}
+
+.status-toggle .checktoggle:after {
+    width: 17px;
+    height: 17px;
+    transform: translate(2px, -50%);
+    -webkit-transform: translate(2px, -50%);
+    -ms-transform: translate(2px, -50%);
+}
+
+.status-tog .checktoggle {
+    height: 28px;
+    width: 50px;
+    border-radius: 999px;
+    background-color: #f3f4f6;
+    border-color: #f3f4f6;
+}
+
+.status-tog .checktoggle:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-image: url(https://helpful-bienenstitch-7914f7.netlify.app/img/icons/check.svg);
+    background-repeat: no-repeat;
+    background-size: 11px 20px;
+    width: 20px;
+    height: 20px;
+    transform: translate(3px, -50%);
+}
+
+.status-tog .checktoggle:after {
+    width: 24px;
+    height: 24px;
+    background-image: url(https://helpful-bienenstitch-7914f7.netlify.app/img/icons/x-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 12px 21px;
+    transform: translate(1px, -50%);
+    background-position: center;
+    box-shadow: 0 1px 2px #0000001a, 0 1px 1px #0000000f;
+}
+
+.status-tog .check:checked+.checktoggle:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 13px 21px;
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.status-tog .check:checked+.checktoggle:after {
+    background-repeat: no-repeat;
+    background-size: 12px 21px;
+    transform: translate(calc(-100% - 1px), -50%);
+    background-position: center;
+}
+
+#search-lawyer-container-all input {
+    padding: .5rem .7rem;
+    margin: 1rem 0;
+    border: 1px solid #737373;
+}
+
+#search-lawyer-container-all input {
+    padding: 1rem 2rem;
+    background-color: #f8fbff;
+}
+
+.status-tog {
+    margin-top: 1rem;
+}
+
+
+
+
+.clinic-details {
+    margin-bottom: 15px;
+}
+
+.clinic-details ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.clinic-details ul li {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.clinic-details ul li:last-child {
+    padding-right: 0;
+}
+
+.clinic-details ul li a {
+    display: inline-block;
+}
+
+.clinic-details ul li a img {
+    width: 40px;
+    border-radius: 5px;
+}
+
+.doctor-widget-one .clinic-details {
+    padding-bottom: 14px;
+}
+
+.my-details {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+
+.clinic-services {
+    color: #272b41;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 13px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.clinic-services span {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 3px 10px;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .clinic-services {
+        display: none;
+    }
+}
+
+.clinic-services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.clinic-services {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.clinic-services {
+    color: #272b41;
+    font-size: 13px;
+}
+
+@media (max-width: 767.98px) {
+    .clinic-services {
+        display: none;
+    }
+}
+
+.clinic-services span {
+    border: 1px solid #cccccc;
+    display: inline-block;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+.clinic-services span+span {
+    margin-left: 5px;
+}
+
+
+.clinic-booking a {
+    background-color: #fff;
+    border-radius: 4px;
+    color: #00329b;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.clinic-booking a {
+    background-color: #fff;
+    color: #00329b;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+
+.btnview-profile {
+    border: 2px solid #00329B !important;
+    padding: .3rem 2.4rem;
+    color: #00329b;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+.appoint-btn {
+    background-color: #00329b;
+    color: #fff;
+    padding: .3rem 2.4rem;
+}
+
+
+#clinic-booking a:first-child {
+    display: block !important;
+    cursor: pointer;
+}
+
+.clinic-booking a+a,
+#clinic-booking a:first-child {
+    border: none;
+    cursor: pointer;
+}
+
+.clinic-booking a+a {
+    margin-top: 5px !important;
+}
+
+.filter-collapse .nice-select {
+    display: none;
+}
+
+#search-lawyer-container-all #text {
+    padding: .55rem 1rem !important;
 }

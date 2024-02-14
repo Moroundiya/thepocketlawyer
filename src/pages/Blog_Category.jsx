@@ -108,43 +108,6 @@ function Blog_Category() {
                             </div>
                             <div className="blog_category_box_wrapper blog_box_wrapper float_left">
                                 <div className="blog_news_img_wrapper float_left">
-                                    <img src="https://thepocketlawyers.net/images/blog3.jpg" alt="blog_img" />
-                                    <a href="https://www.youtube.com/watch?v=b9krhARsAHU" className="test-popup-link vedie_img"><span><img src="images/play.png" alt="img" /></span></a>
-                                    <div className="blog_date_wrapper">
-                                        <p>05
-                                            <br /> <span>jun</span></p>
-                                    </div>
-                                </div>
-                                <div className="lest_news_cont_wrapper float_left">
-                                    <div className="blog_heaidng_top">
-                                        <h3> <a href="#">Creating Better Experience</a></h3>
-                                    </div>
-                                    <div className="blog-single_cntnt">
-                                        <p>Web typography is now more stylish and malleable than ever before. New CSS3 properties allow for trul unique typographic effects that in the past wouldve required images and custom JavaScript.Each of the following code snippets. This is shop version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
-                                    </div>
-                                    <div className="lest_news_cont_bottom float_left">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><i className="fa fa-user" />by akshay H.</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i className="fa fa-comments" />04 comments</a>
-                                            </li>
-                                            <li><a href="#"><i className="fas fa-heart" />37 likes</a> </li>
-                                            <li>
-                                                <Link to="/blog-single" reloadDocument relative='path' className='blog-learn-more'>
-                                                    Learn More
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <Link to="/blog-single" reloadDocument relative='path' className='mobile-blog-learn-more'>
-                                        Learn More
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="blog_category_box_wrapper blog_box_wrapper float_left">
-                                <div className="blog_news_img_wrapper float_left">
                                     <img src="https://thepocketlawyers.net/images/blog1.jpg" alt="blog_img" />
                                     <div className="blog_date_wrapper">
                                         <p>15

@@ -37,7 +37,7 @@ function Forget_Password() {
                                         <a href="#">Recover Password</a>
                                     </div>
                                     <div className="dont_have_account float_left">
-                                        <p>Remember your password ? Go back to <Link to="/login" reloadDocument relative="path">Login</Link></p>
+                                        <p>Remember your password ? Go back to <Link to="/login" reloadDocument relative="path">Sign In</Link></p>
                                     </div>
                                 </div>
                             </div>
