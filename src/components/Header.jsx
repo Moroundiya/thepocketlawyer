@@ -50,7 +50,7 @@ function Header() {
                                         <a href="#0">BACK</a>
                                     </li>
                                     <li>
-                                        <Link to="/about" reloadDocument relative='path'>About Us</Link>
+                                        <Link to="/about-us" reloadDocument relative='path'>About Us</Link>
                                     </li>
                                     <li>
                                         <a href="#0">Why Choose Us</a>
@@ -268,7 +268,7 @@ function Header() {
                                             <a href="faq.html"><i class="fas fa-caret-right"></i>Who We Are</a>
                                             <ul class="navi_2_dropdown">
                                                 <li class="parent">
-                                                    <Link to="/about" relative='path' reloadDocument>About Us</Link>
+                                                    <Link to="/about-us" relative='path' reloadDocument>About Us</Link>
 
                                                 </li>
                                                 <li class="parent">
