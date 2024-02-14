@@ -410,7 +410,8 @@ function Signup() {
                                     </div>
 
                                     <div className="login_remember_box">
-                                        <label className="control control--checkbox">I agreed to the Terms and Conditions.
+                                        <label className="control control--checkbox">
+                                            I agreed to the <Link to="/Terms-and-conditions" reloadDocument relative="path">Terms and Conditions.</Link>
                                             <input type="checkbox" />
                                             <span className="control__indicator" />
                                         </label>

@@ -6,7 +6,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
-import About from './pages/About';
 import All_Transactions from './pages/All_Transactions';
 import Banner from './pages/Banner';
 import Blog_Category from './pages/Blog_Category';
@@ -48,6 +47,7 @@ import Support from './pages/Support';
 import Career from './pages/Career';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
+import About_Us from './pages/About_Us';
 
 
 const router = createBrowserRouter([
@@ -56,8 +56,8 @@ const router = createBrowserRouter([
     element: <Homepage />
   },
   {
-    path: "about",
-    element: <About />
+    path: "about-us",
+    element: <About_Us />
   },
   {
     path: "all-transactions",

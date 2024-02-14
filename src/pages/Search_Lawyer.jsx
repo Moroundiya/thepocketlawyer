@@ -10,7 +10,6 @@ function Search_Lawyer() {
         <div>
             <div className="main-wrfapper search-page container-fluid" id='search-lawyer-container-all'>
                 <Header />
-
                 {/* Page Content */}
                 <div className="doctor-content content mt-5">
                     <div className="container-fluid px-5" id='doctor-content-subpage'>

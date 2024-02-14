@@ -193,6 +193,16 @@
     line-height: 1.2;
 }
 
+#about-us-upper {
+    margin-top: 8rem;
+}
+
+#sv_money_text_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .work-head-title {
     font-size: 1.5rem;
@@ -214,13 +224,6 @@
     margin-bottom: 70px !important;
 }
 
-.work-head-title-container-parent {
-    /* padding-top: 50px; */
-}
-
-.how-it-work-parent-title {
-    /* padding-bottom: 30px !important; */
-}
 
 #how-it-work-parent {
     /* padding-top: 80px; */
@@ -497,7 +500,16 @@ div.nice-select.form-control.all-countries-list {
     width: 30px;
 }
 
+.index2_inves_slider_cntnt .inves_img_wrapper img {
+    height: 170px;
+}
 
+#investment-overlay-pro {
+    background: url('https://w0.peakpx.com/wallpaper/220/504/HD-wallpaper-out-of-focus-01-abstract-blue-blur-colors-landscape.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 
 
@@ -593,6 +605,10 @@ div.nice-select.form-control.all-countries-list {
 }
 
 @media screen and (max-width: 500px) {
+    #about-us-upper {
+        margin-top: 4.5rem;
+    }
+
     #big-title-add {
         font-size: 1.35rem;
     }

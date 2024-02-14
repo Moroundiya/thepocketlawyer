@@ -5,13 +5,20 @@ import t3 from '../assets/images/t3.png';
 import t4 from '../assets/images/t4.png';
 import t5 from '../assets/images/t5.png';
 import t6 from '../assets/images/t6.png';
-import inves1 from '../assets/images/inves1.png';
-import inves2 from '../assets/images/inves2.png';
-import inves3 from '../assets/images/inves3.png';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-function About() {
+import CountUp, { useCountUp } from 'react-countup';
+
+function About_Us() {
+
+    useCountUp({
+        ref: 'counter',
+        // end: 1234567,
+        enableScrollSpy: true,
+        // scrollSpyDelay: 0,
+    });
+
     return (
         <div>
             <div className="cursor" />
@@ -20,11 +27,29 @@ function About() {
             {/* Top Scroll End */}
             {/* cp navi wrapper Start */}
             <Header />
+            <div className=" float_left" id='about-us-upper'>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 col-md-12 col-12 col-sm-12" id='sv_money_text_wrapper'>
+                            <div className="sv_money_text_wrapper float_left" >
+                                <h2>Let Us Revolutionize <br />
+                                    Your Law Firm!</h2>
+                                <p className='text-dark'>
+                                    We help law firms run efficiently from anywhere And Anytime, providing an exceptional
 
-            {/* navi wrapper End */}
-            {/* inner header wrapper start */}
-            {/* inner header wrapper end */}
-            {/* about us wrapper start */}
+                                    client experience, and help firm and Lawyers track performance.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div className="col-lg-6 col-md-12 col-12 col-sm-12">
+                            <div className="sv_abt_img_wrapper float_left">
+                                <img src="https://img.freepik.com/premium-photo/portrait-successful-african-american-female-lawyer-holding-wooden-gavel-folder-hands-standing-indoors-smiling-ta-camera_44344-5016.jpg?w=740" alt="img" className="img-responsive" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="sv_about_wrapper fixed_portion float_left" id='fixed_portion'>
                 <div className="container">
                     <div className="row">
@@ -114,7 +139,7 @@ function About() {
                         </div>
                         <div className="col-lg-6 col-md-12 col-12 col-sm-12">
                             <div className="sv_abt_img_wrapper float_left">
-                                <img src="https://t3.ftcdn.net/jpg/01/04/31/26/240_F_104312641_mv6jGva9vCjDJ1YfsjYyfdUwLOUi4Woh.jpg" alt="img" className="img-responsive" />
+                                <img src="https://img.freepik.com/free-photo/smiling-african-american-man-listening-colleague_74855-3119.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.233311484.1695720566&amp;semt=ais" alt="img" className="img-responsive" />
                             </div>
                         </div>
                     </div>
@@ -134,7 +159,10 @@ function About() {
                                         </div>
                                         <div className="investment_border_wrapper" />
                                     </div>
-                                    <div className="count-description"><span className="timer">365</span>
+                                    <div className="count-description">
+                                        <span className="timer">
+                                            <CountUp end={365} duration={7} enableScrollSpy />
+                                        </span>
                                         <h5 className="con1"> <a href="#">days online</a></h5>
                                     </div>
                                 </div>
@@ -146,7 +174,9 @@ function About() {
                                         </div>
                                         <div className="investment_border_wrapper blue_border_wrapper" />
                                     </div>
-                                    <div className="count-description"> <span className="timer">10,000+</span>
+                                    <div className="count-description">
+                                        <span className="timer">
+                                            <CountUp end={10000} duration={7} enableScrollSpy /> +</span>
                                         <h5 className="con2"> <a href="#"> registered users </a></h5>
                                     </div>
                                 </div>
@@ -158,7 +188,9 @@ function About() {
                                         </div>
                                         <div className="investment_border_wrapper red_border_wrapper" />
                                     </div>
-                                    <div className="count-description"> <span className="timer">5000+</span>
+                                    <div className="count-description">
+                                        <span className="timer">
+                                            <CountUp end={5000} duration={7} enableScrollSpy /> +</span>
                                         <h5 className="con2"> <a href="#"> Law Firms</a></h5>
                                     </div>
                                 </div>
@@ -170,7 +202,8 @@ function About() {
                                         </div>
                                         <div className="investment_border_wrapper green_border_wrapper" />
                                     </div>
-                                    <div className="count-description"> <span className="timer">7000+</span>
+                                    <div className="count-description">
+                                        <span className="timer"> <CountUp end={7000} duration={7} enableScrollSpy /> +</span>
                                         <h5 className="con4"> <a href="#"> Legal Professionals</a></h5>
                                     </div>
                                 </div>
@@ -328,7 +361,7 @@ function About() {
             {/*our services wrapper end */}
             {/* testimonial wrapper start */}
             <div className="testimonial_wrapper float_left">
-                <div className="investment_overlay" />
+                <div className="investment_overlay" id='investment-overlay-pro' />
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12 col-12">
@@ -484,7 +517,7 @@ function About() {
                                             <div className="investment_box_wrapper index_investment float_left">
                                                 <div className="inves_main_border float_left">
                                                     <div className="inves_img_wrapper">
-                                                        <img src={inves1} className="img-responsive" alt="img" />
+                                                        <img src="https://img.freepik.com/premium-photo/black-man-business-person-sit-chair-with-boook_862994-13665.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.233311484.1695720566&amp;semt=ais" className="img-responsive" alt="img" />
                                                     </div>
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">Akshay H.</a></h1>
@@ -508,7 +541,7 @@ function About() {
                                             <div className="investment_box_wrapper index_investment float_left">
                                                 <div className="inves_main_border float_left">
                                                     <div className="inves_img_wrapper">
-                                                        <img src={inves2} className="img-responsive" alt="img" />
+                                                        <img src="https://img.freepik.com/premium-photo/woman-suit-sits-desk-with-her-arms-crossed_671352-3698.jpg?size=626&ext=jpg&ga=GA1.2.233311484.1695720566&semt=ais" className="img-responsive" alt="img" />
                                                     </div>
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">Maria F.</a></h1>
@@ -531,7 +564,7 @@ function About() {
                                             <div className="investment_box_wrapper index_investment float_left">
                                                 <div className="inves_main_border float_left">
                                                     <div className="inves_img_wrapper">
-                                                        <img src={inves3} className="img-responsive" alt="img" />
+                                                        <img src="https://img.freepik.com/premium-photo/black-man-business-person-sit-chair-with-boook_862994-13668.jpg?size=626&ext=jpg&ga=GA1.2.233311484.1695720566&semt=ais" className="img-responsive" alt="img" />
                                                     </div>
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">josep K.</a></h1>
@@ -550,79 +583,7 @@ function About() {
 
                                         </div>
                                     </div>
-                                    {/* <div className="item">
-                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
-                                            <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_main_border float_left">
-                                                    <div className="inves_img_wrapper">
-                                                        <img src={inves4} className="img-responsive" alt="img" />
-                                                    </div>
-                                                    <div className="investment_content_wrapper inves_heading_txt">
-                                                        <h1><a href="#">liva M.</a></h1>
-                                                        <div className="line_shape investment_line_shape" />
-                                                        <p>International Lawyer</p>
-                                                        <ul className="investment_slider_icon">
-                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a href="#" className='view-lawyer-profile'>View Profile</a>
 
-                                        </div>
-                                    </div>
-
-                                    <div className="item">
-                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
-                                            <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_main_border float_left">
-                                                    <div className="inves_img_wrapper">
-                                                        <img src="https://demo.phpscriptpoint.com/lawyer/assets/uploads/attorney-1.jpg" className="img-responsive" alt="img" />
-                                                    </div>
-                                                    <div className="investment_content_wrapper inves_heading_txt">
-                                                        <h1><a href="#">Peter R.</a></h1>
-                                                        <div className="line_shape investment_line_shape" />
-                                                        <p>Medical Lawyer</p>
-                                                        <ul className="investment_slider_icon">
-                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a href="#" className='view-lawyer-profile'>View Profile</a>
-
-                                        </div>
-                                    </div> */}
-                                    {/* <div className="item">
-                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
-                                            <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_main_border float_left">
-                                                    <div className="inves_img_wrapper">
-                                                        <img src="https://demo.phpscriptpoint.com/lawyer/assets/uploads/attorney-2.jpg" className="img-responsive" alt="img" />
-                                                    </div>
-                                                    <div className="investment_content_wrapper inves_heading_txt">
-                                                        <h1><a href="#">Tom S.</a></h1>
-                                                        <div className="line_shape investment_line_shape" />
-                                                        <p>Medical Lawyer</p>
-                                                        <ul className="investment_slider_icon">
-                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a href="#" className='view-lawyer-profile'>View Profile</a>
-
-                                        </div>
-                                    </div> */}
                                 </div>
                             </div>
                         </div>
@@ -637,4 +598,4 @@ function About() {
     )
 }
 
-export default About
+export default About_Us;
