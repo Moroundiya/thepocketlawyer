@@ -16,7 +16,7 @@ function About_Us() {
         ref: 'counter',
         // end: 1234567,
         enableScrollSpy: true,
-        // scrollSpyDelay: 0,
+        scrollSpyOnce: false
     });
 
     return (
@@ -161,7 +161,7 @@ function About_Us() {
                                     </div>
                                     <div className="count-description">
                                         <span className="timer">
-                                            <CountUp end={365} duration={7} enableScrollSpy />
+                                            <CountUp end={365} duration={7} enableScrollSpy={true} scrollSpyOnce={false} />
                                         </span>
                                         <h5 className="con1"> <a href="#">days online</a></h5>
                                     </div>

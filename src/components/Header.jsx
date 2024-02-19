@@ -73,7 +73,8 @@ function Header() {
                                         <a href="#0">Services</a>
                                     </li>
                                     <li>
-                                        <a href="#0">Solutions</a>
+                                        <Link to="/solutions" reloadDocument relative='path'>Solutions</Link>
+
                                     </li>
                                     <li>
                                         <a href="#0">Add-Ons</a>
@@ -289,7 +290,8 @@ function Header() {
                                                     <a href="faq.html">Services</a>
                                                 </li>
                                                 <li class="parent">
-                                                    <a href="login.html">Solutions</a>
+                                                    <Link to="/solutions" reloadDocument relative='path'>Solutions</Link>
+
                                                 </li>
                                                 <li class="parent">
                                                     <a href="register.html">Add-Ons</a>

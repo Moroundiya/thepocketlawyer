@@ -48,6 +48,7 @@ import Career from './pages/Career';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
 import About_Us from './pages/About_Us';
+import Solutions from './pages/Solutions';
 
 
 const router = createBrowserRouter([
@@ -222,6 +223,10 @@ const router = createBrowserRouter([
   {
     path: "career",
     element: <Career />
+  },
+  {
+    path: "solutions",
+    element: <Solutions />
   }
 
 ]);
