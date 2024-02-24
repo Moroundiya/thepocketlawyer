@@ -12,6 +12,17 @@ function Search_Merchant() {
                     <div className="merchant-header">
                         <div className="contented">
                             <div className="merchant-section" id='merchant-section'>
+                                <div id="lawyer-count-bar">
+                                    <h5 aria-current="page" id='search-lawyer-title'> 2245 Available Merchants</h5>
+                                    <select name="" id="lawyer-count-bar-select">
+                                        <option value="" selected disabled>Select</option>
+                                        <option value="">Rating</option>
+                                        <option value="">Popular</option>
+                                        <option value="">Latest</option>
+                                        <option value="">Free</option>
+                                        <option value="">Home Delivery</option>
+                                    </select>
+                                </div>
                                 <div className="row">
                                     <div className="col-md-12 col-lg-4 col-xl-3 theiaStickySidebar">
                                         <div className="card search-filter" id="searched">
@@ -282,43 +293,92 @@ function Search_Merchant() {
                                                         <label htmlFor="">Specialization</label>
                                                         <br />
                                                         <select name="Audiologist" id="audiologist">
-                                                            <option value="country">Audiologist</option>
-
+                                                            <option value="" selected disabled>Select</option>
+                                                            <option value="">Civil Litigation</option>
+                                                            <option value="">Criminal Defense</option>
+                                                            <option value="">Family Law</option>
+                                                            <option value="">Corporate Law</option>
+                                                            <option value="">Real Estate Law</option>
+                                                            <option value="">Intellectual Property Law</option>
+                                                            <option value="">Bankruptcy Law</option>
+                                                            <option value="">Employment Law</option>
+                                                            <option value="">Immigration Law</option>
+                                                            <option value="">Environmental Law</option>
+                                                            <option value="">Tax Law</option>
+                                                            <option value="">Healthcare Law</option>
+                                                            <option value="">International Law</option>
+                                                            <option value="">Estate Planning</option>
+                                                            <option value="">Personal Injury Law</option>
+                                                            <option value="">Civil Rights Law</option>
+                                                            <option value="">Entertainment Law</option>
+                                                            <option value="">Sports Law</option>
+                                                            <option value="">Admiralty (Maritime) Law</option>
+                                                            <option value="">Alternative Dispute Resolution (ADR)</option>
                                                         </select>
                                                         <br />
                                                         <label htmlFor="" className='mt-1'>Service</label>
                                                         <br />
                                                         <select name="Dental" id="dental">
-                                                            <option value="country">Dental</option>
+                                                            <option value="" selected disabled>Select</option>
+                                                            <option value="">Legal Consultation</option>
+                                                            <option value="">Contract Drafting and Review</option>
+                                                            <option value="">Litigation Representation</option>
+                                                            <option value="">Legal Research</option>
+                                                            <option value="">Document Preparation</option>
+                                                            <option value="">Mediation and Arbitration</option>
+                                                            <option value="">Estate Planning</option>
+                                                            <option value="">Intellectual Property Protection</option>
+                                                            <option value="">Business Formation and Transactions</option>
+                                                            <option value="">Real Estate Transactions</option>
+                                                            <option value="">Employment Law Services</option>
+                                                            <option value="">Immigration Services</option>
+                                                            <option value="">Bankruptcy Representation</option>
+                                                            <option value="">Family Law Services</option>
+                                                            <option value="">Criminal Defense Representation</option>
+                                                            <option value="">Tax Law Services</option>
+                                                            <option value="">Healthcare Law Services</option>
+                                                            <option value="">Environmental Law Services</option>
+                                                            <option value="">Civil Rights Advocacy</option>
+                                                            <option value="">Personal Injury Representation</option>
+                                                            <option value="">Entertainment Law Services</option>
+                                                            <option value="">Sports Law Services</option>
+                                                            <option value="">Admiralty (Maritime) Law Services</option>
+                                                            <option value="">Alternative Dispute Resolution (ADR) Services</option>
+                                                            <option value="">Compliance and Regulatory Services</option>
 
                                                         </select>
                                                         <br />
                                                         <label htmlFor="" className='mt-1'>Merchant Type</label>
                                                         <br />
                                                         <select name="merchant" id="merchant" >
-                                                            <option value="">Ambulance Centers</option>
-                                                            <option value="">Cardio logical Centers</option>
+                                                            <option value="">Legal Solutions</option>
+                                                            <option value="">Conference &amp; Events</option>
                                                             <option value="">
-                                                                Cemeteries &amp; Burial Providers
+                                                                Academic &amp; Training
                                                             </option>
-                                                            <option value="">Cosmetics Centers</option>
-                                                            <option value="">Dental Centers</option>
-                                                            <option value="">Drug Distributors</option>
-                                                            <option value="">Drug Manufacturers</option>
-                                                            <option value="">Drug Importers</option>
-                                                            <option value="">Pharmacy Stores </option>
-                                                            <option value="">ENT Centers</option>
-                                                            <option value="">Eye/Optical Centers</option>
-                                                            <option value="">Fertility Centers</option>
-                                                            <option value="">Health Equipment Suppliers</option>
-                                                            <option value="">Health Services Providers</option>
-                                                            <option value="">HMO/Health Insurance</option>
-                                                            <option value="">Hospitals/Clinics</option>
-                                                            <option value="">Lab/Diagnosis Centers</option>
+                                                            <option value="">Public Law/Regulations</option>
+                                                            <option value="">Education &amp; Craft Supplies</option>
+                                                            <option value="">Office Supplies</option>
+                                                            <option value="">Legal Fashion &amp; Bags</option>
+                                                            <option value="">Costume &amp; Outfits</option>
+                                                            <option value="">Books &amp; Publications </option>
+                                                            <option value="">Legal Accessories &amp; Signage</option>
+
 
                                                         </select>
                                                         <br />
-                                                        <label htmlFor="" className='mt-4'>Consultation Shift</label>
+                                                        <label htmlFor="" className='mt-1'>Merchant Features</label>
+                                                        <br />
+                                                        <select name="merchantfeatures" id="merchant" >
+                                                            <option value="">Trade Assurance</option>
+                                                            <option value="">Verified Merchant</option>
+                                                            <option value="">
+                                                                Unverified Merchant
+                                                            </option>
+
+                                                        </select>
+                                                        <br />
+                                                        <label htmlFor="" className='search-law-label'>Consultation Shift</label>
                                                         <br />
                                                         <div>
                                                             <label className="custom_check" id="checked">
@@ -344,25 +404,14 @@ function Search_Merchant() {
                                                                 <span className="checkmark" /> Evening
                                                             </label>
                                                         </div>
-                                                        <div>
-                                                            <label className="custom_check" id="checked">
-                                                                <input type="checkbox" name="gender_type" />
-                                                                <span className="checkmark" /> Night
-                                                            </label>
-                                                        </div>
-                                                        <div>
-                                                            <label className="custom_check" id="checked">
-                                                                <input type="checkbox" name="gender_type" />
-                                                                <span className="checkmark" /> Mid Night
-                                                            </label>
-                                                        </div>
+
                                                         <div>
                                                             <label className="custom_check" id="checked">
                                                                 <input type="checkbox" name="gender_type" />
                                                                 <span className="checkmark" /> Rounds
                                                             </label>
                                                         </div>
-                                                        <label htmlFor="" className='mt-1'>Ratings</label>
+                                                        <label htmlFor="" className='search-law-label'>Ratings</label>
                                                         <br />
                                                         <div className="rating mb-2">
                                                             <label className="custom_check" id="checked">
@@ -427,7 +476,7 @@ function Search_Merchant() {
                                                             </label>
                                                         </div>
                                                         <div className="filter-widget">
-                                                            <label htmlFor="">Categories</label>
+                                                            <label htmlFor="" className='search-law-label'>Categories</label>
                                                             <br />
                                                             <span className="checkmark" />
                                                             <div>
@@ -472,7 +521,7 @@ function Search_Merchant() {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <label htmlFor="">Job Experience</label>
+                                                        <label htmlFor="" className='search-law-label'>Job Experience</label>
                                                         <br />
                                                         <div>
                                                             <label className="custom_check" id="checked">
@@ -504,7 +553,7 @@ function Search_Merchant() {
                                                                 <span className="checkmark" /> 9 Years Above
                                                             </label>
                                                         </div>
-                                                        <label htmlFor="">Language</label>
+                                                        <label htmlFor="" className='search-law-label'>Language</label>
                                                         <br />
                                                         <div>
                                                             <label className="custom_check" id="checked">
@@ -536,7 +585,7 @@ function Search_Merchant() {
                                                         </div>
                                                     </form>
                                                 </div>
-                                                <div className="btn-search" id="search__button">
+                                                <div className="btn-search mt-5 lawyer-search-btn-proceed" id="search__button">
                                                     <button type="button" className="btn w-100">
                                                         Search
                                                     </button>
@@ -552,7 +601,7 @@ function Search_Merchant() {
                                                         <div className="doctor-img1">
                                                             <a href="pharmacy-details.html">
                                                                 <img
-                                                                    src="https://helpful-bienenstitch-7914f7.netlify.app/assets/medicalimg1-25669ab4.jpg"
+                                                                    src="https://img.freepik.com/free-vector/male-lawyer-concept-illustration_114360-14510.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.233311484.1695720566&amp;semt=ais"
                                                                     className="img-fluid"
                                                                     alt="User Image"
                                                                 />
@@ -585,7 +634,7 @@ function Search_Merchant() {
                                                                     </p>
                                                                     <p className="doc-location mb-2">
                                                                         <i className="fas fa-chevron-right me-1" />{" "}
-                                                                        Chemists, Surgical Equipment Dealer
+                                                                        Law accessories and Equipment
                                                                     </p>
                                                                     <p className="doc-location mb-2">
                                                                         <i className="fas fa-chevron-right me-1" /> Opens
@@ -620,7 +669,7 @@ function Search_Merchant() {
                                                         <div className="doctor-img1">
                                                             <a href="pharmacy-details.html">
                                                                 <img
-                                                                    src="https://helpful-bienenstitch-7914f7.netlify.app/assets/medicalimg-d9c20b33.jpg"
+                                                                    src="https://img.freepik.com/free-vector/law-firm-concept-illustration_114360-8869.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.233311484.1695720566&amp;semt=ais"
                                                                     className="img-fluid"
                                                                     alt="User Image"
                                                                 />
@@ -653,7 +702,7 @@ function Search_Merchant() {
                                                                     </p>
                                                                     <p className="doc-location mb-2">
                                                                         <i className="fas fa-chevron-right me-1" />{" "}
-                                                                        Chemists, Surgical Equipment Dealer
+                                                                        Law accessories and Equipment
                                                                     </p>
                                                                     <p className="doc-location mb-2">
                                                                         <i className="fas fa-chevron-right me-1" /> Opens
@@ -688,7 +737,7 @@ function Search_Merchant() {
                                                         <div className="doctor-img1">
                                                             <a href="pharmacy-details.html">
                                                                 <img
-                                                                    src="https://helpful-bienenstitch-7914f7.netlify.app/assets/medicalsimg-51c8ce2e.jpg"
+                                                                    src="https://img.freepik.com/free-photo/lifestyle-people-office_23-2149173727.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.233311484.1695720566&amp;semt=ais"
                                                                     className="img-fluid"
                                                                     alt="User Image"
                                                                 />
@@ -723,7 +772,7 @@ function Search_Merchant() {
                                                                     </p>
                                                                     <p className="doc-location mb-2">
                                                                         <i className="fas fa-chevron-right me-1" />{" "}
-                                                                        Chemists, Surgical Equipment Dealer
+                                                                        Law accessories and Equipment
                                                                     </p>
                                                                     <p className="doc-location mb-2">
                                                                         <i className="fas fa-chevron-right me-1" /> Opens
@@ -758,7 +807,7 @@ function Search_Merchant() {
                                                         <div className="doctor-img1">
                                                             <a href="pharmacy-details.html">
                                                                 <img
-                                                                    src="https://helpful-bienenstitch-7914f7.netlify.app/assets/medicalimg-d9c20b33.jpg"
+                                                                    src="https://img.freepik.com/free-vector/legal-advisers-concept-illustration_114360-14519.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.233311484.1695720566&amp;semt=ais"
                                                                     className="img-fluid"
                                                                     alt="User Image"
                                                                 />
@@ -793,7 +842,7 @@ function Search_Merchant() {
                                                                     </p>
                                                                     <p className="doc-location mb-2">
                                                                         <i className="fas fa-chevron-right me-1" />{" "}
-                                                                        Chemists, Surgical Equipment Dealer
+                                                                        Law accessories and Equipment
                                                                     </p>
                                                                     <p className="doc-location mb-2">
                                                                         <i className="fas fa-chevron-right me-1" /> Opens
@@ -828,7 +877,7 @@ function Search_Merchant() {
                                                         <div className="doctor-img1">
                                                             <a href="pharmacy-details.html">
                                                                 <img
-                                                                    src="https://helpful-bienenstitch-7914f7.netlify.app/assets/medicalimg-d9c20b33.jpg"
+                                                                    src="https://img.freepik.com/free-photo/thoughtful-black-young-administrative-worker-prepares-monthly-report-stands-near-work-place-with-laptop-computer_273609-18038.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.233311484.1695720566&amp;semt=ais"
                                                                     className="img-fluid"
                                                                     alt="User Image"
                                                                 />
@@ -863,7 +912,7 @@ function Search_Merchant() {
                                                                     </p>
                                                                     <p className="doc-location mb-2">
                                                                         <i className="fas fa-chevron-right me-1" />{" "}
-                                                                        Chemists, Surgical Equipment Dealer
+                                                                        Law accessories and Equipment
                                                                     </p>
                                                                     <p className="doc-location mb-2">
                                                                         <i className="fas fa-chevron-right me-1" /> Opens
@@ -898,7 +947,7 @@ function Search_Merchant() {
                                                         <div className="doctor-img1">
                                                             <a href="pharmacy-details.html">
                                                                 <img
-                                                                    src="https://helpful-bienenstitch-7914f7.netlify.app/assets/medicalimg1-25669ab4.jpg"
+                                                                    src="https://img.freepik.com/premium-photo/globe-library-puebla-mexico-books_24859-772.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.233311484.1695720566&amp;semt=ais"
                                                                     className="img-fluid"
                                                                     alt="User Image"
                                                                 />
@@ -933,7 +982,7 @@ function Search_Merchant() {
                                                                     </p>
                                                                     <p className="doc-location mb-2">
                                                                         <i className="fas fa-chevron-right me-1" />{" "}
-                                                                        Chemists, Surgical Equipment Dealer
+                                                                        Law accessories and Equipment
                                                                     </p>
                                                                     <p className="doc-location mb-2">
                                                                         <i className="fas fa-chevron-right me-1" /> Opens
@@ -961,14 +1010,36 @@ function Search_Merchant() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="load-more text-center">
-                                            <a
-                                                className="btn btn-dark-blue btn-md py-3 px-4"
-                                                href="javascript:void(0);"
-                                            >
-                                                Load More
-                                            </a>
+                                        <div className="row">
+                                            <div className="col-sm-12">
+                                                <div className="blog-pagination rev-page">
+                                                    <nav>
+                                                        <ul className="pagination justify-content-center mt-5">
+                                                            <li className="page-item disabled">
+                                                                <a className="page-link page-prev" href="search-2.html#" tabIndex={-1}><iconify-icon icon="ant-design:double-left-outlined" id="pagination-control-icon"></iconify-icon> PREV</a>
+                                                            </li>
+                                                            <li className="page-item active">
+                                                                <a className="page-link" href="search-2.html#">1</a>
+                                                            </li>
+                                                            <li className="page-item">
+                                                                <a className="page-link" href="search-2.html#">2</a>
+                                                            </li>
+                                                            <li className="page-item">
+                                                                <a className="page-link" href="search-2.html#">...</a>
+                                                            </li>
+                                                            <li className="page-item">
+                                                                <a className="page-link" href="search-2.html#">10</a>
+                                                            </li>
+                                                            <li className="page-item">
+                                                                <a className="page-link page-next" href="search-2.html#">NEXT <iconify-icon icon="ant-design:double-right-outlined" id="pagination-control-icon"></iconify-icon></a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>
                                         </div>
+
+
                                     </div>
                                 </div>
                             </div>

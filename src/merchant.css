@@ -181,8 +181,8 @@
 }
 
 #merchant option {
-    background-color: #00329b;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     margin: 1rem 0;
 }
 
@@ -308,12 +308,12 @@
 
 .clinic-booking a.view-pro-btn {
     background-color: #fff;
+    border: 1px solid #00aaef;
 }
 
-.clinic-booking a.view-pro-btn:hover,
-.clinic-booking a.view-pro-btn:focus {
+.clinic-booking a.view-pro-btn:hover {
     background: #00aaef;
-    color: #000;
+    color: #fff;
 }
 
 .clinic-booking a.apt-btn {
@@ -354,6 +354,12 @@
 .doctor-img1 {
     margin-right: 20px;
     margin-left: 0 !important;
+    width: 300px;
+    height: 200px;
+}
+
+.doctor-img1 a img {
+    height: 110%;
 }
 
 .fa-solid,
@@ -404,6 +410,18 @@
 }
 
 @media screen and (max-width:500px) {
+
+    #lawyer-count-bar {
+        flex-direction: column;
+        justify-content: start !important;
+        align-items: flex-start !important;
+        margin-bottom: 2.5rem !important;
+    }
+
+    #lawyer-count-bar-select {
+        margin-top: 1rem;
+    }
+
     .merchant-header {
         top: 50px;
     }
@@ -520,6 +538,21 @@
 }
 
 @media screen and (max-width:990px) {
+    .doctor-img1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .doctor-img1 a img {
+        text-align: center;
+        max-width: 100%;
+    }
+
     .dropdown-iteming:hover {
         color: #00f;
     }
@@ -528,4 +561,43 @@
         left: 7%;
         top: 4rem;
     }
+}
+
+#lawyer-count-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.nice-select {
+    display: none !important;
+}
+
+#merchant-section select {}
+
+.filter-contents select,
+#merchant-section select {
+    height: 48px;
+    border: 1px solid #000000e2 !important;
+    background-color: #fff;
+
+}
+
+#lawyer-count-bar-select {
+    height: 40px !important;
+    padding: 0 .7rem;
+    border-radius: 5px;
+}
+
+.lawyer-search-btn-proceed:hover {
+    background-color: #00aaef;
+    color: #fff;
+}
+
+.search-law-label {
+    margin: 1rem 0 1rem;
+    font-size: 1.1rem;
+    text-transform: capitalize;
 }
