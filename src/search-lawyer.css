@@ -1407,13 +1407,13 @@
 #search-lawyer-container-all input {
     padding: .5rem .7rem;
     /* margin: 1rem 0; */
-    border: 1px solid #737373;
+    /* border: 1px solid #737373; */
 }
 
 
 #search-lawyer-container-all input {
     padding: 1rem 2rem;
-    background-color: #f8fbff;
+    /* background-color: #f8fbff; */
 }
 
 .status-tog {
