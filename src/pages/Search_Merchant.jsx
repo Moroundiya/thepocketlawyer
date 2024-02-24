@@ -274,11 +274,10 @@ function Search_Merchant() {
                                                         <option value="ZM">Zambia</option>
                                                         <option value="ZW">Zimbabwe</option>
                                                     </select>
-                                                    <br />
                                                     <input type="text" id="text" className='w-100 my-3' placeholder="Enter State" />
                                                     <input type="text" id="text" className='w-100 my-0' placeholder="Enter City" />
                                                 </div>
-                                                <div className="merchants mt-4">
+                                                <div className="merchants mt-1">
                                                     <form action="#" className="merchant__type">
                                                         <label htmlFor="">Specialization</label>
                                                         <br />
@@ -287,14 +286,14 @@ function Search_Merchant() {
 
                                                         </select>
                                                         <br />
-                                                        <label htmlFor="" className='mt-4'>Service</label>
+                                                        <label htmlFor="" className='mt-1'>Service</label>
                                                         <br />
                                                         <select name="Dental" id="dental">
                                                             <option value="country">Dental</option>
 
                                                         </select>
                                                         <br />
-                                                        <label htmlFor="" className='mt-4'>Merchant Type</label>
+                                                        <label htmlFor="" className='mt-1'>Merchant Type</label>
                                                         <br />
                                                         <select name="merchant" id="merchant" >
                                                             <option value="">Ambulance Centers</option>
@@ -363,7 +362,7 @@ function Search_Merchant() {
                                                                 <span className="checkmark" /> Rounds
                                                             </label>
                                                         </div>
-                                                        <label htmlFor="">Ratings</label>
+                                                        <label htmlFor="" className='mt-1'>Ratings</label>
                                                         <br />
                                                         <div className="rating mb-2">
                                                             <label className="custom_check" id="checked">

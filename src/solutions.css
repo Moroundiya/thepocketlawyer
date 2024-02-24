@@ -437,7 +437,7 @@
             font-size: 30px;
         }
 
-        .index3_sliderbg {
+        #solution-parent .index3_sliderbg {
             display: none;
         }
     }
@@ -523,7 +523,7 @@
     }
 }
 
-.index3_sliderbg {
+#solution-parent .index3_sliderbg {
     right: 120px;
     top: 150px;
 }

@@ -1406,9 +1406,10 @@
 
 #search-lawyer-container-all input {
     padding: .5rem .7rem;
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
     border: 1px solid #737373;
 }
+
 
 #search-lawyer-container-all input {
     padding: 1rem 2rem;

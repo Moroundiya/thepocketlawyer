@@ -9,7 +9,7 @@ function Solutions() {
 
         <div>
             <Header />
-            <div className="slider-area slider_index2_wrapper slider_index3_wrapper float_left">
+            <div className="slider-area slider_index2_wrapper slider_index3_wrapper float_left" id='solution-parent'>
                 <div className="bg-animation">
                     <img className="zoom-fade" src="https://webstrot.com/html/savehyip/light_version/images/pattern.png" alt="img" />
                 </div>
@@ -21,7 +21,7 @@ function Solutions() {
                     className="carousel slide"
                     data-ride="carousel"
                 >
-                    <div className="carousel-inner" role="listbox">
+                    <div className="carousel-inner" role="listbox"> 
                         <div className="carousel-item active">
                             <div className="carousel-captions caption-1">
                                 <div className="container">

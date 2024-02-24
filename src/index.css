@@ -5530,6 +5530,9 @@ a:hover {
   float: left;
   width: 100%;
 }
+select {
+  display: block !important;
+}
 
 .crm_service_btn_dropbox_wrapper i:before {
   margin-left: 0;

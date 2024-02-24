@@ -101,9 +101,9 @@
 }
 
 .custom_check input {
-    position: absolute;
+    /* position: absolute;
     opacity: 0;
-    cursor: pointer;
+    cursor: pointer; */
 }
 
 .custom_check input:checked~.checkmark {
@@ -151,6 +151,10 @@
     border: 2px solid white !important;
 }
 
+#merchant-section select {
+    display: block !important;
+}
+
 .filter-widget .nice-select,
 .merchants .nice-select {
     display: none;
@@ -159,7 +163,7 @@
 #audiologist,
 #dental {
     padding: .5rem 2.3rem .5rem .4rem;
-    color: #000;
+    color: #000 !important;
     width: 100%;
     border: 2px solid white !important;
 }
