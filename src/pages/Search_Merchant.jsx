@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import '../merchant.css'
+import '../merchant.css';
+import { Link } from 'react-router-dom';
 
 function Search_Merchant() {
     return (
@@ -654,9 +655,9 @@ function Search_Merchant() {
                                                             >
                                                                 View Details
                                                             </a>
-                                                            <a className="apt-btn" href="product-all.html">
-                                                                Browse Products
-                                                            </a>
+                                                            <Link to="/merchant-products" reloadDocument relative='path' className='apt-btn'>
+                                                                Merchant Products
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -722,9 +723,9 @@ function Search_Merchant() {
                                                             >
                                                                 View Details
                                                             </a>
-                                                            <a className="apt-btn" href="product-all.html">
-                                                                Browse Products
-                                                            </a>
+                                                            <Link to="/merchant-products" reloadDocument relative='path' className='apt-btn'>
+                                                                Merchant Products
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -792,9 +793,9 @@ function Search_Merchant() {
                                                             >
                                                                 View Details
                                                             </a>
-                                                            <a className="apt-btn" href="product-all.html">
-                                                                Browse Products
-                                                            </a>
+                                                            <Link to="/merchant-products" reloadDocument relative='path' className='apt-btn'>
+                                                                Merchant Products
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -862,9 +863,9 @@ function Search_Merchant() {
                                                             >
                                                                 View Details
                                                             </a>
-                                                            <a className="apt-btn" href="product-all.html">
-                                                                Browse Products
-                                                            </a>
+                                                            <Link to="/merchant-products" reloadDocument relative='path' className='apt-btn'>
+                                                                Merchant Products
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -932,9 +933,9 @@ function Search_Merchant() {
                                                             >
                                                                 View Details
                                                             </a>
-                                                            <a className="apt-btn" href="product-all.html">
-                                                                Browse Products
-                                                            </a>
+                                                            <Link to="/merchant-products" reloadDocument relative='path' className='apt-btn'>
+                                                                Merchant Products
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1002,9 +1003,9 @@ function Search_Merchant() {
                                                             >
                                                                 View Details
                                                             </a>
-                                                            <a className="apt-btn" href="product-all.html">
-                                                                Browse Products
-                                                            </a>
+                                                            <Link to="/merchant-products" reloadDocument relative='path' className='apt-btn'>
+                                                                Merchant Products
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>

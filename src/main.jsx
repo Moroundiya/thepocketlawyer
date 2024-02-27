@@ -49,6 +49,7 @@ import Signin from './pages/Signin';
 import Signup from './pages/Signup';
 import About_Us from './pages/About_Us';
 import Solutions from './pages/Solutions';
+import Merchant_Products from './pages/Merchant_Products';
 
 
 const router = createBrowserRouter([
@@ -227,6 +228,10 @@ const router = createBrowserRouter([
   {
     path: "solutions",
     element: <Solutions />
+  },
+  {
+    path: "merchant-products",
+    element: <Merchant_Products />
   }
 
 ]);
