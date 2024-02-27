@@ -101,7 +101,7 @@
 
 
 #merchant-product-parent-container a {
-    color: #2e3842;
+    /* color: #2e3842; */
     cursor: pointer;
     -webkit-transition: all .4s ease;
     -ms-transition: all .4s ease;

@@ -232,6 +232,14 @@
     text-align: center;
 }
 
+#merchant-details-card-parent {
+    border: 1px solid #fff;
+}
+
+#merchant-details-card-parent .card-body {
+    margin: 5rem 0;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
 
 .work-head-title-icon {
     font-size: 1.6rem;

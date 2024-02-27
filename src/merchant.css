@@ -377,7 +377,7 @@
     /* font-size:13px; */
 }
 
-.clinic-booking a:first-child {
+#merchant-section .clinic-booking a:first-child {
     display: none;
 }
 

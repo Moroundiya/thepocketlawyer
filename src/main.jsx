@@ -50,6 +50,7 @@ import Signup from './pages/Signup';
 import About_Us from './pages/About_Us';
 import Solutions from './pages/Solutions';
 import Merchant_Products from './pages/Merchant_Products';
+import View_Details from './pages/View_Details';
 
 
 const router = createBrowserRouter([
@@ -232,6 +233,10 @@ const router = createBrowserRouter([
   {
     path: "merchant-products",
     element: <Merchant_Products />
+  },
+  {
+    path: "view-details",
+    element: <View_Details />
   }
 
 ]);

@@ -93,6 +93,9 @@
     transition: all .3s;
 }
 
+#view-profile-parent .clinic-booking a:first-child {
+    display: none;
+}
 @media only screen and (max-width: 991.98px) {
     .review-listing .recommend-btn {
         float: none;

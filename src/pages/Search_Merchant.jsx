@@ -649,12 +649,9 @@ function Search_Merchant() {
                                                         <a href="/view-details"></a>
                                                         <div className="clinic-booking">
                                                             <a href="/view-details"></a>
-                                                            <a
-                                                                className="view-pro-btn"
-                                                                href="pharmacy-details.html"
-                                                            >
+                                                           <Link to="/view-details" reloadDocument relative='path' className='view-pro-btn'>
                                                                 View Details
-                                                            </a>
+                                                            </Link>
                                                             <Link to="/merchant-products" reloadDocument relative='path' className='apt-btn'>
                                                                 Merchant Products
                                                             </Link>
@@ -717,12 +714,9 @@ function Search_Merchant() {
                                                         <a href="/view-details"></a>
                                                         <div className="clinic-booking">
                                                             <a href="/view-details"></a>
-                                                            <a
-                                                                className="view-pro-btn"
-                                                                href="pharmacy-details.html"
-                                                            >
+                                                           <Link to="/view-details" reloadDocument relative='path' className='view-pro-btn'>
                                                                 View Details
-                                                            </a>
+                                                            </Link>
                                                             <Link to="/merchant-products" reloadDocument relative='path' className='apt-btn'>
                                                                 Merchant Products
                                                             </Link>
@@ -787,12 +781,10 @@ function Search_Merchant() {
                                                         <a href="/view-details"></a>
                                                         <div className="clinic-booking">
                                                             <a href="/view-details"></a>
-                                                            <a
-                                                                className="view-pro-btn"
-                                                                href="pharmacy-details.html"
-                                                            >
+                                                          
+                                                            <Link to="/view-details" reloadDocument relative='path' className='view-pro-btn'>
                                                                 View Details
-                                                            </a>
+                                                            </Link>
                                                             <Link to="/merchant-products" reloadDocument relative='path' className='apt-btn'>
                                                                 Merchant Products
                                                             </Link>
@@ -857,12 +849,9 @@ function Search_Merchant() {
                                                         <a href="/view-details"></a>
                                                         <div className="clinic-booking">
                                                             <a href="/view-details"></a>
-                                                            <a
-                                                                className="view-pro-btn"
-                                                                href="pharmacy-details.html"
-                                                            >
+                                                           <Link to="/view-details" reloadDocument relative='path' className='view-pro-btn'>
                                                                 View Details
-                                                            </a>
+                                                            </Link>
                                                             <Link to="/merchant-products" reloadDocument relative='path' className='apt-btn'>
                                                                 Merchant Products
                                                             </Link>
@@ -927,12 +916,9 @@ function Search_Merchant() {
                                                         <a href="/view-details"></a>
                                                         <div className="clinic-booking">
                                                             <a href="/view-details"></a>
-                                                            <a
-                                                                className="view-pro-btn"
-                                                                href="pharmacy-details.html"
-                                                            >
+                                                           <Link to="/view-details" reloadDocument relative='path' className='view-pro-btn'>
                                                                 View Details
-                                                            </a>
+                                                            </Link>
                                                             <Link to="/merchant-products" reloadDocument relative='path' className='apt-btn'>
                                                                 Merchant Products
                                                             </Link>
@@ -997,12 +983,9 @@ function Search_Merchant() {
                                                         <a href="/view-details"></a>
                                                         <div className="clinic-booking">
                                                             <a href="/view-details"></a>
-                                                            <a
-                                                                className="view-pro-btn"
-                                                                href="pharmacy-details.html"
-                                                            >
+                                                           <Link to="/view-details" reloadDocument relative='path' className='view-pro-btn'>
                                                                 View Details
-                                                            </a>
+                                                            </Link>
                                                             <Link to="/merchant-products" reloadDocument relative='path' className='apt-btn'>
                                                                 Merchant Products
                                                             </Link>
