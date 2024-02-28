@@ -51,6 +51,8 @@ import About_Us from './pages/About_Us';
 import Solutions from './pages/Solutions';
 import Merchant_Products from './pages/Merchant_Products';
 import View_Details from './pages/View_Details';
+import Coming_Soon from './pages/Coming_Soon';
+import Training_Sessions from './pages/Training_Sessions';
 
 
 const router = createBrowserRouter([
@@ -237,6 +239,14 @@ const router = createBrowserRouter([
   {
     path: "view-details",
     element: <View_Details />
+  },
+  {
+    path: "404",
+    element: <Coming_Soon />
+  },
+  {
+    path: "training-sessions",
+    element: <Training_Sessions />
   }
 
 ]);

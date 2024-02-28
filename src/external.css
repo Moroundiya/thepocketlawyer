@@ -613,6 +613,16 @@ div.nice-select.form-control.all-countries-list {
 }
 
 @media screen and (max-width: 500px) {
+
+    .border_about_wrapper {
+        padding: 20px !important;
+    }
+
+    #dot {
+        font-size: 24px !important;
+
+    }
+
     #about-us-upper {
         margin-top: 4.5rem;
     }
@@ -726,6 +736,63 @@ div.nice-select.form-control.all-countries-list {
 
 }
 
+
+#coming-soon {
+    width: 100%;
+    height: 100%;
+    background: #00091B;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    animation: fadeIn 1000ms ease;
+    -webkit-animation: fadeIn 1000ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        top: 20%;
+        opacity: 0;
+    }
+
+    to {
+        top: 100;
+        opacity: 1;
+    }
+
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        top: 20%;
+        opacity: 0;
+    }
+
+    to {
+        top: 100;
+        opacity: 1;
+    }
+
+}
+
+
+
+#dot {
+    color: #4FEBFE;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    line-height: 1;
+    font-weight: 700;
+
+}
 
 
 

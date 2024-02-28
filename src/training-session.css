@@ -1,0 +1,119 @@
+#training-img {
+    width: 100% !important;
+}
+
+#training-img2 {
+    width: 100% !important;
+    height: 480px;
+}
+
+#training_sv_abt_img_wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.training-span {
+    color: rgb(56, 199, 56);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.training-row-spacing {
+    margin: 3rem 0 !important;
+}
+
+#training-row-parent-spacing {
+    margin-bottom: 5rem !important;
+}
+
+#training-parent-container-div {
+    position: relative;
+    top: 80px;
+}
+
+
+@media screen and (max-width:991px) {
+    #row-column-change {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+
+    #training-img,
+    #training-img2 {
+        margin: 1.5rem 0 !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .session-video-container {
+        padding: 0rem;
+    }
+
+    .video-all-parent {
+        padding: 0 !important;
+    }
+
+    .training-title {
+        font-size: 1.3rem;
+    }
+
+    .video-all-parent {
+        margin-bottom: 3rem !important;
+    }
+
+    #training-parent-container-div {
+        position: relative;
+        top: 30px;
+    }
+
+    #border_about_wrapper {
+        padding: 20px 10px !important;
+    }
+
+    #training-row-parent-spacing {
+        margin-bottom: 5rem !important;
+    }
+
+    .session-video-container-info {
+        font-size: 1rem !important;
+    }
+
+}
+
+
+
+.session-video-container {
+    background-color: rgba(225, 225, 215, .3);
+    width: 100%;
+    height: auto;
+    padding: 3rem 0 0rem;
+}
+
+.video-logo-container {
+    width: 100%;
+    height: 300px;
+    background: rgba(71, 144, 184, 0.581);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+.session-video-container-title {
+    color: #2b2a31;
+    font-size: 1.4444444444rem;
+    line-height: 1.3;
+    margin: 1rem 0 .5rem;
+    font-weight: 500;
+}
+
+.session-video-container-info {
+    font-size: 1.1rem;
+}
+
+.video-all-parent {
+    margin-bottom: 5rem;
+}

@@ -6,6 +6,7 @@ import article from '../assets/images/article.png';
 import video from '../assets/images/video.png';
 import webminar from '../assets/images/webminar.png';
 import support from '../assets/images/support.png';
+import { Link } from 'react-router-dom';
 
 function Support() {
     return (
@@ -29,8 +30,10 @@ function Support() {
                                         <p>Get immediate answers to your ThePocketLawyers questions with our 24/7
                                             Knowledge Base.</p>
                                         <p>&nbsp;</p>
-                                        <a href="https://support.mycase.com/en/" className="btn" id='support-cta-btn'>
-                                            Help Center  </a>
+
+                                        <Link to="/help" reloadDocument relative='path' className='btn' id='support-cta-btn'>
+                                            Help Center
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -43,8 +46,9 @@ function Support() {
                                         <h4>ThePocketLawyers Webinar Series</h4>
                                         <p>Get up and running with ThePocketLawyers quickly and successfully.</p>
                                         <p>&nbsp;</p>
-                                        <a href="https://mycase.zoom.us/meeting/register/tJcofu2rrz4oHt0nutufiJoQfhdPK6YCaQuQ" className="btn" id='support-cta-btn'>
-                                            Register  </a>
+                                        <Link to="/404" reloadDocument relative='path' className='btn' id='support-cta-btn'>
+                                            Register
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -58,8 +62,9 @@ function Support() {
                                         <h4>Training Videos</h4>
                                         <p>Watch our training videos to ensure you’re getting the most out of ThePocketLawyers.</p>
                                         <p>&nbsp;</p>
-                                        <a href="https://www.mycase.com/support/training-sessions/" className="btn" id='support-cta-btn'>
-                                            Training videos  </a>
+                                        <Link to="/training-sessions" reloadDocument relative='path' className='btn' id='support-cta-btn'>
+                                            Training videos
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -73,8 +78,10 @@ function Support() {
                                         <p>Live chat with a support representative for assistance. Chat support hours are from M-F
                                             9am-5 pm PT</p>
                                         <p>&nbsp;</p>
-                                        <a href="#chatbutton" className="btn" id='support-cta-btn'>
-                                            Chat With Support  </a>
+                                      
+                                        <Link to="/tickets" reloadDocument relative='path' className='btn' id='support-cta-btn'>
+                                            Chat With Support
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
