@@ -81,9 +81,7 @@
 }
 
 #ticket-container .card-body {
-    flex: 1 1 auto;
-    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-    color: var(--bs-card-color);
+    padding: 2.5rem 2rem;
 }
 
 
@@ -148,6 +146,10 @@
         top: 30px;
     }
 
+    #ticket-container .card-body {
+        padding: 2rem 1.5rem !important;
+    }
+
 }
 
 #ticket-container .auth-wrapper.auth-v1 .card {
@@ -159,4 +161,71 @@
     position: relative;
     top: 80px;
     height: auto;
+    margin-bottom: 12rem;
+
 }
+
+.search-h2 {
+    font-weight: 500;
+    font-size: 1.65rem;
+
+}
+
+#ticket-message {
+    height: 200px !important;
+    resize: none;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+}
+
+
+
+
+#ticket-container .form-select:focus {
+    border-color: #0CAF60;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(12, 175, 96, 0.25);
+}
+
+#ticket-container .form-select:disabled {
+    color: #6c757d;
+    background-color: #e9ecef;
+}
+
+#ticket-container .form-select {
+    display: block;
+    width: 100%;
+    padding: 0.575rem 1rem 0.575rem 1rem;
+    -moz-padding-start: calc(1rem - 3px);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #293240;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
