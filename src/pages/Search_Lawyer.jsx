@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom';
 function Search_Lawyer() {
     return (
         <div>
+            <Header />
             <div className="main-wrfapper search-page container-fluid" id='search-lawyer-container-all'>
-                <Header />
                 {/* Page Content */}
-                <div className="doctor-content content mt-5">
+                <div className="doctor-content content">
                     <div className="container-fluid px-5" id='doctor-content-subpage'>
                         <h5 className="py-5" aria-current="page" id='search-lawyer-title'> 2245 Available Lawyers &amp; Attorneys</h5>
 
@@ -933,7 +933,7 @@ function Search_Lawyer() {
                                                             <Link to="/" reloadDocument relative='path'>
                                                                 <button class="btn appoint-btn">Book Appointment</button>
                                                             </Link>
-                                                            <Link to="/" reloadDocument relative='path'>
+                                                            <Link to="/availability" reloadDocument relative='path'>
                                                                 <button class="btn appoint-btn">Check Availability</button>
                                                             </Link>
                                                         </div>
@@ -1024,7 +1024,7 @@ function Search_Lawyer() {
                                                             <Link to="/" reloadDocument relative='path'>
                                                                 <button class="btn appoint-btn">Book Appointment</button>
                                                             </Link>
-                                                            <Link to="/" reloadDocument relative='path'>
+                                                            <Link to="/availability" reloadDocument relative='path'>
                                                                 <button class="btn appoint-btn">Check Availability</button>
                                                             </Link>
                                                         </div>
@@ -1115,7 +1115,7 @@ function Search_Lawyer() {
                                                             <Link to="/" reloadDocument relative='path'>
                                                                 <button class="btn appoint-btn">Book Appointment</button>
                                                             </Link>
-                                                            <Link to="/" reloadDocument relative='path'>
+                                                            <Link to="/availability" reloadDocument relative='path'>
                                                                 <button class="btn appoint-btn">Check Availability</button>
                                                             </Link>
                                                         </div>
@@ -1206,7 +1206,7 @@ function Search_Lawyer() {
                                                             <Link to="/" reloadDocument relative='path'>
                                                                 <button class="btn appoint-btn">Book Appointment</button>
                                                             </Link>
-                                                            <Link to="/" reloadDocument relative='path'>
+                                                            <Link to="/availability" reloadDocument relative='path'>
                                                                 <button class="btn appoint-btn">Check Availability</button>
                                                             </Link>
                                                         </div>
@@ -1297,7 +1297,7 @@ function Search_Lawyer() {
                                                             <Link to="/" reloadDocument relative='path'>
                                                                 <button class="btn appoint-btn">Book Appointment</button>
                                                             </Link>
-                                                            <Link to="/" reloadDocument relative='path'>
+                                                            <Link to="/availability" reloadDocument relative='path'>
                                                                 <button class="btn appoint-btn">Check Availability</button>
                                                             </Link>
                                                         </div>

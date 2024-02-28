@@ -57,7 +57,7 @@ function About_Us() {
                             <div className="border_about_wrapper float_left">
                                 <div className="row">
                                     <div className="col-lg-6 col-md-12 col-12 col-sm-12">
-                                        <div className="sv_abt_img_wrapper float_left">
+                                        <div className="sv_abt_img_wrapper float_left" id='sv_abt_img_wrapper-pro'>
                                             <img src="https://img.freepik.com/free-vector/graduated-lawyer-concept-illustration_114360-14462.jpg?size=626&amp;ext=jpg&amp;ga=GA1.1.233311484.1695720566&amp;semt=ais" alt="img" className="img-responsive" />
                                         </div>
                                     </div>
@@ -93,6 +93,25 @@ function About_Us() {
                                                 diverse needs of our users. We offer functionalities
                                                 like time tracking, CRM, accounting, case
                                                 management, contact management, and docketing.
+                                            </p>
+                                            <p className='my-3'>
+                                                Quality is a cornerstone of ThePocketLawyers. We
+                                                ensure the competence and expertise of
+                                                the legal professionals on our platform
+                                                through stringent vetting processes and
+                                                profile top notch Technology. This
+                                                commitment to quality fosters trust and
+                                                reliability between clients and lawyers.
+                                                Convenience and accessibility are
+                                                paramount in our approach. Through our
+                                                user-friendly interface, clients can easily
+                                                navigate services, find specialized lawyers,
+                                                and even seek consultations without the
+                                                constraints of time and location. We&#39;ve
+                                                embraced technology to make legal
+                                                processes smoother, incorporating AI tools
+                                                and document templates to enhance
+                                                efficiency for both lawyers and clients
                                             </p>
                                         </p>
                                     </div>

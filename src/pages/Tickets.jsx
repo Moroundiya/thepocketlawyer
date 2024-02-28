@@ -181,7 +181,7 @@ function Tickets() {
                                             </div>
                                             <div className="invalid-feedback d-block">
                                             </div>
-                                        </div>
+                                        </div>  
 
                                     </div>
 

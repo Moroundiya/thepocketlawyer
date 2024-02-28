@@ -831,3 +831,11 @@ div.nice-select.form-control.all-countries-list {
         font-size: 26px;
     }
 }
+
+
+#sv_abt_img_wrapper-pro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}

@@ -256,7 +256,7 @@
 @media (max-width: 991.98px) {
 
     #search-lawyer-title {
-        margin: 25px 0 0 !important;
+        /* margin: 25px 0 0 !important; */
     }
 }
 
@@ -1214,20 +1214,20 @@
 
 .doctor-content.content {
     margin: 0;
-    padding: 80px 0;
+    padding: 30px 0;
 }
 
 @media (max-width: 991.98px) {
     .doctor-content.content {
         margin: 0;
-        padding: 40px 0;
+        padding: 0 0;
     }
 }
 
 @media (max-width: 767.98px) {
     .doctor-content.content {
         margin: 0;
-        padding: 20px 0;
+        padding: 0px 0;
     }
 
     #pagination-control-icon {

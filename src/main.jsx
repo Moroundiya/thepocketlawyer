@@ -53,6 +53,7 @@ import Merchant_Products from './pages/Merchant_Products';
 import View_Details from './pages/View_Details';
 import Coming_Soon from './pages/Coming_Soon';
 import Training_Sessions from './pages/Training_Sessions';
+import Availability from './pages/Availability';
 
 
 const router = createBrowserRouter([
@@ -247,6 +248,10 @@ const router = createBrowserRouter([
   {
     path: "training-sessions",
     element: <Training_Sessions />
+  },
+  {
+    path: "availability",
+    element: <Availability />
   }
 
 ]);
