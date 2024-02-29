@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import t1 from '../assets/images/t1.png';
 import t2 from '../assets/images/t2.png';
 import t3 from '../assets/images/t3.png';
@@ -7,17 +7,39 @@ import t5 from '../assets/images/t5.png';
 import t6 from '../assets/images/t6.png';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import CountUp from 'react-countup';
+// import ScrollTrigger from 'react-scroll-trigger';
 
-import CountUp, { useCountUp } from 'react-countup';
+function useIsInViewport(ref) {
+    const [isIntersecting, setIsIntersecting] = useState(false);
+
+    const observer = useMemo(
+        () =>
+            new IntersectionObserver(([entry]) =>
+                setIsIntersecting(entry.isIntersecting),
+            ),
+        [],
+    );
+
+    useEffect(() => {
+        observer.observe(ref.current);
+
+        return () => {
+            observer.disconnect();
+        };
+    }, [ref, observer]);
+
+    return isIntersecting;
+}
+
+
 
 function About_Us() {
 
-    useCountUp({
-        ref: 'counter',
-        // end: 1234567,
-        enableScrollSpy: true,
-        scrollSpyOnce: false
-    });
+
+    const ref1 = useRef(null);
+    const isInViewport1 = useIsInViewport(ref1);
+    console.log('isInViewport1: ', isInViewport1);
 
     return (
         <div>
@@ -129,7 +151,7 @@ function About_Us() {
                         <div className="col-lg-6 col-md-12 col-12 col-sm-12">
                             <div className="sv_money_text_wrapper float_left">
                                 <h1>We Make Your</h1>
-                                <h2>Invest To Grow a <br />
+                                <h2>Invest To Grow <br />
                                     Your Money !</h2>
                                 <p>
                                     Transparency and clarity are integral to our ethos.
@@ -166,7 +188,9 @@ function About_Us() {
             </div>
             {/* about us wrapper end */}
             {/* counter wrapper start*/}
-            <div className="counter_section float_left">
+
+
+            <div className="counter_section float_left" ref={ref1}>
                 <div className="investment_overlay" />
                 <div className="counter-section2">
                     <div className="container">
@@ -180,7 +204,8 @@ function About_Us() {
                                     </div>
                                     <div className="count-description">
                                         <span className="timer">
-                                            <CountUp end={365} duration={7} enableScrollSpy={true} scrollSpyOnce={false} />
+                                            {isInViewport1 && <CountUp start={0} end={365} duration={4} />}
+
                                         </span>
                                         <h5 className="con1"> <a href="#">days online</a></h5>
                                     </div>
@@ -195,7 +220,10 @@ function About_Us() {
                                     </div>
                                     <div className="count-description">
                                         <span className="timer">
-                                            <CountUp end={10000} duration={7} enableScrollSpy /> +</span>
+                                            <span className="timer">
+                                                {isInViewport1 && <CountUp start={0} end={10000} duration={3} />}+
+                                            </span>
+                                        </span>
                                         <h5 className="con2"> <a href="#"> registered users </a></h5>
                                     </div>
                                 </div>
@@ -209,7 +237,9 @@ function About_Us() {
                                     </div>
                                     <div className="count-description">
                                         <span className="timer">
-                                            <CountUp end={5000} duration={7} enableScrollSpy /> +</span>
+                                            {isInViewport1 && <CountUp start={0} end={5000} duration={4} />}+
+
+                                        </span>
                                         <h5 className="con2"> <a href="#"> Law Firms</a></h5>
                                     </div>
                                 </div>
@@ -222,7 +252,9 @@ function About_Us() {
                                         <div className="investment_border_wrapper green_border_wrapper" />
                                     </div>
                                     <div className="count-description">
-                                        <span className="timer"> <CountUp end={7000} duration={7} enableScrollSpy /> +</span>
+                                        <span className="timer">
+                                            {isInViewport1 && <CountUp start={0} end={7000} duration={3} />}+
+                                        </span>
                                         <h5 className="con4"> <a href="#"> Legal Professionals</a></h5>
                                     </div>
                                 </div>

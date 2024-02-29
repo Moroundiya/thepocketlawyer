@@ -574,8 +574,6 @@ function Homepage() {
                 </div>
             </div >
 
-
-
             {/* counter wrapper start*/}
             <div className="counter_section float_left">
                 <div className="investment_overlay" />

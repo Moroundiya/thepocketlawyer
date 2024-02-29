@@ -54,6 +54,7 @@ import View_Details from './pages/View_Details';
 import Coming_Soon from './pages/Coming_Soon';
 import Training_Sessions from './pages/Training_Sessions';
 import Availability from './pages/Availability';
+import Estore from './pages/Estore';
 
 
 const router = createBrowserRouter([
@@ -252,6 +253,10 @@ const router = createBrowserRouter([
   {
     path: "availability",
     element: <Availability />
+  },
+  {
+    path: "e-store",
+    element: <Estore />
   }
 
 ]);
