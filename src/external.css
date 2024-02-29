@@ -616,6 +616,15 @@ div.nice-select.form-control.all-countries-list {
 
 @media screen and (max-width: 500px) {
 
+
+    #investment_plans_pro_increase .investment_box_wrapper {
+        height: auto !important;
+    }
+
+    #invest-plan-each-col {
+        margin-bottom: 5rem !important;
+    }
+
     #export-carousel .card-body {
         height: 400px;
         overflow-y: auto;
@@ -855,4 +864,9 @@ div.nice-select.form-control.all-countries-list {
 
 #who-we-are-img {
     height: 80%;
+}
+
+
+#investment_plans_pro_increase .investment_box_wrapper {
+    height: 870px;
 }

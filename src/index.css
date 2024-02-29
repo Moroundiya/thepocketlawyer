@@ -5530,6 +5530,7 @@ a:hover {
   float: left;
   width: 100%;
 }
+
 select {
   display: block !important;
 }
@@ -5838,6 +5839,11 @@ dl.userdescc dd {
   width: 95px;
   height: 1px;
   background: #00aaef;
+}
+
+#sv-heading-remove-line .sv_heading_wraper h3:after {
+  content: '';
+  display: none;
 }
 
 .heading_wrapper_dark h3 {

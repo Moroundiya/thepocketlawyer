@@ -730,112 +730,183 @@ function Homepage() {
             </section>
 
 
-            {/* Work Section Testing */}
-
-            {/* <div className="our_services_wrapper index2_our_service_wrapper float_left">
-                <div className="container-fluid">
+            <div className="investment_plans float_left" id='investment_plans_pro_increase'>
+                <div className="investment_overlay" />
+                <div className="container-fluid px-5">
                     <div className="row">
-                        <div className="col-md-12 col-lg-12 col-sm-12 col-12">
-                            <div className="sv_heading_wraper heading_wrapper_dark dark_heading index2_heading index2_heading_center">
-                                <h3>How it Works</h3>
-                                <div className="line_shape" />
+                        <div className="col-md-12 col-lg-12 col-sm-12 col-12" id='sv-heading-remove-line'>
+                            <div className="sv_heading_wraper heading_wrapper_dark">
+                                <h4> our plans </h4>
+                                <h3> Pay Only for What You Need</h3>
+                                <h5 className='text-white'>Start your free trial. Full access. No credit card required.</h5>
                             </div>
                         </div>
-                        <div className="col-md-4 col-lg-2 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <Icon icon="mdi:monitor-account" className='work-head-title-icon' />
+                        <div className="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12" id='invest-plan-each-col'>
+                            <div className="investment_box_wrapper float_left">
+                                <div className="investment_icon_circle">
+                                    <i className="flaticon-bar-chart" />
+                                </div>
                                 <div className="investment_border_wrapper" />
-                                <div className="investment_content_wrapper new ">
-                                    <h1><a href="#">Connect</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p> Tell the Lawyers' Assistant what's going on so that she can find the attorney for your situation.</p>
+                                <div className="investment_content_wrapper">
+                                    <h3 className='font-weight-bold'>
+                                        <a href="#">14 Days Trial</a>
+                                    </h3>
+                                    <h4 className='mt-3 text-danger'>
+                                        N00:00
+                                    </h4>
+                                    <p className='text-left px-3 font-weight-bold'>
+                                        ●  Everything in Basic <br />
+                                        ●  Everything in Professional <br />
+                                        ●  Limited Monthly in App Video Calls<br />
+                                        ● Limited Employee Mgt. (+5 Staff)<br />
+                                        ● Limited Practitioners Mgt. (+5
+                                        Lawyers) <br />
+                                        ● ThePocketLawyers Drive<br />
+                                        ● Sync ThePocketLawyers files to your
+                                        desktop automatically<br />
+                                        ● Full Text Search<br />
+                                        ● Perform conflict checks with ease<br />
+                                        ● Advanced Document Automation<br />
+                                        ● Automate legal document creation<br />
+                                        ● Dedicated Account Manager<br />
+                                        ● Advance Reports &amp; Analytics<br />
+                                        ● Custom Design Solutions<br />
+                                        ● NEW Open API<br />
+                                    </p>
+                                </div>
+                                <div className="about_btn plans_btn">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Learn More!</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-
-                        <div className="col-md-4 col-lg-2 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <Icon icon="gridicons:chat" className='work-head-title-icon' />
-                                <div className="investment_border_wrapper" />
-                                <div className="investment_content_wrapper new ">
-                                    <h1><a href="#">Go back-and-forth</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p> Connect with the lawyer via email, text or phone. Include citations, documents, tickets and more to get a comprehensice answer.</p>
+                        <div className="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12" id='invest-plan-each-col'>
+                            <div className="investment_box_wrapper float_left">
+                                <div className="investment_icon_circle red_info_circle">
+                                    <i className="flaticon-money" />
+                                </div>
+                                <div className="investment_border_wrapper red_border_wrapper" />
+                                <div className="investment_content_wrapper">
+                                    <h3 className='font-weight-bold'>
+                                        <a href="#">Basic Plan</a>
+                                    </h3>
+                                    <h4 className='mt-3 text-danger'>
+                                        N3:500/Month
+                                    </h4>
+                                    <p className='text-left px-3 font-weight-bold'>
+                                        ● Free Registrations <br />
+                                        ● Limited Access Rights <br />
+                                        ● Unlimited Monthly in App Messages <br />
+                                        ● Profile Management<br />
+                                        ● Matter Management<br />
+                                        ● Limited Employee Mgt. (2 Staff)<br />
+                                        ● Limited Practitioners Mgt. (2 Lawyers)<br />
+                                        ● Free Google meet Links Mgt.<br />
+                                        ● Free Zoom Meeting Links Mgt.<br />
+                                        ● Case and Contact Management<br />
+                                        ● Task Management<br />
+                                        ● Client Intake Management<br />
+                                        ● Client Portal<br />
+                                        ● Time Entry and Expense Tracking<br />
+                                        ● Billing and Online Payments<br />
+                                        ● Legal Calendaring<br />
+                                        ● Unlimited Document Storage<br />
+                                        ● Basic Financial Reporting<br />
+                                        ● Free Training &amp; Support<br />
+                                    </p>
+                                </div>
+                                <div className="about_btn plans_btn red_btn_plans">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Learn More!</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-
-                        <div className="col-md-4 col-lg-2 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <Icon icon="icon-park-solid:protect" className='work-head-title-icon' />
-                                <div className="investment_border_wrapper" />
-                                <div className="investment_content_wrapper new ">
-                                    <h1><a href="#"> Stay Protected</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Get expert legal support from bar-certified attorneys at an extremely affordable price.</p>
+                        <div className="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12" id='invest-plan-each-col'>
+                            <div className="investment_box_wrapper float_left">
+                                <div className="investment_icon_circle blue_icon_circle">
+                                    <i className="flaticon-gold" />
+                                </div>
+                                <div className="investment_border_wrapper blue_border_wrapper" />
+                                <div className="investment_content_wrapper">
+                                    <h3 className='font-weight-bold'>
+                                        <a href="#">Professional</a>
+                                    </h3>
+                                    <h4 className='mt-3 text-danger'>
+                                        N8, 000:00/Month
+                                    </h4>
+                                    <p className='text-left px-3 font-weight-bold'>
+                                        ● Everything in Basic <br />
+                                        ● limited Monthly in App Voice Calls <br />
+                                        ● Limited Employee Mgt. (+3 Staff)<br />
+                                        ● Limited Practitioners Mgt. (+3
+                                        Lawyers)<br />
+                                        ● Lead &amp; CRM<br />
+                                        ● Payroll &amp; HRM<br />
+                                        ● In App Appointment Mgt.<br />
+                                        ● Custom Fields<br />
+                                        ● Advanced Billing and Invoicing<br />
+                                        ● Secure document sharing via Portal<br />
+                                        ● Integrations: Google, Outlook,<br />
+                                        ● + more features<br />
+                                    </p>
+                                </div>
+                                <div className="about_btn plans_btn blue_btn_plans">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Learn More!</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4 col-lg-2 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <Icon icon="icon-park-solid:protect" className='work-head-title-icon' />
-                                <div className="investment_border_wrapper" />
-                                <div className="investment_content_wrapper new ">
-                                    <h1><a href="#"> Search And Review Lawyer Profiles</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p> Personally Search listing of Lawyers and attorney’s profile, specialization and services offered.</p>
+                        <div className="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12" id='invest-plan-each-col'>
+                            <div className="investment_box_wrapper float_left">
+                                <div className="investment_icon_circle green_info_circle">
+                                    <i className="flaticon-medal" />
+                                </div>
+                                <div className="investment_border_wrapper green_border_wrapper" />
+                                <div className="investment_content_wrapper">
+                                    <h3 className='font-weight-bold'>
+                                        <a href="#">Advanced</a>
+                                    </h3>
+                                    <h4 className='mt-3 text-danger'>
+                                        N15, 000:00/Month
+                                    </h4>
+                                    <p className='text-left px-3 font-weight-bold'>
+                                        ● Everything in Basic <br />
+                                        ● Everything in Professional<br />
+                                        ● limited Monthly in App Video Calls<br />
+                                        ● Limited Employee Mgt. (+5 Staff)<br />
+                                        ● Limited Practitioners Mgt. (+5
+                                        Lawyers)<br />
+                                        ● ThePocketLawyers Drive<br />
+                                        ● Sync ThePocketLawyers files to your
+                                        desktop automatically<br />
+                                        ● Full Text Search<br />
+                                        ● Perform conflict checks with ease<br />
+                                        ● Advanced Document Automation<br />
+                                        ● Automate legal document creation<br />
+                                        ● Dedicated Account Manager<br />
+                                        ● Advance Reports &amp; Analytics<br />
+                                        ● Custom Design Solutions<br />
+                                        ● NEW Open API<br />
+                                        ● + more features<br />
+                                    </p>
+                                </div>
+                                <div className="about_btn plans_btn green_plan_btn">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Learn More!</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4 col-lg-2 col-12">
-                            <div className="investment_box_wrapper service_box feature_box index2_service_box float_left">
-                                <Icon icon="icon-park-solid:protect" className='work-head-title-icon' />
-                                <div className="investment_border_wrapper" />
-                                <div className="investment_content_wrapper new ">
-                                    <h1><a href="#"> Stay Protected</a></h1>
-                                    <div className="line_shape investment_line_shape" />
-                                    <p>Get expert legal support from bar-certified attorneys at an extremely affordable price.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
-
-
-
-
-            <div className="works_wrapper float_left" id='works_wrapper'>
-                <div className="work_banner_wrapper" id='work_banner_wrapper'>
-                    <img src={video_bg} alt="img" className='work_banner_wrapper-img' />
-                </div>
-                <div className="howwork_banner_wrapper index2_homwork_banner_wrapper">
-                    <div className="vedio_link_wrapper">
-                        <a className="test-popup-link button" rel="external" href="https://www.youtube.com/embed/ryzOXAO0Ss0" title="title"><i className="fa fa-play" /></a>
-                        <div className="work_content_wrap" id='how-it-works'>
-                            <h1>How It Works</h1>
-                            <ul className="work_checklist_wrapper">
-                                <p data-animation="animated bounceInUp">
-                                    <Icon icon="mdi:monitor-account" className='work-head-title-icon' />
-                                    &nbsp;Connect
-                                </p>
-                                <p data-animation="animated bounceInUp">
-                                    <Icon icon="gridicons:chat" className='work-head-title-icon' />&nbsp;Go back-and-forth
-                                </p>
-                                <p data-animation="animated bounceInUp">
-                                    <Icon icon="icon-park-solid:protect" className='work-head-title-icon' /> &nbsp;Stay Protected
-                                </p>
-                                <p data-animation="animated bounceInUp">
-                                    <Icon icon="mdi:search" className='work-head-title-icon' /> &nbsp;Search And Review Lawyer Profiles
-                                </p>
-                                <p data-animation="animated bounceInUp">
-                                    <Icon icon="wpf:check-book" className='work-head-title-icon' /> &nbsp;Book Appointments And Make Payment
-                                </p>
-                                <p data-animation="animated bounceInUp">
-                                    <Icon icon="map:lawyer" className='work-head-title-icon' /> &nbsp;Get Instant Lawyer’s Appointment
-                                </p>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -843,13 +914,7 @@ function Homepage() {
 
 
 
-            {/*investment plan wrapper start */}
-
-
-
-
-
-            <div className="investment_plans index2_investment_plans float_left">
+            <div className="investment_plans index2_investment_plans float_left" >
                 <div className="investment_overlay" />
                 <div className="container">
                     <div className="row">
@@ -1027,143 +1092,7 @@ function Homepage() {
                     </div>
                 </div>
             </div>
-            {/*investment plan wrapper end */}
-            {/*calculator plan wrapper start */}
 
-            {/* <div className="calculator_wrapper index2_calculator_wrapper float_left">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12 col-lg-12 col-sm-12 col-12">
-                            <div className="sv_heading_wraper heading_wrapper_dark dark_heading index2_heading index2_heading_center">
-                                <h4> plans calculator </h4>
-                                <h3> How Much Can You Save With Plans? </h3>
-                                <div className="line_shape" />
-                            </div>
-                        </div>
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 calc">
-                            <div className="mutualfunds-calculator index2_mutualfund">
-                                <div className="calculator calculator_index2">
-                                    <div className="graph-area">
-                                        <span className="mf-yAxis">Investment Value</span>
-                                        <svg width="100%" height={350} id="graph" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 900 355" className="mf-chart">
-                                            <defs>
-                                                <pattern id="grid" x={10} y={10} width="100%" height={88} patternUnits="userSpaceOnUse">
-                                                    <line x1={0} y1={0} x2="100%" y2={0} strokeWidth={1} shapeRendering="crispEdges" stroke="#bdbdbd" />
-                                                </pattern>
-                                            </defs>
-                                            <rect width={480} height={355} style={{ fill: 'transparent' }} />
-                                            <g>
-                                                <path d="M 5,330
-      C 5,330
-      300,257.5
-      475,170" id="path1" fill="none" stroke="#bdbdbd" strokeWidth="5px" strokeLinecap="round" className="anim-path" style={{ transition: 'stroke-dashoffset 2s ease-in-out', strokeDasharray: '522.957, 522.957', strokeDashoffset: '0px', display: 'inline' }} />
-                                                <path d="M 5,330
-      C 5,330
-      300,257.5
-      475,20" fill="none" id="path2" stroke="#05a4cd" strokeWidth="5px" strokeLinecap="round" className="anim-path" style={{ transition: 'stroke-dashoffset 2s ease-in-out', strokeDasharray: '572.872, 572.872', strokeDashoffset: '0px', display: 'inline' }} />
-                                            </g>
-                                            <g className="mf-circles" style={{}}>
-                                                <circle cx={472} cy={22} r={8} fill="#05a4cd" stroke="#f9f9f7" strokeWidth="3px" />
-                                                <circle cx={472} cy={170} r={8} fill="#bdbdbd" stroke="#f9f9f7" strokeWidth="3px" />
-                                            </g>
-                                        </svg>
-                                        <div className="mf-xAxis">
-                                            <span className="mf-xAxis-end" id="years_selected">25 Years</span>
-                                        </div>
-                                        <div className="labels funds_label" style={{ display: 'block' }}>
-                                            <div className="chart-label">
-                                                <span className="amt" id="directFund"><i className="fa fa-rupee-sign" />1.98 Cr</span>
-                                                <span className="sub">total returns</span>
-                                            </div>
-                                            <div className="chart-label label-regular">
-                                                <span className="amt" id="regularFund"><i className="fa fa-rupee-sign" />1.64 Cr</span>
-                                                <span className="sub">investment amounts</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="calc-amt">
-                                    <p className="calc-price" id="returnAmount">Rs. 34.06 L</p>
-                                    <p>extra returns for you </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-12 calc">
-                            <div className="calculator_portion index2_calculation_portion float_left">
-                                <div className="row">
-                                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
-                                        <div className="caluclator_text_wrapper">
-                                            <p>deposit amount : <i className="fas fa-info-circle" /></p>
-                                            <p className="dollar_wrap"><i className="fa fa-rupee-sign" />
-                                                <input type="text" id="investmentAmount" />
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
-                                        <div className="caluclator_text_wrapper">
-                                            <p>monthly SIP : <i className="fas fa-info-circle" /></p>
-                                            <p className="dollar_wrap"><i className="fa fa-rupee-sign" />
-                                                <input type="text" id="investmentAmountSIP" />
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
-                                        <div className="caluclator_text_wrapper">
-                                            <p>Investment Year : <i className="fas fa-info-circle" /></p>
-                                            <select className="custom-select" id="investmentYears">
-                                                <option selected value={5}>5 Years</option>
-                                                <option value={10}>10 Years</option>
-                                                <option value={15}>15 Years</option>
-                                                <option value={20}>20 Years</option>
-                                                <option value={25}>25 Years</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
-                                        <div className="about_btn calc_btn index2_calc_btn float_left" onclick="CalCommission(); return false;">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">calculate profit</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-            {/*calculator plan wrapper end */}
-            {/* global community wrapper start */}
-            {/* <div className="global_community_wrapper index2_global_community_wrapper float_left">
-                <div className="container">
-                    <div className="row">
-                        <div className="global_comm_wraper index2_global_comm_wrapper">
-                            <h1>We Were Always Thinking Global Community</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                        <div className="zero_balance_wrapper">
-                            <div className="zero_commisition">
-                                <h1>Zero
-                                    Commissions</h1>
-                                <h4>No hidden charges*</h4>
-                            </div>
-                            <div className="start_invest_wrap">
-                                <h1>start invest now</h1>
-                                <div className="about_btn float_left">
-                                    <ul>
-                                        <li>
-                                            <a href="#">buy now !</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-            {/* global community wrapper end */}
 
 
             {/* investors wrapper start */}
