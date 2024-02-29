@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import React, { useEffect, useRef, useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import 'animate.css';
 import '../custom.js';
@@ -58,8 +58,35 @@ import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 // import DarkModeToggle from '../components/DarkModeToggle';
 
+import CountUp from 'react-countup';
+
+
+function useIsInViewport(ref) {
+    const [isIntersecting, setIsIntersecting] = useState(false);
+
+    const observer = useMemo(
+        () =>
+            new IntersectionObserver(([entry]) =>
+                setIsIntersecting(entry.isIntersecting),
+            ),
+        [],
+    );
+
+    useEffect(() => {
+        observer.observe(ref.current);
+
+        return () => {
+            observer.disconnect();
+        };
+    }, [ref, observer]);
+
+    return isIntersecting;
+}
+
 
 function Homepage() {
+    const ref1 = useRef(null);
+    const isInViewport1 = useIsInViewport(ref1);
 
     return (
         <div>
@@ -111,7 +138,7 @@ function Homepage() {
                                                 <div className="slider_btn index2_sliderbtn float_left cta-header-btn ">
                                                     <ul>
                                                         <li data-animation="animated bounceInLeft">
-                                                            <a href="#">start now</a>
+                                                            <Link to="/search-lawyer" reloadDocument relative='path'>Book Now</Link>
                                                         </li>
                                                         <li data-animation="animated bounceInLeft">
                                                             <a href="#">view plans</a>
@@ -301,14 +328,17 @@ function Homepage() {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-md-12 col-lg-12 col-sm-12 col-12">
-                            <div className="index2_abt_img_wrapper">
-                                <img src={abt_3} alt="About" className="img-responsive" />
-                                <div className="sw_disc_img_btm">
-                                    <img src={abt_2} alt="About" className="img-responsive" />
-                                </div>
+
+                            <div className='w-100 h-100 d-flex justify-contents-center align-items-center'>
+                                <img src="https://img.freepik.com/premium-photo/working-as-attorney_891336-4174.jpg?w=740" id="who-we-are-img" alt="About" className="w-100 mb-5" />
                             </div>
+
+                            {/* <div className="index2_abt_img_wrapper">
+                                <div className="sw_disc_img_btm">
+                                </div>
+                            </div> */}
                         </div>
-                        <div className="col-xl-6 col-md-12 col-lg-12 col-sm-12 col-12">
+                        <div className="col-xl-6 col-md-12 col-lg-12 col-sm-12 col-12" id='who-we-are-container'>
                             <div className="about_content_wrapper">
                                 <div className="sv_heading_wraper index2_heading">
                                     <h4>who we are</h4>
@@ -575,7 +605,7 @@ function Homepage() {
             </div >
 
             {/* counter wrapper start*/}
-            <div className="counter_section float_left">
+            <div className="counter_section float_left" ref={ref1}>
                 <div className="investment_overlay" />
                 <div className="counter-section2">
                     <div className="container">
@@ -587,7 +617,10 @@ function Homepage() {
                                         </div>
                                         <div className="investment_border_wrapper" />
                                     </div>
-                                    <div className="count-description"><span className="timer">365</span>
+                                    <div className="count-description">
+                                        <span className="timer">
+                                            {isInViewport1 && <CountUp start={0} end={365} duration={4} />}
+                                        </span>
                                         <h5 className="con1"> <a href="#">days online</a></h5>
                                     </div>
                                 </div>
@@ -599,7 +632,10 @@ function Homepage() {
                                         </div>
                                         <div className="investment_border_wrapper blue_border_wrapper" />
                                     </div>
-                                    <div className="count-description"> <span className="timer">10,000+</span>
+                                    <div className="count-description">
+                                        <span className="timer">
+                                            {isInViewport1 && <CountUp start={0} end={10000} duration={3} />}+
+                                        </span>
                                         <h5 className="con2"> <a href="#"> registered users </a></h5>
                                     </div>
                                 </div>
@@ -611,7 +647,10 @@ function Homepage() {
                                         </div>
                                         <div className="investment_border_wrapper red_border_wrapper" />
                                     </div>
-                                    <div className="count-description"> <span className="timer">5000+</span>
+                                    <div className="count-description">
+                                        <span className="timer">
+                                            {isInViewport1 && <CountUp start={0} end={5000} duration={4} />}+
+                                        </span>
                                         <h5 className="con2"> <a href="#"> Law Firms </a></h5>
                                     </div>
                                 </div>
@@ -623,7 +662,10 @@ function Homepage() {
                                         </div>
                                         <div className="investment_border_wrapper green_border_wrapper" />
                                     </div>
-                                    <div className="count-description"> <span className="timer">7000+</span>
+                                    <div className="count-description">
+                                        <span className="timer">
+                                            {isInViewport1 && <CountUp start={0} end={7000} duration={3} />}+
+                                        </span>
                                         <h5 className="con4"> <a href="#">Legal Professionals</a></h5>
                                     </div>
                                 </div>
@@ -649,7 +691,8 @@ function Homepage() {
                                     workflow, enabling legal professionals to effectively manage every facet of their practice and operational
                                     processes.
                                 </p>
-                                <a target="_blank" href="https://demo.rajodiya.com/advocatego-saas/login" class="btn" tabindex="0">Sign Up Now</a>
+                                <Link to="/signup" reloadDocument relative='path' className='btn'>Sign Up Now</Link>
+
                             </div>
                         </div>
                         <div class=" col-lg-6 col-12">

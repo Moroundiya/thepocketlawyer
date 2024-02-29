@@ -303,6 +303,8 @@
 
 #export-carousel .card-body {
     text-align: center;
+    height: 450px;
+    overflow-y: auto;
 }
 
 #carousel-service-icon {
@@ -614,6 +616,15 @@ div.nice-select.form-control.all-countries-list {
 
 @media screen and (max-width: 500px) {
 
+    #export-carousel .card-body {
+        height: 400px;
+        overflow-y: auto;
+    }
+
+    #who-we-are-container {
+        padding: 0 .8rem 0 0 !important;
+    }
+
     .border_about_wrapper {
         padding: 20px !important;
     }
@@ -838,4 +849,10 @@ div.nice-select.form-control.all-countries-list {
     justify-content: center;
     align-items: center;
     height: auto;
+}
+
+
+
+#who-we-are-img {
+    height: 80%;
 }

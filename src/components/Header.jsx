@@ -35,7 +35,9 @@ function Header() {
                     </li>
                     <li>
                         <Link to="/plans" reloadDocument relative='path'>Plans</Link>
-
+                    </li>
+                    <li>
+                        <Link to="/search-merchant" reloadDocument relative='path'>Merchants</Link>
                     </li>
                     <li class="has-children">
                         <a href="#">Company</a>
@@ -260,6 +262,9 @@ function Header() {
                                 </li>
                                 <li className="has-mega gc_main_navigation">
                                     <Link to="/plans" relative='path' reloadDocument>PLANS</Link>
+                                </li>
+                                <li className="has-mega gc_main_navigation">
+                                    <Link to="/search-merchant" relative='path' reloadDocument>MERCHANTS</Link>
                                 </li>
                                 <li className="has-mega gc_main_navigation">
                                     <a href="#" className="gc_main_navigation">COMPANY <i class="fas fa-caret-down"></i>

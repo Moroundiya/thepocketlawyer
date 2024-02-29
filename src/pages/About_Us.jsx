@@ -219,11 +219,9 @@ function About_Us() {
                                         <div className="investment_border_wrapper blue_border_wrapper" />
                                     </div>
                                     <div className="count-description">
-                                        <span className="timer">
                                             <span className="timer">
                                                 {isInViewport1 && <CountUp start={0} end={10000} duration={3} />}+
                                             </span>
-                                        </span>
                                         <h5 className="con2"> <a href="#"> registered users </a></h5>
                                     </div>
                                 </div>
