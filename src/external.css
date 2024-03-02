@@ -621,9 +621,6 @@ div.nice-select.form-control.all-countries-list {
         height: auto !important;
     }
 
-    #invest-plan-each-col {
-        margin-bottom: 5rem !important;
-    }
 
     #export-carousel .card-body {
         height: 400px;
@@ -667,11 +664,6 @@ div.nice-select.form-control.all-countries-list {
         width: 160px;
     }
 
-    .slider_index2_wrapper .carousel-inner .carousel-item .carousel-captions .content,
-    .payments_wrapper {
-        padding-top: 60px !important;
-        padding-bottom: 60px !important;
-    }
 
     .index2_abt_img_wrapper,
     .sw_disc_img_btm {
@@ -842,6 +834,20 @@ div.nice-select.form-control.all-countries-list {
         font-size: 33px;
     }
 
+    #invest-plan-each-col {
+        margin-bottom: 5rem !important;
+    }
+
+    #container-fluid-space-removal {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    #investment_plans_pro_increase {
+        padding-bottom: 2rem !important;
+    }
+
+
 }
 
 
@@ -850,6 +856,23 @@ div.nice-select.form-control.all-countries-list {
     .fs-50 {
         font-size: 26px;
     }
+
+    #owl-theme-container-pro-div .investors_slider_wrapper .owl-theme .owl-nav {
+        top: -80px;
+    }
+
+    .slider_index2_wrapper .carousel-inner .carousel-item .carousel-captions .content,
+    .payments_wrapper {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+
+    #fixed_portion,
+    .transaction_wrapper,
+    .investors_wrapper {
+        margin: 0 !important;
+    }
+
 }
 
 
@@ -869,4 +892,232 @@ div.nice-select.form-control.all-countries-list {
 
 #investment_plans_pro_increase .investment_box_wrapper {
     height: 870px;
+}
+
+
+.view-profile-lawyer-list {
+    background-color: #00aaef;
+    color: #fff;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.view-profile-lawyer-list-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-size: .8rem !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.app-section {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px 0 80px;
+}
+
+@media (max-width: 1199.98px) {
+    .app-section {
+        margin: 0;
+        padding: 0 0 80px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .app-section {
+        margin: 0;
+        padding: 20px 0 40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .app-section {
+        margin: 0;
+        padding: 0px 0 40px;
+    }
+}
+
+#home-app-bg {
+    background: #0E82FD;
+    background-image: url(https://doccure.dreamstechnologies.com/html/template/assets/img/app-bg.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    padding: 40px 0 0 50px;
+}
+
+@media (max-width: 1199.98px) {
+    .home-app-bg {
+        margin: 0;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .app-bg {
+        margin: 0;
+        padding: 40px 0;
+        background-image: inherit;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .app-bg {
+        margin: 0;
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .app-content {
+        text-align: center;
+    }
+}
+
+.app-header {
+    padding-bottom: 40px;
+}
+
+.app-header h5 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 991.98px) {
+    .app-header h5 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .app-header h5 {
+        font-size: 18px;
+    }
+}
+
+.app-header h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0;
+    max-width: 565px;
+}
+
+@media (max-width: 991.98px) {
+    .app-header h2 {
+        font-size: 34px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .app-header h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .app-header {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .app-header {
+        padding-bottom: 20px;
+    }
+}
+
+.app-scan {
+    padding-bottom: 40px;
+}
+
+.app-scan p {
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 991.98px) {
+    .app-scan {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .app-scan {
+        padding-bottom: 20px;
+    }
+}
+
+.google-imgs a {
+    margin-right: 24px;
+}
+
+.google-imgs a:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 767.98px) {
+    .google-imgs a img {
+        width: 120px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .google-imgs a {
+        margin-right: 14px;
+    }
+}
+
+.mobile-img {
+    position: relative;
+    bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+    #phone-carousel {
+        margin-top: 80px;
+    }
+
+    #home-app-bg {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 1440.98px) {
+    .mobile-img img {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .mobile-img img {
+        max-width: 370px;
+    }
+}
+
+#phone-carousel .carousel-inner .carousel-item #phone-carousel-each {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.each-lawyer-view-profile-btn {
+    background: #00aaef !important;
+    color: #fff !important;
+    padding: .7rem 1.4rem !important;
+    border-radius: 7px !important;
 }

@@ -58,6 +58,13 @@ import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 // import DarkModeToggle from '../components/DarkModeToggle';
 
+import phoneImg1 from '../assets/images/phone-img1.png';
+import phoneImg2 from '../assets/images/phone-img2.png';
+import phoneImg3 from '../assets/images/phone-img3.png';
+import phoneImg4 from '../assets/images/phone-img4.png';
+import phoneImg5 from '../assets/images/phone-img5.png';
+import phoneImg6 from '../assets/images/phone-img6.png';
+
 import CountUp from 'react-countup';
 
 
@@ -732,7 +739,7 @@ function Homepage() {
 
             <div className="investment_plans float_left" id='investment_plans_pro_increase'>
                 <div className="investment_overlay" />
-                <div className="container-fluid px-5">
+                <div className="container-fluid px-5" id='container-fluid-space-removal'>
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12 col-12" id='sv-heading-remove-line'>
                             <div className="sv_heading_wraper heading_wrapper_dark">
@@ -914,7 +921,7 @@ function Homepage() {
 
 
 
-            <div className="investment_plans index2_investment_plans float_left" >
+            <div className="investment_plans index2_investment_plans float_left pt-0" >
                 <div className="investment_overlay" />
                 <div className="container">
                     <div className="row">
@@ -1114,7 +1121,7 @@ function Homepage() {
                                             <div className="investment_box_wrapper index_investment float_left">
                                                 <div className="inves_main_border float_left">
                                                     <div className="inves_img_wrapper">
-                                                        <img src={inves1} className="img-responsive" alt="img" />
+                                                        <img src="https://img.freepik.com/premium-photo/black-man-business-person-sit-chair-with-boook_862994-13665.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.233311484.1695720566&amp;semt=ais" className="img-responsive" alt="img" />
                                                     </div>
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">Akshay H.</a></h1>
@@ -1129,7 +1136,7 @@ function Homepage() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="#" className='view-lawyer-profile'>View Profile</a>
+                                            <a href="#" className='each-lawyer-view-profile-btn'>View Profile</a>
 
                                         </div>
                                     </div>
@@ -1138,7 +1145,7 @@ function Homepage() {
                                             <div className="investment_box_wrapper index_investment float_left">
                                                 <div className="inves_main_border float_left">
                                                     <div className="inves_img_wrapper">
-                                                        <img src={inves2} className="img-responsive" alt="img" />
+                                                        <img src="https://img.freepik.com/premium-photo/woman-suit-sits-desk-with-her-arms-crossed_671352-3698.jpg?size=626&ext=jpg&ga=GA1.2.233311484.1695720566&semt=ais" className="img-responsive" alt="img" />
                                                     </div>
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">Maria F.</a></h1>
@@ -1153,7 +1160,7 @@ function Homepage() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="#" className='view-lawyer-profile'>View Profile</a>
+                                            <a href="#" className='each-lawyer-view-profile-btn'>View Profile</a>
                                         </div>
                                     </div>
                                     <div className="item">
@@ -1161,7 +1168,7 @@ function Homepage() {
                                             <div className="investment_box_wrapper index_investment float_left">
                                                 <div className="inves_main_border float_left">
                                                     <div className="inves_img_wrapper">
-                                                        <img src={inves3} className="img-responsive" alt="img" />
+                                                        <img src="https://img.freepik.com/premium-photo/black-man-business-person-sit-chair-with-boook_862994-13668.jpg?size=626&ext=jpg&ga=GA1.2.233311484.1695720566&semt=ais" className="img-responsive" alt="img" />
                                                     </div>
                                                     <div className="investment_content_wrapper inves_heading_txt">
                                                         <h1><a href="#">josep K.</a></h1>
@@ -1176,83 +1183,11 @@ function Homepage() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="#" className='view-lawyer-profile'>View Profile</a>
-
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
-                                            <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_main_border float_left">
-                                                    <div className="inves_img_wrapper">
-                                                        <img src={inves4} className="img-responsive" alt="img" />
-                                                    </div>
-                                                    <div className="investment_content_wrapper inves_heading_txt">
-                                                        <h1><a href="#">liva M.</a></h1>
-                                                        <div className="line_shape investment_line_shape" />
-                                                        <p>International Lawyer</p>
-                                                        <ul className="investment_slider_icon">
-                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a href="#" className='view-lawyer-profile'>View Profile</a>
+                                            <a href="#" className='each-lawyer-view-profile-btn'>View Profile</a>
 
                                         </div>
                                     </div>
 
-                                    <div className="item">
-                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
-                                            <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_main_border float_left">
-                                                    <div className="inves_img_wrapper">
-                                                        <img src="https://demo.phpscriptpoint.com/lawyer/assets/uploads/attorney-1.jpg" className="img-responsive" alt="img" />
-                                                    </div>
-                                                    <div className="investment_content_wrapper inves_heading_txt">
-                                                        <h1><a href="#">Peter R.</a></h1>
-                                                        <div className="line_shape investment_line_shape" />
-                                                        <p>Medical Lawyer</p>
-                                                        <ul className="investment_slider_icon">
-                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a href="#" className='view-lawyer-profile'>View Profile</a>
-
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="inves_slider_cntn index2_inves_slider_cntnt float_left">
-                                            <div className="investment_box_wrapper index_investment float_left">
-                                                <div className="inves_main_border float_left">
-                                                    <div className="inves_img_wrapper">
-                                                        <img src="https://demo.phpscriptpoint.com/lawyer/assets/uploads/attorney-2.jpg" className="img-responsive" alt="img" />
-                                                    </div>
-                                                    <div className="investment_content_wrapper inves_heading_txt">
-                                                        <h1><a href="#">Tom S.</a></h1>
-                                                        <div className="line_shape investment_line_shape" />
-                                                        <p>Medical Lawyer</p>
-                                                        <ul className="investment_slider_icon">
-                                                            <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-twitter" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
-                                                            <li><a href="#"><i className="fab fa-google" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a href="#" className='view-lawyer-profile'>View Profile</a>
-
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1324,8 +1259,8 @@ function Homepage() {
                                                                     <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
                                                                 </a>
                                                             </td>
-                                                            <td>
-                                                                <a href="#" class="">View Profile</a>
+                                                            <td className='view-profile-lawyer-list-container'>
+                                                                <a href="#" class="view-profile-lawyer-list">View Profile</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -1349,8 +1284,8 @@ function Homepage() {
                                                                     <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
                                                                 </a>
                                                             </td>
-                                                            <td>
-                                                                <a href="#" class="">View Profile</a>
+                                                            <td className='view-profile-lawyer-list-container'>
+                                                                <a href="#" class="view-profile-lawyer-list">View Profile</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -1374,44 +1309,109 @@ function Homepage() {
                                                                     <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
                                                                 </a>
                                                             </td>
-                                                            <td>
-                                                                <a href="#" class="">View Profile</a>
+                                                            <td className='view-profile-lawyer-list-container'>
+                                                                <a href="#" class="view-profile-lawyer-list">View Profile</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src={mem2} alt="img" /> <span>Ripple Alison</span></td>
                                                             <td>June 24,2019</td>
-                                                            <td>$06,00,000.00</td>
-                                                            <td>ripees</td>
-                                                            <td>05 Minutes Ago</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><img src={mem3} alt="img" /> <span>Olympia Ripple</span></td>
-                                                            <td>June 05,2019</td>
-                                                            <td>$45,00,000.00</td>
-                                                            <td>ETH</td>
-                                                            <td>13 Minutes Ago</td>
+                                                            <td>United Kingdom</td>
+                                                            <td>Shashi</td>
+                                                            <td>Medical Lawyer</td>
+                                                            <td>10 Years</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <Icon icon="logos:facebook" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:twitter" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:instagram" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
+                                                                </a>
+                                                            </td>
+                                                            <td className='view-profile-lawyer-list-container'>
+                                                                <a href="#" class="view-profile-lawyer-list">View Profile</a>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src={mem4} alt="img" /> <span>Alison Rittichier</span></td>
                                                             <td>June 28,2019</td>
-                                                            <td>$77,00,000.00</td>
-                                                            <td>payonner</td>
-                                                            <td>05 Minutes Ago</td>
+                                                            <td>United Kingdom</td>
+                                                            <td>Shashi</td>
+                                                            <td>Medical Lawyer</td>
+                                                            <td>5 Years</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <Icon icon="logos:facebook" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:twitter" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:instagram" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
+                                                                </a>
+                                                            </td>
+                                                            <td className='view-profile-lawyer-list-container'>
+                                                                <a href="#" class="view-profile-lawyer-list">View Profile</a>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src={mem5} alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 24,2019</td>
-                                                            <td>$11,00,000.00</td>
-                                                            <td>card</td>
-                                                            <td>23 Minutes Ago</td>
+                                                            <td>Germany</td>
+                                                            <td>Shashi</td>
+                                                            <td>Medical Lawyer</td>
+                                                            <td>15 Years</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <Icon icon="logos:facebook" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:twitter" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:instagram" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
+                                                                </a>
+                                                            </td>
+                                                            <td className='view-profile-lawyer-list-container'>
+                                                                <a href="#" class="view-profile-lawyer-list">View Profile</a>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src={mem6} alt="img" /> <span>Emmett Stein </span></td>
                                                             <td>June 21,2019</td>
-                                                            <td>$66,00,000.00</td>
-                                                            <td>paypal</td>
-                                                            <td>53 Minutes Ago</td>
+                                                            <td>Canada</td>
+                                                            <td>Shashi</td>
+                                                            <td>Medical Lawyer</td>
+                                                            <td>8 Years</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <Icon icon="logos:facebook" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:twitter" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:instagram" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
+                                                                </a>
+                                                            </td>
+                                                            <td className='view-profile-lawyer-list-container'>
+                                                                <a href="#" class="view-profile-lawyer-list">View Profile</a>
+                                                            </td>
                                                         </tr>
                                                     </tbody></table>
                                             </div>
@@ -1454,8 +1454,8 @@ function Homepage() {
                                                                     <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
                                                                 </a>
                                                             </td>
-                                                            <td>
-                                                                <a href="#" class="">View Profile</a>
+                                                            <td className='view-profile-lawyer-list-container'>
+                                                                <a href="#" class="view-profile-lawyer-list">View Profile</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -1479,8 +1479,8 @@ function Homepage() {
                                                                     <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
                                                                 </a>
                                                             </td>
-                                                            <td>
-                                                                <a href="#" class="">View Profile</a>
+                                                            <td className='view-profile-lawyer-list-container'>
+                                                                <a href="#" class="view-profile-lawyer-list">View Profile</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -1504,45 +1504,135 @@ function Homepage() {
                                                                     <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
                                                                 </a>
                                                             </td>
-                                                            <td>
-                                                                <a href="#" class="">View Profile</a>
+                                                            <td className='view-profile-lawyer-list-container'>
+                                                                <a href="#" class="view-profile-lawyer-list">View Profile</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src={mem6} alt="img" /> <span>Emmett Stein
                                                             </span></td>
                                                             <td>June 21,2019</td>
-                                                            <td>$66,00,000.00</td>
-                                                            <td>paypal</td>
-                                                            <td>53 Minutes Ago</td>
+                                                            <td>South Africa</td>
+                                                            <td>Sashi &amp; Sashi</td>
+                                                            <td>Civil Lawyer</td>
+                                                            <td>7 Years</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <Icon icon="logos:facebook" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:twitter" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:instagram" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
+                                                                </a>
+                                                            </td>
+                                                            <td className='view-profile-lawyer-list-container'>
+                                                                <a href="#" class="view-profile-lawyer-list">View Profile</a>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src={mem1} alt="img" /> <span>Broom Nancee</span></td>
                                                             <td>June 24,2019</td>
-                                                            <td>$6,00,000.00</td>
-                                                            <td>bitcoin</td>
-                                                            <td>15 Minutes Ago</td>
+                                                            <td>South Africa</td>
+                                                            <td>Sashi &amp; Sashi</td>
+                                                            <td>Civil Lawyer</td>
+                                                            <td>7 Years</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <Icon icon="logos:facebook" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:twitter" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:instagram" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
+                                                                </a>
+                                                            </td>
+                                                            <td className='view-profile-lawyer-list-container'>
+                                                                <a href="#" class="view-profile-lawyer-list">View Profile</a>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src={mem4} alt="img" /> <span>Alison Rittichier</span></td>
                                                             <td>June 28,2019</td>
-                                                            <td>$77,00,000.00</td>
-                                                            <td>payonner</td>
-                                                            <td>05 Minutes Ago</td>
+                                                            <td>South Africa</td>
+                                                            <td>Sashi &amp; Sashi</td>
+                                                            <td>Civil Lawyer</td>
+                                                            <td>7 Years</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <Icon icon="logos:facebook" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:twitter" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:instagram" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
+                                                                </a>
+                                                            </td>
+                                                            <td className='view-profile-lawyer-list-container'>
+                                                                <a href="#" class="view-profile-lawyer-list">View Profile</a>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src={mem3} alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 05,2019</td>
-                                                            <td>$45,00,000.00</td>
-                                                            <td>ETH</td>
-                                                            <td>13 Minutes Ago</td>
+                                                            <td>South Africa</td>
+                                                            <td>Sashi &amp; Sashi</td>
+                                                            <td>Civil Lawyer</td>
+                                                            <td>7 Years</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <Icon icon="logos:facebook" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:twitter" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:instagram" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
+                                                                </a>
+                                                            </td>
+                                                            <td className='view-profile-lawyer-list-container'>
+                                                                <a href="#" class="view-profile-lawyer-list">View Profile</a>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src={mem5} alt="img" /> <span>Olympia Ripple</span></td>
                                                             <td>June 24,2019</td>
-                                                            <td>$11,00,000.00</td>
-                                                            <td>card</td>
-                                                            <td>23 Minutes Ago</td>
+                                                            <td>South Africa</td>
+                                                            <td>Sashi &amp; Sashi</td>
+                                                            <td>Civil Lawyer</td>
+                                                            <td>7 Years</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <Icon icon="logos:facebook" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:twitter" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:instagram" className='social-profile-icon' />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <Icon icon="skill-icons:linkedin" className='social-profile-icon' />
+                                                                </a>
+                                                            </td>
+                                                            <td className='view-profile-lawyer-list-container'>
+                                                                <a href="#" class="view-profile-lawyer-list">View Profile</a>
+                                                            </td>
                                                         </tr>
                                                     </tbody></table>
                                             </div>
@@ -1554,6 +1644,7 @@ function Homepage() {
                     </div>
                 </div>
             </div>
+
             {/* transaction wrapper start */}
             {/* testimonial wrapper start */}
             <div className="testimonial_wrapper float_left">
@@ -1716,7 +1807,7 @@ function Homepage() {
                                 <div className="line_shape" />
                             </div>
                         </div>
-                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12" id='owl-theme-container-pro-div'>
                             <div className="payment_slider_wrapper" id='payment-slider-parent'>
                                 <div className="owl-carousel owl-theme" id='owl-theme-container'>
                                     <div className="item">
@@ -1758,8 +1849,139 @@ function Homepage() {
             </div>
             {/* payments wrapper end */}
 
-            {/* payments wrapper start */}
-            <div className="payments_wrapper float_left" id='transaction-wrapper-container'>
+
+            <div className="container">
+                <div className="row align-items-center py-5" id='home-app-bg'>
+                    <div className="col-lg-6 col-md-12">
+                        <div className="app-content">
+                            <div
+                                className="app-header aos aos-init aos-animate"
+                                data-aos="fade-up"
+                            >
+                                <h5>Working To Help in Providing Better Legal Practice Globally</h5>
+                                <h2>Download African Leading Lawyers on Demand App Today!</h2>
+                            </div>
+                            <div
+                                className="app-scan aos aos-init aos-animate"
+                                data-aos="fade-up"
+                            >
+                                <p>Scan the QR code to get the app now</p>
+                                <img src="https://doccure.dreamstechnologies.com/html/template/assets/img/scan-img.png" alt="scan-image" />
+                            </div>
+                            <div
+                                className="google-imgs aos aos-init aos-animate"
+                                data-aos="fade-up"
+                            >
+                                <a href="javascript:void(0);">
+                                    <img src="https://doccure.dreamstechnologies.com/html/template/assets/img/google-play.png" alt="img" />
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <img src="https://doccure.dreamstechnologies.com/html/template/assets/img/app-store.png" alt="img" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-6 col-md-12" id="phone-carousel">
+
+                        <div
+                            id="carouselExampleControls"
+                            className="carousel slide"
+                            data-ride="carousel"
+                        >
+                            <div className="carousel-inner">
+                                <div className="carousel-item active">
+                                    <div id='phone-carousel-each'>
+                                        <img
+                                            className="d-block"
+                                            src={phoneImg1}
+                                            alt="First slide"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="carousel-item">
+                                    <div id='phone-carousel-each'>
+
+                                        <img
+                                            className="d-block"
+                                            src={phoneImg2}
+
+                                            alt="Second slide"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="carousel-item">
+                                    <div id='phone-carousel-each'>
+
+                                        <img
+                                            className="d-block"
+                                            src={phoneImg3}
+
+                                            alt="Third slide"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="carousel-item">
+                                    <div id='phone-carousel-each'>
+
+                                        <img
+                                            className="d-block"
+                                            src={phoneImg4}
+
+                                            alt="Third slide"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="carousel-item">
+                                    <div id='phone-carousel-each'>
+
+                                        <img
+                                            className="d-block"
+                                            src={phoneImg5}
+
+                                            alt="Third slide"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="carousel-item">
+                                    <div id='phone-carousel-each'>
+
+                                        <img
+                                            className="d-block"
+                                            src={phoneImg6}
+
+                                            alt="Third slide"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                className="carousel-control-prev"
+                                href="#carouselExampleControls"
+                                role="button"
+                                data-slide="prev"
+                            >
+                                <span className="carousel-control-prev-icon" aria-hidden="true" />
+                                <span className="sr-only">Previous</span>
+                            </a>
+                            <a
+                                className="carousel-control-next"
+                                href="#carouselExampleControls"
+                                role="button"
+                                data-slide="next"
+                            >
+                                <span className="carousel-control-next-icon" aria-hidden="true" />
+                                <span className="sr-only">Next</span>
+                            </a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="payments_wrapper float_left mt-5" id='transaction-wrapper-container' >
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-sm-12">
@@ -1807,11 +2029,11 @@ function Homepage() {
                                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Payoneer_logo.svg/2560px-Payoneer_logo.svg.png" className="img-responsive" alt="img" />
                                         </div>
                                     </div>
-                                    <div className="item">
+                                    {/* <div className="item">
                                         <div className="partner_img_wrapper float_left">
                                             <img src="https://banner2.cleanpng.com/20171220/kke/mastercard-logo-png-5a3a1f282e6103.818127331513758504194124.jpg" className="img-responsive" alt="img" />
                                         </div>
-                                    </div>
+                                    </div> */}
 
                                     <div className="item">
                                         <div className="partner_img_wrapper float_left">
@@ -1823,12 +2045,14 @@ function Homepage() {
                         </div>
                     </div>
                 </div>
-            </div>
-            {/* payments wrapper end */}
+                {/* payments wrapper end */}
 
-            {/* footer section start*/}
+                {/* footer section start*/}
+            </div >
+
             <Footer />
-        </div >
+
+        </div>
 
     )
 }
