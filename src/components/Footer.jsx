@@ -38,7 +38,7 @@ function Footer() {
                                 <li><a href="#"><i className="fa fa-angle-right" />Lawyers</a> </li>
                                 <li><a href="#"><i className="fa fa-angle-right" />Consultants</a> </li>
                                 <li>
-                                    <Link to="/plans" reloadDocument relative='path'><i className="fa fa-angle-right" /> Plans</Link>
+                                    <Link to="/pricing-plans" reloadDocument relative='path'><i className="fa fa-angle-right" /> Plans</Link>
 
                                 </li>
                                 <li><a href="#"><i className="fa fa-angle-right" />Solutions</a> </li>

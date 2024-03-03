@@ -34,7 +34,7 @@ function Header() {
                         <a href="investment.html">E-Stores</a>
                     </li>
                     <li>
-                        <Link to="/plans" reloadDocument relative='path'>Plans</Link>
+                        <Link to="/pricing-plans" reloadDocument relative='path'>Pricing Plans</Link>
                     </li>
                     <li>
                         <Link to="/search-merchant" reloadDocument relative='path'>Merchants</Link>
@@ -261,7 +261,7 @@ function Header() {
 
                                 </li>
                                 <li className="has-mega gc_main_navigation">
-                                    <Link to="/plans" relative='path' reloadDocument>PLANS</Link>
+                                    <Link to="/pricing-plans" relative='path' reloadDocument>PRICING PLANS</Link>
                                 </li>
                                 <li className="has-mega gc_main_navigation">
                                     <Link to="/search-merchant" relative='path' reloadDocument>MERCHANTS</Link>

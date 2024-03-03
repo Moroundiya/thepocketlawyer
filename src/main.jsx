@@ -19,7 +19,6 @@ import Echance_Money from './pages/Echance_Money';
 import Email_Notification from './pages/Email_Notification';
 import Exchange_History from './pages/Exchange_History';
 import Faq from './pages/Faq';
-import Investment from './pages/Investment';
 import Make_Deposit from './pages/Make_Deposit';
 import My_Account from './pages/My_Account';
 import Payment_Request from './pages/Payment_Request';
@@ -32,7 +31,7 @@ import View_Profile from './pages/View_Profile';
 import Earnings_History from './pages/Earnings_History';
 import Integrations from './pages/Integrations';
 import Forget_Password from './pages/Forget_Password';
-import Plans from './pages/Plans';
+// import Plans from './pages/Plans';
 import Help from './pages/Help';
 import Privacy_Policy from './pages/Privacy_Policy';
 import Delivery_Policy from './pages/Delivery_Policy';
@@ -55,6 +54,7 @@ import Coming_Soon from './pages/Coming_Soon';
 import Training_Sessions from './pages/Training_Sessions';
 import Availability from './pages/Availability';
 import Estore from './pages/Estore';
+import Pricing_Plans from './pages/Pricing_Plans';
 
 
 const router = createBrowserRouter([
@@ -123,10 +123,6 @@ const router = createBrowserRouter([
     element: <Faq />
   },
   {
-    path: "investment",
-    element: <Investment />
-  },
-  {
     path: "signin",
     element: <Signin />
   },
@@ -179,8 +175,8 @@ const router = createBrowserRouter([
     element: <Integrations />
   },
   {
-    path: "plans",
-    element: <Plans />
+    path: "pricing-plans",
+    element: <Pricing_Plans />
   },
   {
     path: "help",
