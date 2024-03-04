@@ -23,7 +23,9 @@
 }
 
 #sv_pricing_paln_pro {
-    padding-bottom: 0 !important;
+    padding-bottom: 1.5rem !important;
+    position: relative;
+    top: 100px;
 }
 
 @media screen and (max-width: 500px) {
@@ -440,4 +442,138 @@
 
 #new-star-rating-container {
     margin-right: .6rem;
+}
+
+
+
+
+
+
+
+
+.content__blocks {
+    padding: 5.5555555556rem 0;
+}
+
+.content__blocks h3 {
+    margin-bottom: 1.3888888889rem;
+}
+
+.content__blocks img {
+    max-height: 2.7777777778rem;
+    width: auto;
+}
+
+.content__blocks .container>.row>.col-6:first-child {
+    align-items: center;
+    display: flex;
+}
+
+.content__blocks .container>.row>.col-6:first-child>div {
+    padding-left: 10%;
+    padding-right: 7%;
+}
+
+
+.content__blocks-title {
+    font-family: "SuisseIntl-Medium";
+    font-size: 1.2222222222rem;
+    margin-top: auto;
+    width: 100%;
+}
+
+#pricing-all-parent-div .blue {
+    background-color: #6e73ff;
+    background-image: url(https://www.mycase.com/wp-content/themes/mycase/library/img/purple-bg.svg);
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+}
+
+#pricing-all-parent-div .blue h3 {
+    color: #fff !important;
+    font-size: 3rem;
+    line-height: 1.3;
+}
+
+@media only screen and (max-width : 1200px) {
+    .content__blocks-title {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width : 800px) {
+    .content__blocks {
+        padding: 2.7777777778rem 0;
+    }
+
+    .content__blocks .container>.row>.col-6 {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .content__blocks .container>.row>.col-6:first-child {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width : 650px) {
+
+
+    .content__blocks-title {
+        margin-top: 0;
+    }
+
+    .content__blocks-title br {
+        display: none;
+    }
+
+    .content__blocks .container>.row>.col-6:first-child>div {
+        padding: 0;
+    }
+
+    #pricing-all-parent-div .blue h3 {
+        color: #fff !important;
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 3rem;
+    }
+
+    #plus-features-each-box {
+        width: 100% !important;
+    }
+
+    #investors_wrapper-pricing-pro .index3_investment_box {
+        height: 200px !important;
+        overflow: auto;
+    }
+
+}
+
+#plus-features-each-box {
+    width: 95% !important;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 1.5555555556rem 2rem;
+}
+
+#investors_wrapper-pricing-pro {
+    padding-top: 2rem !important;
+}
+
+
+#investors_wrapper-pricing-pro .index3_investment_box {
+    height: 300px;
+    overflow: auto;
+}
+
+
+#investors_wrapper-pricing-pro .index3_investment_box .inves_img_wrapper h3 {
+    color: green;
+    font-weight: 500;
 }

@@ -756,10 +756,10 @@ function Homepage() {
                                 <div className="investment_border_wrapper" />
                                 <div className="investment_content_wrapper">
                                     <h3 className='font-weight-bold'>
-                                        <a href="#">14 Days Trial</a>
+                                        <a href="#" id='plan-purple-color'>14 Days Trial</a>
                                     </h3>
                                     <h4 className='mt-3 text-danger'>
-                                        N00:00
+                                    ₦00:00
                                     </h4>
                                     <p className='text-left px-3 font-weight-bold'>
                                         ●  Everything in Basic <br />
@@ -798,10 +798,10 @@ function Homepage() {
                                 <div className="investment_border_wrapper red_border_wrapper" />
                                 <div className="investment_content_wrapper">
                                     <h3 className='font-weight-bold'>
-                                        <a href="#">Basic Plan</a>
+                                        <a href="#" id='plan-orange-color'>Basic Plan</a>
                                     </h3>
                                     <h4 className='mt-3 text-danger'>
-                                        N3:500/Month
+                                    ₦3:500/Month
                                     </h4>
                                     <p className='text-left px-3 font-weight-bold'>
                                         ● Free Registrations <br />
@@ -842,10 +842,10 @@ function Homepage() {
                                 <div className="investment_border_wrapper blue_border_wrapper" />
                                 <div className="investment_content_wrapper">
                                     <h3 className='font-weight-bold'>
-                                        <a href="#">Professional</a>
+                                        <a href="#" id='plan-blue-color'>Professional</a>
                                     </h3>
                                     <h4 className='mt-3 text-danger'>
-                                        N8, 000:00/Month
+                                    ₦8, 000:00/Month
                                     </h4>
                                     <p className='text-left px-3 font-weight-bold'>
                                         ● Everything in Basic <br />
@@ -880,10 +880,10 @@ function Homepage() {
                                 <div className="investment_border_wrapper green_border_wrapper" />
                                 <div className="investment_content_wrapper">
                                     <h3 className='font-weight-bold'>
-                                        <a href="#">Advanced</a>
+                                        <a href="#" id='plan-green-color'>Advanced</a>
                                     </h3>
                                     <h4 className='mt-3 text-danger'>
-                                        N15, 000:00/Month
+                                    ₦15, 000:00/Month
                                     </h4>
                                     <p className='text-left px-3 font-weight-bold'>
                                         ● Everything in Basic <br />
