@@ -18,6 +18,8 @@ import '../swiper.css'
 
 function Chat() {
     return (
+
+
         <div>
             <div className="main-wrapper">
                 <div className="header">
