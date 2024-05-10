@@ -259,10 +259,10 @@ const router = createBrowserRouter([
     path: "e-store",
     element: <Estore />
   },
-  // {
-  //   path: "audio-call",
-  //   element: <Audio_call />
-  // },
+  {
+    path: "audio-call",
+    element: <Audio_call />
+  },
   // {
   //   path: "call-history",
   //   element: <Call_History />
