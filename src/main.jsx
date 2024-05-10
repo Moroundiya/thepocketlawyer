@@ -259,26 +259,26 @@ const router = createBrowserRouter([
     path: "e-store",
     element: <Estore />
   },
-  {
-    path: "audio-call",
-    element: <Audio_call />
-  },
-  {
-    path: "call-history",
-    element: <Call_History />
-  },
-  {
-    path: "email",
-    element: <Email />
-  },
-  {
-    path: "file-manager",
-    element: <File_Manager />
-  },
-  {
-    path: "chat",
-    element: <Chat />
-  }
+  // {
+  //   path: "audio-call",
+  //   element: <Audio_call />
+  // },
+  // {
+  //   path: "call-history",
+  //   element: <Call_History />
+  // },
+  // {
+  //   path: "email",
+  //   element: <Email />
+  // },
+  // {
+  //   path: "file-manager",
+  //   element: <File_Manager />
+  // },
+  // {
+  //   path: "chat",
+  //   element: <Chat />
+  // }
 
 ]);
 

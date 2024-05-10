@@ -1,18 +1,18 @@
 import React from 'react'
-import '../audio.css';
-import '../audio-feather.css';
-import '../audio-jquery';
-import '../audio-script'
-import '../audio-boot'
-import '../sticky-sidebar'
-import '../rocket'
-import '../slimscroll'
-import '../history'
-import '../select2'
-import '../feather-pro'
-import '../datatable'
-import '../select2.css'
-import '../summernote'
+// import '../audio.css';
+// import '../audio-feather.css';
+// import '../audio-jquery';
+// import '../audio-script'
+// import '../audio-boot'
+// import '../sticky-sidebar'
+// import '../rocket'
+// import '../slimscroll'
+// import '../history'
+// import '../select2'
+// import '../feather-pro'
+// import '../datatable'
+// import '../select2.css'
+// import '../summernote'
 
 function File_Manager() {
     return (
