@@ -55,6 +55,11 @@ import Training_Sessions from './pages/Training_Sessions';
 import Availability from './pages/Availability';
 import Estore from './pages/Estore';
 import Pricing_Plans from './pages/Pricing_Plans';
+import Audio_call from './pages/Audio_call';
+import Call_History from './pages/Call_History';
+import Email from './pages/Email';
+import File_Manager from './pages/File_Manager';
+import Chat from './pages/Chat';
 
 
 const router = createBrowserRouter([
@@ -253,6 +258,26 @@ const router = createBrowserRouter([
   {
     path: "e-store",
     element: <Estore />
+  },
+  {
+    path: "audio-call",
+    element: <Audio_call />
+  },
+  {
+    path: "call-history",
+    element: <Call_History />
+  },
+  {
+    path: "email",
+    element: <Email />
+  },
+  {
+    path: "file-manager",
+    element: <File_Manager />
+  },
+  {
+    path: "chat",
+    element: <Chat />
   }
 
 ]);
