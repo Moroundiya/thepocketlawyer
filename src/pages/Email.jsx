@@ -1,5 +1,5 @@
 import React from 'react'
-// import '../audio.css';
+import '../audio2.css';
 // import '../audio-feather.css';
 // import '../audio-jquery';
 // import '../audio-script'
@@ -15,7 +15,7 @@ import React from 'react'
 function Email() {
     return (
 
-        <div>
+        <div className='audio-main-parent-container'>
             <div className="main-wrapper">
                 <div className="header">
                     <div className="header-left active">
@@ -28,9 +28,9 @@ function Email() {
                         <a href="https://dreamspos.dreamstechnologies.com/html/template/index.html" className="logo-small">
                             <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/logo-small.png" alt="" />
                         </a>
-                        <a id="toggle_btn" href="javascript:void(0);">
+                        {/* <a id="toggle_btn" href="javascript:void(0);">
                             <i data-feather="chevrons-left" className="feather-16" />
-                        </a>
+                        </a> */}
                     </div>
                     <a id="mobile_btn" className="mobile_btn" href="email.html#sidebar">
                         <span className="bar-icon">
@@ -1640,7 +1640,7 @@ function Email() {
                                             <div className="row">
                                                 <div className="col-lg-9 top-action-left col-sm-12">
                                                     <div className="float-left">
-                                                        <div className="btn-group dropdown-action me-1">
+                                                        <div className="btn-group dropdown-action mr-1">
                                                             <button type="button" className="btn btn-white dropdown-toggle" data-bs-toggle="dropdown">Select <i className="fas fa-angle-down" /></button>
                                                             <div className="dropdown-menu">
                                                                 <a className="dropdown-item" href="javascript:void(0);">All</a>
@@ -1650,7 +1650,7 @@ function Email() {
                                                                 <a className="dropdown-item" href="javascript:void(0);">Unread</a>
                                                             </div>
                                                         </div>
-                                                        <div className="btn-group dropdown-action me-1">
+                                                        <div className="btn-group dropdown-action mr-1">
                                                             <button type="button" className="btn btn-white dropdown-toggle" data-bs-toggle="dropdown">Actions <i className="fas fa-angle-down" /></button>
                                                             <div className="dropdown-menu">
                                                                 <a className="dropdown-item" href="javascript:void(0);">Reply</a>
@@ -1663,7 +1663,7 @@ function Email() {
                                                                 <a className="dropdown-item" href="javascript:void(0);">Delete</a>
                                                             </div>
                                                         </div>
-                                                        <div className="btn-group dropdown-action me-1">
+                                                        <div className="btn-group dropdown-action mr-1">
                                                             <button type="button" className="btn btn-white dropdown-toggle" data-bs-toggle="dropdown"><i className="fas fa-folder" /> <i className="fas fa-angle-down" /></button>
                                                             <div role="menu" className="dropdown-menu">
                                                                 <a className="dropdown-item" href="javascript:void(0);">Social</a>
@@ -1676,7 +1676,7 @@ function Email() {
                                                                 <a className="dropdown-item" href="javascript:void(0);">New</a>
                                                             </div>
                                                         </div>
-                                                        <div className="btn-group dropdown-action me-1">
+                                                        <div className="btn-group dropdown-action mr-1">
                                                             <button type="button" data-bs-toggle="dropdown" className="btn btn-white dropdown-toggle"><i className="fas fa-tags" /> <i className="fas fa-angle-down" /></button>
                                                             <div role="menu" className="dropdown-menu">
                                                                 <a className="dropdown-item" href="javascript:void(0);">Work</a>
@@ -1695,7 +1695,7 @@ function Email() {
                                                 </div>
                                                 <div className="col-lg-3 top-action-right col-sm-12">
                                                     <div className="text-end ">
-                                                        <button type="button" title="Refresh" data-toggle="tooltip" className="btn btn-white d-none d-md-inline-block me-1"><i className="fas fa-sync-alt" /></button>
+                                                        <button type="button" title="Refresh" data-toggle="tooltip" className="btn btn-white d-none d-md-inline-block mr-1"><i className="fas fa-sync-alt" /></button>
                                                         <div className="btn-group">
                                                             <a className="btn btn-white"><i className="fas fa-angle-left" /></a>
                                                             <a className="btn btn-white"><i className="fas fa-angle-right" /></a>
@@ -1893,15 +1893,7 @@ function Email() {
                     </div>
                 </div>
             </div>
-            <div className="customizer-links" id="setdata">
-                <ul className="sticky-sidebar">
-                    <li className="sidebar-icons">
-                        <a href="email.html#" className="navigation-add" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Theme">
-                            <i data-feather="settings" className="feather-five" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
+       
         </div>
 
     )

@@ -1,22 +1,7 @@
 import React from 'react'
+import '../audio2.css'
 
-import '../audio2.css';
-// import '../audio-feather.css';
-// import '../audio-jquery';
-// import '../audio-script'
-// import '../audio-boot'
-// import '../sticky-sidebar'
-// import '../rocket'
-// import '../slimscroll'
-// import '../history'
-// import '../select2'
-// import '../feather-pro'
-// import '../datatable'
-// import '../select2.css'
-// import '../summernote'
-// import '../swiper.css'
-
-function Chat() {
+function Todo() {
     return (
         <div className='audio-main-parent-container'>
             <div className="main-wrapper">
@@ -35,7 +20,7 @@ function Chat() {
                             <i data-feather="chevrons-left" className="feather-16" />
                         </a> */}
                     </div>
-                    <a id="mobile_btn" className="mobile_btn" href="chat.html#sidebar">
+                    <a id="mobile_btn" className="mobile_btn" href="todo.html#sidebar">
                         <span className="bar-icon">
                             <span />
                             <span />
@@ -48,7 +33,7 @@ function Chat() {
                                 <a href="javascript:void(0);" className="responsive-search">
                                     <i className="fa fa-search" />
                                 </a>
-                                <form action="chat.html#" className="dropdown">
+                                <form action="todo.html#" className="dropdown">
                                     <div className="searchinputs dropdown-toggle" id="dropdownMenuClickable" data-bs-toggle="dropdown" data-bs-auto-close="false">
                                         <input type="text" placeholder="Search" />
                                         <div className="search-addon">
@@ -294,9 +279,9 @@ function Chat() {
                                             </ul>
                                         </li>
                                         <li className="submenu">
-                                            <a href="javascript:void(0);" className="active subdrop"><i data-feather="smartphone" /><span>Application</span><span className="menu-arrow" /></a>
+                                            <a href="javascript:void(0);" className="subdrop active"><i data-feather="smartphone" /><span>Application</span><span className="menu-arrow" /></a>
                                             <ul>
-                                                <li><a href="chat.html" className="active">Chat</a></li>
+                                                <li><a href="https://dreamspos.dreamstechnologies.com/html/template/chat.html">Chat</a></li>
                                                 <li className="submenu submenu-two"><a href="javascript:void(0);">Call<span className="menu-arrow inside-submenu" /></a>
                                                     <ul>
                                                         <li><a href="https://dreamspos.dreamstechnologies.com/html/template/video-call.html">Video Call</a></li>
@@ -306,7 +291,7 @@ function Chat() {
                                                 </li>
                                                 <li><a href="https://dreamspos.dreamstechnologies.com/html/template/calendar.html">Calendar</a></li>
                                                 <li><a href="https://dreamspos.dreamstechnologies.com/html/template/email.html">Email</a></li>
-                                                <li><a href="https://dreamspos.dreamstechnologies.com/html/template/todo.html">To Do</a></li>
+                                                <li><a href="todo.html" className="active">To Do</a></li>
                                                 <li><a href="https://dreamspos.dreamstechnologies.com/html/template/notes.html">Notes</a></li>
                                                 <li><a href="https://dreamspos.dreamstechnologies.com/html/template/file-manager.html">File Manager</a></li>
                                             </ul>
@@ -735,52 +720,52 @@ function Chat() {
                             <aside id="aside" className="ui-aside">
                                 <ul className="tab nav nav-tabs" id="myTab" role="tablist">
                                     <li className="nav-item" role="presentation">
-                                        <a className="tablinks nav-link active" href="chat.html#home" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-selected="true">
+                                        <a className="tablinks nav-link active" href="todo.html#home" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-selected="true">
                                             <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/menu-icon.svg" alt="" />
                                         </a>
                                     </li>
                                     <li className="nav-item" role="presentation">
-                                        <a className="tablinks nav-link" href="chat.html#messages" id="messages-tab" data-bs-toggle="tab" data-bs-target="#product" role="tab" aria-selected="false">
+                                        <a className="tablinks nav-link" href="todo.html#messages" id="messages-tab" data-bs-toggle="tab" data-bs-target="#product" role="tab" aria-selected="false">
                                             <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/product.svg" alt="" />
                                         </a>
                                     </li>
                                     <li className="nav-item" role="presentation">
-                                        <a className="tablinks nav-link" href="chat.html#profile" id="profile-tab" data-bs-toggle="tab" data-bs-target="#sales" role="tab" aria-selected="false">
+                                        <a className="tablinks nav-link" href="todo.html#profile" id="profile-tab" data-bs-toggle="tab" data-bs-target="#sales" role="tab" aria-selected="false">
                                             <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/sales1.svg" alt="" />
                                         </a>
                                     </li>
                                     <li className="nav-item" role="presentation">
-                                        <a className="tablinks nav-link" href="chat.html#report" id="report-tab" data-bs-toggle="tab" data-bs-target="#purchase" role="tab" aria-selected="true">
+                                        <a className="tablinks nav-link" href="todo.html#report" id="report-tab" data-bs-toggle="tab" data-bs-target="#purchase" role="tab" aria-selected="true">
                                             <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/purchase1.svg" alt="" />
                                         </a>
                                     </li>
                                     <li className="nav-item" role="presentation">
-                                        <a className="tablinks nav-link" href="chat.html#set" id="set-tab" data-bs-toggle="tab" data-bs-target="#user" role="tab" aria-selected="true">
+                                        <a className="tablinks nav-link" href="todo.html#set" id="set-tab" data-bs-toggle="tab" data-bs-target="#user" role="tab" aria-selected="true">
                                             <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/users1.svg" alt="" />
                                         </a>
                                     </li>
                                     <li className="nav-item" role="presentation">
-                                        <a className="tablinks nav-link" href="chat.html#set2" id="set-tab2" data-bs-toggle="tab" data-bs-target="#employee" role="tab" aria-selected="true">
+                                        <a className="tablinks nav-link" href="todo.html#set2" id="set-tab2" data-bs-toggle="tab" data-bs-target="#employee" role="tab" aria-selected="true">
                                             <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/calendars.svg" alt="" />
                                         </a>
                                     </li>
                                     <li className="nav-item" role="presentation">
-                                        <a className="tablinks nav-link" href="chat.html#set3" id="set-tab3" data-bs-toggle="tab" data-bs-target="#report" role="tab" aria-selected="true">
+                                        <a className="tablinks nav-link" href="todo.html#set3" id="set-tab3" data-bs-toggle="tab" data-bs-target="#report" role="tab" aria-selected="true">
                                             <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/printer.svg" alt="" />
                                         </a>
                                     </li>
                                     <li className="nav-item" role="presentation">
-                                        <a className="tablinks nav-link" href="chat.html#set4" id="set-tab4" data-bs-toggle="tab" data-bs-target="#document" role="tab" aria-selected="true">
+                                        <a className="tablinks nav-link" href="todo.html#set4" id="set-tab4" data-bs-toggle="tab" data-bs-target="#document" role="tab" aria-selected="true">
                                             <i data-feather="user" />
                                         </a>
                                     </li>
                                     <li className="nav-item" role="presentation">
-                                        <a className="tablinks nav-link" href="chat.html#set5" id="set-tab6" data-bs-toggle="tab" data-bs-target="#permission" role="tab" aria-selected="true">
+                                        <a className="tablinks nav-link" href="todo.html#set5" id="set-tab6" data-bs-toggle="tab" data-bs-target="#permission" role="tab" aria-selected="true">
                                             <i data-feather="file-text" />
                                         </a>
                                     </li>
                                     <li className="nav-item" role="presentation">
-                                        <a className="tablinks nav-link" href="chat.html#set6" id="set-tab5" data-bs-toggle="tab" data-bs-target="#settings" role="tab" aria-selected="true">
+                                        <a className="tablinks nav-link" href="todo.html#set6" id="set-tab5" data-bs-toggle="tab" data-bs-target="#settings" role="tab" aria-selected="true">
                                             <i data-feather="settings" />
                                         </a>
                                     </li>
@@ -796,9 +781,9 @@ function Chat() {
                                         </ul>
                                     </li>
                                     <li className="submenu">
-                                        <a href="javascript:void(0);"><span>Application</span><span className="menu-arrow" /></a>
+                                        <a href="javascript:void(0);" className="active"><span>Application</span><span className="menu-arrow" /></a>
                                         <ul>
-                                            <li><a href="chat.html" className="active">Chat</a></li>
+                                            <li><a href="https://dreamspos.dreamstechnologies.com/html/template/chat.html">Chat</a></li>
                                             <li className="submenu submenu-two"><a href="javascript:void(0);"><span>Call</span><span className="menu-arrow inside-submenu" /></a>
                                                 <ul>
                                                     <li><a href="https://dreamspos.dreamstechnologies.com/html/template/video-call.html">Video Call</a></li>
@@ -808,7 +793,7 @@ function Chat() {
                                             </li>
                                             <li><a href="https://dreamspos.dreamstechnologies.com/html/template/calendar.html">Calendar</a></li>
                                             <li><a href="https://dreamspos.dreamstechnologies.com/html/template/email.html">Email</a></li>
-                                            <li><a href="https://dreamspos.dreamstechnologies.com/html/template/todo.html">To Do</a></li>
+                                            <li><a href="todo.html" className="active">To Do</a></li>
                                             <li><a href="https://dreamspos.dreamstechnologies.com/html/template/notes.html">Notes</a></li>
                                             <li><a href="https://dreamspos.dreamstechnologies.com/html/template/file-manager.html">File Manager</a></li>
                                         </ul>
@@ -1190,7 +1175,7 @@ function Chat() {
                                     <li className="submenu">
                                         <a href="javascript:void(0);" className="active subdrop"><span>Application</span><span className="menu-arrow" /></a>
                                         <ul>
-                                            <li><a href="chat.html" className="active">Chat</a></li>
+                                            <li><a href="https://dreamspos.dreamstechnologies.com/html/template/chat.html">Chat</a></li>
                                             <li className="submenu submenu-two"><a href="javascript:void(0);"><span>Call</span><span className="menu-arrow inside-submenu" /></a>
                                                 <ul>
                                                     <li><a href="https://dreamspos.dreamstechnologies.com/html/template/video-call.html">Video Call</a></li>
@@ -1200,7 +1185,7 @@ function Chat() {
                                             </li>
                                             <li><a href="https://dreamspos.dreamstechnologies.com/html/template/calendar.html">Calendar</a></li>
                                             <li><a href="https://dreamspos.dreamstechnologies.com/html/template/email.html">Email</a></li>
-                                            <li><a href="https://dreamspos.dreamstechnologies.com/html/template/todo.html">To Do</a></li>
+                                            <li><a href="todo.html" className="active">To Do</a></li>
                                             <li><a href="https://dreamspos.dreamstechnologies.com/html/template/notes.html">Notes</a></li>
                                             <li><a href="https://dreamspos.dreamstechnologies.com/html/template/file-manager.html">File Manager</a></li>
                                         </ul>
@@ -1602,1084 +1587,683 @@ function Chat() {
                         </ul>
                     </div>
                 </div>
-                <div className="page-wrapper chat-page-wrapper">
+                <div className="page-wrapper notes-page-wrapper">
                     <div className="content">
-                        <div className="sidebar-group left-sidebar chat_sidebar">
-                            <div id="chats" className="left-sidebar-wrap sidebar active slimscroll">
-                                <div className="slimscroll-active-sidebar">
-                                    <div className="left-chat-title all-chats d-flex justify-content-between align-items-center">
-                                        <div className="setting-title-head">
-                                            <h4> All Chats</h4>
-                                        </div>
-                                        <div className="add-section">
-                                            <ul>
-                                                <li><a href="javascript:void(0);" className="user-chat-search-btn"><i className="bx bx-search" /></a></li>
-                                                <li>
-                                                    <div className="chat-action-btns">
-                                                        <div className="chat-action-col">
-                                                            <a className="#" href="chat.html#" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i className="bx bx-dots-vertical-rounded" />
-                                                            </a>
-                                                            <div className="dropdown-menu dropdown-menu-end">
-                                                                <a href="javascript:void(0);" className="dropdown-item " data-bs-toggle="modal" data-bs-target="#new-chat"><span><i className="bx bx-message-rounded-add" /></span>New Chat </a>
-                                                                <a href="javascript:void(0);" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#new-group"><span><i className="bx bx-user-circle" /></span>Create Group</a>
-                                                                <a href="javascript:void(0);" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#invite-other"><span><i className="bx bx-user-plus" /></span>Invite Others</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div className="user-chat-search">
-                                                <form>
-                                                    <span className="form-control-feedback"><i className="bx bx-search" /></span>
-                                                    <input type="text" name="chat-search" placeholder="Search" className="form-control" />
-                                                    <div className="user-close-btn-chat"><span className="material-icons">close</span></div>
-                                                </form>
-                                            </div>
+                        <div className="page-header page-add-notes">
+                            <div className="add-item d-flex">
+                                <div className="page-title">
+                                    <h4>Todo</h4>
+                                    <h6>Manage your tasks</h6>
+                                </div>
+                                <a id="toggle_btn2" className="notes-tog" href="javascript:void(0);">
+                                    <i className="fas fa-chevron-left" />
+                                </a>
+                            </div>
+                            <div className="d-flex flex-sm-row flex-column align-items-sm-center align-items-start">
+                                <div className="input-block add-lists todo-inbox-check">
+                                    <label className="checkboxs">
+                                        <input type="checkbox" defaultChecked />
+                                        <span className="checkmarks" />Mark all as Complete
+                                    </label>
+                                </div>
+                                <div className="form-ssort me-2 mb-sm-0 mb-3">
+                                    {/* <i data-feather="sliders" className="info-img" /> */}
+                                    <select className="select-customized mr-3">
+                                        <option>Sort by Date</option>
+                                        <option>Ascending </option>
+                                        <option>Descending</option>
+                                        <option>Recently Viewed </option>
+                                        <option>Recently Added</option>
+                                        <option>Creation Date </option>
+                                    </select>
+                                </div>
+                                <ul className="table-top-head">
+                                    <li>
+                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Refresh"><i data-feather="rotate-ccw" className="feather-rotate-ccw" /></a>
+                                    </li>
+                                    <li>
+                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header"><i data-feather="chevron-up" className="feather-chevron-up" /></a>
+                                    </li>
+                                </ul>
+                                <div className="page-btn">
+                                    <a href="todo.html#" className="btn btn-added" data-bs-toggle="modal" data-bs-target="#note-units"><i data-feather="plus-circle" className="me-2" /> Add Task </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-xl-3 col-md-12 sidebars-right theiaStickySidebar section-bulk-widget">
+                                <div className="notes-dash">
+                                    <div className="notes-top-head">
+                                        <h5> <i data-feather="file-text" className="feather-file-text" /> Todo List</h5>
+                                    </div>
+                                    <div className="notes-top-head-submenu">
+                                        <div className="nav flex-column nav-pills todo-inbox" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <button className="nav-link todo-tab todo-inbox active" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="true"> <i data-feather="inbox" className="feather-inbox" />Inbox <span className="ms-2">1</span></button>
+                                            <button className="nav-link todo-tab todo-inbox" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="false"> <i data-feather="check-circle" className="feather-check-circle" />Done</button>
+                                            <button className="nav-link todo-tab-btn todo-inbox" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"> <i data-feather="star" className="feather-star" /> Important</button>
+                                            <button className="nav-link todo-tab todo-inbox mb-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"> <i data-feather="trash-2" className="feather-trash-2" />Trash</button>
                                         </div>
                                     </div>
-                                    <div className="top-online-contacts">
-                                        <div className="fav-title">
-                                            <h6>Online Now</h6>
-                                            <a href="javascript:void(0);">View All</a>
-                                        </div>
-                                        <div className="swiper-container">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="top-contacts-box">
-                                                        <div className="profile-img online">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" alt="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="top-contacts-box">
-                                                        <div className="profile-img online">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-1.jpg" alt="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="top-contacts-box">
-                                                        <div className="profile-img online">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-7.jpg" alt="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="top-contacts-box">
-                                                        <div className="profile-img online">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-5.jpg" alt="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="top-contacts-box">
-                                                        <div className="profile-img online">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-3.jpg" alt="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="top-contacts-box">
-                                                        <div className="profile-img online">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" alt="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="sidebar-body chat-body" id="chatsidebar">
-                                        <div className="d-flex justify-content-between align-items-center ps-0 pe-0">
-                                            <div className="fav-title pin-chat">
-                                                <h6>Pinned Chat</h6>
-                                            </div>
-                                        </div>
-                                        <ul className="user-list">
-                                            <li className="user-list-item">
+                                    <div className="content-submenu-tag">
+                                        <h6>Tags</h6>
+                                        <ul className="tags-list">
+                                            <li className="personal">
                                                 <a href="javascript:void(0);">
-                                                    <div className="avatar avatar-online">
-                                                        <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" className="rounded-circle" alt="image" />
-                                                    </div>
-                                                    <div className="users-list-body">
-                                                        <div>
-                                                            <h5>Mark Villiams</h5>
-                                                            <p>Have you called them?</p>
-                                                        </div>
-                                                        <div className="last-chat-time">
-                                                            <small className="text-muted">10:20 PM</small>
-                                                            <div className="chat-pin">
-                                                                <i className="bx bx-pin me-2" />
-                                                                <i className="bx bx-check-double" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    <span><i className="fas fa-square" /></span>
+                                                    Pending
                                                 </a>
                                             </li>
-                                            <li className="user-list-item">
+                                            <li className="social">
                                                 <a href="javascript:void(0);">
-                                                    <div>
-                                                        <div className="avatar ">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-1.jpg" className="rounded-circle" alt="image" />
-                                                        </div>
-                                                    </div>
-                                                    <div className="users-list-body">
-                                                        <div>
-                                                            <h5>Elizabeth Sosa</h5>
-                                                            <p><span className="animate-typing-col">Typing
-                                                                <span className="dot" />
-                                                                <span className="dot" />
-                                                                <span className="dot" />
-                                                            </span>
-                                                            </p>
-                                                        </div>
-                                                        <div className="last-chat-time">
-                                                            <small className="text-muted">Yesterday</small>
-                                                            <div className="chat-pin">
-                                                                <i className="bx bx-pin" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    <span><i className="fas fa-square" /></span>
+                                                    Onhold
                                                 </a>
                                             </li>
-                                            <li className="user-list-item">
+                                            <li className="public">
                                                 <a href="javascript:void(0);">
-                                                    <div className="avatar avatar-online">
-                                                        <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-5.jpg" className="rounded-circle" alt="image" />
-                                                    </div>
-                                                    <div className="users-list-body">
-                                                        <div>
-                                                            <h5>Michael Howard</h5>
-                                                            <p>Thank you</p>
-                                                        </div>
-                                                        <div className="last-chat-time">
-                                                            <small className="text-muted">10:20 PM</small>
-                                                            <div className="chat-pin">
-                                                                <i className="bx bx-pin me-2" />
-                                                                <i className="bx bx-check-double green-check" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    <span><i className="fas fa-square" /></span>
+                                                    Inprogress
+                                                </a>
+                                            </li>
+                                            <li className="work">
+                                                <a href="javascript:void(0);">
+                                                    <span><i className="fas fa-square" /></span>
+                                                    Done
                                                 </a>
                                             </li>
                                         </ul>
-                                        <div className="d-flex justify-content-between align-items-center ps-0 pe-0">
-                                            <div className="fav-title pin-chat">
-                                                <h6>Recent Chat</h6>
-                                            </div>
-                                        </div>
-                                        <ul className="user-list">
-                                            <li className="user-list-item">
+                                        <h6>Priority</h6>
+                                        <ul className="priority-list">
+                                            <li className="medium">
                                                 <a href="javascript:void(0);">
-                                                    <div className="avatar avatar-online">
-                                                        <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-3.jpg" className="rounded-circle" alt="image" />
-                                                    </div>
-                                                    <div className="users-list-body">
-                                                        <div>
-                                                            <h5>Horace Keene</h5>
-                                                            <p>Have you called them?</p>
-                                                        </div>
-                                                        <div className="last-chat-time">
-                                                            <small className="text-muted">Just Now</small>
-                                                            <div className="new-message-count">11</div>
-                                                        </div>
-                                                    </div>
+                                                    <span><i className="fas fa-square" /></span>
+                                                    Medium
                                                 </a>
                                             </li>
-                                            <li className="user-list-item">
+                                            <li className="high">
                                                 <a href="javascript:void(0);">
-                                                    <div>
-                                                        <div className="avatar avatar-online">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-3.jpg" className="rounded-circle" alt="image" />
-                                                        </div>
-                                                    </div>
-                                                    <div className="users-list-body">
-                                                        <div>
-                                                            <h5>Hollis Tran</h5>
-                                                            <p><i className="bx bx-video me-1" />Video</p>
-                                                        </div>
-                                                        <div className="last-chat-time">
-                                                            <small className="text-muted">Yesterday</small>
-                                                            <div className="chat-pin">
-                                                                <i className="bx bx-check" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    <span><i className="fas fa-square" /></span>
+                                                    High
                                                 </a>
                                             </li>
-                                            <li className="user-list-item">
+                                            <li className="low">
                                                 <a href="javascript:void(0);">
-                                                    <div className="avatar">
-                                                        <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-4.jpg" className="rounded-circle" alt="image" />
-                                                    </div>
-                                                    <div className="users-list-body">
-                                                        <div>
-                                                            <h5>James Albert</h5>
-                                                            <p><i className="bx bx-file me-1" />Project Tools.doc</p>
-                                                        </div>
-                                                        <div className="last-chat-time">
-                                                            <small className="text-muted">10:20 PM</small>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li className="user-list-item">
-                                                <a href="javascript:void(0);">
-                                                    <div>
-                                                        <div className="avatar avatar-online">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-9.jpg" className="rounded-circle" alt="image" />
-                                                        </div>
-                                                    </div>
-                                                    <div className="users-list-body">
-                                                        <div>
-                                                            <h5>Debra Jones</h5>
-                                                            <p><i className="bx bx-microphone me-1" />Audio</p>
-                                                        </div>
-                                                        <div className="last-chat-time">
-                                                            <small className="text-muted">12:30 PM</small>
-                                                            <div className="chat-pin">
-                                                                <i className="bx bx-check-double green-check" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li className="user-list-item">
-                                                <a href="javascript:void(0);">
-                                                    <div>
-                                                        <div className="avatar ">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-7.jpg" className="rounded-circle" alt="image" />
-                                                        </div>
-                                                    </div>
-                                                    <div className="users-list-body">
-                                                        <div>
-                                                            <h5>Dina Brown</h5>
-                                                            <p>Have you called them?</p>
-                                                        </div>
-                                                        <div className="last-chat-time">
-                                                            <small className="text-muted">Yesterday</small>
-                                                            <div className="chat-pin">
-                                                                <i className="bx bx-microphone-off" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li className="user-list-item">
-                                                <a href="javascript:void(0);">
-                                                    <div>
-                                                        <div className="avatar avatar-online">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-8.jpg" className="rounded-circle" alt="image" />
-                                                        </div>
-                                                    </div>
-                                                    <div className="users-list-body">
-                                                        <div>
-                                                            <h5>Judy Mercer</h5>
-                                                            <p className="missed-call-col"><i className="bx bx-phone-incoming me-1" />Missed Call</p>
-                                                        </div>
-                                                        <div className="last-chat-time">
-                                                            <small className="text-muted">25/July/23</small>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li className="user-list-item">
-                                                <a href="javascript:void(0);">
-                                                    <div>
-                                                        <div className="avatar">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-6.jpg" className="rounded-circle" alt="image" />
-                                                        </div>
-                                                    </div>
-                                                    <div className="users-list-body">
-                                                        <div>
-                                                            <h5>Richard Ohare</h5>
-                                                            <p><i className="bx bx-image-alt me-1" />Photo</p>
-                                                        </div>
-                                                        <div className="last-chat-time">
-                                                            <small className="text-muted">27/July/23</small>
-                                                            <div className="chat-pin">
-                                                                <i className="bx bx-check-double" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    <span><i className="fas fa-square" /></span>
+                                                    Low
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="chat chat-messages" id="middle">
-                            <div className="slimscroll">
-                                <div className="chat-header">
-                                    <div className="user-details">
-                                        <div className="d-lg-none">
-                                            <ul className="list-inline mt-2 me-2">
-                                                <li className="list-inline-item">
-                                                    <a className="text-muted px-0 left_sides" href="chat.html#" data-chat="open">
-                                                        <i className="fas fa-arrow-left" />
+                            <div className="col-xl-9 budget-role-notes">
+                                <div className="section-bulk-wrap">
+                                    <div className="bulk-action-type">
+                                        <div className="fosrm-sort select-bluk">
+                                            <select className="select-customized">
+                                                <option>Bulk Actions</option>
+                                                <option>Delete Marked</option>
+                                                <option>Unmark All</option>
+                                                <option>Mark All</option>
+                                            </select>
+                                        </div>
+                                        <a href='' className="btn btn-added ">Apply</a>
+                                        <div className="search-set">
+                                            <div className="search-input">
+                                                <a href='' className="btn btn-searchset"><i data-feather="search" className="feather-search" /></a>
+                                                <div id="DataTables_Table_0_filter" className="dataTables_filter">
+                                                    <label> <input type="search" className="form-control form-control-sm" placeholder="Search" /></label>
+                                                </div></div>
+                                        </div>
+                                    </div>
+                                    <div className="fodrm-sort">
+                                        {/* <i data-feather="filter" className="feather-filter" /> */}
+                                        <select className="select-customized">
+                                            <option>Recent</option>
+                                            <option>Last Modified</option>
+                                            <option>Last Modified by me</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div className="tab-content" id="v-pills-tabContent">
+                                    <div className="tab-pane fade active show" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                        <div className="sections-notes-slider">
+                                            <div className="row">
+                                                <div className="col-lg-12">
+                                                    <div className="accordion-card-one accordion todo-accordion" id="accordionExample">
+                                                        <div className="accordion-item">
+                                                            <div className="accordion-header" id="headingOne">
+                                                                <div className="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+                                                                    <div className="notes-content todo-today-content">
+                                                                        <div className="notes-header todo-today-header">
+                                                                            <span><i data-feather="calendar" className="feather-calendar" /></span>
+                                                                            <h3>Today</h3>
+                                                                            <h6>1</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="todo-drop-down">
+                                                                        <a href="javascript:void(0);">
+                                                                            <span><i className="fas fa-chevron-down" /></span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                                <div className="accordion-body">
+                                                                    <div className="todo-widget">
+                                                                        <div className="todo-wrapper-list">
+                                                                            <div className="input-block add-lists todo-inbox-check todo-inbox-check-list">
+                                                                                <label className="checkboxs">
+                                                                                    <input type="checkbox" />
+                                                                                    <span className="checkmarks" />
+                                                                                </label>
+                                                                                <div className="todo-wrapper-list-content">
+                                                                                    <h4>Meeting with Shaun Park at 4:50pm</h4>
+                                                                                    <p>Discuss about new project</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div className="notes-card-body d-flex align-items-center">
+                                                                                <p className="badge bg-outline-danger badge-lg me-2 mb-0"><i className="fas fa-circle" /> High</p>
+                                                                                <p className="badge bg-outline-secondary badge-lg me-2 mb-0"> New</p>
+                                                                            </div>
+                                                                            <div className=" todo-profile d-flex align-items-center">
+                                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/users/user-24.jpg" alt="Img" className="img-fluid" />
+                                                                                <a href="todo.html#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                    <i className="fas fa-ellipsis-v" />
+                                                                                </a>
+                                                                                <div className="dropdown-menu notes-menu dropdown-menu-end">
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit-note-units"><span><i data-feather="edit" /></span>Edit</a>
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-note-units"><span><i data-feather="trash-2" /></span>Delete</a>
+                                                                                    <a href="todo.html#" className="dropdown-item"><span><i data-feather="star" /></span>Not Important</a>
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#view-note-units"><span><i data-feather="eye" /></span>View</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="accordion-card-one accordion todo-accordion" id="accordionExample2">
+                                                        <div className="accordion-item">
+                                                            <div className="accordion-header" id="headingTwo">
+                                                                <div className="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-controls="collapseTwo">
+                                                                    <div className="notes-content todo-today-content">
+                                                                        <div className="notes-header todo-today-header">
+                                                                            <span><i data-feather="calendar" className="feather-calendar" /></span>
+                                                                            <h3>Yesterday</h3>
+                                                                        </div>
+                                                                        <div className="todo-drop-down">
+                                                                            <a href="javascript:void(0);">
+                                                                                <span><i className="fas fa-chevron-down" /></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="collapseTwo" className="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
+                                                                <div className="accordion-body">
+                                                                    <div className="todo-widget">
+                                                                        <div className="todo-wrapper-list">
+                                                                            <div className="input-block add-lists todo-inbox-check todo-inbox-check-list">
+                                                                                <label className="checkboxs">
+                                                                                    <input type="checkbox" />
+                                                                                    <span className="checkmarks" />
+                                                                                </label>
+                                                                                <div className="todo-wrapper-list-content">
+                                                                                    <h4>Team meet at Starbucks</h4>
+                                                                                    <p>Identify the implementation team</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div className="notes-card-body d-flex align-items-center">
+                                                                                <p className="badge bg-outline-danger badge-lg me-2 mb-0"><i className="fas fa-circle" /> High</p>
+                                                                                <p className="badge bg-outline-info badge-lg me-2 mb-0"> Pending</p>
+                                                                            </div>
+                                                                            <div className=" todo-profile d-flex align-items-center">
+                                                                                <a href="todo.html#" className="todo-star star-todo-inbox">
+                                                                                    <span>
+                                                                                        <i data-feather="star" className="feather-star me-3" />
+                                                                                    </span>
+                                                                                </a>
+                                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" alt="Img" className="img-fluid" />
+                                                                                <a href="todo.html#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                    <i className="fas fa-ellipsis-v" />
+                                                                                </a>
+                                                                                <div className="dropdown-menu notes-menu dropdown-menu-end">
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit-note-units"><span><i data-feather="edit" /></span>Edit</a>
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-note-units"><span><i data-feather="trash-2" /></span>Delete</a>
+                                                                                    <a href="todo.html#" className="dropdown-item"><span><i data-feather="star" /></span>Not Important</a>
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#view-note-units"><span><i data-feather="eye" /></span>View</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div className="todo-wrapper-list">
+                                                                            <div className="input-block add-lists todo-inbox-check todo-inbox-check-list">
+                                                                                <label className="checkboxs">
+                                                                                    <input type="checkbox" />
+                                                                                    <span className="checkmarks" />
+                                                                                </label>
+                                                                                <div className="todo-wrapper-list-content">
+                                                                                    <h4>Meet Lisa to discuss project details</h4>
+                                                                                    <p>Discuss about additional features</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div className="notes-card-body d-flex align-items-center">
+                                                                                <p className="badge bg-outline-secondary badge-lg me-2 mb-0"><i className="fas fa-circle" /> Medium</p>
+                                                                                <p className="badge bg-outline-warning badge-lg me-2 mb-0"> InProgress</p>
+                                                                            </div>
+                                                                            <div className=" todo-profile d-flex align-items-center">
+                                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/users/user-11.jpg" alt="Img" className="img-fluid" />
+                                                                                <a href="todo.html#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                    <i className="fas fa-ellipsis-v" />
+                                                                                </a>
+                                                                                <div className="dropdown-menu notes-menu dropdown-menu-end">
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit-note-units"><span><i data-feather="edit" /></span>Edit</a>
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-note-units"><span><i data-feather="trash-2" /></span>Delete</a>
+                                                                                    <a href="todo.html#" className="dropdown-item"><span><i data-feather="star" /></span>Not Important</a>
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#view-note-units"><span><i data-feather="eye" /></span>View</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div className="todo-wrapper-list">
+                                                                            <div className="input-block add-lists todo-inbox-check todo-inbox-check-list">
+                                                                                <label className="checkboxs">
+                                                                                    <input type="checkbox" defaultChecked />
+                                                                                    <span className="checkmarks" />
+                                                                                </label>
+                                                                                <div className="todo-wrapper-list-content todo-strike-content">
+                                                                                    <h4>Download Complete</h4>
+                                                                                    <p>Install console machines and prerequiste softwares</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div className="notes-card-body d-flex align-items-center">
+                                                                                <p className="badge bg-outline-warning badge-lg me-2 mb-0"><i className="fas fa-circle" /> Low</p>
+                                                                                <p className="badge bg-outline-success badge-lg me-2 mb-0"> Completed</p>
+                                                                            </div>
+                                                                            <div className=" todo-profile d-flex align-items-center">
+                                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/users/user-02.jpg" alt="Img" className="img-fluid" />
+                                                                                <a href="todo.html#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                    <i className="fas fa-ellipsis-v" />
+                                                                                </a>
+                                                                                <div className="dropdown-menu notes-menu dropdown-menu-end">
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit-note-units"><span><i data-feather="edit" /></span>Edit</a>
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-note-units"><span><i data-feather="trash-2" /></span>Delete</a>
+                                                                                    <a href="todo.html#" className="dropdown-item"><span><i data-feather="star" /></span>Not Important</a>
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#view-note-units"><span><i data-feather="eye" /></span>View</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="accordion-card-one accordion todo-accordion" id="accordionExample4">
+                                                        <div className="accordion-item">
+                                                            <div className="accordion-header" id="headingFour">
+                                                                <div className="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-controls="collapseFour">
+                                                                    <div className="notes-content todo-today-content">
+                                                                        <div className="notes-header todo-today-header">
+                                                                            <span><i data-feather="calendar" className="feather-calendar" /></span>
+                                                                            <h3>25/07/2023</h3>
+                                                                        </div>
+                                                                        <div className="todo-drop-down">
+                                                                            <a href="javascript:void(0);">
+                                                                                <span><i className="fas fa-chevron-down" /></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="collapseFour" className="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample4">
+                                                                <div className="accordion-body">
+                                                                    <div className="todo-widget">
+                                                                        <div className="todo-wrapper-list">
+                                                                            <div className="input-block add-lists todo-inbox-check todo-inbox-check-list">
+                                                                                <label className="checkboxs">
+                                                                                    <input type="checkbox" />
+                                                                                    <span className="checkmarks" />
+                                                                                </label>
+                                                                                <div className="todo-wrapper-list-content">
+                                                                                    <h4>New User Registered</h4>
+                                                                                    <p>Add new user</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div className="notes-card-body d-flex align-items-center">
+                                                                                <p className="badge bg-outline-danger badge-lg me-2 mb-0"><i className="fas fa-circle" /> High</p>
+                                                                                <p className="badge bg-outline-info badge-lg me-2 mb-0"> Pending</p>
+                                                                            </div>
+                                                                            <div className=" todo-profile d-flex align-items-center">
+                                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/users/user-25.jpg" alt="Img" className="img-fluid" />
+                                                                                <a href="todo.html#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                    <i className="fas fa-ellipsis-v" />
+                                                                                </a>
+                                                                                <div className="dropdown-menu notes-menu dropdown-menu-end">
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit-note-units"><span><i data-feather="edit" /></span>Edit</a>
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-note-units"><span><i data-feather="trash-2" /></span>Delete</a>
+                                                                                    <a href="todo.html#" className="dropdown-item"><span><i data-feather="star" /></span>Not Important</a>
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#view-note-units"><span><i data-feather="eye" /></span>View</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div className="todo-wrapper-list">
+                                                                            <div className="input-block add-lists todo-inbox-check todo-inbox-check-list">
+                                                                                <label className="checkboxs">
+                                                                                    <input type="checkbox" />
+                                                                                    <span className="checkmarks" />
+                                                                                </label>
+                                                                                <div className="todo-wrapper-list-content">
+                                                                                    <h4>Fix issues in new project</h4>
+                                                                                    <p>Unit test had done and bug fixed</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div className="notes-card-body d-flex align-items-center">
+                                                                                <p className="badge bg-outline-danger badge-lg me-2 mb-0"><i className="fas fa-circle" /> High</p>
+                                                                                <p className="badge bg-outline-warning badge-lg me-2 mb-0"> InProgress</p>
+                                                                            </div>
+                                                                            <div className=" todo-profile d-flex align-items-center">
+                                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/users/user-04.jpg" alt="Img" className="img-fluid" />
+                                                                                <a href="todo.html#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                    <i className="fas fa-ellipsis-v" />
+                                                                                </a>
+                                                                                <div className="dropdown-menu notes-menu dropdown-menu-end">
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit-note-units"><span><i data-feather="edit" /></span>Edit</a>
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-note-units"><span><i data-feather="trash-2" /></span>Delete</a>
+                                                                                    <a href="todo.html#" className="dropdown-item"><span><i data-feather="star" /></span>Not Important</a>
+                                                                                    <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#view-note-units"><span><i data-feather="eye" /></span>View</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="tab-pane fade " id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <div className="sections-notes-slider">
+                                            <div className="row">
+                                                <div className="todo-widget">
+                                                    <div className="todo-wrapper-list">
+                                                        <div className="input-block add-lists todo-inbox-check todo-inbox-check-list">
+                                                            <label className="checkboxs">
+                                                                <input type="checkbox" />
+                                                                <span className="checkmarks" />
+                                                            </label>
+                                                            <div className="todo-wrapper-list-content">
+                                                                <h4>Team meet at Starbucks</h4>
+                                                                <p>Identify the implementation team</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="notes-card-body d-flex align-items-center">
+                                                            <p className="badge bg-outline-danger badge-lg me-2 mb-0"><i className="fas fa-circle" /> High</p>
+                                                            <p className="badge bg-outline-info badge-lg me-2 mb-0"> Pending</p>
+                                                        </div>
+                                                        <div className=" todo-profile d-flex align-items-center">
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/users/user-03.jpg" alt="Img" className="img-fluid" />
+                                                            <a href="todo.html#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i className="fas fa-ellipsis-v" />
+                                                            </a>
+                                                            <div className="dropdown-menu notes-menu dropdown-menu-end">
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit-note-units"><span><i data-feather="edit" /></span>Edit</a>
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-note-units"><span><i data-feather="trash-2" /></span>Delete</a>
+                                                                <a href="todo.html#" className="dropdown-item"><span><i data-feather="star" /></span>Not Important</a>
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#view-note-units"><span><i data-feather="eye" /></span>View</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="todo-wrapper-list">
+                                                        <div className="input-block add-lists todo-inbox-check todo-inbox-check-list">
+                                                            <label className="checkboxs">
+                                                                <input type="checkbox" />
+                                                                <span className="checkmarks" />
+                                                            </label>
+                                                            <div className="todo-wrapper-list-content">
+                                                                <h4>Meet Lisa to discuss project details</h4>
+                                                                <p>Discuss about additional features</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="notes-card-body d-flex align-items-center">
+                                                            <p className="badge bg-outline-secondary badge-lg me-2 mb-0"><i className="fas fa-circle" /> Medium</p>
+                                                            <p className="badge bg-outline-warning badge-lg me-2 mb-0"> InProgress</p>
+                                                        </div>
+                                                        <div className=" todo-profile d-flex align-items-center">
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/users/user-04.jpg" alt="Img" className="img-fluid" />
+                                                            <a href="todo.html#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i className="fas fa-ellipsis-v" />
+                                                            </a>
+                                                            <div className="dropdown-menu notes-menu dropdown-menu-end">
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit-note-units"><span><i data-feather="edit" /></span>Edit</a>
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-note-units"><span><i data-feather="trash-2" /></span>Delete</a>
+                                                                <a href="todo.html#" className="dropdown-item"><span><i data-feather="star" /></span>Not Important</a>
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#view-note-units"><span><i data-feather="eye" /></span>View</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="todo-wrapper-list">
+                                                        <div className="input-block add-lists todo-inbox-check todo-inbox-check-list">
+                                                            <label className="checkboxs active">
+                                                                <input type="checkbox" />
+                                                                <span className="checkmarks" />
+                                                            </label>
+                                                            <div className="todo-wrapper-list-content todo-strike-content">
+                                                                <h4>Download Complete</h4>
+                                                                <p>Install console machines and prerequiste softwares</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="notes-card-body d-flex align-items-center">
+                                                            <p className="badge bg-outline-warning badge-lg me-2 mb-0"><i className="fas fa-circle" /> Low</p>
+                                                            <p className="badge bg-outline-success badge-lg me-2 mb-0"> Completed</p>
+                                                        </div>
+                                                        <div className=" todo-profile d-flex align-items-center">
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/users/user-05.jpg" alt="Img" className="img-fluid me-0" />
+                                                            <a href="todo.html#" className="inbox-call-profile">
+                                                                Calls
+                                                            </a>
+                                                            <a href="todo.html#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i className="fas fa-ellipsis-v" />
+                                                            </a>
+                                                            <div className="dropdown-menu notes-menu dropdown-menu-end">
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit-note-units"><span><i data-feather="edit" /></span>Edit</a>
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-note-units"><span><i data-feather="trash-2" /></span>Delete</a>
+                                                                <a href="todo.html#" className="dropdown-item"><span><i data-feather="star" /></span>Not Important</a>
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#view-note-units"><span><i data-feather="eye" /></span>View</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                        <div className="sections-notes-slider">
+                                            <div className="row">
+                                                <div className="todo-widget">
+                                                    <div className="todo-wrapper-list">
+                                                        <div className="input-block add-lists todo-inbox-check todo-inbox-check-list">
+                                                            <label className="checkboxs">
+                                                                <input type="checkbox" />
+                                                                <span className="checkmarks" />
+                                                            </label>
+                                                            <div className="todo-wrapper-list-content">
+                                                                <h4>Team meet at Starbucks</h4>
+                                                                <p>Identify the implementation team</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="notes-card-body d-flex align-items-center">
+                                                            <p className="badge bg-outline-danger badge-lg me-2 mb-0"><i className="fas fa-circle" /> High</p>
+                                                            <p className="badge bg-outline-info badge-lg me-2 mb-0"> Pending</p>
+                                                        </div>
+                                                        <div className=" todo-profile d-flex align-items-center">
+                                                            <a href="todo.html#" className="todo-star">
+                                                                <span>
+                                                                    <i className="fas fa-star me-3" />
+                                                                </span>
+                                                            </a>
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/users/user-05.jpg" alt="Img" className="img-fluid" />
+                                                            <a href="todo.html#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i className="fas fa-ellipsis-v" />
+                                                            </a>
+                                                            <div className="dropdown-menu notes-menu dropdown-menu-end">
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit-note-units"><span><i data-feather="edit" /></span>Edit</a>
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-note-units"><span><i data-feather="trash-2" /></span>Delete</a>
+                                                                <a href="todo.html#" className="dropdown-item"><span><i data-feather="star" /></span>Not Important</a>
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#view-note-units"><span><i data-feather="eye" /></span>View</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="todo-wrapper-list">
+                                                        <div className="input-block add-lists todo-inbox-check todo-inbox-check-list">
+                                                            <label className="checkboxs">
+                                                                <input type="checkbox" />
+                                                                <span className="checkmarks" />
+                                                            </label>
+                                                            <div className="todo-wrapper-list-content">
+                                                                <h4>Meet Lisa to discuss project details</h4>
+                                                                <p>Discuss about additional features</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="notes-card-body d-flex align-items-center">
+                                                            <p className="badge bg-outline-secondary badge-lg me-2 mb-0"><i className="fas fa-circle" /> Medium</p>
+                                                            <p className="badge bg-outline-warning badge-lg me-2 mb-0"> InProgress</p>
+                                                        </div>
+                                                        <div className=" todo-profile d-flex align-items-center">
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/users/user-06.jpg" alt="Img" className="img-fluid" />
+                                                            <a href="todo.html#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i className="fas fa-ellipsis-v" />
+                                                            </a>
+                                                            <div className="dropdown-menu notes-menu dropdown-menu-end">
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit-note-units"><span><i data-feather="edit" /></span>Edit</a>
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-note-units"><span><i data-feather="trash-2" /></span>Delete</a>
+                                                                <a href="todo.html#" className="dropdown-item"><span><i data-feather="star" /></span>Not Important</a>
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#view-note-units"><span><i data-feather="eye" /></span>View</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="todo-wrapper-list">
+                                                        <div className="input-block add-lists todo-inbox-check todo-inbox-check-list">
+                                                            <label className="checkboxs active">
+                                                                <input type="checkbox" />
+                                                                <span className="checkmarks" />
+                                                            </label>
+                                                            <div className="todo-wrapper-list-content todo-strike-content">
+                                                                <h4>Download Complete</h4>
+                                                                <p>Install console machines and prerequiste softwares</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="notes-card-body d-flex align-items-center">
+                                                            <p className="badge bg-outline-warning badge-lg me-2 mb-0"><i className="fas fa-circle" /> Low</p>
+                                                            <p className="badge bg-outline-success badge-lg me-2 mb-0"> Completed</p>
+                                                        </div>
+                                                        <div className=" todo-profile d-flex align-items-center">
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/users/user-07.jpg" alt="Img" className="img-fluid" />
+                                                            <a href="todo.html#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i className="fas fa-ellipsis-v" />
+                                                            </a>
+                                                            <div className="dropdown-menu notes-menu dropdown-menu-end">
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit-note-units"><span><i data-feather="edit" /></span>Edit</a>
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-note-units"><span><i data-feather="trash-2" /></span>Delete</a>
+                                                                <a href="todo.html#" className="dropdown-item"><span><i data-feather="star" /></span>Not Important</a>
+                                                                <a href="todo.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#view-note-units"><span><i data-feather="eye" /></span>View</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                        <div className="sections-notes-slider">
+                                            <div className="row">
+                                                <div className="todo-widget">
+                                                    <div className="todo-wrapper-list">
+                                                        <div className="input-block add-lists todo-inbox-check todo-inbox-check-list">
+                                                            <label className="checkboxs">
+                                                                <input type="checkbox" />
+                                                                <span className="checkmarks" />
+                                                            </label>
+                                                            <div className="todo-wrapper-list-content">
+                                                                <h4>Team meet at Starbucks</h4>
+                                                                <p>Identify the implementation team</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="notes-card-body d-flex align-items-center">
+                                                            <p className="badge bg-outline-danger badge-lg me-2 mb-0"><i className="fas fa-circle" /> High</p>
+                                                            <p className="badge bg-outline-info badge-lg me-2 mb-0"> Pending</p>
+                                                        </div>
+                                                        <div className=" todo-profile d-flex align-items-center">
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/users/user-08.jpg" alt="Img" className="img-fluid" />
+                                                            <a href="todo.html#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i className="fas fa-ellipsis-v" />
+                                                            </a>
+                                                            <div className="dropdown-menu notes-menu dropdown-menu-end">
+                                                                <a href="todo.html#" className="dropdown-item"><span><i data-feather="edit" /></span>Permanent Delete</a>
+                                                                <a href="todo.html#" className="dropdown-item"><span><i data-feather="trash-2" /></span>Restore Task</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="todo-wrapper-list">
+                                                        <div className="input-block add-lists todo-inbox-check todo-inbox-check-list">
+                                                            <label className="checkboxs">
+                                                                <input type="checkbox" />
+                                                                <span className="checkmarks" />
+                                                            </label>
+                                                            <div className="todo-wrapper-list-content">
+                                                                <h4>Meet Lisa to discuss project details</h4>
+                                                                <p>Discuss about additional features</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="notes-card-body d-flex align-items-center">
+                                                            <p className="badge bg-outline-secondary badge-lg me-2 mb-0"><i className="fas fa-circle" /> Medium</p>
+                                                            <p className="badge bg-outline-warning badge-lg me-2 mb-0"> InProgress</p>
+                                                        </div>
+                                                        <div className=" todo-profile d-flex align-items-center">
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/users/user-09.jpg" alt="Img" className="img-fluid" />
+                                                            <a href="todo.html#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i className="fas fa-ellipsis-v" />
+                                                            </a>
+                                                            <div className="dropdown-menu notes-menu dropdown-menu-end">
+                                                                <a href="todo.html#" className="dropdown-item"><span><i data-feather="edit" /></span>Permanent Delete</a>
+                                                                <a href="todo.html#" className="dropdown-item"><span><i data-feather="trash-2" /></span>Restore Task</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="row custom-pagination">
+                                    <div className="col-md-12">
+                                        <div className="paginations d-flex justify-content-end">
+                                            <span><i className="fas fa-chevron-left" /></span>
+                                            <ul className="d-flex align-items-center page-wrap">
+                                                <li>
+                                                    <a href="javascript:void(0);" className="active">
+                                                        1
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        2
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        3
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        4
                                                     </a>
                                                 </li>
                                             </ul>
+                                            <span><i className="fas fa-chevron-right" /></span>
                                         </div>
-                                        <figure className="avatar ms-1">
-                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" className="rounded-circle" alt="image" />
-                                        </figure>
-                                        <div className="mt-1">
-                                            <h5>Mark Villiams</h5>
-                                            <small className="last-seen">
-                                                Last Seen at 07:15 PM
-                                            </small>
-                                        </div>
-                                    </div>
-                                    <div className="chat-options ">
-                                        <ul className="list-inline">
-                                            <li className="list-inline-item">
-                                                <a href="javascript:void(0)" className="btn btn-outline-light chat-search-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search">
-                                                    <i className="bx bx-search" />
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a href="https://dreamspos.dreamstechnologies.com/html/template/video-call.html" className="btn btn-outline-light" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Video Call">
-                                                    <i className="bx bx-video" />
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a href="https://dreamspos.dreamstechnologies.com/html/template/audio-call.html" className="btn btn-outline-light" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Voice Call">
-                                                    <i className="bx bx-phone" />
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item dream_profile_menu">
-                                                <a href="javascript:void(0)" className="btn btn-outline-light not-chat-user">
-                                                    <i className="bx bx-info-circle" />
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="btn btn-outline-light no-bg" href="chat.html#" data-bs-toggle="dropdown">
-                                                    <i className="bx bx-dots-vertical-rounded" />
-                                                </a>
-                                                <div className="dropdown-menu dropdown-menu-end">
-                                                    <a href="chat.html#" className="dropdown-item "><span><i className="bx bx-x" /></span>Close Chat </a>
-                                                    <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#mute-notification"><span><i className="bx bx-volume-mute" /></span>Mute Notification</a>
-                                                    <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#disappearing-messages"><span><i className="bx bx-time-five" /></span>Disappearing Message</a>
-                                                    <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#clear-chat"><span><i className="bx bx-brush-alt" /></span>Clear Message</a>
-                                                    <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#change-chat"><span><i className="bx bx-trash-alt" /></span>Delete Chat</a>
-                                                    <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#report-user"><span><i className="bx bx-dislike" /></span>Report</a>
-                                                    <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#block-user"><span><i className="bx bx-block" /></span>Block</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="chat-search">
-                                        <form>
-                                            <span className="form-control-feedback"><i className="bx bx-search" /></span>
-                                            <input type="text" name="chat-search" placeholder="Search Chats" className="form-control" />
-                                            <div className="close-btn-chat"><span className="material-icons">close</span></div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div className="chat-body">
-                                    <div className="messages">
-                                        <div className="chats">
-                                            <div className="chat-avatar">
-                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" className="rounded-circle dreams_chat" alt="image" />
-                                            </div>
-                                            <div className="chat-content">
-                                                <div className="chat-profile-name">
-                                                    <h6>Mark Villiams<span>8:16 PM</span></h6>
-                                                    <div className="chat-action-btns ms-3">
-                                                        <div className="chat-action-col">
-                                                            <a className="#" href="chat.html#" data-bs-toggle="dropdown">
-                                                                <i className="bx bx-dots-horizontal-rounded" />
-                                                            </a>
-                                                            <div className="dropdown-menu chat-drop-menu dropdown-menu-end">
-                                                                <a href="chat.html#" className="dropdown-item message-info-left"><span><i className="bx bx-info-circle" /></span>Message Info </a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-share" /></span>Reply</a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-smile" /></span>React</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#forward-message"><span><i className="bx bx-reply" /></span>Forward</a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-star" /></span>Star Message</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#report-user"><span><i className="bx bx-dislike" /></span>Report</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-message"><span><i className="bx bx-trash" /></span>Delete</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="message-content">
-                                                    Hello <a href="javascript:void(0);">@Alex</a> Thank you for the beautiful web design ahead schedule.
-                                                    <div className="emoj-group">
-                                                        <ul>
-                                                            <li className="emoj-action"><a href="javascript:void(0);"><i className="bx bx-smile" /></a>
-                                                                <div className="emoj-group-list">
-                                                                    <ul>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-01.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-02.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-03.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-04.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-05.svg" alt="Icon" /></a></li>
-                                                                        <li className="add-emoj"><a href="javascript:void(0);"><i className="bx bx-plus" /></a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="chat.html#" data-bs-toggle="modal" data-bs-target="#forward-message"><i className="bx bx-share" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="chat-line">
-                                            <span className="chat-date">Today, July 24</span>
-                                        </div>
-                                        <div className="chats chats-right">
-                                            <div className="chat-content">
-                                                <div className="chat-profile-name text-end">
-                                                    <h6>Alex Smith<span>8:16 PM</span></h6>
-                                                    <div className="chat-action-btns ms-3">
-                                                        <div className="chat-action-col">
-                                                            <a className="#" href="chat.html#" data-bs-toggle="dropdown">
-                                                                <i className="bx bx-dots-horizontal-rounded" />
-                                                            </a>
-                                                            <div className="dropdown-menu chat-drop-menu dropdown-menu-end">
-                                                                <a href="chat.html#" className="dropdown-item message-info-left"><span><i className="bx bx-info-circle" /></span>Message Info </a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-share" /></span>Reply</a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-smile" /></span>React</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#forward-message"><span><i className="bx bx-reply" /></span>Forward</a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-star" /></span>Star Message</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#report-user"><span><i className="bx bx-dislike" /></span>Report</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-message"><span><i className="bx bx-trash" /></span>Delete</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="message-content ">
-                                                    <div className="emoj-group rig-emoji-group">
-                                                        <ul>
-                                                            <li className="emoj-action"><a href="javascript:void(0);"><i className="bx bx-smile" /></a>
-                                                                <div className="emoj-group-list">
-                                                                    <ul>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-01.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-02.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-03.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-04.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-05.svg" alt="Icon" /></a></li>
-                                                                        <li className="add-emoj"><a href="javascript:void(0);"><i className="bx bx-plus" /></a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="chat.html#" data-bs-toggle="modal" data-bs-target="#forward-message"><i className="bx bx-share" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div className="chat-voice-group">
-                                                        <ul>
-                                                            <li><a href="javascript:void(0);"><span><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/play-01.svg" alt="image" /></span></a></li>
-                                                            <li><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/voice.svg" alt="image" /></li>
-                                                            <li>0:05</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="chat-avatar">
-                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-10.jpg" className="rounded-circle dreams_chat" alt="image" />
-                                            </div>
-                                        </div>
-                                        <div className="chats">
-                                            <div className="chat-avatar">
-                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" className="rounded-circle dreams_chat" alt="image" />
-                                            </div>
-                                            <div className="chat-content">
-                                                <div className="chat-profile-name">
-                                                    <h6>Mark Villiams<span>8:16 PM</span><span className="check-star"><i className="bx bxs-star" /></span></h6>
-                                                    <div className="chat-action-btns ms-2">
-                                                        <div className="chat-action-col">
-                                                            <a className="#" href="chat.html#" data-bs-toggle="dropdown">
-                                                                <i className="bx bx-dots-horizontal-rounded" />
-                                                            </a>
-                                                            <div className="dropdown-menu chat-drop-menu dropdown-menu-end">
-                                                                <a href="chat.html#" className="dropdown-item message-info-left"><span><i className="bx bx-info-circle" /></span>Message Info </a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-share" /></span>Reply</a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-smile" /></span>React</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#forward-message"><span><i className="bx bx-reply" /></span>Forward</a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bxs-star" /></span>Unstar Message</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#report-user"><span><i className="bx bx-dislike" /></span>Report</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-message"><span><i className="bx bx-trash" /></span>Delete</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="message-content award-link chat-award-link">
-                                                    <a href="javascript:void(0);" className="mb-1">https://www.youtube.com/watch?v=GCmL3mS0Psk</a>
-                                                    <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/sending-img.png" alt="img" />
-                                                    <div className="emoj-group">
-                                                        <ul>
-                                                            <li className="emoj-action"><a href="javascript:void(0);"><i className="bx bx-smile" /></a>
-                                                                <div className="emoj-group-list">
-                                                                    <ul>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-01.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-02.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-03.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-04.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-05.svg" alt="Icon" /></a></li>
-                                                                        <li className="add-emoj"><a href="javascript:void(0);"><i className="bx bx-plus" /></a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="chat.html#" data-bs-toggle="modal" data-bs-target="#forward-message"><i className="bx bx-share" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="chats chats-right">
-                                            <div className="chat-content">
-                                                <div className="chat-profile-name justify-content-end">
-                                                    <h6>Alex Smith<span>8:16 PM</span></h6>
-                                                    <div className="chat-action-btns ms-3">
-                                                        <div className="chat-action-col">
-                                                            <a className="#" href="chat.html#" data-bs-toggle="dropdown">
-                                                                <i className="bx bx-dots-horizontal-rounded" />
-                                                            </a>
-                                                            <div className="dropdown-menu chat-drop-menu dropdown-menu-end">
-                                                                <a href="chat.html#" className="dropdown-item message-info-left"><span><i className="bx bx-info-circle" /></span>Message Info </a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-share" /></span>Reply</a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-smile" /></span>React</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#forward-message"><span><i className="bx bx-reply" /></span>Forward</a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-star" /></span>Star Message</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#report-user"><span><i className="bx bx-dislike" /></span>Report</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-message"><span><i className="bx bx-trash" /></span>Delete</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="message-content fancy-msg-box">
-                                                    <div className="emoj-group wrap-emoji-group ">
-                                                        <ul>
-                                                            <li className="emoj-action"><a href="javascript:void(0);"><i className="bx bx-smile" /></a>
-                                                                <div className="emoj-group-list">
-                                                                    <ul>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-01.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-02.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-03.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-04.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-05.svg" alt="Icon" /></a></li>
-                                                                        <li className="add-emoj"><a href="javascript:void(0);"><i className="bx bx-plus" /></a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#forward-message"><i className="bx bx-share" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div className="download-col">
-                                                        <ul className="nav mb-0">
-                                                            <li>
-                                                                <div className="image-download-col">
-                                                                    <a href="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-02.jpg" data-fancybox="gallery" className="fancybox">
-                                                                        <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-02.jpg" alt="" />
-                                                                    </a>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div className="image-download-col ">
-                                                                    <a href="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-03.jpg" data-fancybox="gallery" className="fancybox">
-                                                                        <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-03.jpg" alt="" />
-                                                                    </a>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div className="image-download-col image-not-download">
-                                                                    <a href="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-01.jpg" data-fancybox="gallery" className="fancybox">
-                                                                        <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-01.jpg" alt="" />
-                                                                        <span>10+</span>
-                                                                    </a>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="chat-avatar">
-                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-10.jpg" className="rounded-circle dreams_chat" alt="image" />
-                                            </div>
-                                        </div>
-                                        <div className="chats">
-                                            <div className="chat-avatar">
-                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" className="rounded-circle dreams_chat" alt="image" />
-                                            </div>
-                                            <div className="chat-content">
-                                                <div className="chat-profile-name">
-                                                    <h6>Mark Villiams<span>8:16 PM</span></h6>
-                                                    <div className="chat-action-btns ms-3">
-                                                        <div className="chat-action-col">
-                                                            <a className="#" href="chat.html#" data-bs-toggle="dropdown">
-                                                                <i className="bx bx-dots-horizontal-rounded" />
-                                                            </a>
-                                                            <div className="dropdown-menu chat-drop-menu dropdown-menu-end">
-                                                                <a href="chat.html#" className="dropdown-item message-info-left"><span><i className="bx bx-info-circle" /></span>Message Info </a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-share" /></span>Reply</a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-smile" /></span>React</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#forward-message"><span><i className="bx bx-reply" /></span>Forward</a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-star" /></span>Star Message</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#report-user"><span><i className="bx bx-dislike" /></span>Report</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-message"><span><i className="bx bx-trash" /></span>Delete</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="message-content review-files">
-                                                    <p className="d-flex align-items-center">Please check and review the files<span className="ms-1 d-flex"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/smile-chat.svg" alt="Icon" /></span></p>
-                                                    <div className="file-download d-flex align-items-center mb-0">
-                                                        <div className="file-type d-flex align-items-center justify-content-center me-2">
-                                                            <i className="bx bxs-file-doc" />
-                                                        </div>
-                                                        <div className="file-details">
-                                                            <span className="file-name">Landing_page_V1.doc</span>
-                                                            <ul>
-                                                                <li>80 Bytes</li>
-                                                                <li><a href="javascript:void(0);">Download</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div className="emoj-group">
-                                                        <ul>
-                                                            <li className="emoj-action"><a href="javascript:void(0);"><i className="bx bx-smile" /></a>
-                                                                <div className="emoj-group-list">
-                                                                    <ul>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-01.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-02.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-03.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-04.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-05.svg" alt="Icon" /></a></li>
-                                                                        <li className="add-emoj"><a href="javascript:void(0);"><i className="bx bx-plus" /></a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="chat.html#" data-bs-toggle="modal" data-bs-target="#forward-message"><i className="bx bx-share" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div className="like-chat-grp">
-                                                    <ul>
-                                                        <li className="like-chat"><a href="javascript:void(0);">2<img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/like.svg" alt="Icon" /></a></li>
-                                                        <li className="comment-chat"><a href="javascript:void(0);">2<img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/heart.svg" alt="Icon" /></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="chats">
-                                            <div className="chat-avatar">
-                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" className="rounded-circle dreams_chat" alt="image" />
-                                            </div>
-                                            <div className="chat-content">
-                                                <div className="chat-profile-name">
-                                                    <h6>Mark Villiams<span>8:16 PM</span></h6>
-                                                    <div className="chat-action-btns ms-3">
-                                                        <div className="chat-action-col">
-                                                            <a className="#" href="chat.html#" data-bs-toggle="dropdown">
-                                                                <i className="bx bx-dots-horizontal-rounded" />
-                                                            </a>
-                                                            <div className="dropdown-menu chat-drop-menu dropdown-menu-end">
-                                                                <a href="chat.html#" className="dropdown-item message-info-left"><span><i className="bx bx-info-circle" /></span>Message Info </a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-share" /></span>Reply</a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-smile" /></span>React</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#forward-message"><span><i className="bx bx-reply" /></span>Forward</a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-star" /></span>Star Message</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#report-user"><span><i className="bx bx-dislike" /></span>Report</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-message"><span><i className="bx bx-trash" /></span>Delete</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="message-content">
-                                                    Thank you for your support
-                                                    <div className="emoj-group">
-                                                        <ul>
-                                                            <li className="emoj-action"><a href="javascript:void(0);"><i className="bx bx-smile" /></a>
-                                                                <div className="emoj-group-list">
-                                                                    <ul>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-01.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-02.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-03.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-04.svg" alt="Icon" /></a></li>
-                                                                        <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-05.svg" alt="Icon" /></a></li>
-                                                                        <li className="add-emoj"><a href="javascript:void(0);"><i className="bx bx-plus" /></a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#forward-message"><i className="bx bx-share" /></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="chats">
-                                            <div className="chat-avatar">
-                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" className="rounded-circle dreams_chat" alt="image" />
-                                            </div>
-                                            <div className="chat-content chat-cont-type">
-                                                <div className="chat-profile-name chat-type-wrapper">
-                                                    <p>Mark Villiams Typing...</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="chats forward-chat-msg">
-                                            <div className="chat-avatar">
-                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" className="rounded-circle dreams_chat" alt="image" />
-                                            </div>
-                                            <div className="chat-content">
-                                                <div className="chat-profile-name">
-                                                    <h6>Mark Villiams<span>8:16 PM</span></h6>
-                                                    <div className="chat-action-btns ms-3">
-                                                        <div className="chat-action-col">
-                                                            <a className="#" href="chat.html#" data-bs-toggle="dropdown">
-                                                                <i className="bx bx-dots-horizontal-rounded" />
-                                                            </a>
-                                                            <div className="dropdown-menu chat-drop-menu dropdown-menu-end">
-                                                                <a href="chat.html#" className="dropdown-item message-info-left"><span><i className="bx bx-info-circle" /></span>Message Info </a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-share" /></span>Reply</a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-smile" /></span>React</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#forward-message"><span><i className="bx bx-reply" /></span>Forward</a>
-                                                                <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-star" /></span>Star Message</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#report-user"><span><i className="bx bx-dislike" /></span>Report</a>
-                                                                <a href="chat.html#" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-message"><span><i className="bx bx-trash" /></span>Delete</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="message-content">
-                                                    Thank you for your support
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="chat-footer">
-                                <form>
-                                    <div className="smile-foot">
-                                        <div className="chat-action-btns">
-                                            <div className="chat-action-col">
-                                                <a className="action-circle" href="chat.html#" data-bs-toggle="dropdown">
-                                                    <i className="bx bx-dots-vertical-rounded" />
-                                                </a>
-                                                <div className="dropdown-menu dropdown-menu-end">
-                                                    <a href="chat.html#" className="dropdown-item "><span><i className="bx bx-file" /></span>Document</a>
-                                                    <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-camera" /></span>Camera</a>
-                                                    <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-image" /></span>Gallery</a>
-                                                    <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-volume-full" /></span>Audio</a>
-                                                    <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-map" /></span>Location</a>
-                                                    <a href="chat.html#" className="dropdown-item"><span><i className="bx bx-user-pin" /></span>Contact</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="smile-foot emoj-action-foot">
-                                        <a href="chat.html#" className="action-circle"><i className="bx bx-smile" /></a>
-                                        <div className="emoj-group-list-foot down-emoji-circle">
-                                            <ul>
-                                                <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-01.svg" alt="Icon" /></a></li>
-                                                <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-02.svg" alt="Icon" /></a></li>
-                                                <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-03.svg" alt="Icon" /></a></li>
-                                                <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-04.svg" alt="Icon" /></a></li>
-                                                <li><a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/emoj-icon-05.svg" alt="Icon" /></a></li>
-                                                <li className="add-emoj"><a href="javascript:void(0);"><i className="bx bx-plus" /></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="smile-foot">
-                                        <a href="chat.html#" className="action-circle"><i className="bx bx-microphone-off" /></a>
-                                    </div>
-                                    <input type="text" className="form-control chat_form" placeholder="Type your message here..." />
-                                    <div className="form-buttons">
-                                        <button className="btn send-btn" type="submit">
-                                            <i className="bx bx-paper-plane" />
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div className="right-sidebar right_sidebar_profile right-side-contact hide-right-sidebar" id="middle1">
-                            <div className="right-sidebar-wrap active">
-                                <div className="slimscroll">
-                                    <div className="left-chat-title d-flex justify-content-between align-items-center border-bottom-0">
-                                        <div className="fav-title mb-0">
-                                            <h6>Contact Info</h6>
-                                        </div>
-                                        <div className="contact-close_call text-end">
-                                            <a href="chat.html#" className="close_profile close-star">
-                                                <i className="bx bxs-star" />
-                                            </a>
-                                            <a href="chat.html#" className="close_profile close-trash">
-                                                <i className="bx bx-trash" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className="sidebar-body">
-                                        <div className="mt-0 right_sidebar_logo">
-                                            <div className="text-center right-sidebar-profile">
-                                                <figure className="avatar avatar-xl mb-3">
-                                                    <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" className="rounded-circle" alt="image" />
-                                                </figure>
-                                                <h5 className="profile-name">Mark Villiams</h5>
-                                                <div className="last-seen-profile">
-                                                    <span>last seen at 07:15 PM</span>
-                                                </div>
-                                                <div className="chat-options chat-option-profile">
-                                                    <ul className="list-inline">
-                                                        <li className="list-inline-item">
-                                                            <a href="https://dreamspos.dreamstechnologies.com/html/template/audio-call.html" className="btn btn-outline-light " data-bs-toggle="tooltip" data-bs-placement="bottom" title="Voice Call">
-                                                                <i className="bx bx-phone" />
-                                                            </a>
-                                                        </li>
-                                                        <li className="list-inline-item ">
-                                                            <a href="https://dreamspos.dreamstechnologies.com/html/template/video-call.html" className="btn btn-outline-light profile-open" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Video Call">
-                                                                <i className="bx bx-video" />
-                                                            </a>
-                                                        </li>
-                                                        <li className="list-inline-item">
-                                                            <a href="javascript:void(0)" className="btn btn-outline-light" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Chat">
-                                                                <i className="bx bx-message-square-dots" />
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="chat-member-details">
-                                                <div className="member-details">
-                                                    <ul>
-                                                        <li>
-                                                            <h5>Bio</h5>
-                                                        </li>
-                                                        <li>
-                                                            <h6>Phone</h6>
-                                                            <span>555-555-21541</span>
-                                                        </li>
-                                                        <li>
-                                                            <h6>Email Address</h6>
-                                                            <span><a href="https://dreamspos.dreamstechnologies.com/cdn-cgi/l/email-protection" className="__cf_email__" data-cfemail="036a6d656c43667b626e736f662d606c6e">[email&nbsp;protected]</a></span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="right-sidebar-head share-media">
-                                        <div className="share-media-blk">
-                                            <h5>Shared Media</h5>
-                                            <a href="javascript:void(0);">View All</a>
-                                        </div>
-                                        <div className="about-media-tabs">
-                                            <nav>
-                                                <div className="nav nav-tabs " id="nav-tab">
-                                                    <a className="nav-item nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="chat.html#info">Photos</a>
-                                                    <a className="nav-item nav-link" id="nav-profile-tab1" data-bs-toggle="tab" href="chat.html#Participants">Videos</a>
-                                                    <a className="nav-item nav-link" id="nav-profile-tab2" data-bs-toggle="tab" href="chat.html#media">File</a>
-                                                    <a className="nav-item nav-link" id="nav-profile-tab3" data-bs-toggle="tab" href="chat.html#link">Link</a>
-                                                </div>
-                                            </nav>
-                                            <div className="tab-content pt-0" id="nav-tabContent">
-                                                <div className="tab-pane fade show active" id="info">
-                                                    <ul className="nav share-media-img mb-0">
-                                                        <li>
-                                                            <a href="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-01.jpg" data-fancybox="gallery" className="fancybox">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-01.jpg" alt="" />
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-02.jpg" data-fancybox="gallery" className="fancybox">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-02.jpg" alt="" />
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-03.jpg" data-fancybox="gallery" className="fancybox">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-03.jpg" alt="" />
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-04.jpg" data-fancybox="gallery" className="fancybox">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-04.jpg" alt="" />
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-05.jpg" data-fancybox="gallery" className="fancybox">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-05.jpg" alt="" />
-                                                            </a>
-                                                        </li>
-                                                        <li className="blur-media">
-                                                            <a href="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-02.jpg" data-fancybox="gallery" className="fancybox">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-02.jpg" alt="" />
-                                                            </a>
-                                                            <span>+10</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div className="tab-pane fade" id="Participants">
-                                                    <ul className="nav share-media-img mb-0">
-                                                        <li>
-                                                            <a href="https://www.youtube.com/embed/Mj9WJJNp5wA" data-fancybox className="fancybox">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-01.jpg" alt="img" />
-                                                                <span><i className="bx bx-play-circle" /></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://www.youtube.com/embed/Mj9WJJNp5wA" data-fancybox className="fancybox">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-02.jpg" alt="img" />
-                                                                <span><i className="bx bx-play-circle" /></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://www.youtube.com/embed/Mj9WJJNp5wA" data-fancybox className="fancybox">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-03.jpg" alt="img" />
-                                                                <span><i className="bx bx-play-circle" /></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://www.youtube.com/embed/Mj9WJJNp5wA" data-fancybox className="fancybox">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-04.jpg" alt="img" />
-                                                                <span><i className="bx bx-play-circle" /></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://www.youtube.com/embed/Mj9WJJNp5wA" data-fancybox className="fancybox">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-05.jpg" alt="img" />
-                                                                <span><i className="bx bx-play-circle" /></span>
-                                                            </a>
-                                                        </li>
-                                                        <li className="blur-media">
-                                                            <a href="https://www.youtube.com/embed/Mj9WJJNp5wA" data-fancybox className="fancybox">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-03.jpg" alt="img" />
-                                                            </a>
-                                                            <span>+10</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div className="tab-pane fade" id="media">
-                                                    <div className="media-file">
-                                                        <div className="media-doc-blk">
-                                                            <span><i className="bx bxs-file-doc" /></span>
-                                                            <div className="document-detail">
-                                                                <h6>Landing_page_V1.doc</h6>
-                                                                <ul>
-                                                                    <li>12 Mar 2023</li>
-                                                                    <li>246.3 KB</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div className="media-download">
-                                                            <a href="javascript:void(0);"><i className="bx bx-download" /></a>
-                                                        </div>
-                                                    </div>
-                                                    <div className="media-file">
-                                                        <div className="media-doc-blk">
-                                                            <span><i className="bx bxs-file-pdf" /></span>
-                                                            <div className="document-detail">
-                                                                <h6>Design Guideless.pdf</h6>
-                                                                <ul>
-                                                                    <li>12 Mar 2023</li>
-                                                                    <li>246.3 KB</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div className="media-download">
-                                                            <a href="javascript:void(0);"><i className="bx bx-download" /></a>
-                                                        </div>
-                                                    </div>
-                                                    <div className="media-file">
-                                                        <div className="media-doc-blk">
-                                                            <span><i className="bx bxs-file" /></span>
-                                                            <div className="document-detail">
-                                                                <h6>sample site.txt</h6>
-                                                                <ul>
-                                                                    <li>12 Mar 2023</li>
-                                                                    <li>246.3 KB</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div className="media-download">
-                                                            <a href="javascript:void(0);"><i className="bx bx-download" /></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="tab-pane fade" id="link">
-                                                    <div className="media-link-grp">
-                                                        <div className="link-img">
-                                                            <a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-link-01.jpg" alt="Img" /></a>
-                                                        </div>
-                                                        <div className="media-link-detail">
-                                                            <h6><a href="javascript:void(0);">Digital Marketing Guide</a></h6>
-                                                            <span><a href="javascript:void(0);">https://elements.envato.com/all-items/blog</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="media-link-grp mb-0">
-                                                        <div className="link-img">
-                                                            <a href="javascript:void(0);"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/media/media-link-02.jpg" alt="Img" /></a>
-                                                        </div>
-                                                        <div className="media-link-detail">
-                                                            <h6><a href="javascript:void(0);">Blog Post</a></h6>
-                                                            <span><a href="javascript:void(0);">https://elements.envato.com/blog-post-TXQ5FB8</a></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="chat-message-grp">
-                                        <ul>
-                                            <li>
-                                                <a href="javascript:void(0);" className="star-message-left">
-                                                    <div className="stared-group">
-                                                        <span className="star-message"> <i className="bx bx-star" /></span>
-                                                        <h6>Starred Messages</h6>
-                                                    </div>
-                                                    <div className="count-group">
-                                                        <span>10</span>
-                                                        <i className="bx bx-chevron-right" />
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#mute-notification">
-                                                    <div className="stared-group">
-                                                        <span className="mute-message"> <i className="bx bx-microphone-off" /></span>
-                                                        <h6>Mute Notifications</h6>
-                                                    </div>
-                                                    <div className="count-group">
-                                                        <i className="bx bx-chevron-right" />
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#block-user">
-                                                    <div className="stared-group">
-                                                        <span className="block-message"> <i className="bx bx-x-circle" /></span>
-                                                        <h6>Block User</h6>
-                                                    </div>
-                                                    <div className="count-group">
-                                                        <i className="bx bx-chevron-right" />
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#report-user">
-                                                    <div className="stared-group">
-                                                        <span className="report-message"> <i className="bx bx-user-x" /></span>
-                                                        <h6>Report User</h6>
-                                                    </div>
-                                                    <div className="count-group">
-                                                        <i className="bx bx-chevron-right" />
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete-user">
-                                                    <div className="stared-group">
-                                                        <span className="delete-message"> <i className="bx bx-trash-alt" /></span>
-                                                        <h6>Delete Chat</h6>
-                                                    </div>
-                                                    <div className="count-group">
-                                                        <i className="bx bx-chevron-right" />
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -2687,400 +2271,265 @@ function Chat() {
                     </div>
                 </div>
             </div>
-            <div className="modal fade" id="add-units">
-                <div className="modal-dialog purchase modal-dialog-centered stock-adjust-modal">
+            <div className="modal fade" id="note-units">
+                <div className="modal-dialog modal-dialog-centered custom-modal-two">
                     <div className="modal-content">
                         <div className="page-wrapper-new p-0">
                             <div className="content">
                                 <div className="modal-header border-0 custom-modal-header">
                                     <div className="page-title">
-                                        <h4>Add Transfer</h4>
+                                        <h4>Add Todo</h4>
                                     </div>
                                     <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">×</span>
                                     </button>
                                 </div>
                                 <div className="modal-body custom-modal-body">
-                                    <div className="row">
-                                        <div className="col-lg-4 col-md-6 col-sm-12">
-                                            <div className="input-blocks">
-                                                <label>Date</label>
-                                                <div className="input-groupicon calender-input">
-                                                    <i data-feather="calendar" className="info-img" />
-                                                    <input type="text" className="datetimepicker form-control" placeholder="Select Date" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-6 col-sm-12">
-                                            <div className="input-blocks">
-                                                <label>From</label>
-                                                <select className="select">
-                                                    <option>Choose</option>
-                                                    <option>Store 1</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-6 col-sm-12">
-                                            <div className="input-blocks">
-                                                <label>To</label>
-                                                <select className="select">
-                                                    <option>Choose</option>
-                                                    <option>Store 2</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col-lg-12">
-                                            <div className="input-blocks">
-                                                <label>Product Name</label>
-                                                <input type="text" placeholder="Please type product code and select" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <div className="modal-body-table">
-                                                <div className="table-responsive">
-                                                    <table className="table  datanew">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>Product</th>
-                                                                <th>Qty</th>
-                                                                <th>Purchase Price($)</th>
-                                                                <th>Discount($)</th>
-                                                                <th>Tax(%)</th>
-                                                                <th>Tax Amount($)</th>
-                                                                <th>Unit Cost($)</th>
-                                                                <th>Total Cost(%)</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td className="p-5" />
-                                                                <td className="p-5" />
-                                                                <td className="p-5" />
-                                                                <td className="p-5" />
-                                                                <td className="p-5" />
-                                                                <td className="p-5" />
-                                                                <td className="p-5" />
-                                                                <td className="p-5" />
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <form action="todo.html">
                                         <div className="row">
-                                            <div className="col-lg-3 col-md-6 col-sm-12">
-                                                <div className="input-blocks">
-                                                    <label>Order Tax</label>
-                                                    <input type="text" defaultValue={0} />
+                                            <div className="col-12">
+                                                <div className="mb-3">
+                                                    <label className="form-label">Todo Title</label>
+                                                    <input type="text" className="form-control" />
                                                 </div>
                                             </div>
-                                            <div className="col-lg-3 col-md-6 col-sm-12">
-                                                <div className="input-blocks">
-                                                    <label>Discount</label>
-                                                    <input type="text" defaultValue={0} />
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-3 col-md-6 col-sm-12">
-                                                <div className="input-blocks">
-                                                    <label>Shipping</label>
-                                                    <input type="text" defaultValue={0} />
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-3 col-md-6 col-sm-12">
-                                                <div className="input-blocks">
-                                                    <label>Status</label>
-                                                    <select className="select">
+                                            <div className="col-12">
+                                                <div className="mb-3">
+                                                    <label className="form-label">Assignee</label>
+                                                    <select className="select-customized">
                                                         <option>Choose</option>
-                                                        <option>Sent</option>
-                                                        <option>Pending</option>
+                                                        <option>Recent1</option>
+                                                        <option>Recent2</option>
                                                     </select>
                                                 </div>
                                             </div>
+                                            <div className="col-6">
+                                                <div className="mb-3">
+                                                    <label className="form-label">Tag</label>
+                                                    <select className="select-customized">
+                                                        <option>Select</option>
+                                                        <option>Recent1</option>
+                                                        <option>Recent2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div className="col-6">
+                                                <div className="mb-3">
+                                                    <label className="form-label">Priority</label>
+                                                    <select className="select-customized">
+                                                        <option>Select</option>
+                                                        <option>Recent1</option>
+                                                        <option>Recent2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div className="col-6">
+                                                <div className="input-blocks todo-calendar">
+                                                    <label className="form-label">Due Date</label>
+                                                    <div className="input-groupicon calender-input">
+                                                        <input type="text" className="form-control  date-range bookingrange" placeholder="Select" defaultValue="13 Aug 1992" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-6">
+                                                <div className="mb-3">
+                                                    <label className="form-label">Status</label>
+                                                    <select className="select-customized">
+                                                        <option>Select</option>
+                                                        <option>Recent1</option>
+                                                        <option>Recent2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-12">
+                                                <div className="mb-3 summer-description-box notes-summernote">
+                                                    <label className="form-label">Descriptions</label>
+                                                    <div id="summernote" />
+                                                    <p>Maximum 60 Characters</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="col-lg-12">
-                                        <div className="input-blocks summer-description-box">
-                                            <label>Notes</label>
-                                            <div id="summernote" />
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-12">
                                         <div className="modal-footer-btn">
-                                            <a href="javascript:void(0);" className="btn btn-cancel me-2" data-bs-dismiss="modal">Cancel</a>
-                                            <a href="javascript:void(0);" className="btn btn-submit">Submit</a>
+                                            <button type="button" className="btn btn-cancel me-2" data-bs-dismiss="modal">Cancel</button>
+                                            <button type="submit" className="btn btn-submit">Submit</button>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="modal fade" id="edit-units">
-                <div className="modal-dialog purchase modal-dialog-centered stock-adjust-modal">
+            <div className="modal fade" id="edit-note-units">
+                <div className="modal-dialog modal-dialog-centered custom-modal-two">
                     <div className="modal-content">
                         <div className="page-wrapper-new p-0">
                             <div className="content">
                                 <div className="modal-header border-0 custom-modal-header">
                                     <div className="page-title">
-                                        <h4>Edit Transfer</h4>
+                                        <h4>Todo Title</h4>
                                     </div>
-                                    <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
+                                    <div className=" edit-note-head d-flex align-items-center">
+                                        <a href="javascript:void(0);" className="me-2">
+                                            <span>
+                                                <i data-feather="trash-2" />
+                                            </span>
+                                        </a>
+                                        <a href="javascript:void(0);" className="me-2">
+                                            <span>
+                                                <i data-feather="star" />
+                                            </span>
+                                        </a>
+                                        <a href="javascript:void(0);" className="me-2">
+                                            <span>
+                                                <i data-feather="eye" />
+                                            </span>
+                                        </a>
+                                        <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
                                 </div>
                                 <div className="modal-body custom-modal-body">
-                                    <div>
-                                        <div>
-                                            <div className="row">
-                                                <div className="col-lg-4 col-md-6 col-sm-12">
-                                                    <div className="input-blocks">
-                                                        <label>Date</label>
-                                                        <div className="input-groupicon calender-input">
-                                                            <i data-feather="calendar" className="info-img" />
-                                                            <input type="text" className="datetimepicker" placeholder="19 Jan 2023" />
-                                                        </div>
-                                                    </div>
+                                    <form action="todo.html">
+                                        <div className="row">
+                                            <div className="col-12">
+                                                <div className="input-blocks">
+                                                    <label className="form-label">Note Title</label>
+                                                    <input type="text" className="form-control" placeholder="Meet Lisa to discuss project details" />
                                                 </div>
-                                                <div className="col-lg-4 col-md-6 col-sm-12">
-                                                    <div className="input-blocks">
-                                                        <label>From</label>
-                                                        <select className="select">
-                                                            <option>Store 1</option>
-                                                            <option>Choose</option>
-                                                        </select>
-                                                    </div>
+                                            </div>
+                                            <div className="col-12">
+                                                <div className="input-blocks">
+                                                    <label className="form-label">Assignee</label>
+                                                    <select className="select-customized">
+                                                        <option>Choose</option>
+                                                        <option>Recent1</option>
+                                                        <option>Recent2</option>
+                                                    </select>
                                                 </div>
-                                                <div className="col-lg-4 col-md-6 col-sm-12">
-                                                    <div className="input-blocks">
-                                                        <label>To</label>
-                                                        <select className="select">
-                                                            <option>Store 2</option>
-                                                            <option>Choose</option>
-                                                        </select>
-                                                    </div>
+                                            </div>
+                                            <div className="col-6">
+                                                <div className="input-blocks">
+                                                    <label className="form-label">Tag</label>
+                                                    <select className="select-customized">
+                                                        <option>Onhold</option>
+                                                        <option>Onhold</option>
+                                                        <option>Onhold</option>
+                                                    </select>
                                                 </div>
-                                                <div className="col-lg-12 col-sm-6 col-12">
-                                                    <div className="input-blocks">
-                                                        <label>Product</label>
-                                                        <div className="input-groupicon">
-                                                            <input type="text" placeholder="Scan/Search Product by code and select..." />
-                                                            <div className="addonset">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/scanners.svg" alt="img" />
-                                                            </div>
-                                                        </div>
+                                            </div>
+                                            <div className="col-6">
+                                                <div className="input-blocks">
+                                                    <label className="form-label">Priority</label>
+                                                    <select className="select-customized">
+                                                        <option>High</option>
+                                                        <option>Medium</option>
+                                                        <option>Low</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div className="col-6">
+                                                <div className="input-blocks todo-calendar">
+                                                    <label className="form-label">Due Date</label>
+                                                    <div className="input-groupicon calender-input">
+                                                        <input type="text" className="form-control date-range bookingrange" placeholder="Select" defaultValue="13 Aug 1992" />
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="row">
-                                                <div className="col-lg-12">
-                                                    <div className="modal-body-table total-orders">
-                                                        <div className="table-responsive">
-                                                            <table className="table">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>Product Name</th>
-                                                                        <th>QTY</th>
-                                                                        <th>Purchase Price($) </th>
-                                                                        <th>Discount($) </th>
-                                                                        <th>Tax %</th>
-                                                                        <th>Tax Amount($)</th>
-                                                                        <th className="text-end">Unit Cost($)</th>
-                                                                        <th className="text-end">Total Cost ($) </th>
-                                                                        <th />
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div className="productimgname">
-                                                                                <a href="javascript:void(0);" className="product-img stock-img">
-                                                                                    <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/products/stock-img-02.png" alt="product" />
-                                                                                </a>
-                                                                                <a href="javascript:void(0);">Nike Jordan</a>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td><div className="product-quantity">
-                                                                            <span className="quantity-btn">+<i data-feather="plus-circle" className="plus-circle" /></span>
-                                                                            <input type="text" className="quntity-input" defaultValue={10} />
-                                                                            <span className="quantity-btn"><i data-feather="minus-circle" className="feather-search" /></span>
-                                                                        </div></td>
-                                                                        <td>2000</td>
-                                                                        <td>500.00</td>
-                                                                        <td>0.00</td>
-                                                                        <td>0.00</td>
-                                                                        <td className="text-end">0.00</td>
-                                                                        <td className="text-end">1500</td>
-                                                                        <td>
-                                                                            <a className="delete-set"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/delete.svg" alt="svg" /></a>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
+                                            <div className="col-6">
+                                                <div className="input-blocks">
+                                                    <label className="form-label">Status</label>
+                                                    <select className="select-customized">
+                                                        <option>Select</option>
+                                                        <option>Recent1</option>
+                                                        <option>Recent2</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                            <div className="row">
-                                                <div className="col-lg-12 float-md-right">
-                                                    <div className="total-order">
-                                                        <ul>
-                                                            <li>
-                                                                <h4>Order Tax</h4>
-                                                                <h5>$ 0.00</h5>
-                                                            </li>
-                                                            <li>
-                                                                <h4>Discount</h4>
-                                                                <h5>$ 0.00</h5>
-                                                            </li>
-                                                            <li>
-                                                                <h4>Shipping</h4>
-                                                                <h5>$ 0.00</h5>
-                                                            </li>
-                                                            <li className="total">
-                                                                <h4>Grand Total</h4>
-                                                                <h5>$1500.00</h5>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="row">
-                                                <div className="col-lg-3 col-sm-6 col-12">
-                                                    <div className="input-blocks">
-                                                        <label>Order Tax</label>
-                                                        <input type="text" defaultValue={0} />
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-3 col-sm-6 col-12">
-                                                    <div className="input-blocks">
-                                                        <label>Discount</label>
-                                                        <input type="text" defaultValue={0} />
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-3 col-sm-6 col-12">
-                                                    <div className="input-blocks">
-                                                        <label>Shipping</label>
-                                                        <input type="text" defaultValue={0} />
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-3 col-sm-6 col-12">
-                                                    <div className="input-blocks">
-                                                        <label>Status</label>
-                                                        <select className="select">
-                                                            <option>Sent</option>
-                                                            <option>Pending</option>
-                                                        </select>
-                                                    </div>
+                                            <div className="col-lg-12">
+                                                <div className="input-blocks summer-description-box notes-summernote">
+                                                    <label className="form-label">Descriptions</label>
+                                                    <div id="summernote2" />
+                                                    <p>Maximum 60 Characters</p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="col-lg-12">
-                                        <div className="input-blocks summer-description-box">
-                                            <label>Description</label>
-                                            <div id="summernote2">
-                                                <p>These shoes are made with the highest quality materials. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-12">
                                         <div className="modal-footer-btn">
-                                            <a href="javascript:void(0);" className="btn btn-cancel me-2" data-bs-dismiss="modal">Cancel</a>
-                                            <a href="javascript:void(0);" className="btn btn-submit">Save Changes</a>
+                                            <button type="button" className="btn btn-cancel me-2" data-bs-dismiss="modal">Cancel</button>
+                                            <button type="submit" className="btn btn-submit">Save Changes</button>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="modal fade" id="view-notes">
+            <div className="modal fade" id="delete-note-units">
+                <div className="modal-dialog modal-dialog-centered">
+                    <div className="modal-content">
+                        <div className="page-wrapper-new p-0">
+                            <div className="content">
+                                <div className="delete-popup">
+                                    <div className="delete-image text-center mx-auto">
+                                        <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/close-circle.png" alt="Img" className="img-fluid" />
+                                    </div>
+                                    <div className="delete-heads">
+                                        <h4>Are You Sure?</h4>
+                                        <p>Do you really want to delete this item, This process cannot be undone.</p>
+                                    </div>
+                                    <div className="modal-footer-btn delete-footer">
+                                        <a href="" className="btn btn-cancel me-2" data-bs-dismiss="modal">Cancel</a>
+                                        <a href="" className="btn btn-submit">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div >
+            </div >
+            <div className="modal fade" id="view-note-units">
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
                         <div className="page-wrapper-new p-0">
                             <div className="content">
                                 <div className="modal-header border-0 custom-modal-header">
-                                    <div className="page-title">
-                                        <h4>Import Transfer</h4>
+                                    <div className="page-title edit-page-title">
+                                        <h4>Todo</h4>
+                                        <p>Personal</p>
                                     </div>
-                                    <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
+                                    <div className=" edit-noted-head d-flex align-items-center">
+                                        <a href="javascript:void(0);">
+                                            <span>
+                                                <i data-feather="trash-2" />
+                                            </span>
+                                        </a>
+                                        <a href="javascript:void(0);" className="me-2">
+                                            <span>
+                                                <i data-feather="star" />
+                                            </span>
+                                        </a>
+                                        <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
                                 </div>
                                 <div className="modal-body custom-modal-body">
                                     <div className="row">
-                                        <div className="col-lg-4 col-sm-6 col-12">
-                                            <div className="input-blocks">
-                                                <label>From</label>
-                                                <select className="select">
-                                                    <option>Choose</option>
-                                                    <option>Store 1</option>
-                                                </select>
+                                        <div className="col-12">
+                                            <div className="edit-head-view">
+                                                <h6>Meet Lisa to discuss project details</h6>
+                                                <p>Hiking is a long, vigorous walk, usually on trails or footpaths in the countryside.
+                                                    Walking for pleasure developed in Europe during the eighteenth century.
+                                                    Religious pilgrimages have existed much longer but they involve walking long
+                                                    distances for a spiritual purpose associated with specific religions and also
+                                                    we achieve inner peace while we hike at a local park.</p>
+                                                <p className="badged high"><i className="fas fa-circle" /> High</p>
                                             </div>
-                                        </div>
-                                        <div className="col-lg-4 col-sm-6 col-12">
-                                            <div className="input-blocks">
-                                                <label>To</label>
-                                                <select className="select">
-                                                    <option>Choose</option>
-                                                    <option>Store 2</option>
-                                                </select>
+                                            <div className="modal-footer-btn edit-footer-menu">
+                                                <a href="" className="btn btn-cancel me-2" data-bs-dismiss="modal">Close</a>
                                             </div>
-                                        </div>
-                                        <div className="col-lg-4 col-sm-6 col-12">
-                                            <div className="input-blocks">
-                                                <label>Satus</label>
-                                                <select className="select">
-                                                    <option>Choose</option>
-                                                    <option>Sent</option>
-                                                    <option>Pending</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-12 col-sm-6 col-12">
-                                            <div className="row">
-                                                <div>
-                                                    <div className="modal-footer-btn download-file">
-                                                        <a href="javascript:void(0)" className="btn btn-submit">Download Sample File</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <div className="input-blocks image-upload-down">
-                                                <label> Upload CSV File</label>
-                                                <div className="image-upload download">
-                                                    <input type="file" />
-                                                    <div className="image-uploads">
-                                                        <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/download-img.png" alt="img" />
-                                                        <h4>Drag and drop a <span>file to upload</span></h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-12 col-sm-6 col-12">
-                                            <div className="input-blocks">
-                                                <label>Shipping</label>
-                                                <input type="text" className="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-12">
-                                        <div className="input-blocks summer-description-box transfer">
-                                            <label>Description</label>
-                                            <div id="summernote3">
-                                            </div>
-                                            <p>Maximum 60 Characters</p>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-12">
-                                        <div className="modal-footer-btn">
-                                            <a href="javascript:void(0);" className="btn btn-cancel me-2" data-bs-dismiss="modal">Cancel</a>
-                                            <a href="https://dreamspos.dreamstechnologies.com/html/template/purchase-list.html" className="btn btn-submit">Submit</a>
                                         </div>
                                     </div>
                                 </div>
@@ -3088,10 +2537,12 @@ function Chat() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
            
-        </div>
+        </div >
+
+
     )
 }
 
-export default Chat
+export default Todo

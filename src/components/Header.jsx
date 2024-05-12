@@ -28,7 +28,7 @@ function Header() {
                         <Link to="/" reloadDocument relative='path'>HOME</Link>
                     </li>
                     <li>
-                        <a href="about_us.html">Services</a>
+                        <a href="">Services</a>
                     </li>
                     <li>
                         <a href="investment.html">E-Stores</a>
@@ -271,7 +271,7 @@ function Header() {
                                     </a>
                                     <ul class="navi_2_dropdown">
                                         <li class="parent">
-                                            <a href="faq.html"><i class="fas fa-caret-right"></i>Who We Are</a>
+                                            <a href="#"><i class="fas fa-caret-right"></i>Who We Are</a>
                                             <ul class="navi_2_dropdown">
                                                 <li class="parent">
                                                     <Link to="/about-us" relative='path' reloadDocument>About Us</Link>
@@ -292,7 +292,7 @@ function Header() {
                                             <a href="login.html"><i class="fas fa-caret-right"></i>What We Do</a>
                                             <ul class="navi_2_dropdown">
                                                 <li class="parent">
-                                                    <a href="faq.html">Services</a>
+                                                    <a href="#">Services</a>
                                                 </li>
                                                 <li class="parent">
                                                     <Link to="/solutions" reloadDocument relative='path'>Solutions</Link>

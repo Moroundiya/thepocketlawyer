@@ -1,5 +1,5 @@
 import React from 'react'
-// import '../audio.css';
+import '../audio2.css';
 // import '../audio-feather.css';
 // import '../audio-jquery';
 // import '../audio-script'
@@ -16,7 +16,7 @@ import React from 'react'
 
 function File_Manager() {
     return (
-        <div id='file-manager-container'>
+        <div id='file-manager-container' className='audio-main-parent-container'>
             <div className="main-wrapper">
                 <div className="header">
                     <div className="header-left active">
@@ -29,9 +29,9 @@ function File_Manager() {
                         <a href="https://dreamspos.dreamstechnologies.com/html/template/index.html" className="logo-small">
                             <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/logo-small.png" alt="" />
                         </a>
-                        <a id="toggle_btn" href="javascript:void(0);">
+                        {/* <a id="toggle_btn" href="javascript:void(0);">
                             <i data-feather="chevrons-left" className="feather-16" />
-                        </a>
+                        </a> */}
                     </div>
                     <a id="mobile_btn" className="mobile_btn" href="file-manager.html#sidebar">
                         <span className="bar-icon">
@@ -259,11 +259,11 @@ function File_Manager() {
                                         </div>
                                     </div>
                                     <hr className="m-0" />
-                                    <a className="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/profile.html"> <i className="me-2" data-feather="user" /> My
+                                    <a className="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/profile.html"> <i className="mr-2" data-feather="user" /> My
                                         Profile</a>
-                                    <a className="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/general-settings.html"><i className="me-2" data-feather="settings" />Settings</a>
+                                    <a className="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/general-settings.html"><i className="mr-2" data-feather="settings" />Settings</a>
                                     <hr className="m-0" />
-                                    <a className="dropdown-item logout pb-0" href="https://dreamspos.dreamstechnologies.com/html/template/signin.html"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/log-out.svg" className="me-2" alt="img" />Logout</a>
+                                    <a className="dropdown-item logout pb-0" href="https://dreamspos.dreamstechnologies.com/html/template/signin.html"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/log-out.svg" className="mr-2" alt="img" />Logout</a>
                                 </div>
                             </div>
                         </li>
@@ -1613,14 +1613,14 @@ function File_Manager() {
                                 </a>
                             </div>
                             <div className="d-sm-flex align-items-center">
-                                <div className="form-sort owned-by w-auto">
-                                    <span><i data-feather="sliders" className="info-img" /></span>
-                                    <select className="select">
+                                {/* <div className="form-sort owned-by w-auto"> */}
+                                    {/* <span><i data-feather="sliders" className="info-img" /></span> */}
+                                    <select className="select-customized mr-3">
                                         <option>Owned By Me</option>
                                         <option>Owned by Anyone</option>
                                         <option>Not Owned by Me</option>
                                     </select>
-                                </div>
+                                {/* </div> */}
                                 <ul className="table-top-head">
                                     <li>
                                         <a data-bs-toggle="tooltip" data-bs-placement="top" title="rotate"><i data-feather="rotate-ccw" className="feather-rotate-ccw" /></a>
@@ -1629,38 +1629,38 @@ function File_Manager() {
                                         <a data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header"><i data-feather="chevron-up" className="feather-chevron-up" /></a>
                                     </li>
                                 </ul>
-                                <a href="file-manager.html#" className="btn btn-primary btn-added" data-bs-toggle="modal" data-bs-target="#upload-file"><span className="me-1 d-flex align-items-center"><i data-feather="upload" className="feather-16" /></span>Upload Files</a>
+                                <a href="file-manager.html#" className="btn btn-primary btn-added" data-bs-toggle="modal" data-bs-target="#upload-file"><span className="mr-1 d-flex align-items-center"><i data-feather="upload" className="feather-16" /></span>Upload Files</a>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-3 col-md-12 sidebars-right theiaStickySidebar section-bulk-widget">
                                 <aside className="card file-manager-sidebar mb-0">
-                                    <h5 className="d-flex align-items-center"><span className="me-2 d-flex align-items-center"><i data-feather="folder" className="feather-20" /></span>Files</h5>
+                                    <h5 className="d-flex align-items-center"><span className="mr-2 d-flex align-items-center"><i data-feather="folder" className="feather-20" /></span>Files</h5>
                                     <div className="dropdown">
                                         <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset btn btn-primary mb-3 btn-icon">
-                                            <span className="me-1 btn-icon"><i data-feather="plus-circle" className="feather-16" /></span>New
+                                            <span className="mr-1 btn-icon"><i data-feather="plus-circle" className="feather-16" /></span>New
                                         </a>
                                         <ul className="dropdown-menu">
-                                            <li data-bs-toggle="modal" data-bs-target="#upload-file"><a href="javascript:void(0);" className="dropdown-item"><i data-feather="upload-cloud" className="feather-16 me-2" />Upload File</a></li>
-                                            <li data-bs-toggle="modal" data-bs-target="#upload-folder"><a href="javascript:void(0);" className="dropdown-item"><i data-feather="folder" className="feather-16 me-2" />Upload Folder</a></li>
-                                            <li data-bs-toggle="modal" data-bs-target="#create-folder"><a href="javascript:void(0);" className="dropdown-item"><i data-feather="folder-minus" className="feather-16 me-2" />Create folder</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#upload-file"><a href="javascript:void(0);" className="dropdown-item"><i data-feather="upload-cloud" className="feather-16 mr-2" />Upload File</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#upload-folder"><a href="javascript:void(0);" className="dropdown-item"><i data-feather="folder" className="feather-16 mr-2" />Upload Folder</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#create-folder"><a href="javascript:void(0);" className="dropdown-item"><i data-feather="folder-minus" className="feather-16 mr-2" />Create folder</a></li>
                                         </ul>
                                     </div>
                                     <ul className="mb-5">
-                                        <li><a href="file-manager.html" className="active"><span className="me-2 btn-icon"><i data-feather="file-text" className="feather-16" /></span>My Files</a></li>
-                                        <li><a href="javascript:void(0);"><span className="me-2 btn-icon"><i data-feather="star" className="feather-16" /></span>Google Drive</a></li>
-                                        <li><a href="javascript:void(0);"><span className="me-2 btn-icon"><i data-feather="send" className="feather-16" /></span>Dropbox</a></li>
-                                        <li><a href="https://dreamspos.dreamstechnologies.com/html/template/file-shared.html"><span className="me-2 btn-icon"><i data-feather="file" className="feather-16" /></span>Shared With Me</a></li>
-                                        <li><a href="https://dreamspos.dreamstechnologies.com/html/template/file-document.html"><span className="me-2 btn-icon"><i data-feather="file" className="feather-16" /></span>Document</a></li>
-                                        <li><a href="https://dreamspos.dreamstechnologies.com/html/template/file-recent.html"><span className="me-2 btn-icon"><i data-feather="clock" className="feather-16" /></span>Recent</a></li>
-                                        <li><a href="https://dreamspos.dreamstechnologies.com/html/template/file-favourites.html"><span className="me-2 btn-icon"><i data-feather="star" className="feather-16" /></span>Favourites</a></li>
-                                        <li><a href="https://dreamspos.dreamstechnologies.com/html/template/file-archived.html"><span className="me-2 btn-icon"><i data-feather="target" className="feather-16" /></span>Archived</a></li>
-                                        <li><a href="https://dreamspos.dreamstechnologies.com/html/template/file-manager-deleted.html"><span className="me-2 btn-icon"><i data-feather="trash-2" className="feather-16" /></span>Deleted</a></li>
-                                        <li><a href="javascript:void(0);"><span className="me-2 btn-icon"><i data-feather="settings" className="feather-16" /></span>Settings</a></li>
+                                        <li><a href="file-manager.html" className="active"><span className="mr-2 btn-icon"><i data-feather="file-text" className="feather-16" /></span>My Files</a></li>
+                                        <li><a href="javascript:void(0);"><span className="mr-2 btn-icon"><i data-feather="star" className="feather-16" /></span>Google Drive</a></li>
+                                        <li><a href="javascript:void(0);"><span className="mr-2 btn-icon"><i data-feather="send" className="feather-16" /></span>Dropbox</a></li>
+                                        <li><a href="https://dreamspos.dreamstechnologies.com/html/template/file-shared.html"><span className="mr-2 btn-icon"><i data-feather="file" className="feather-16" /></span>Shared With Me</a></li>
+                                        <li><a href="https://dreamspos.dreamstechnologies.com/html/template/file-document.html"><span className="mr-2 btn-icon"><i data-feather="file" className="feather-16" /></span>Document</a></li>
+                                        <li><a href="https://dreamspos.dreamstechnologies.com/html/template/file-recent.html"><span className="mr-2 btn-icon"><i data-feather="clock" className="feather-16" /></span>Recent</a></li>
+                                        <li><a href="https://dreamspos.dreamstechnologies.com/html/template/file-favourites.html"><span className="mr-2 btn-icon"><i data-feather="star" className="feather-16" /></span>Favourites</a></li>
+                                        <li><a href="https://dreamspos.dreamstechnologies.com/html/template/file-archived.html"><span className="mr-2 btn-icon"><i data-feather="target" className="feather-16" /></span>Archived</a></li>
+                                        <li><a href="https://dreamspos.dreamstechnologies.com/html/template/file-manager-deleted.html"><span className="mr-2 btn-icon"><i data-feather="trash-2" className="feather-16" /></span>Deleted</a></li>
+                                        <li><a href="javascript:void(0);"><span className="mr-2 btn-icon"><i data-feather="settings" className="feather-16" /></span>Settings</a></li>
                                     </ul>
                                     <div className="d-flex align-items-center justify-content-between">
                                         <div className="d-flex align-items-center">
-                                            <span className="me-2 btn-icon"><i data-feather="hard-drive" className="feather-16" /></span>
+                                            <span className="mr-2 btn-icon"><i data-feather="hard-drive" className="feather-16" /></span>
                                             <h6>Storage</h6>
                                         </div>
                                         <span>70%</span>
@@ -1683,7 +1683,7 @@ function File_Manager() {
                                         <div className="section-bulk-wrap">
                                             <div className="bulk-action-type col-lg-6 col-md-6">
                                                 <div className="form-sort select-bluk">
-                                                    <select className="select">
+                                                    <select className="select-customized">
                                                         <option>Sort by Date</option>
                                                         <option>Sort By Relevance</option>
                                                         <option>Sort By Size</option>
@@ -1692,7 +1692,7 @@ function File_Manager() {
                                                         <option>Upload Time</option>
                                                     </select>
                                                 </div>
-                                                <div className="search-set me-2" id="dropdownSort" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                                <div className="search-set mr-2" id="dropdownSort" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                                                     <div className="search-input">
                                                         <a href='' className="btn btn-searchset"><i data-feather="search" className="feather-search" /></a>
                                                         <div className="dataTables_filter">
@@ -1715,17 +1715,17 @@ function File_Manager() {
                                                 </div>
                                             </div>
                                             <div className="d-sm-flex align-items-center col-lg-6 col-md-6 justify-content-end">
-                                                <div className="form-sort me-3">
-                                                    <i data-feather="filter" className="fa-filter" />
-                                                    <select className="select">
+                                                <div className="form-sort mr-3">
+                                                    {/* <i data-feather="filter" className="fa-filter" /> */}
+                                                    <select className="select-customized">
                                                         <option>Recent</option>
                                                         <option>Last Week</option>
                                                         <option>Last Month</option>
                                                     </select>
                                                 </div>
                                                 <div className="form-sort">
-                                                    <i data-feather="file-text" className="fa-filter" />
-                                                    <select className="select">
+                                                    {/* <i data-feather="file-text" className="fa-filter" /> */}
+                                                    <select className="select-customized">
                                                         <option>All File types</option>
                                                         <option>Folders</option>
                                                         <option>PDF</option>
@@ -1810,7 +1810,7 @@ function File_Manager() {
                                                     <div className="folders p-3">
                                                         <div className="d-flex align-items-center justify-content-between head">
                                                             <div className="d-flex align-items-center">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="me-2" />
+                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="mr-2" />
                                                                 <h6 className="popup-toggle"><a href="javascript:void(0);">Project Details</a></h6>
                                                             </div>
                                                             <div className="dropdown">
@@ -1854,7 +1854,7 @@ function File_Manager() {
                                                     <div className="folders p-3">
                                                         <div className="d-flex align-items-center justify-content-between head">
                                                             <div className="d-flex align-items-center">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="me-2" />
+                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="mr-2" />
                                                                 <h6 className="popup-toggle"><a href="javascript:void(0);">Project Details</a></h6>
                                                             </div>
                                                             <div className="dropdown">
@@ -1907,7 +1907,7 @@ function File_Manager() {
                                                     <div className="folders p-3">
                                                         <div className="d-flex align-items-center justify-content-between head">
                                                             <div className="d-flex align-items-center">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="me-2" />
+                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="mr-2" />
                                                                 <h6 className="popup-toggle"><a href="javascript:void(0);">Project Details</a></h6>
                                                             </div>
                                                             <div className="dropdown">
@@ -1952,7 +1952,7 @@ function File_Manager() {
                                                     <div className="folders p-3">
                                                         <div className="d-flex align-items-center justify-content-between head">
                                                             <div className="d-flex align-items-center">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="me-2" />
+                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="mr-2" />
                                                                 <h6 className="popup-toggle"><a href="javascript:void(0);">Project Details</a></h6>
                                                             </div>
                                                             <div className="dropdown">
@@ -2014,11 +2014,11 @@ function File_Manager() {
                                                     <div className="folders p-3">
                                                         <div className="d-flex align-items-center justify-content-between head">
                                                             <div className="d-flex align-items-center">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/pdf-02.svg" alt="File" className="me-2" />
+                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/pdf-02.svg" alt="File" className="mr-2" />
                                                                 <h6 className="popup-toggle"><a href="javascript:void(0);">hsa.pdf</a></h6>
                                                             </div>
                                                             <div className="d-flex align-items-center">
-                                                                <a href="javascript:void(0);" className><i className="fa fa-star me-2" /></a>
+                                                                <a href="javascript:void(0);" className><i className="fa fa-star mr-2" /></a>
                                                                 <div className="dropdown">
                                                                     <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset">
                                                                         <i className="fa fa-ellipsis-v" />
@@ -2046,11 +2046,11 @@ function File_Manager() {
                                                     <div className="folders p-3">
                                                         <div className="d-flex align-items-center justify-content-between head">
                                                             <div className="d-flex align-items-center">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/pdf-02.svg" alt="File" className="me-2" />
+                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/pdf-02.svg" alt="File" className="mr-2" />
                                                                 <h6 className="popup-toggle"><a href="javascript:void(0);">Haird.pdf</a></h6>
                                                             </div>
                                                             <div className="d-flex align-items-center">
-                                                                <a href="javascript:void(0);" className><i className="fa fa-star me-2" /></a>
+                                                                <a href="javascript:void(0);" className><i className="fa fa-star mr-2" /></a>
                                                                 <div className="dropdown">
                                                                     <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset">
                                                                         <i className="fa fa-ellipsis-v" />
@@ -2078,11 +2078,11 @@ function File_Manager() {
                                                     <div className="folders p-3">
                                                         <div className="d-flex align-items-center justify-content-between head">
                                                             <div className="d-flex align-items-center">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/xls.svg" alt="File" className="me-2" />
+                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/xls.svg" alt="File" className="mr-2" />
                                                                 <h6 className="popup-toggle"><a href="javascript:void(0);">Estimation.xls</a></h6>
                                                             </div>
                                                             <div className="d-flex align-items-center">
-                                                                <a href="javascript:void(0);" className><i className="fa fa-star me-2" /></a>
+                                                                <a href="javascript:void(0);" className><i className="fa fa-star mr-2" /></a>
                                                                 <div className="dropdown">
                                                                     <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset">
                                                                         <i className="fa fa-ellipsis-v" />
@@ -2110,11 +2110,11 @@ function File_Manager() {
                                                     <div className="folders p-3">
                                                         <div className="d-flex align-items-center justify-content-between head">
                                                             <div className="d-flex align-items-center">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/pdf-02.svg" alt="File" className="me-2" />
+                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/pdf-02.svg" alt="File" className="mr-2" />
                                                                 <h6 className="popup-toggle"><a href="javascript:void(0);">hsa.pdf</a></h6>
                                                             </div>
                                                             <div className="d-flex align-items-center">
-                                                                <a href="javascript:void(0);" className><i className="fa fa-star me-2" /></a>
+                                                                <a href="javascript:void(0);" className><i className="fa fa-star mr-2" /></a>
                                                                 <div className="dropdown">
                                                                     <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset">
                                                                         <i className="fa fa-ellipsis-v" />
@@ -2142,11 +2142,11 @@ function File_Manager() {
                                                     <div className="folders p-3">
                                                         <div className="d-flex align-items-center justify-content-between head">
                                                             <div className="d-flex align-items-center">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/pdf-02.svg" alt="File" className="me-2" />
+                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/pdf-02.svg" alt="File" className="mr-2" />
                                                                 <h6 className="popup-toggle"><a href="javascript:void(0);">Haird.pdf</a></h6>
                                                             </div>
                                                             <div className="d-flex align-items-center">
-                                                                <a href="javascript:void(0);" className><i className="fa fa-star me-2" /></a>
+                                                                <a href="javascript:void(0);" className><i className="fa fa-star mr-2" /></a>
                                                                 <div className="dropdown">
                                                                     <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset">
                                                                         <i className="fa fa-ellipsis-v" />
@@ -2174,11 +2174,11 @@ function File_Manager() {
                                                     <div className="folders p-3">
                                                         <div className="d-flex align-items-center justify-content-between head">
                                                             <div className="d-flex align-items-center">
-                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/xls.svg" alt="File" className="me-2" />
+                                                                <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/xls.svg" alt="File" className="mr-2" />
                                                                 <h6 className="popup-toggle"><a href="javascript:void(0);">Estimation.xls</a></h6>
                                                             </div>
                                                             <div className="d-flex align-items-center">
-                                                                <a href="javascript:void(0);" className><i className="fa fa-star me-2" /></a>
+                                                                <a href="javascript:void(0);" className><i className="fa fa-star mr-2" /></a>
                                                                 <div className="dropdown">
                                                                     <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset">
                                                                         <i className="fa fa-ellipsis-v" />
@@ -2224,7 +2224,7 @@ function File_Manager() {
                                                             <div className="d-flex align-items-center justify-content-between">
                                                                 <h6 className="popup-toggle"><a href="javascript:void(0);">Demo_dw</a></h6>
                                                                 <div className="d-flex align-items-center">
-                                                                    <a href="javascript:void(0);" className="d-flex align-items-center"><i data-feather="star" className="feather-16 me-2" /></a>
+                                                                    <a href="javascript:void(0);" className="d-flex align-items-center"><i data-feather="star" className="feather-16 mr-2" /></a>
                                                                     <div className="dropdown">
                                                                         <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset">
                                                                             <i className="fa fa-ellipsis-v" />
@@ -2260,7 +2260,7 @@ function File_Manager() {
                                                             <div className="d-flex align-items-center justify-content-between">
                                                                 <h6 className="popup-toggle"><a href="javascript:void(0);">Android_bike.mp4</a></h6>
                                                                 <div className="d-flex align-items-center">
-                                                                    <a href="javascript:void(0);" className="d-flex align-items-center"><i data-feather="star" className="feather-16 me-2" /></a>
+                                                                    <a href="javascript:void(0);" className="d-flex align-items-center"><i data-feather="star" className="feather-16 mr-2" /></a>
                                                                     <div className="dropdown">
                                                                         <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset">
                                                                             <i className="fa fa-ellipsis-v" />
@@ -2296,7 +2296,7 @@ function File_Manager() {
                                                             <div className="d-flex align-items-center justify-content-between">
                                                                 <h6 className="popup-toggle"><a href="javascript:void(0);">Demoparticles.mp4</a></h6>
                                                                 <div className="d-flex align-items-center">
-                                                                    <a href="javascript:void(0);" className="d-flex align-items-center"><i data-feather="star" className="feather-16 me-2" /></a>
+                                                                    <a href="javascript:void(0);" className="d-flex align-items-center"><i data-feather="star" className="feather-16 mr-2" /></a>
                                                                     <div className="dropdown">
                                                                         <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset">
                                                                             <i className="fa fa-ellipsis-v" />
@@ -2331,9 +2331,9 @@ function File_Manager() {
                                     <div className="seprator-lg d-lg-flex align-items-center justify-content-between">
                                         <h4>All Files</h4>
                                         <div className="d-sm-flex align-items-center btn-grp">
-                                            <a href="javascript:void(0);" className="btn btn-primary me-2"><i data-feather="list" className="feather-20" /></a>
-                                            <a href="javascript:void(0);" className="btn btn-outline-secondary me-2"><i data-feather="layout" className="feather-20" /></a>
-                                            <a href="javascript:void(0);" className="btn btn-outline-secondary me-2"><i data-feather="grid" className="feather-20" /></a>
+                                            <a href="javascript:void(0);" className="btn btn-primary mr-2"><i data-feather="list" className="feather-20" /></a>
+                                            <a href="javascript:void(0);" className="btn btn-outline-secondary mr-2"><i data-feather="layout" className="feather-20" /></a>
+                                            <a href="javascript:void(0);" className="btn btn-outline-secondary mr-2"><i data-feather="grid" className="feather-20" /></a>
                                             <div className="icon-select">
                                                 <span className="icon"><i data-feather="calendar" className="feather-16" /></span>
                                                 <select className="select">
@@ -2371,7 +2371,7 @@ function File_Manager() {
                                                     </td>
                                                     <td className="productimgname">
                                                         <a href="https://dreamspos.dreamstechnologies.com/html/template/product-list.html" className="product-img d-flex align-items-center">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Product" className="me-2" />
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Product" className="mr-2" />
                                                             <span>Digimed</span>
                                                         </a>
                                                     </td>
@@ -2379,20 +2379,20 @@ function File_Manager() {
                                                     <td>200 MB</td>
                                                     <td>
                                                         <a href="javascript:void(0);" className="product-img d-flex align-items-center">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-6.jpg" alt="Product" className="me-2 rounded-circle" />
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-6.jpg" alt="Product" className="mr-2 rounded-circle" />
                                                             <span>Nolan Christopher</span>
                                                         </a>
                                                     </td>
                                                     <td>
                                                         <div className="d-flex align-items-center">
-                                                            <a href="javascript:void(0);" className><i data-feather="star" className="feather-16 me-2 color-primary" /></a>
+                                                            <a href="javascript:void(0);" className><i data-feather="star" className="feather-16 mr-2 color-primary" /></a>
                                                             <div className="dropdown">
                                                                 <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset">
                                                                     <i className="fa fa-ellipsis-v" />
                                                                 </a>
                                                                 <ul className="dropdown-menu">
-                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="trash-2" className="feather-14 me-2" />Permanent Delete</a></li>
-                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="edit" className="feather-14 me-2" />Restore File</a></li>
+                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="trash-2" className="feather-14 mr-2" />Permanent Delete</a></li>
+                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="edit" className="feather-14 mr-2" />Restore File</a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -2407,7 +2407,7 @@ function File_Manager() {
                                                     </td>
                                                     <td className="productimgname">
                                                         <a href="https://dreamspos.dreamstechnologies.com/html/template/product-list.html" className="product-img d-flex align-items-center">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/xls.svg" alt="Product" className="me-2" />
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/xls.svg" alt="Product" className="mr-2" />
                                                             <span>Estimation</span>
                                                         </a>
                                                     </td>
@@ -2415,20 +2415,20 @@ function File_Manager() {
                                                     <td>140 MB</td>
                                                     <td>
                                                         <a href="javascript:void(0);" className="product-img d-flex align-items-center">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-5.jpg" alt="Product" className="me-2 rounded-circle" />
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-5.jpg" alt="Product" className="mr-2 rounded-circle" />
                                                             <span>Nolan Harris</span>
                                                         </a>
                                                     </td>
                                                     <td>
                                                         <div className="d-flex align-items-center">
-                                                            <a href="javascript:void(0);" className><i data-feather="star" className="feather-16 me-2 color-primary" /></a>
+                                                            <a href="javascript:void(0);" className><i data-feather="star" className="feather-16 mr-2 color-primary" /></a>
                                                             <div className="dropdown">
                                                                 <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset">
                                                                     <i className="fa fa-ellipsis-v" />
                                                                 </a>
                                                                 <ul className="dropdown-menu">
-                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="trash-2" className="feather-14 me-2" />Permanent Delete</a></li>
-                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="edit" className="feather-14 me-2" />Restore File</a></li>
+                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="trash-2" className="feather-14 mr-2" />Permanent Delete</a></li>
+                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="edit" className="feather-14 mr-2" />Restore File</a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -2443,7 +2443,7 @@ function File_Manager() {
                                                     </td>
                                                     <td className="productimgname">
                                                         <a href="https://dreamspos.dreamstechnologies.com/html/template/product-list.html" className="product-img d-flex align-items-center">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/pdf-02.svg" alt="Product" className="me-2" />
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/pdf-02.svg" alt="Product" className="mr-2" />
                                                             <span>Intro.pdf</span>
                                                         </a>
                                                     </td>
@@ -2451,20 +2451,20 @@ function File_Manager() {
                                                     <td>70 MB</td>
                                                     <td>
                                                         <a href="javascript:void(0);" className="product-img d-flex align-items-center">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-10.jpg" alt="Product" className="me-2 rounded-circle" />
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-10.jpg" alt="Product" className="mr-2 rounded-circle" />
                                                             <span>Me</span>
                                                         </a>
                                                     </td>
                                                     <td className="text-end">
                                                         <div className="d-flex align-items-center">
-                                                            <a href="javascript:void(0);" className><i data-feather="star" className="feather-16 me-2 color-primary" /></a>
+                                                            <a href="javascript:void(0);" className><i data-feather="star" className="feather-16 mr-2 color-primary" /></a>
                                                             <div className="dropdown">
                                                                 <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset">
                                                                     <i className="fa fa-ellipsis-v" />
                                                                 </a>
                                                                 <ul className="dropdown-menu">
-                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="trash-2" className="feather-14 me-2" />Permanent Delete</a></li>
-                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="edit" className="feather-14 me-2" />Restore File</a></li>
+                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="trash-2" className="feather-14 mr-2" />Permanent Delete</a></li>
+                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="edit" className="feather-14 mr-2" />Restore File</a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -2479,7 +2479,7 @@ function File_Manager() {
                                                     </td>
                                                     <td className="productimgname">
                                                         <a href="https://dreamspos.dreamstechnologies.com/html/template/product-list.html" className="product-img d-flex align-items-center">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/video.svg" alt="Product" className="me-2" />
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/video.svg" alt="Product" className="mr-2" />
                                                             <span>Demoworrking.mp4</span>
                                                         </a>
                                                     </td>
@@ -2487,20 +2487,20 @@ function File_Manager() {
                                                     <td>180 MB</td>
                                                     <td>
                                                         <a href="javascript:void(0);" className="product-img d-flex align-items-center">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" alt="Product" className="me-2 rounded-circle" />
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" alt="Product" className="mr-2 rounded-circle" />
                                                             <span>Daniel</span>
                                                         </a>
                                                     </td>
                                                     <td>
                                                         <div className="d-flex align-items-center">
-                                                            <a href="javascript:void(0);" className><i data-feather="star" className="feather-16 me-2 color-primary" /></a>
+                                                            <a href="javascript:void(0);" className><i data-feather="star" className="feather-16 mr-2 color-primary" /></a>
                                                             <div className="dropdown">
                                                                 <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset">
                                                                     <i className="fa fa-ellipsis-v" />
                                                                 </a>
                                                                 <ul className="dropdown-menu">
-                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="trash-2" className="feather-14 me-2" />Permanent Delete</a></li>
-                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="edit" className="feather-14 me-2" />Restore File</a></li>
+                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="trash-2" className="feather-14 mr-2" />Permanent Delete</a></li>
+                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="edit" className="feather-14 mr-2" />Restore File</a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -2515,7 +2515,7 @@ function File_Manager() {
                                                     </td>
                                                     <td className="productimgname">
                                                         <a href="https://dreamspos.dreamstechnologies.com/html/template/product-list.html" className="product-img d-flex align-items-center">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/audio.svg" alt="Product" className="me-2" />
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/audio.svg" alt="Product" className="mr-2" />
                                                             <span>voice.mp3</span>
                                                         </a>
                                                     </td>
@@ -2523,20 +2523,20 @@ function File_Manager() {
                                                     <td>80 MB</td>
                                                     <td>
                                                         <a href="javascript:void(0);" className="product-img d-flex align-items-center">
-                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-7.jpg" alt="Product" className="me-2 rounded-circle" />
+                                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-7.jpg" alt="Product" className="mr-2 rounded-circle" />
                                                             <span>Henriques</span>
                                                         </a>
                                                     </td>
                                                     <td className="text-end">
                                                         <div className="d-flex align-items-center">
-                                                            <a href="javascript:void(0);" className><i data-feather="star" className="feather-16 me-2 color-primary" /></a>
+                                                            <a href="javascript:void(0);" className><i data-feather="star" className="feather-16 mr-2 color-primary" /></a>
                                                             <div className="dropdown">
                                                                 <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset">
                                                                     <i className="fa fa-ellipsis-v" />
                                                                 </a>
                                                                 <ul className="dropdown-menu">
-                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="trash-2" className="feather-14 me-2" />Permanent Delete</a></li>
-                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="edit" className="feather-14 me-2" />Restore File</a></li>
+                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="trash-2" className="feather-14 mr-2" />Permanent Delete</a></li>
+                                                                    <li><a href="javascript:void(0);" className="dropdown-item"><i data-feather="edit" className="feather-14 mr-2" />Restore File</a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -2555,8 +2555,8 @@ function File_Manager() {
                     <div className="d-flex align-items-center justify-content-between head">
                         <h4>File Preview</h4>
                         <div className="d-flex align-items-center">
-                            <a href="javascript:void(0);" className="me-2 d-flex align-items-center"><i className="fa fa-star" /></a>
-                            <a href="javascript:void(0);" className="me-2 d-flex align-items-center"><i data-feather="trash-2" className="feather-16 text-center text-danger" /></a>
+                            <a href="javascript:void(0);" className="mr-2 d-flex align-items-center"><i className="fa fa-star" /></a>
+                            <a href="javascript:void(0);" className="mr-2 d-flex align-items-center"><i data-feather="trash-2" className="feather-16 text-center text-danger" /></a>
                             <a href="javascript:void(0);" className="sidebar-closes d-flex align-items-center" aria-hidden="true"><i data-feather="x-circle" className="feather-26 color-primary" /></a>
                         </div>
                     </div>
@@ -2566,12 +2566,12 @@ function File_Manager() {
                         <p>File Size : 616 MB</p>
                     </div>
                     <div className="nav nav-tabs d-flex align-items-center justify-content-between py-4 mb-4" id="nav-tab" role="tablist">
-                        <a className="nav-link flex-fill active btn btn-light me-2 text-center" id="nav-home-tab" data-bs-toggle="tab" href="file-manager.html#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i data-feather="list" className="feather-16 me-2 text-center" />Details</a>
-                        <a className="nav-link flex-fill btn btn-light" id="nav-profile-tab" data-bs-toggle="tab" href="file-manager.html#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i data-feather="clock" className="feather-16 me-2" />Activity</a>
+                        <a className="nav-link flex-fill active btn btn-light mr-2 text-center" id="nav-home-tab" data-bs-toggle="tab" href="file-manager.html#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i data-feather="list" className="feather-16 mr-2 text-center" />Details</a>
+                        <a className="nav-link flex-fill btn btn-light" id="nav-profile-tab" data-bs-toggle="tab" href="file-manager.html#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i data-feather="clock" className="feather-16 mr-2" />Activity</a>
                     </div>
                     <div className="tab-content" id="nav-tabContent">
                         <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                            <h5 className="mb-4 d-flex align-items-center"><i data-feather="edit" className="feather-20 me-2" />Properties</h5>
+                            <h5 className="mb-4 d-flex align-items-center"><i data-feather="edit" className="feather-20 mr-2" />Properties</h5>
                             <ul className="seprator-lg">
                                 <li className="mb-4">
                                     <h6>File Name</h6>
@@ -2591,7 +2591,7 @@ function File_Manager() {
                                 </li>
                                 <li className="mb-4">
                                     <h6>Location</h6>
-                                    <p className="location d-inline-flex align-items-center"><i data-feather="hard-drive" className="feather-16 me-1" />Drive</p>
+                                    <p className="location d-inline-flex align-items-center"><i data-feather="hard-drive" className="feather-16 mr-1" />Drive</p>
                                 </li>
                                 <li className="mb-4">
                                     <h6>File Name</h6>
@@ -2614,7 +2614,7 @@ function File_Manager() {
                                     </div>
                                 </li>
                             </ul>
-                            <h5 className="mb-4 d-flex align-items-center"><i data-feather="user" className="feather-20 me-2" />Who has access</h5>
+                            <h5 className="mb-4 d-flex align-items-center"><i data-feather="user" className="feather-20 mr-2" />Who has access</h5>
                             <div className="d-flex align-items-center justify-content-between avatar-wrap">
                                 <div className="avatar-access d-flex align-items-center mb-4">
                                     <span>
@@ -2630,72 +2630,72 @@ function File_Manager() {
                                         <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Member 4" data-bs-original-title="Member 4"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-4.jpg" alt="Avatar" className="avatar-md" /></a>
                                     </span>
                                     <span>
-                                        <a href="javascript:void(0);" className="avatar-md add d-flex align-items-center justify-content-center"><i data-feather="plus" className="feather-16 me-1" /></a>
+                                        <a href="javascript:void(0);" className="avatar-md add d-flex align-items-center justify-content-center"><i data-feather="plus" className="feather-16 mr-1" /></a>
                                     </span>
                                 </div>
                             </div>
                             <p>Owned by Andrew. Shared with James, Fin, Davis</p>
                         </div>
                         <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            <h5 className="mb-4 d-flex align-items-center"><i data-feather="calendar" className="feather-20 me-2" />This Week</h5>
+                            <h5 className="mb-4 d-flex align-items-center"><i data-feather="calendar" className="feather-20 mr-2" />This Week</h5>
                             <ul className="mb-4">
                                 <li className="mb-4">
                                     <div className="d-flex align-items-center mb-2">
-                                        <a href="javascript:void(0);" className="me-3"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-1.jpg" alt="Avatar" className="avatar-md" /></a>
+                                        <a href="javascript:void(0);" className="mr-4"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-1.jpg" alt="Avatar" className="avatar-md" /></a>
                                         <p>Andrew commented on 1 items <br />3:39 PM Jul 19</p>
                                     </div>
-                                    <p className="d-flex align-items-center location border-0"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="me-2" />Website Backup for the Design team</p>
+                                    <p className="d-flex align-items-center location border-0"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="mr-2" />Website Backup for the Design team</p>
                                 </li>
                                 <li className="mb-4">
                                     <div className="d-flex align-items-center mb-2">
-                                        <a href="javascript:void(0);" className="me-3"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" alt="Avatar" className="avatar-md" /></a>
+                                        <a href="javascript:void(0);" className="mr-4"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" alt="Avatar" className="avatar-md" /></a>
                                         <p>Drake shared an item<br />3:39 PM Jul 19</p>
                                     </div>
-                                    <p className="d-flex align-items-center location border-0"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="me-2" />Website Backup for the Design team</p>
+                                    <p className="d-flex align-items-center location border-0"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="mr-2" />Website Backup for the Design team</p>
                                 </li>
                                 <li className="mb-2">
                                     <div className="d-flex align-items-center mb-2">
-                                        <a href="javascript:void(0);" className="me-3"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-3.jpg" alt="Avatar" className="avatar-md" /></a>
+                                        <a href="javascript:void(0);" className="mr-4"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-3.jpg" alt="Avatar" className="avatar-md" /></a>
                                         <div><p className="mb-0 text-secondary">Melvin</p><p className="mb-0">Commentor</p></div>
                                     </div>
                                 </li>
                                 <li className="mb-2">
                                     <div className="d-flex align-items-center mb-2">
-                                        <a href="javascript:void(0);" className="me-3"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-4.jpg" alt="Avatar" className="avatar-md" /></a>
+                                        <a href="javascript:void(0);" className="mr-4"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-4.jpg" alt="Avatar" className="avatar-md" /></a>
                                         <div><p className="mb-0 text-secondary">Drake</p><p className="mb-0">Editor</p></div>
                                     </div>
                                 </li>
                             </ul>
-                            <h5 className="mb-4 d-flex align-items-center"><i data-feather="calendar" className="feather-20 me-2" />Last Month</h5>
+                            <h5 className="mb-4 d-flex align-items-center"><i data-feather="calendar" className="feather-20 mr-2" />Last Month</h5>
                             <ul className="mb-4">
                                 <li className="mb-4">
                                     <div className="d-flex align-items-center mb-2">
-                                        <a href="javascript:void(0);" className="me-3"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-1.jpg" alt="Avatar" className="avatar-md" /></a>
+                                        <a href="javascript:void(0);" className="mr-4"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-1.jpg" alt="Avatar" className="avatar-md" /></a>
                                         <p>Andrew commented on 1 items <br />3:39 PM Jul 19</p>
                                     </div>
-                                    <p className="d-flex align-items-center location border-0"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="me-2" />Website Backup for the Design team</p>
+                                    <p className="d-flex align-items-center location border-0"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="mr-2" />Website Backup for the Design team</p>
                                 </li>
                                 <li className="mb-4">
                                     <div className="d-flex align-items-center mb-2">
-                                        <a href="javascript:void(0);" className="me-3"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" alt="Avatar" className="avatar-md" /></a>
+                                        <a href="javascript:void(0);" className="mr-4"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-2.jpg" alt="Avatar" className="avatar-md" /></a>
                                         <p>Drake shared an item<br />3:39 PM Jul 19</p>
                                     </div>
-                                    <p className="d-flex align-items-center location border-0"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="me-2" />Website Backup for the Design team</p>
+                                    <p className="d-flex align-items-center location border-0"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="mr-2" />Website Backup for the Design team</p>
                                 </li>
                                 <li className="mb-2">
                                     <div className="d-flex align-items-center mb-2">
-                                        <a href="javascript:void(0);" className="me-3"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-3.jpg" alt="Avatar" className="avatar-md" /></a>
+                                        <a href="javascript:void(0);" className="mr-4"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-3.jpg" alt="Avatar" className="avatar-md" /></a>
                                         <div><p className="mb-0 text-secondary">Melvin</p><p className="mb-0">Commentor</p></div>
                                     </div>
                                 </li>
                                 <li className="mb-2">
                                     <div className="d-flex align-items-center mb-2">
-                                        <a href="javascript:void(0);" className="me-3"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-4.jpg" alt="Avatar" className="avatar-md" /></a>
+                                        <a href="javascript:void(0);" className="mr-4"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/avatar/avatar-4.jpg" alt="Avatar" className="avatar-md" /></a>
                                         <div><p className="mb-0 text-secondary">Drake</p><p className="mb-0">Editor</p></div>
                                     </div>
                                 </li>
                             </ul>
-                            <a href="javascript:void(0);" className="text-primary show-all"><i data-feather="plus-circle" className="feather-20 me-2" />Show All</a>
+                            <a href="javascript:void(0);" className="text-primary show-all"><i data-feather="plus-circle" className="feather-20 mr-2" />Show All</a>
                         </div>
                     </div>
                 </div>
@@ -2726,7 +2726,7 @@ function File_Manager() {
                                 <ul>
                                     <li className="d-flex align-items-center justify-content-between">
                                         <div className="d-flex align-items-center w-85">
-                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="me-2" />
+                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="mr-2" />
                                             <div className="flex-fill">
                                                 <h6><a href="javascript:void(0);">latest-version.zip<i data-feather="check-circle" className="ms-2 feather-16" /></a></h6>
                                                 <span>616 MB</span>
@@ -2736,7 +2736,7 @@ function File_Manager() {
                                     </li>
                                     <li className="d-flex align-items-center justify-content-between">
                                         <div className="d-flex align-items-center w-85">
-                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/xls.svg" alt="Folder" className="me-2" />
+                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/xls.svg" alt="Folder" className="mr-2" />
                                             <div className="flex-fill">
                                                 <h6><a href="javascript:void(0);">Update work history.xls</a></h6>
                                                 <span>616 MB</span>
@@ -2746,13 +2746,13 @@ function File_Manager() {
                                             </div>
                                         </div>
                                         <div className="d-flex align-items-center">
-                                            <a href="javascript:void(0);" className="text-danger me-2 d-flex align-items-center"><i data-feather="trash-2" className="feather-16" /></a>
+                                            <a href="javascript:void(0);" className="text-danger mr-2 d-flex align-items-center"><i data-feather="trash-2" className="feather-16" /></a>
                                             <a href="javascript:void(0);" className="text-default d-flex align-items-center"><i data-feather="pause-circle" className="feather-16" /></a>
                                         </div>
                                     </li>
                                     <li className="d-flex align-items-center justify-content-between">
                                         <div className="d-flex align-items-center w-85">
-                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/zip.svg" alt="Folder" className="me-2" />
+                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/zip.svg" alt="Folder" className="mr-2" />
                                             <div className="flex-fill">
                                                 <h6><a href="javascript:void(0);">Updated Project.zip</a></h6>
                                                 <span>616 MB</span>
@@ -2762,7 +2762,7 @@ function File_Manager() {
                                             </div>
                                         </div>
                                         <div className="d-flex align-items-center">
-                                            <a href="javascript:void(0);" className="text-danger me-2 d-flex align-items-center"><i data-feather="trash-2" className="feather-16" /></a>
+                                            <a href="javascript:void(0);" className="text-danger mr-2 d-flex align-items-center"><i data-feather="trash-2" className="feather-16" /></a>
                                             <a href="javascript:void(0);" className="text-default d-flex align-items-center"><i data-feather="play-circle" className="feather-16" /></a>
                                         </div>
                                     </li>
@@ -2798,7 +2798,7 @@ function File_Manager() {
                                 <ul>
                                     <li className="d-flex align-items-center justify-content-between">
                                         <div className="d-flex align-items-center w-85">
-                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="me-2" />
+                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/folder.svg" alt="Folder" className="mr-2" />
                                             <div className="flex-fill">
                                                 <h6><a href="javascript:void(0);">latest-version<i data-feather="check-circle" className="ms-2 feather-16" /></a></h6>
                                                 <span>616 MB</span>
@@ -2808,27 +2808,27 @@ function File_Manager() {
                                     </li>
                                     <li className="d-flex align-items-center justify-content-between">
                                         <div className="d-flex align-items-center w-85">
-                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/xls.svg" alt="Folder" className="me-2" />
+                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/xls.svg" alt="Folder" className="mr-2" />
                                             <div className="flex-fill">
                                                 <h6><a href="javascript:void(0);">Update work history.xls<i data-feather="trash-2" className="feather-16" /></a></h6>
                                                 <span>16 MB</span>
                                             </div>
                                         </div>
                                         <div className="d-flex align-items-center">
-                                            <a href="javascript:void(0);" className="text-danger me-2"><i data-feather="trash-2" className="feather-16" /></a>
+                                            <a href="javascript:void(0);" className="text-danger mr-2"><i data-feather="trash-2" className="feather-16" /></a>
                                             <a href="javascript:void(0);" className="text-default"><i data-feather="pause-circle" className="feather-16" /></a>
                                         </div>
                                     </li>
                                     <li className="d-flex align-items-center justify-content-between">
                                         <div className="d-flex align-items-center w-85">
-                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/zip.svg" alt="Folder" className="me-2" />
+                                            <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/zip.svg" alt="Folder" className="mr-2" />
                                             <div className="flex-fill">
                                                 <h6><a href="javascript:void(0);">updated project.zip<i data-feather="trash-2" className="feather-16" /></a></h6>
                                                 <span>14 MB</span>
                                             </div>
                                         </div>
                                         <div className="d-flex align-items-center">
-                                            <a href="javascript:void(0);" className="text-danger me-2"><i data-feather="trash-2" className="feather-16" /></a>
+                                            <a href="javascript:void(0);" className="text-danger mr-2"><i data-feather="trash-2" className="feather-16" /></a>
                                             <a href="javascript:void(0);" className="text-default"><i data-feather="play-circle" className="feather-16" /></a>
                                         </div>
                                     </li>
@@ -2883,22 +2883,14 @@ function File_Manager() {
                                     </div>
                                 </div>
                                 <div className="modal-footer d-sm-flex justify-content-end">
-                                    <button type="button" className="btn btn-secondary me-2" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" className="btn btn-secondary mr-2" data-bs-dismiss="modal">Cancel</button>
                                     <button type="button" className="btn btn-primary">Create Folder</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="customizer-links" id="setdata">
-                    <ul className="sticky-sidebar">
-                        <li className="sidebar-icons">
-                            <a href="file-manager.html#" className="navigation-add" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Theme">
-                                <i data-feather="settings" className="feather-five" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+               
             </div>
         </div>
     )

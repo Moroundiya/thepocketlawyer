@@ -50,7 +50,7 @@ function Footer() {
                         <div className="wrapper_second_useful wrapper_second_links">
                             <ul>
                                 <li>
-                                    <Link to="/about" reloadDocument relative='path'> <i className="fa fa-angle-right" />About Us</Link>
+                                    <Link to="/about-us" reloadDocument relative='path'> <i className="fa fa-angle-right" />About Us</Link>
                                 </li>
                                 <li>
                                     <Link to="/contact" reloadDocument relative='path'><i className="fa fa-angle-right" />Contact </Link>

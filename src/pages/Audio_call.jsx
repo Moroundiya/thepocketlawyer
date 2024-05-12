@@ -1,5 +1,5 @@
 import React from 'react';
-// import '../audio.css';
+import '../audio2.css';
 // import '../audio-feather.css';
 // import '../audio-jquery';
 // import '../audio-script'
@@ -15,7 +15,7 @@ import React from 'react';
 
 function Audio_call() {
     return (
-        <div>
+        <div className='audio-main-parent-container' id='audio-call-parent-main-container'>
             <div className="main-wrapper">
                 <div className="header">
                     <div className="header-left active">
@@ -28,9 +28,9 @@ function Audio_call() {
                         <a href="https://dreamspos.dreamstechnologies.com/html/template/index.html" className="logo-small">
                             <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/logo-small.png" alt="" />
                         </a>
-                        <a id="toggle_btn" href="javascript:void(0);">
+                        {/* <a id="toggle_btn" href="javascript:void(0);">
                             <i data-feather="chevrons-left" className="feather-16" />
-                        </a>
+                        </a> */}
                     </div>
                     <a id="mobile_btn" className="mobile_btn" href="audio-call.html#sidebar">
                         <span className="bar-icon">
@@ -258,11 +258,11 @@ function Audio_call() {
                                         </div>
                                     </div>
                                     <hr className="m-0" />
-                                    <a className="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/profile.html"> <i className="me-2" data-feather="user" /> My
+                                    <a className="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/profile.html"> <i className="mr-2" data-feather="user" /> My
                                         Profile</a>
-                                    <a className="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/general-settings.html"><i className="me-2" data-feather="settings" />Settings</a>
+                                    <a className="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/general-settings.html"><i className="mr-2" data-feather="settings" />Settings</a>
                                     <hr className="m-0" />
-                                    <a className="dropdown-item logout pb-0" href="https://dreamspos.dreamstechnologies.com/html/template/signin.html"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/log-out.svg" className="me-2" alt="img" />Logout</a>
+                                    <a className="dropdown-item logout pb-0" href="https://dreamspos.dreamstechnologies.com/html/template/signin.html"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/log-out.svg" className="mr-2" alt="img" />Logout</a>
                                 </div>
                             </div>
                         </li>
@@ -1830,15 +1830,6 @@ function Audio_call() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="customizer-links" id="setdata">
-                <ul className="sticky-sidebar">
-                    <li className="sidebar-icons">
-                        <a href="audio-call.html#" className="navigation-add" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Theme">
-                            <i data-feather="settings" className="feather-five" />
-                        </a>
-                    </li>
-                </ul>
             </div>
         </div>
 

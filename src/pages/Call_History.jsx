@@ -1,5 +1,5 @@
 import React from 'react'
-// import '../audio.css';
+import '../audio2.css';
 // import '../audio-feather.css';
 // import '../audio-jquery';
 // import '../audio-script'
@@ -16,7 +16,7 @@ function Call_History() {
     return (
 
         <div>
-            <div className="main-wrapper" id="call-history-container">
+            <div className="main-wrapper audio-main-parent-container" id="call-history-container">
                 <div className="header">
                     <div className="header-left active">
                         <a href="https://dreamspos.dreamstechnologies.com/html/template/index.html" className="logo logo-normal">
@@ -28,9 +28,9 @@ function Call_History() {
                         <a href="https://dreamspos.dreamstechnologies.com/html/template/index.html" className="logo-small">
                             <img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/logo-small.png" alt="" />
                         </a>
-                        <a id="toggle_btn" href="javascript:void(0);">
+                        {/* <a id="toggle_btn" href="javascript:void(0);">
                             <i data-feather="chevrons-left" className="feather-16" />
-                        </a>
+                        </a> */}
                     </div>
                     <a id="mobile_btn" className="mobile_btn" href="call-history.html#sidebar">
                         <span className="bar-icon">
@@ -258,11 +258,11 @@ function Call_History() {
                                         </div>
                                     </div>
                                     <hr className="m-0" />
-                                    <a className="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/profile.html"> <i className="me-2" data-feather="user" /> My
+                                    <a className="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/profile.html"> <i className="mr-2" data-feather="user" /> My
                                         Profile</a>
-                                    <a className="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/general-settings.html"><i className="me-2" data-feather="settings" />Settings</a>
+                                    <a className="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/general-settings.html"><i className="mr-2" data-feather="settings" />Settings</a>
                                     <hr className="m-0" />
-                                    <a className="dropdown-item logout pb-0" href="https://dreamspos.dreamstechnologies.com/html/template/signin.html"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/log-out.svg" className="me-2" alt="img" />Logout</a>
+                                    <a className="dropdown-item logout pb-0" href="https://dreamspos.dreamstechnologies.com/html/template/signin.html"><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/log-out.svg" className="mr-2" alt="img" />Logout</a>
                                 </div>
                             </div>
                         </li>
@@ -1642,9 +1642,8 @@ function Call_History() {
                                             <span><img src="https://dreamspos.dreamstechnologies.com/html/template/assets/img/icons/closes.svg" alt="img" /></span>
                                         </a>
                                     </div>
-                                    <div className="form-sort">
-                                        <i data-feather="sliders" className="info-img" />
-                                        <select className="select">
+                                    <div className="">
+                                        <select className='select-customized'>
                                             <option>Sort by Date</option>
                                             <option>Newest</option>
                                             <option>Oldest</option>
@@ -1724,12 +1723,12 @@ function Call_History() {
                                                     </div>
                                                 </td>
                                                 <td>+1 25182 94528</td>
-                                                <td className="phone-call-icon"><i data-feather="phone" className="income-calls me-1" /><i data-feather="arrow-down-left" className="income-success me-1" />Incoming Call</td>
+                                                <td className="phone-call-icon"><i data-feather="phone" className="income-calls mr-1" /><i data-feather="arrow-down-left" className="income-success mr-1" />Incoming Call</td>
                                                 <td>00.25</td>
                                                 <td>19 Jan 2023 - 01:16 PM</td>
                                                 <td className="action-table-data">
                                                     <div className="edit-delete-action">
-                                                        <a className="me-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
+                                                        <a className="mr-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
                                                             <i data-feather="eye" className="feather-eye" />
                                                         </a>
                                                         <a className="confirm-text p-2" href="javascript:void(0);">
@@ -1754,12 +1753,12 @@ function Call_History() {
                                                     </div>
                                                 </td>
                                                 <td>+1 93016 81932</td>
-                                                <td className="phone-call-icon"><i data-feather="phone" className="income-calls me-1" /><i data-feather="arrow-up-right" className="income-success-missed me-1" />Missed Call</td>
+                                                <td className="phone-call-icon"><i data-feather="phone" className="income-calls mr-1" /><i data-feather="arrow-up-right" className="income-success-missed mr-1" />Missed Call</td>
                                                 <td>00.00</td>
                                                 <td>24 Jan 2023 - 02:50 PM</td>
                                                 <td className="action-table-data">
                                                     <div className="edit-delete-action">
-                                                        <a className="me-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
+                                                        <a className="mr-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
                                                             <i data-feather="eye" className="feather-eye" />
                                                         </a>
                                                         <a className="confirm-text p-2" href="javascript:void(0);">
@@ -1784,12 +1783,12 @@ function Call_History() {
                                                     </div>
                                                 </td>
                                                 <td>+1 25182 94528</td>
-                                                <td className="phone-call-icon"><i data-feather="video" className="income-calls me-1" /><i data-feather="arrow-down-left" className="income-success me-1" />Incoming Call</td>
+                                                <td className="phone-call-icon"><i data-feather="video" className="income-calls mr-1" /><i data-feather="arrow-down-left" className="income-success mr-1" />Incoming Call</td>
                                                 <td>00.15</td>
                                                 <td>03 Feb 2023 - 10:37 AM</td>
                                                 <td className="action-table-data">
                                                     <div className="edit-delete-action">
-                                                        <a className="me-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
+                                                        <a className="mr-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
                                                             <i data-feather="eye" className="feather-eye" />
                                                         </a>
                                                         <a className="confirm-text p-2" href="javascript:void(0);">
@@ -1814,12 +1813,12 @@ function Call_History() {
                                                     </div>
                                                 </td>
                                                 <td>+1 70328 96042</td>
-                                                <td className="phone-call-icon"><i data-feather="phone" className="income-calls me-1" /><i data-feather="arrow-down-left" className="income-success-missed me-1" />Missed Call</td>
+                                                <td className="phone-call-icon"><i data-feather="phone" className="income-calls mr-1" /><i data-feather="arrow-down-left" className="income-success-missed mr-1" />Missed Call</td>
                                                 <td>00.00</td>
                                                 <td>17 Feb 2023 - 11:25 AM</td>
                                                 <td className="action-table-data">
                                                     <div className="edit-delete-action">
-                                                        <a className="me-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
+                                                        <a className="mr-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
                                                             <i data-feather="eye" className="feather-eye" />
                                                         </a>
                                                         <a className="confirm-text p-2" href="javascript:void(0);">
@@ -1844,12 +1843,12 @@ function Call_History() {
                                                     </div>
                                                 </td>
                                                 <td>+1 83610 45175</td>
-                                                <td className="phone-call-icon"><i data-feather="video" className="income-calls me-1" /><i data-feather="arrow-up-right" className="income-success me-1" />Outgoing Call</td>
+                                                <td className="phone-call-icon"><i data-feather="video" className="income-calls mr-1" /><i data-feather="arrow-up-right" className="income-success mr-1" />Outgoing Call</td>
                                                 <td>00.45</td>
                                                 <td>14 Mar 2023 - 09:12 AM</td>
                                                 <td className="action-table-data">
                                                     <div className="edit-delete-action">
-                                                        <a className="me-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
+                                                        <a className="mr-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
                                                             <i data-feather="eye" className="feather-eye" />
                                                         </a>
                                                         <a className="confirm-text p-2" href="javascript:void(0);">
@@ -1874,12 +1873,12 @@ function Call_History() {
                                                     </div>
                                                 </td>
                                                 <td>+1 46217 84294</td>
-                                                <td className="phone-call-icon"><i data-feather="phone" className="income-calls me-1" /><i data-feather="arrow-down-left" className="income-success me-1" />Incoming Call</td>
+                                                <td className="phone-call-icon"><i data-feather="phone" className="income-calls mr-1" /><i data-feather="arrow-down-left" className="income-success mr-1" />Incoming Call</td>
                                                 <td>00.30</td>
                                                 <td>27 Mar 2023 - 04:32 PM</td>
                                                 <td className="action-table-data">
                                                     <div className="edit-delete-action">
-                                                        <a className="me-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
+                                                        <a className="mr-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
                                                             <i data-feather="eye" className="feather-eye" />
                                                         </a>
                                                         <a className="confirm-text p-2" href="javascript:void(0);">
@@ -1904,12 +1903,12 @@ function Call_History() {
                                                     </div>
                                                 </td>
                                                 <td>+1 62573 84301</td>
-                                                <td className="phone-call-icon"><i data-feather="phone" className="income-calls me-1" /><i data-feather="arrow-up-right" className="income-success me-1" />Outgoing Call</td>
+                                                <td className="phone-call-icon"><i data-feather="phone" className="income-calls mr-1" /><i data-feather="arrow-up-right" className="income-success mr-1" />Outgoing Call</td>
                                                 <td>01.17</td>
                                                 <td>13 Apr 2023 - 02:46 PM</td>
                                                 <td className="action-table-data">
                                                     <div className="edit-delete-action">
-                                                        <a className="me-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
+                                                        <a className="mr-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
                                                             <i data-feather="eye" className="feather-eye" />
                                                         </a>
                                                         <a className="confirm-text p-2" href="javascript:void(0);">
@@ -1934,12 +1933,12 @@ function Call_History() {
                                                     </div>
                                                 </td>
                                                 <td>+1 14693 63826</td>
-                                                <td className="phone-call-icon"><i data-feather="video" className="income-calls me-1" /><i data-feather="arrow-down-left" className="income-success-missed me-1" />Missed Call</td>
+                                                <td className="phone-call-icon"><i data-feather="video" className="income-calls mr-1" /><i data-feather="arrow-down-left" className="income-success-missed mr-1" />Missed Call</td>
                                                 <td>00.00</td>
                                                 <td>11 Apr 2023 - 10:29 AM</td>
                                                 <td className="action-table-data">
                                                     <div className="edit-delete-action">
-                                                        <a className="me-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
+                                                        <a className="mr-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
                                                             <i data-feather="eye" className="feather-eye" />
                                                         </a>
                                                         <a className="confirm-text p-2" href="javascript:void(0);">
@@ -1964,12 +1963,12 @@ function Call_History() {
                                                     </div>
                                                 </td>
                                                 <td>+1 83710 43827</td>
-                                                <td className="phone-call-icon"><i data-feather="phone" className="income-calls me-1" /><i data-feather="arrow-down-left" className="income-success me-1" />Incoming Call</td>
+                                                <td className="phone-call-icon"><i data-feather="phone" className="income-calls mr-1" /><i data-feather="arrow-down-left" className="income-success mr-1" />Incoming Call</td>
                                                 <td>00.50</td>
                                                 <td>14 May 2023 - 03:06 PM</td>
                                                 <td className="action-table-data">
                                                     <div className="edit-delete-action">
-                                                        <a className="me-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
+                                                        <a className="mr-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
                                                             <i data-feather="eye" className="feather-eye" />
                                                         </a>
                                                         <a className="confirm-text p-2" href="javascript:void(0);">
@@ -1994,12 +1993,12 @@ function Call_History() {
                                                     </div>
                                                 </td>
                                                 <td>+1 42695 07322</td>
-                                                <td className="phone-call-icon"><i data-feather="video" className="income-calls me-1" /><i data-feather="arrow-down-left" className="income-success-missed me-1" />Missed Call</td>
+                                                <td className="phone-call-icon"><i data-feather="video" className="income-calls mr-1" /><i data-feather="arrow-down-left" className="income-success-missed mr-1" />Missed Call</td>
                                                 <td>00.00</td>
                                                 <td>29 May 2023 - 11:23 AM</td>
                                                 <td className="action-table-data">
                                                     <div className="edit-delete-action">
-                                                        <a className="me-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
+                                                        <a className="mr-3 p-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#user-profile-new">
                                                             <i data-feather="eye" className="feather-eye" />
                                                         </a>
                                                         <a className="confirm-text p-2" href="javascript:void(0);">
@@ -2016,15 +2015,6 @@ function Call_History() {
                     </div>
                 </div>
 
-                <div className="customizer-links" id="setdata">
-                    <ul className="sticky-sidebar">
-                        <li className="sidebar-icons">
-                            <a href="call-history.html#" className="navigation-add" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Theme">
-                                <i data-feather="settings" className="feather-five" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
                 <div className="modal fade" id="user-profile-new">
                     <div className="modal-dialog history-modal-profile">
                         <div className="modal-content">

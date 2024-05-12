@@ -60,6 +60,8 @@ import Call_History from './pages/Call_History';
 import Email from './pages/Email';
 import File_Manager from './pages/File_Manager';
 import Chat from './pages/Chat';
+import Todo from './pages/Todo';
+import Notes from './pages/Notes';
 
 
 const router = createBrowserRouter([
@@ -263,22 +265,30 @@ const router = createBrowserRouter([
     path: "audio-call",
     element: <Audio_call />
   },
-  // {
-  //   path: "call-history",
-  //   element: <Call_History />
-  // },
-  // {
-  //   path: "email",
-  //   element: <Email />
-  // },
-  // {
-  //   path: "file-manager",
-  //   element: <File_Manager />
-  // },
-  // {
-  //   path: "chat",
-  //   element: <Chat />
-  // }
+  {
+    path: "call-history",
+    element: <Call_History />
+  },
+  {
+    path: "email",
+    element: <Email />
+  },
+  {
+    path: "file-manager",
+    element: <File_Manager />
+  },
+  {
+    path: "chat",
+    element: <Chat />
+  },
+  {
+    path: "todo",
+    element: <Todo />
+  },
+  {
+    path: "notes",
+    element: <Notes />
+  }
 
 ]);
 

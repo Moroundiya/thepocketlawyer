@@ -123,7 +123,7 @@ function Pricing_Plans() {
                                                                 <a href="#" id='plan-orange-color' >Basic Plan</a>
                                                             </h3>
                                                             <h4 className='mt-3 text-danger'>
-                                                                ₦3:500/Month
+                                                                ₦3,500/Month
                                                             </h4>
                                                             <p className='my-3' style={{ lineHeight: '1.5' }}>
                                                                 Cloud-based practice and case

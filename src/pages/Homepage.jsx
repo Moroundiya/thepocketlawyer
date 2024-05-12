@@ -801,7 +801,7 @@ function Homepage() {
                                         <a href="#" id='plan-orange-color'>Basic Plan</a>
                                     </h3>
                                     <h4 className='mt-3 text-danger'>
-                                    ₦3:500/Month
+                                    ₦3,500/Month
                                     </h4>
                                     <p className='text-left px-3 font-weight-bold'>
                                         ● Free Registrations <br />
