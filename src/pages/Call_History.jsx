@@ -15,8 +15,8 @@ import '../audio2.css';
 function Call_History() {
     return (
 
-        <div>
-            <div className="main-wrapper audio-main-parent-container" id="call-history-container">
+        <div className='audio-main-parent-container'>
+            <div className="main-wrapper" id="call-history-container">
                 <div className="header">
                     <div className="header-left active">
                         <a href="https://dreamspos.dreamstechnologies.com/html/template/index.html" className="logo logo-normal">
